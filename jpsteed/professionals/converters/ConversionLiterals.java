@@ -35,4 +35,9 @@ public class ConversionLiterals {
 	static final double GALLONSPERCUBICMETER = 264.172;
 	static final int LITERSPERCUBICMETER = 1000;
 	static final double CUBICFOOTPERCUBICMETER = 35.3147;
+	
+	// Temperature Conversions
+	static final double CELSIUSKELVIN = 273.15;
+	static final double FAHRENHEITCELSIUS1 = 1.8;
+	static final int FAHRENHEITCELSIUS2 = 32;
 }
