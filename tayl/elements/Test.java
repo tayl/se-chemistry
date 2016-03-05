@@ -1,4 +1,4 @@
-package tayl.professionals.elements;
+package elements;
 
 /**
  * Created by Taylor on 2/16/2016.
@@ -6,7 +6,7 @@ package tayl.professionals.elements;
 public class Test {
     public static void main(String[] s) {
         TableBuilder tb = new TableBuilder();
-        Table table = tb.build("tayl/professionals/elements/data/elements.csv");
+        Table table = tb.build("tayl/elements/data/elements.csv");
         table.printTable();
     }
 }

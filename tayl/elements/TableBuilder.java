@@ -1,8 +1,7 @@
-package tayl.professionals.elements;
+package elements;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -15,7 +14,6 @@ public class TableBuilder {
 
     public Table build(String filename) {
         Table table = new Table();
-        ArrayList<Element> elements = new ArrayList<>();
 
         File input = new File(filename);
 
@@ -44,7 +42,7 @@ public class TableBuilder {
                 element.setGroup(parseInt(parts[9]));
                 element.setElectronConfiguration(new Configuration());
 
-                elements.add(element);
+                table.addElement(element);
             }
         } catch (FileNotFoundException e) {
 //            e.printStackTrace();
@@ -52,13 +50,6 @@ public class TableBuilder {
             System.out.println("No such element found");
 //            nsee.printStackTrace();
         }
-
-        Element[] element_array = new Element[elements.size()];
-        for (int i = 0; i < element_array.length; i++) {
-            element_array[i] = elements.get(i);
-        }
-
-        table.setElements(element_array);
 
         return table;
     }

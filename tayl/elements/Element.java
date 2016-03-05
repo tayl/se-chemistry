@@ -1,4 +1,4 @@
-package tayl.professionals.elements;
+package elements;
 
 /**
  * @author Taylor Veith
