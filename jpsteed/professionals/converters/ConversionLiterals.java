@@ -6,6 +6,71 @@ package jpsteed.professionals.converters;
  *
  */
 public class ConversionLiterals {
+	
+	/**
+	 * Unit data type.
+	 * @author John-Paul Steed
+	 *
+	 */
+	static enum Unit {
+		// LengthConverter
+		INCH,
+		FOOT,
+		YARD,
+		MILE,
+		PICOMETER,
+		NANOMETER,
+		MICROMETER,
+		MILLIMETER,
+		CENTIMETER,
+		DECIMETER,
+		METER,
+		KILOMETER,
+		MEGAMETER,
+		GIGAMETER,
+		//AreaConverter
+		ACRE,
+		HECTACRE,
+		SQMETER,
+		SQCENTIMETER,
+		SQMILLIMETER,
+		SQKILOMETER,
+		SQMILE,
+		SQINCH,
+		SQFOOT,
+		SQYARD,
+		//VolumeConverter
+		CUBMETER,
+		CUBCENTIMETER,
+		CUBMILLIMETER,
+		CUBKILOMETER,
+		LITER,
+		GALLON,
+		QUART,
+		CUP,
+		CUBFOOT,
+		MILLILITER,
+		KILOLITER,
+		//MassConverter
+		OUNCE,
+		POUND,
+		ATOMICMASSUNIT,
+		GRAM,
+		MILLIGRAM,
+		KILOGRAM,
+		METRICTON,
+		//TemperatureConverter
+		KELVIN,
+		CELSIUS,
+		FAHRENHEIT,
+		//PressureConverter
+		ATMOSPHERE,
+		TORR,
+		KILOPASCAL,
+		MILLIMERCURY,
+		POUNDSSQINCH
+	};
+	
 	// Length Conversions
 	static final double FEETPERMETER = 3.280824;
 	static final int INCHESPERFOOT = 12;
@@ -40,4 +105,10 @@ public class ConversionLiterals {
 	static final double CELSIUSKELVIN = 273.15;
 	static final double FAHRENHEITCELSIUS1 = 1.8;
 	static final int FAHRENHEITCELSIUS2 = 32;
+	
+	// Pressure Conversions
+	static final int PASCALATMOSPHER = 101325;
+	static final double PASCALMMMERCURY = 133.322;
+	static final int PASCALPERPSI = 6893;
+	static final double PASCALTORR = 133.322;
 }
