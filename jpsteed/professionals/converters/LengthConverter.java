@@ -1,5 +1,7 @@
 package jpsteed.professionals.converters;
 
+import jpsteed.professionals.converters.ConversionLiterals.Unit;
+
 /**
  * Length Converter. Includes: inches, feet, yards, miles,
  * 		picometer, nanometer, micrometer, millimeter, centimeter,
@@ -1834,6 +1836,588 @@ public class LengthConverter {
 	public static double gigaToMega(double inputLength) {
 		inputLength = gigaToMeter(inputLength);
 		return meterToMega(inputLength);
+	}
+	
+	/*************************************************************/
+	
+	/**
+	 * Convert length from input unit to output unit.
+	 * @param inputUnit : Unit data type in ConversionLiterals class
+	 * @param outputUnit : Unit data type in ConversionLiterals class
+	 * @param inputLength : double
+	 * @return double
+	 */
+	public static double convertLength(Unit inputUnit, Unit outputUnit, double inputLength) {
+		double outputLength = 0;
+		String choice = inputUnit.toString() + outputUnit.toString();
+		
+		// Determine conversion function.
+		switch(choice) {
+		//Inch conversions
+		case "INCHFOOT":
+			outputLength = inchesToFeet(inputLength);
+			break;
+		case "INCHYARD":
+			outputLength = inchToYard(inputLength);
+			break;
+		case "INCHMILE":
+			outputLength = inchToMile(inputLength);
+			break;
+		case "INCHMETER":
+			outputLength = inchToMeter(inputLength);
+			break;
+		case "INCHPICOMETER":
+			outputLength = inchToPicoMeter(inputLength);
+			break;
+		case "INCHNANOMETER":
+			outputLength = inchToNanoMeter(inputLength);
+			break;
+		case "INCHMICROMETER":
+			outputLength = inchToMicroMeter(inputLength);
+			break;
+		case "INCHMILLIMETER":
+			outputLength = inchToMilliMeter(inputLength);
+			break;
+		case "INCHCENTIMETER":
+			outputLength = inchToCentiMeter(inputLength);
+			break;
+		case "INCHDECIMETER":
+			outputLength = inchToDeciMeter(inputLength);
+			break;
+		case "INCHKILOMETER":
+			outputLength = inchToKiloMeter(inputLength);
+			break;
+		case "INCHMEGAMETER":
+			outputLength = inchToMegaMeter(inputLength);
+			break;
+		case "INCHGIGAMETER":
+			outputLength = inchToGigaMeter(inputLength);
+			break;
+		//Foot conversions
+		case "FOOTINCH":
+			outputLength = feetToInches(inputLength);
+			break;
+		case "FOOTYARD":
+			outputLength = feetToYard(inputLength);
+			break;
+		case "FOOTMILE":
+			outputLength = feetToMiles(inputLength);
+			break;
+		case "FOOTMETER":
+			outputLength = feetToMeter(inputLength);
+			break;
+		case "FOOTPICOMETER":
+			outputLength = feetToPicoMeter(inputLength);
+			break;
+		case "FOOTNANOMETER":
+			outputLength = feetToNanoMeter(inputLength);
+			break;
+		case "FOOTMICROMETER":
+			outputLength = feetToMicroMeter(inputLength);
+			break;
+		case "FOOTMILLIMETER":
+			outputLength = feetToMilliMeter(inputLength);
+			break;
+		case "FOOTCENTIMETER":
+			outputLength = feetToCentiMeter(inputLength);
+			break;
+		case "FOOTDECIMETER":
+			outputLength = feetToDeciMeter(inputLength);
+			break;
+		case "FOOTKILOMETER":
+			outputLength = feetToKiloMeter(inputLength);
+			break;
+		case "FOOTMEGAMETER":
+			outputLength = feetToMegaMeter(inputLength);
+			break;
+		case "FOOTGIGAMETER":
+			outputLength = feetToGigaMeter(inputLength);
+			break;
+		//Yard conversions
+		case "YARDINCH":
+			outputLength = yardToInch(inputLength);
+			break;
+		case "YARDFOOT":
+			outputLength = yardToFeet(inputLength);
+			break;
+		case "YARDMILE":
+			outputLength = yardToMile(inputLength);
+			break;
+		case "YARDMETER":
+			outputLength = yardToMeter(inputLength);
+			break;
+		case "YARDPICOMETER":
+			outputLength = yardToPico(inputLength);
+			break;
+		case "YARDNANOMETER":
+			outputLength = yardToNano(inputLength);
+			break;
+		case "YARDMICROMETER":
+			outputLength = yardToMicro(inputLength);
+			break;
+		case "YARDMILLIMETER":
+			outputLength = yardToMilli(inputLength);
+			break;
+		case "YARDCENTIMETER":
+			outputLength = yardToCenti(inputLength);
+			break;
+		case "YARDDECIMETER":
+			outputLength = yardToDeci(inputLength);
+			break;
+		case "YARDKILOMETER":
+			outputLength = yardToKilo(inputLength);
+			break;
+		case "YARDMEGAMETER":
+			outputLength = yardToMega(inputLength);
+			break;
+		case "YARDGIGAMETER":
+			outputLength = yardToGiga(inputLength);
+			break;
+		//Mile conversions
+		case "MILEINCH":
+			outputLength = mileToInch(inputLength);
+			break;
+		case "MILEFOOT":
+			outputLength = milesToFeet(inputLength);
+			break;
+		case "MILEYARD":
+			outputLength = mileToYard(inputLength);
+			break;
+		case "MILEMETER":
+			outputLength = mileToMeter(inputLength);
+			break;
+		case "MILEPICOMETER":
+			outputLength = mileToPicoMeter(inputLength);
+			break;
+		case "MILENANOMETER":
+			outputLength = mileToNanoMeter(inputLength);
+			break;
+		case "MILEMICROMETER":
+			outputLength = mileToMicroMeter(inputLength);
+			break;
+		case "MILEMILLIMETER":
+			outputLength = mileToMilliMeter(inputLength);
+			break;
+		case "MILECENTIMETER":
+			outputLength = mileToCentiMeter(inputLength);
+			break;
+		case "MILEDECIMETER":
+			outputLength = mileToDeciMeter(inputLength);
+			break;
+		case "MILEKILOMETER":
+			outputLength = mileToKiloMeter(inputLength);
+			break;
+		case "MILEMEGAMETER":
+			outputLength = mileToMegaMeter(inputLength);
+			break;
+		case "MILEGIGAMETER":
+			outputLength = mileToGigaMeter(inputLength);
+			break;
+		//Meter conversion
+		case "METERINCH":
+			outputLength = meterToInch(inputLength);
+			break;
+		case "METERFOOT":
+			outputLength = meterToFeet(inputLength);
+			break;
+		case "METERYARD":
+			outputLength = meterToYard(inputLength);
+			break;
+		case "METERMILE":
+			outputLength = meterToMile(inputLength);
+			break;
+		case "METERPICOMETER":
+			outputLength = meterToPico(inputLength);
+			break;
+		case "METERNANOMETER":
+			outputLength = meterToNano(inputLength);
+			break;
+		case "METERMICROMETER":
+			outputLength = meterToMicro(inputLength);
+			break;
+		case "METERMILLIMETER":
+			outputLength = meterToMilli(inputLength);
+			break;
+		case "METERCENTIMETER":
+			outputLength = meterToCenti(inputLength);
+			break;
+		case "METERDECIMETER":
+			outputLength = meterToDeci(inputLength);
+			break;
+		case "METERKILOMETER":
+			outputLength = meterToKilo(inputLength);
+			break;
+		case "METERMEGAMETER":
+			outputLength = meterToMega(inputLength);
+			break;
+		case "METERGIGAMETER":
+			outputLength = meterToGiga(inputLength);
+			break;
+		//Picometer conversion
+		case "PICOMETERINCH":
+			outputLength = picoToInch(inputLength);
+			break;
+		case "PICOMETERFOOT":
+			outputLength = picoToFeet(inputLength);
+			break;
+		case "PICOMETERYARD":
+			outputLength = picoToYard(inputLength);
+			break;
+		case "PICOMETERMILE":
+			outputLength = picoToMile(inputLength);
+			break;
+		case "PICOMETERMETER":
+			outputLength = picoToMeter(inputLength);
+			break;
+		case "PICOMETERNANOMETER":
+			outputLength = picoToNano(inputLength);
+			break;
+		case "PICOMETERMICROMETER":
+			outputLength = picoToMicro(inputLength);
+			break;
+		case "PICOMETERMILLIMETER":
+			outputLength = picoToMilli(inputLength);
+			break;
+		case "PICOMETERCENTIMETER":
+			outputLength = picoToCenti(inputLength);
+			break;
+		case "PICOMETERDECIMETER":
+			outputLength = picoToDeci(inputLength);
+			break;
+		case "PICOMETERKILOMETER":
+			outputLength = picoToKilo(inputLength);
+			break;
+		case "PICOMETERMEGAMETER":
+			outputLength = picoToMega(inputLength);
+			break;
+		case "PICOMETERGIGAMETER":
+			outputLength = picoToGiga(inputLength);
+			break;
+		//Nanometer conversion
+		case "NANOMETERINCH":
+			outputLength = nanoToInch(inputLength);
+			break;
+		case "NANOMETERFOOT":
+			outputLength = nanoToFeet(inputLength);
+			break;
+		case "NANOMETERYARD":
+			outputLength = nanoToYard(inputLength);
+			break;
+		case "NANOMETERMILE":
+			outputLength = nanoToMile(inputLength);
+			break;
+		case "NANOMETERMETER":
+			outputLength = nanoToMeter(inputLength);
+			break;
+		case "NANOMETERPICOMETER":
+			outputLength = nanoToPico(inputLength);
+			break;
+		case "NANOMETERMICROMETER":
+			outputLength = nanoToMicro(inputLength);
+			break;
+		case "NANOMETERMILLIMETER":
+			outputLength = nanoToMilli(inputLength);
+			break;
+		case "NANOMETERCENTIMETER":
+			outputLength = nanoToCenti(inputLength);
+			break;
+		case "NANOMETERDECIMETER":
+			outputLength = nanoToDeci(inputLength);
+			break;
+		case "NANOMETERKILOMETER":
+			outputLength = nanoToKilo(inputLength);
+			break;
+		case "NANOMETERMEGAMETER":
+			outputLength = nanoToMega(inputLength);
+			break;
+		case "NANOMETERGIGAMETER":
+			outputLength = nanoToGiga(inputLength);
+			break;
+		//Micrometer conversion
+		case "MICROMETERINCH":
+			outputLength = microToInch(inputLength);
+			break;
+		case "MICROMETERFOOT":
+			outputLength = microToFeet(inputLength);
+			break;
+		case "MICROMETERYARD":
+			outputLength = microToYard(inputLength);
+			break;
+		case "MICROMETERMILE":
+			outputLength = microToMile(inputLength);
+			break;
+		case "MICROMETERMETER":
+			outputLength = microToMeter(inputLength);
+			break;
+		case "MICROMETERPICOMETER":
+			outputLength = microToPico(inputLength);
+			break;
+		case "MICROMETERNANOMETER":
+			outputLength = microToNano(inputLength);
+			break;
+		case "MICROMETERMILLIMETER":
+			outputLength = microToMilli(inputLength);
+			break;
+		case "MICROMETERCENTIMETER":
+			outputLength = microToCenti(inputLength);
+			break;
+		case "MICROMETERDECIMETER":
+			outputLength = microToDeci(inputLength);
+			break;
+		case "MICROMETERKILOMETER":
+			outputLength = microToKilo(inputLength);
+			break;
+		case "MICROMETERMEGAMETER":
+			outputLength = microToMega(inputLength);
+			break;
+		case "MICROMETERGIGAMETER":
+			outputLength = microToGiga(inputLength);
+			break;
+		//Millimeter conversion
+		case "MILLIMETERINCH":
+			outputLength = milliToInch(inputLength);
+			break;
+		case "MILLIMETERFOOT":
+			outputLength = milliToFeet(inputLength);
+			break;
+		case "MILLIMETERYARD":
+			outputLength = milliToYard(inputLength);
+			break;
+		case "MILLIMETERMILE":
+			outputLength = milliToMile(inputLength);
+			break;
+		case "MILLIMETERMETER":
+			outputLength = milliToMeter(inputLength);
+			break;
+		case "MILLIMETERPICOMETER":
+			outputLength = milliToPico(inputLength);
+			break;
+		case "MILLIMETERNANOMETER":
+			outputLength = milliToNano(inputLength);
+			break;
+		case "MILLIMETERMICROMETER":
+			outputLength = milliToMicro(inputLength);
+			break;
+		case "MILLIMETERCENTIMETER":
+			outputLength = milliToCenti(inputLength);
+			break;
+		case "MILLIMETERDECIMETER":
+			outputLength = milliToDeci(inputLength);
+			break;
+		case "MILLIMETERKILOMETER":
+			outputLength = milliToKilo(inputLength);
+			break;
+		case "MILLIMETERMEGAMETER":
+			outputLength = milliToMega(inputLength);
+			break;
+		case "MILLIMETERGIGAMETER":
+			outputLength = milliToGiga(inputLength);
+			break;
+		//Centimeter conversion
+		case "CENTIMETERINCH":
+			outputLength = centiToInch(inputLength);
+			break;
+		case "CENTIMETERFOOT":
+			outputLength = centiToFeet(inputLength);
+			break;
+		case "CENTIMETERYARD":
+			outputLength = centiToYard(inputLength);
+			break;
+		case "CENTIMETERMILE":
+			outputLength = centiToMile(inputLength);
+			break;
+		case "CENTIMETERMETER":
+			outputLength = centiToMeter(inputLength);
+			break;
+		case "CENTIMETERPICOMETER":
+			outputLength = centiToPico(inputLength);
+			break;
+		case "CENTIMETERNANOMETER":
+			outputLength = centiToNano(inputLength);
+			break;
+		case "CENTIMETERMICROMETER":
+			outputLength = centiToMicro(inputLength);
+			break;
+		case "CENTIMETERMILLIMETER":
+			outputLength = centiToMilli(inputLength);
+			break;
+		case "CENTIMETERDECIMETER":
+			outputLength = centiToDeci(inputLength);
+			break;
+		case "CENTIMETERKILOMETER":
+			outputLength = centiToKilo(inputLength);
+			break;
+		case "CENTIMETERMEGAMETER":
+			outputLength = centiToMega(inputLength);
+			break;
+		case "CENTIMETERGIGAMETER":
+			outputLength = centiToGiga(inputLength);
+			break;
+		//Decimeter conversion
+		case "DECIMETERINCH":
+			outputLength = deciToInch(inputLength);
+			break;
+		case "DECIMETERFOOT":
+			outputLength = deciToFeet(inputLength);
+			break;
+		case "DECIMETERYARD":
+			outputLength = deciToYard(inputLength);
+			break;
+		case "DECIMETERMILE":
+			outputLength = deciToMile(inputLength);
+			break;
+		case "DECIMETERMETER":
+			outputLength = deciToMeter(inputLength);
+			break;
+		case "DECIMETERPICOMETER":
+			outputLength = deciToPico(inputLength);
+			break;
+		case "DECIMETERNANOMETER":
+			outputLength = deciToNano(inputLength);
+			break;
+		case "DECIMETERMICROMETER":
+			outputLength = deciToMicro(inputLength);
+			break;
+		case "DECIMETERMILLIMETER":
+			outputLength = deciToMilli(inputLength);
+			break;
+		case "DECIMETERCENTIMETER":
+			outputLength = deciToCenti(inputLength);
+			break;
+		case "DECIMETERKILOMETER":
+			outputLength = deciToKilo(inputLength);
+			break;
+		case "DECIMETERMEGAMETER":
+			outputLength = deciToMega(inputLength);
+			break;
+		case "DECIMETERGIGAMETER":
+			outputLength = deciToGiga(inputLength);
+			break;
+		//Kilometer conversion
+		case "KILOMETERINCH":
+			outputLength = kiloToInch(inputLength);
+			break;
+		case "KILOMETERFOOT":
+			outputLength = kiloToFeet(inputLength);
+			break;
+		case "KILOMETERYARD":
+			outputLength = kiloToYard(inputLength);
+			break;
+		case "KILOMETERMILE":
+			outputLength = kiloToMile(inputLength);
+			break;
+		case "KILOMETERMETER":
+			outputLength = kiloToMeter(inputLength);
+			break;
+		case "KILOMETERPICOMETER":
+			outputLength = kiloToPico(inputLength);
+			break;
+		case "KILOMETERNANOMETER":
+			outputLength = kiloToNano(inputLength);
+			break;
+		case "KILOMETERMICROMETER":
+			outputLength = kiloToMicro(inputLength);
+			break;
+		case "KILOMETERMILLIMETER":
+			outputLength = kiloToMilli(inputLength);
+			break;
+		case "KILOMETERCENTIMETER":
+			outputLength = kiloToCenti(inputLength);
+			break;
+		case "KILOMETERDECIMETER":
+			outputLength = kiloToDeci(inputLength);
+			break;
+		case "KILOMETERMEGAMETER":
+			outputLength = kiloToMega(inputLength);
+			break;
+		case "KILOMETERGIGAMETER":
+			outputLength = kiloToGiga(inputLength);
+			break;
+		//Megameter conversion
+		case "MEGAMETERINCH":
+			outputLength = megaToInch(inputLength);
+			break;
+		case "MEGAMETERFOOT":
+			outputLength = megaToFeet(inputLength);
+			break;
+		case "MEGAMETERYARD":
+			outputLength = megaToYard(inputLength);
+			break;
+		case "MEGAMETERMILE":
+			outputLength = megaToMile(inputLength);
+			break;
+		case "MEGAMETERMETER":
+			outputLength = megaToMeter(inputLength);
+			break;
+		case "MEGAMETERPICOMETER":
+			outputLength = megaToPico(inputLength);
+			break;
+		case "MEGAMETERNANOMETER":
+			outputLength = megaToNano(inputLength);
+			break;
+		case "MEGAMETERMICROMETER":
+			outputLength = megaToMicro(inputLength);
+			break;
+		case "MEGAMETERMILLIMETER":
+			outputLength = megaToMilli(inputLength);
+			break;
+		case "MEGAMETERCENTIMETER":
+			outputLength = megaToCenti(inputLength);
+			break;
+		case "MEGAMETERDECIMETER":
+			outputLength = megaToDeci(inputLength);
+			break;
+		case "MEGAMETERKILOMETER":
+			outputLength = megaToKilo(inputLength);
+			break;
+		case "MEGAMETERGIGAMETER":
+			outputLength = megaToGiga(inputLength);
+			break;
+		//Gigameter conversion
+		case "GIGAMETERINCH":
+			outputLength = gigaToInch(inputLength);
+			break;
+		case "GIGAMETERFOOT":
+			outputLength = gigaToFeet(inputLength);
+			break;
+		case "GIGAMETERYARD":
+			outputLength = gigaToYard(inputLength);
+			break;
+		case "GIGAMETERMILE":
+			outputLength = gigaToMile(inputLength);
+			break;
+		case "GIGAMETERMETER":
+			outputLength = gigaToMeter(inputLength);
+			break;
+		case "GIGAMETERPICOMETER":
+			outputLength = gigaToPico(inputLength);
+			break;
+		case "GIGAMETERNANOMETER":
+			outputLength = gigaToNano(inputLength);
+			break;
+		case "GIGAMETERMICROMETER":
+			outputLength = gigaToMicro(inputLength);
+			break;
+		case "GIGAMETERMILLIMETER":
+			outputLength = gigaToMilli(inputLength);
+			break;
+		case "GIGAMETERCENTIMETER":
+			outputLength = gigaToCenti(inputLength);
+			break;
+		case "GIGAMETERDECIMETER":
+			outputLength = gigaToDeci(inputLength);
+			break;
+		case "GIGAMETERKILOMETER":
+			outputLength = gigaToKilo(inputLength);
+			break;
+		case "GIGAMETERMEGAMETER":
+			outputLength = gigaToMega(inputLength);
+			break;
+		default:
+			//  Return inputLength if the input unit is the same as the output unit.
+			outputLength = inputLength;
+		}
+		return outputLength;
 	}
 	
 	

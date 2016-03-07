@@ -1,5 +1,7 @@
 package jpsteed.professionals.converters;
 
+import jpsteed.professionals.converters.ConversionLiterals.Unit;
+
 /**
  * Temperature conversions. Including fahrenheit, celsius, kelvin.
  * @author John-Paul Steed
@@ -62,5 +64,48 @@ public class TemperatureConverter {
 		tempInput = fahrenheitToCelsius(tempInput);
 		return celsiusToKelvin(tempInput);
 	}
-
+	
+	/*************************************************************************************/
+	
+	/**
+	 * Convert temperature from input unit to output unit.
+	 * @param inputUnit : Unit data type in ConversionLiterals class
+	 * @param outputUnit : Unit data type in ConversionLiterals class
+	 * @param tempInput : double
+	 * @return
+	 */
+	public static double convertTemperature(Unit inputUnit, Unit outputUnit, double tempInput) {
+		double outputTemperature = 0;
+		String choice = inputUnit.toString() + outputUnit.toString();
+		
+		// Determine conversion function.
+		switch(choice) {
+		// Celsius conversion
+		case "CELSIUSFAHRENHEIT":
+			outputTemperature = celsiusToFahrenheit(tempInput);
+			break;
+		case "CELSIUSKELVIN":
+			outputTemperature = celsiusToKelvin(tempInput);
+			break;
+		// Fahrenheit conversion
+		case "FAHRENHEITCELSIUS":
+			outputTemperature = fahrenheitToCelsius(tempInput);
+			break;
+		case "FAHRENHEITKELVIN":
+			outputTemperature = fahrenheitToKelvin(tempInput);
+			break;
+		// Kelvin conversion
+		case "KELVINCELSIUS":
+			outputTemperature = kelvinToCelsius(tempInput);
+			break;
+		case "KELVINFAHRENHEIT":
+			outputTemperature = kelvinToFahrenheit(tempInput);
+			break;
+		default:
+			//  Return input if the input unit is the same as the output unit.
+			outputTemperature = tempInput;
+		}
+		
+		return outputTemperature;
+	}
 }
