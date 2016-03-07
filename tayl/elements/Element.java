@@ -9,10 +9,9 @@ package elements;
  * error codes
  * if a field contains one of the following, the corresponding issue occurred
  * (ideally, this will be replaced with a better system. works as-is though)
- *
+ * <p>
  * -99999 unknown
  * -99998 ancient times
- *
  */
 public class Element {
     private int atomic_number;
@@ -113,5 +112,10 @@ public class Element {
 
     public void setElectronConfiguration(Configuration electron_configuration) {
         this.electron_configuration = electron_configuration;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
     }
 }

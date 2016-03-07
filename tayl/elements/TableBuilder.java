@@ -11,6 +11,8 @@ import java.util.Scanner;
  *         Builds the Periodic Table from elements in data folder
  */
 public class TableBuilder {
+    
+    public static String LIST_OF_ELEMENTS_FILENAME = "tayl/elements/data/elements.csv";
 
     public Table build(String filename) {
         Table table = new Table();

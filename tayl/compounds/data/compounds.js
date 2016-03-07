@@ -10,6 +10,10 @@ compound details available at "http://www.chemexper.com/search/cas/" + element.C
 
 */
 
+String.prototype.toProperCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
 var letters = document.getElementsByClassName("wikitable sortable jquery-tablesorter"); // tables representing each letter
 var elements = []; // declare array to house elements
 var tsv = "";
@@ -40,6 +44,10 @@ for(var letter = 0; letter < letters.length; letter++) {
       };
     } else {
       console.log("error. last element: " + elements[elements.length - 1].CAS)
+    }
+
+    for(var name in element.names) {
+      element.names[name] = element.names[name].toProperCase();
     }
 
     // push element to the array

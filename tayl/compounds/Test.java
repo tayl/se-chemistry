@@ -7,7 +7,7 @@ package compounds;
 public class Test {
     public static void main(String[] s) {
         CompoundBuilder cb = new CompoundBuilder();
-        CompoundList compoundList = cb.build("tayl/compounds/data/compounds.tsv");
-        compoundList.printCompounds();
+        CompoundList compoundList = cb.build("tayl/compounds/data/compounds.txt");
+        System.out.println(compoundList);
     }
 }
