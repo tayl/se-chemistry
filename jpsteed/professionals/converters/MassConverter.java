@@ -1,5 +1,7 @@
 package jpsteed.professionals.converters;
 
+import jpsteed.professionals.converters.ConversionLiterals.Unit;
+
 /**
  * Mass and weight conversions. Including: ounces, pounds, 
  * 		atomic mass units, grams, milligrams, kilograms, metric tons.
@@ -433,6 +435,162 @@ public class MassConverter {
 	public static double atomsToTon(double inputMass) {
 		inputMass = atomsToGram(inputMass);
 		return gramsToTon(inputMass);
+	}
+	
+	/**********************************************************/
+	
+	/**
+	 * Convert mass from input unit to output unit.
+	 * @param inputUnit : Unit data type in ConversionLiterals class
+	 * @param outputUnit : Unit data type in ConversionLiterals class
+	 * @param inputMass : double
+	 * @return
+	 */
+	public static double convertMass(Unit inputUnit, Unit outputUnit, double inputMass) {
+		double outputMass = 0;
+		String choice = inputUnit.toString() + outputUnit.toString();
+		
+		// Determine conversion function.
+		switch(choice) {
+		// Ounce conversion
+		case "OUNCEPOUND":
+			outputMass = ouncesToPound(inputMass);
+			break;
+		case "OUNCEATOMICMASSUNIT":
+			outputMass = ouncesToAtom(inputMass);
+			break;
+		case "OUNCEGRAM":
+			outputMass = ouncesToGram(inputMass);
+			break;
+		case "OUNCEMILLIGRAM":
+			outputMass = ouncesToMilligram(inputMass);
+			break;
+		case "OUNCEKILOGRAM":
+			outputMass = ouncesToKilogram(inputMass);
+			break;
+		case "OUNCEMETRICTON":
+			outputMass = ouncesToTon(inputMass);
+			break;
+		// Pound conversion
+		case "POUNDOUNCE":
+			outputMass = poundToOunces(inputMass);
+			break;
+		case "POUNDATOMICMASSUNIT":
+			outputMass = poundsToAtom(inputMass);
+			break;
+		case "POUNDGRAM":
+			outputMass = poundsToGram(inputMass);
+			break;
+		case "POUNDMILLIGRAM":
+			outputMass = poundsToMilligram(inputMass);
+			break;
+		case "POUNDKILOGRAM":
+			outputMass = poundsToKilogram(inputMass);
+			break;
+		case "POUNDMETRICTON":
+			outputMass = poundsToTon(inputMass);
+			break;
+		// Atomic Mass Unit conversion
+		case "ATOMICMASSUNITOUNCE":
+			outputMass = atomsToOunces(inputMass);
+			break;
+		case "ATOMICMASSUNITPOUND":
+			outputMass = atomsToPound(inputMass);
+			break;
+		case "ATOMICMASSUNITGRAM":
+			outputMass = atomsToGram(inputMass);
+			break;
+		case "ATOMICMASSUNITMILLIGRAM":
+			outputMass = atomsToMilli(inputMass);
+			break;
+		case "ATOMICMASSUNITKILOGRAM":
+			outputMass = atomsToKilogram(inputMass);
+			break;
+		case "ATOMICMASSUNITMETRICTON":
+			outputMass = atomsToTon(inputMass);
+			break;
+		// Gram conversion
+		case "GRAMOUNCE":
+			outputMass = gramsToOunces(inputMass);
+			break;
+		case "GRAMPOUND":
+			outputMass = gramsToPound(inputMass);
+			break;
+		case "GRAMATOMICMASSUNIT":
+			outputMass = gramsToAtom(inputMass);
+			break;
+		case "GRAMMILLIGRAM":
+			outputMass = gramsToMilli(inputMass);
+			break;
+		case "GRAMKILOGRAM":
+			outputMass = gramsToKilo(inputMass);
+			break;
+		case "GRAMMETRICTON":
+			outputMass = gramsToTon(inputMass);
+			break;
+		// Milligram conversion
+		case "MILLIGRAMOUNCE":
+			outputMass = milligramsToOunces(inputMass);
+			break;
+		case "MILLIGRAMPOUND":
+			outputMass = milligramsToPound(inputMass);
+			break;
+		case "MILLIGRAMATOMICMASSUNIT":
+			outputMass = milligramsToAtom(inputMass);
+			break;
+		case "MILLIGRAMGRAM":
+			outputMass = milliToGrams(inputMass);
+			break;
+		case "MILLIGRAMKILOGRAM":
+			outputMass = milligramsToKilo(inputMass);
+			break;
+		case "MILLIGRAMMETRICTON":
+			outputMass = milligramsToTon(inputMass);
+			break;
+		// Kilogram conversion
+		case "KILOGRAMOUNCE":
+			outputMass = kilogramsToOunces(inputMass);
+			break;
+		case "KILOGRAMPOUND":
+			outputMass = kilogramsToPound(inputMass);
+			break;
+		case "KILOGRAMATOMICMASSUNIT":
+			outputMass = kilogramsToAtom(inputMass);
+			break;
+		case "KILOGRAMGRAM":
+			outputMass = kiloToGrams(inputMass);
+			break;
+		case "KILOGRAMMILLIGRAM":
+			outputMass = kilogramsToMilli(inputMass);
+			break;
+		case "KILOGRAMMETRICTON":
+			outputMass = kilogramsToTon(inputMass);
+			break;
+		// Metric Ton conversion
+		case "METRICTONOUNCE":
+			outputMass = tonToOunces(inputMass);
+			break;
+		case "METRICTONPOUND":
+			outputMass = tonToPound(inputMass);
+			break;
+		case "METRICTONATOMICMASSUNIT":
+			outputMass = tonToAtom(inputMass);
+			break;
+		case "METRICTONGRAM":
+			outputMass = tonsToGram(inputMass);
+			break;
+		case "METRICTONMILLIGRAM":
+			outputMass = tonToMilli(inputMass);
+			break;
+		case "METRICTONKILOGRAM":
+			outputMass = tonToKilogram(inputMass);
+			break;
+		default:
+			//  Return input if the input unit is the same as the output unit.
+			outputMass = inputMass;
+		}
+		
+		return outputMass;
 	}
 	
 	

@@ -1,8 +1,11 @@
 package jpsteed.professionals.converters;
 
+import jpsteed.professionals.converters.ConversionLiterals.Unit;
+
 /**
  * Volume conversions. Including cubic meter, cubic cm, cubic mm,
- * 		cubic km, liter, gallon(us), quart(us), cup(us), cubic foot.
+ * 		cubic km, liter, gallon(us), quart(us), cup(us), cubic foot,
+ * 		milliliter, kiloliter.
  * @author John-Paul Steed
  *
  */
@@ -1114,5 +1117,369 @@ public class VolumeConverter {
 	public static double kiloliterToMilliliter(double inputVolume) {
 		inputVolume = kiloliterToLiter(inputVolume);
 		return literToMilliliter(inputVolume);
+	}
+	
+	/********************************************************************/
+	
+	/**
+	 * Convert volume from input unit to output unit.
+	 * @param inputUnit : Unit data type in ConversionLiterals class
+	 * @param outputUnit : Unit data type in ConversionLiterals class
+	 * @param inputVolume : double
+	 * @return
+	 */
+	public static double convertVolume(Unit inputUnit, Unit outputUnit, double inputVolume) {
+		double outputVolume = 0;
+		String choice = inputUnit.toString() + outputUnit.toString();
+		
+		// Determine conversion function.
+		switch(choice) {
+		// Cubic Meter conversion
+		case "CUBMETERCUBCENTIMETER":
+			outputVolume = cubicMeterToCenti(inputVolume);
+			break;
+		case "CUBMETERCUBMILLIMETER":
+			outputVolume = cubicMeterToMilli(inputVolume);
+			break;
+		case "CUBMETERCUBKILOMETER":
+			outputVolume = cubicMeterToKilo(inputVolume);
+			break;
+		case "CUBMETERLITER":
+			outputVolume = cubicMeterToLiter(inputVolume);
+			break;
+		case "CUBMETERGALLON":
+			outputVolume = cubicMeterToGallon(inputVolume);
+			break;
+		case "CUBMETERQUART":
+			outputVolume = cubicMeterToQuart(inputVolume);
+			break;
+		case "CUBMETERCUP":
+			outputVolume = cubicMeterToCup(inputVolume);
+			break;
+		case "CUBMETERCUBFOOT":
+			outputVolume = cubicMeterToFeet(inputVolume);
+			break;
+		case "CUBMETERMILLILITER":
+			outputVolume = cubicMeterToMilliliter(inputVolume);
+			break;
+		case "CUBMETERKILOLITER":
+			outputVolume = cubicMeterToKiloliter(inputVolume);
+			break;
+		// Cubic Centimeter conversion
+		case "CUBCENTIMETERCUBMETER":
+			outputVolume = cubicCentiToMeter(inputVolume);
+			break;
+		case "CUBCENTIMETERCUBMILLIMETER":
+			outputVolume = cubicCentiToMilli(inputVolume);
+			break;
+		case "CUBCENTIMETERCUBKILOMETER":
+			outputVolume = cubicCentiToKilo(inputVolume);
+			break;
+		case "CUBCENTIMETERLITER":
+			outputVolume = cubicCentiToLiter(inputVolume);
+			break;
+		case "CUBCENTIMETERGALLON":
+			outputVolume = cubicCentiToGallon(inputVolume);
+			break;
+		case "CUBCENTIMETERQUART":
+			outputVolume = cubicCentiToQuart(inputVolume);
+			break;
+		case "CUBCENTIMETERCUP":
+			outputVolume = cubicCentiToCup(inputVolume);
+			break;
+		case "CUBCENTIMETERCUBFOOT":
+			outputVolume = cubicCentiToFeet(inputVolume);
+			break;
+		case "CUBCENTIMETERMILLILITER":
+			outputVolume = cubicCentiToMilliliter(inputVolume);
+			break;
+		case "CUBCENTIMETERKILOLITER":
+			outputVolume = cubicCentiToKiloliter(inputVolume);
+			break;
+		// Cubic Millimeter conversion
+		case "CUBMILLIMETERCUBMETER":
+			outputVolume = cubicMilliToMeter(inputVolume);
+			break;
+		case "CUBMILLIMETERCUBCENTIMETER":
+			outputVolume = cubicMilliToCenti(inputVolume);
+			break;
+		case "CUBMILLIMETERCUBKILOMETER":
+			outputVolume = cubicMilliToKilo(inputVolume);
+			break;
+		case "CUBMILLIMETERLITER":
+			outputVolume = cubicMilliToLiter(inputVolume);
+			break;
+		case "CUBMILLIMETERGALLON":
+			outputVolume = cubicMilliToGallon(inputVolume);
+			break;
+		case "CUBMILLIMETERQUART":
+			outputVolume = cubicMilliToQuart(inputVolume);
+			break;
+		case "CUBMILLIMETERCUP":
+			outputVolume = cubicMilliToCup(inputVolume);
+			break;
+		case "CUBMILLIMETERCUBFOOT":
+			outputVolume = cubicMilliToFeet(inputVolume);
+			break;
+		case "CUBMILLIMETERMILLILITER":
+			outputVolume = cubicMilliToMilliliter(inputVolume);
+			break;
+		case "CUBMILLIMETERKILOLITER":
+			outputVolume = cubicMilliToKiloliter(inputVolume);
+			break;
+		// Cubic Kilometer conversion
+		case "CUBKILOMETERCUBMETER":
+			outputVolume = cubicKiloToMeter(inputVolume);
+			break;
+		case "CUBKILOMETERCUBCENTIMETER":
+			outputVolume = cubicKiloToCenti(inputVolume);
+			break;
+		case "CUBKILOMETERCUBMILLIMETER":
+			outputVolume = cubicKiloToMilli(inputVolume);
+			break;
+		case "CUBKILOMETERLITER":
+			outputVolume = cubicKiloToLiter(inputVolume);
+			break;
+		case "CUBKILOMETERGALLON":
+			outputVolume = cubicKiloToGallon(inputVolume);
+			break;
+		case "CUBKILOMETERQUART":
+			outputVolume = cubicKiloToQuart(inputVolume);
+			break;
+		case "CUBKILOMETERCUP":
+			outputVolume = cubicKiloToCup(inputVolume);
+			break;
+		case "CUBKILOMETERCUBFOOT":
+			outputVolume = cubicKiloToFeet(inputVolume);
+			break;
+		case "CUBKILOMETERMILLILITER":
+			outputVolume = cubicKiloToMilliliter(inputVolume);
+			break;
+		case "CUBKILOMETERKILOLITER":
+			outputVolume = cubicKiloToKiloliter(inputVolume);
+			break;
+		// Liter conversion
+		case "LITERCUBMETER":
+			outputVolume = literToCubicMeter(inputVolume);
+			break;
+		case "LITERCUBCENTIMETER":
+			outputVolume = literToCubicCenti(inputVolume);
+			break;
+		case "LITERCUBMILLIMETER":
+			outputVolume = literToCubicMilli(inputVolume);
+			break;
+		case "LITERCUBKILOMETER":
+			outputVolume = literToCubicKilo(inputVolume);
+			break;
+		case "LITERGALLON":
+			outputVolume = literToGallon(inputVolume);
+			break;
+		case "LITERQUART":
+			outputVolume = literToQuart(inputVolume);
+			break;
+		case "LITERCUP":
+			outputVolume = literToCup(inputVolume);
+			break;
+		case "LITERCUBFOOT":
+			outputVolume = literToCubicFeet(inputVolume);
+			break;
+		case "LITERMILLILITER":
+			outputVolume = literToMilliliter(inputVolume);
+			break;
+		case "LITERKILOLITER":
+			outputVolume = literToKiloliter(inputVolume);
+			break;
+		// Gallon conversion
+		case "GALLONCUBMETER":
+			outputVolume = gallonToCubicMeter(inputVolume);
+			break;
+		case "GALLONCUBCENTIMETER":
+			outputVolume = gallonToCubicCenti(inputVolume);
+			break;
+		case "GALLONCUBMILLIMETER":
+			outputVolume = gallonToCubicMilli(inputVolume);
+			break;
+		case "GALLONCUBKILOMETER":
+			outputVolume = gallonToCubicKilo(inputVolume);
+			break;
+		case "GALLONLITER":
+			outputVolume = gallonToLiter(inputVolume);
+			break;
+		case "GALLONQUART":
+			outputVolume = gallonToQuart(inputVolume);
+			break;
+		case "GALLONCUP":
+			outputVolume = gallonToCup(inputVolume);
+			break;
+		case "GALLONCUBFOOT":
+			outputVolume = gallonToCubicFeet(inputVolume);
+			break;
+		case "GALLONMILLILITER":
+			outputVolume = gallonToMilliliter(inputVolume);
+			break;
+		case "GALLONKILOLITER":
+			outputVolume = gallonToKiloliter(inputVolume);
+			break;
+		// Quart conversion
+		case "QUARTCUBMETER":
+			outputVolume = quartToCubicMeter(inputVolume);
+			break;
+		case "QUARTCUBCENTIMETER":
+			outputVolume = quartToCubicCenti(inputVolume);
+			break;
+		case "QUARTCUBMILLIMETER":
+			outputVolume = quartToCubicMilli(inputVolume);
+			break;
+		case "QUARTCUBKILOMETER":
+			outputVolume = quartToCubicKilo(inputVolume);
+			break;
+		case "QUARTLITER":
+			outputVolume = quartToLiter(inputVolume);
+			break;
+		case "QUARTGALLON":
+			outputVolume = quartsToGallon(inputVolume);
+			break;
+		case "QUARTCUP":
+			outputVolume = quartToCup(inputVolume);
+			break;
+		case "QUARTCUBFOOT":
+			outputVolume = quartToCubicFeet(inputVolume);
+			break;
+		case "QUARTMILLILITER":
+			outputVolume = quartToMilliliter(inputVolume);
+			break;
+		case "QUARTKILOLITER":
+			outputVolume = quartToKiloliter(inputVolume);
+			break;
+		// Cup conversion
+		case "CUPCUBMETER":
+			outputVolume = cupsToCubicMeter(inputVolume);
+			break;
+		case "CUPCUBCENTIMETER":
+			outputVolume = cupsToCubicCenti(inputVolume);
+			break;
+		case "CUPCUBMILLIMETER":
+			outputVolume = cupsToCubicMilli(inputVolume);
+			break;
+		case "CUPCUBKILOMETER":
+			outputVolume = cupsToCubicKilo(inputVolume);
+			break;
+		case "CUPLITER":
+			outputVolume = cupsToLiter(inputVolume);
+			break;
+		case "CUPGALLON":
+			outputVolume = cupsToGallon(inputVolume);
+			break;
+		case "CUPQUART":
+			outputVolume = cupsToQuart(inputVolume);
+			break;
+		case "CUPCUBFOOT":
+			outputVolume = cupsToCubicFeet(inputVolume);
+			break;
+		case "CUPMILLILITER":
+			outputVolume = cupsToMilliliter(inputVolume);
+			break;
+		case "CUPKILOLITER":
+			outputVolume = cupsToKiloliter(inputVolume);
+			break;
+		// Cubic Foot conversion
+		case "CUBFOOTCUBMETER":
+			outputVolume = cubicFeetToMeter(inputVolume);
+			break;
+		case "CUBFOOTCUBCENTIMETER":
+			outputVolume = cubicFeetToCenti(inputVolume);
+			break;
+		case "CUBFOOTCUBMILLIMETER":
+			outputVolume = cubicFeetToMilli(inputVolume);
+			break;
+		case "CUBFOOTCUBKILOMETER":
+			outputVolume = cubicFeetToKilo(inputVolume);
+			break;
+		case "CUBFOOTLITER":
+			outputVolume = cubicFeetToLiter(inputVolume);
+			break;
+		case "CUBFOOTGALLON":
+			outputVolume = cubicFeetToGallon(inputVolume);
+			break;
+		case "CUBFOOTQUART":
+			outputVolume = cubicFeetToQuart(inputVolume);
+			break;
+		case "CUBFOOTCUP":
+			outputVolume = cubicFeetToCup(inputVolume);
+			break;
+		case "CUBFOOTMILLILITER":
+			outputVolume = cubicFeetToMilliliter(inputVolume);
+			break;
+		case "CUBFOOTKILOLITER":
+			outputVolume = cubicFeetToKiloliter(inputVolume);
+			break;
+		// Milliliter conversion
+		case "MILLILITERCUBMETER":
+			outputVolume = milliliterToCubicMeter(inputVolume);
+			break;
+		case "MILLILITERCUBCENTIMETER":
+			outputVolume = milliliterToCubicCenti(inputVolume);
+			break;
+		case "MILLILITERCUBMILLIMETER":
+			outputVolume = milliliterToCubicMilli(inputVolume);
+			break;
+		case "MILLILITERCUBKILOMETER":
+			outputVolume = milliliterToCubicKilo(inputVolume);
+			break;
+		case "MILLILITERLITER":
+			outputVolume = milliliterToLiter(inputVolume);
+			break;
+		case "MILLILITERGALLON":
+			outputVolume = milliliterToGallon(inputVolume);
+			break;
+		case "MILLILITERQUART":
+			outputVolume = milliliterToQuart(inputVolume);
+			break;
+		case "MILLILITERCUP":
+			outputVolume = milliliterToCup(inputVolume);
+			break;
+		case "MILLILITERCUBFOOT":
+			outputVolume = milliliterToCubicFeet(inputVolume);
+			break;
+		case "MILLILITERKILOLITER":
+			outputVolume = milliliterToKiloliter(inputVolume);
+			break;
+		// Kiloliter conversion
+		case "KILOLITERCUBMETER":
+			outputVolume = kiloliterToCubicMeter(inputVolume);
+			break;
+		case "KILOLITERCUBCENTIMETER":
+			outputVolume = kiloliterToCubicCenti(inputVolume);
+			break;
+		case "KILOLITERCUBMILLIMETER":
+			outputVolume = kiloliterToCubicMilli(inputVolume);
+			break;
+		case "KILOLITERCUBKILOMETER":
+			outputVolume = kiloliterToCubicKilo(inputVolume);
+			break;
+		case "KILOLITERLITER":
+			outputVolume = kiloliterToLiter(inputVolume);
+			break;
+		case "KILOLITERGALLON":
+			outputVolume = kiloliterToGallon(inputVolume);
+			break;
+		case "KILOLITERQUART":
+			outputVolume = kiloliterToQuart(inputVolume);
+			break;
+		case "KILOLITERCUP":
+			outputVolume = kiloliterToCup(inputVolume);
+			break;
+		case "KILOLITERCUBFOOT":
+			outputVolume = kiloliterToCubicFeet(inputVolume);
+			break;
+		case "KILOLITERMILLILITER":
+			outputVolume = kiloliterToMilliliter(inputVolume);
+			break;
+		default:
+			//  Return input if the input unit is the same as the output unit.
+			outputVolume = inputVolume;
+		}
+		
+		return outputVolume;
 	}
 }
