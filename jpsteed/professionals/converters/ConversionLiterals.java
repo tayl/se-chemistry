@@ -66,6 +66,7 @@ public class ConversionLiterals {
 		//PressureConverter
 		ATMOSPHERE,
 		TORR,
+		PASCAL,
 		KILOPASCAL,
 		MILLIMERCURY,
 		POUNDSSQINCH
@@ -107,7 +108,7 @@ public class ConversionLiterals {
 	static final int FAHRENHEITCELSIUS2 = 32;
 	
 	// Pressure Conversions
-	static final int PASCALATMOSPHER = 101325;
+	static final int PASCALATMOSPHERE = 101325;
 	static final double PASCALMMMERCURY = 133.322;
 	static final int PASCALPERPSI = 6893;
 	static final double PASCALTORR = 133.322;
