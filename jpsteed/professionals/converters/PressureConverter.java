@@ -318,12 +318,10 @@ public class PressureConverter {
 	
 	/**
 	 * Convert pressure from input unit to output unit.
-	 * Units allowed from Unit data type: ATMOSPHERE, TORR, PASCAL,
-	 * KILOPASCAL, MILLIMERCURY, POUNDSSQINCH.
 	 * @param inputUnit : Unit data type in ConversionLiterals class
 	 * @param outputUnit : Unit data type in ConversionLiterals class
 	 * @param inputPressure : double
-	 * @return double
+	 * @return
 	 */
 	public static double convertPressure(Unit inputUnit, Unit outputUnit, double inputPressure) {
 		double outputPressure = 0;
