@@ -1842,6 +1842,9 @@ public class LengthConverter {
 	
 	/**
 	 * Convert length from input unit to output unit.
+	 * Units allowed from Unit data type: INCH, FOOT, YARD, MILE, PICOMETER,
+	 * NANOMETER, MICROMETER, MILLIMETER, CENTIMETER, DECIMETER, METER, KILOMETER,
+	 * MEGAMETER, GIGAMETER.
 	 * @param inputUnit : Unit data type in ConversionLiterals class
 	 * @param outputUnit : Unit data type in ConversionLiterals class
 	 * @param inputLength : double
