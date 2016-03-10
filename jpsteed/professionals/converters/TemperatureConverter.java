@@ -69,10 +69,11 @@ public class TemperatureConverter {
 	
 	/**
 	 * Convert temperature from input unit to output unit.
+	 * Units allowed from Unit data type: KELVIN, CELSIUS, FAHRENHEIT.
 	 * @param inputUnit : Unit data type in ConversionLiterals class
 	 * @param outputUnit : Unit data type in ConversionLiterals class
 	 * @param tempInput : double
-	 * @return
+	 * @return double
 	 */
 	public static double convertTemperature(Unit inputUnit, Unit outputUnit, double tempInput) {
 		double outputTemperature = 0;

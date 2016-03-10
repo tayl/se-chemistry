@@ -441,10 +441,12 @@ public class MassConverter {
 	
 	/**
 	 * Convert mass from input unit to output unit.
+	 * Units allowed from Unit data type: OUNCE, POUND, ATOMICMASSUNIT,
+	 * GRAM, MILLIGRAM, KILOGRAM, METRICTON.
 	 * @param inputUnit : Unit data type in ConversionLiterals class
 	 * @param outputUnit : Unit data type in ConversionLiterals class
 	 * @param inputMass : double
-	 * @return
+	 * @return double
 	 */
 	public static double convertMass(Unit inputUnit, Unit outputUnit, double inputMass) {
 		double outputMass = 0;

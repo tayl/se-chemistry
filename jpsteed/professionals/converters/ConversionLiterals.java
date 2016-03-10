@@ -30,7 +30,7 @@ public class ConversionLiterals {
 		GIGAMETER,
 		//AreaConverter
 		ACRE,
-		HECTACRE,
+		HECTARE,
 		SQMETER,
 		SQCENTIMETER,
 		SQMILLIMETER,
@@ -112,4 +112,13 @@ public class ConversionLiterals {
 	static final double PASCALMMMERCURY = 133.322;
 	static final int PASCALPERPSI = 6893;
 	static final double PASCALTORR = 133.322;
+	
+	// Area Conversions
+	static final int SQINCHSQFOOT = 144;
+	static final int SQFOOTSQYARD = 9;
+	static final int SQYARDPERACRE = 4840;
+	static final int ACRESQMILE = 640;
+	static final int HECTARESQKILOMETER = 100;
+	static final double SQFOOTSQMETER = 10.76391;
+	
 }

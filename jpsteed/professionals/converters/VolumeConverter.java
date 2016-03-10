@@ -1123,10 +1123,12 @@ public class VolumeConverter {
 	
 	/**
 	 * Convert volume from input unit to output unit.
+	 * Units allowed from Unit data type: CUBMETER, CUBCENTIMETER, CUBMILLIMETER,
+	 * CUBKILOMETER, LITER, GALLON, QUART, CUP, CUBFOOT, MILLILITER, KILOLITER.
 	 * @param inputUnit : Unit data type in ConversionLiterals class
 	 * @param outputUnit : Unit data type in ConversionLiterals class
 	 * @param inputVolume : double
-	 * @return
+	 * @return double
 	 */
 	public static double convertVolume(Unit inputUnit, Unit outputUnit, double inputVolume) {
 		double outputVolume = 0;
