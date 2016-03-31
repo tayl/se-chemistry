@@ -27,16 +27,16 @@ public class Table {
 
     public void addElement(Element element) {
         elements.add(element);
-        elementMap.put(element.getName().toLowerCase(), element);
-        elementMap.put(element.getSymbol().toLowerCase(), element);
+        elementMap.put(element.getName(), element);
+        elementMap.put(element.getSymbol(), element);
     }
 
     public Element getElementBySymbol(String symbol) {
-        return elementMap.get(symbol.toLowerCase());
+        return elementMap.get(symbol);
     }
 
     public Element getElementByName(String symbol) {
-        return elementMap.get(symbol.toLowerCase());
+        return elementMap.get(symbol);
     }
 
     public int getElementCount() {

@@ -23,11 +23,6 @@ public class CompoundBuilder {
     Table table = new Table();
 
     public CompoundList build(String filename) {
-
-        //create a new TableBuilder and build a table of elements from it
-        TableBuilder tb = new TableBuilder();
-        table = tb.build(TableBuilder.LIST_OF_ELEMENTS_FILENAME);
-
         //CompoundList accepts List or generic array, using List for variable length
         List<Compound> compounds = new ArrayList<>();
 
@@ -97,7 +92,13 @@ public class CompoundBuilder {
      * @param formula The chemical formula (e.g. "H2O", "Mg3(Si4O10)(OH)2", "(NH4)2(Pt(SCN)6)")
      * @return List of Element objects that make up the Compound
      */
-    private List<Element> deriveElementsFromFormula(String formula) {
+    public List<Element> deriveElementsFromFormula(String formula) {
+
+        //create a new TableBuilder and build a table of elements from it
+        if (table.getElementCount() == 0) {
+            TableBuilder tb = new TableBuilder();
+            table = tb.build(TableBuilder.LIST_OF_ELEMENTS_FILENAME);
+        }
 
         List<Element> elements = new ArrayList<>();
 

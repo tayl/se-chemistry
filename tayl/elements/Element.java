@@ -9,7 +9,7 @@ package elements;
  * error codes
  * if a field contains one of the following, the corresponding issue occurred
  * (ideally, this will be replaced with a better system. works as-is though)
- * <p>
+ * <p/>
  * -99999 unknown
  * -99998 ancient times
  */
@@ -117,5 +117,33 @@ public class Element {
     @Override
     public String toString() {
         return this.name;
+    }
+
+    public boolean equals(Object element) {
+        boolean equal = false;
+        if (element != null && element instanceof Element) {
+            equal = ((Element) element).atomic_number == this.atomic_number;
+        }
+        return equal;
+    }
+
+    public Object clone() {
+        Element copy = new Element();
+        copy.atomic_number = atomic_number;
+        copy.atomic_weight = atomic_weight;
+        copy.name = name;
+        copy.symbol = symbol;
+        copy.melting_point = melting_point;
+        copy.boiling_point = boiling_point;
+        copy.density = density;
+        copy.percentage_composition = percentage_composition;
+        copy.year_discovered = year_discovered;
+        copy.group = group;
+        copy.electron_configuration = electron_configuration;
+        return copy;
+    }
+
+    public int hashCode() {
+        return this.atomic_number;
     }
 }

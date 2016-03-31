@@ -2,6 +2,7 @@ package compounds;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,21 +18,41 @@ public class Compound implements Comparable<Compound> {
     private String formula; // chemical formula - case, parenthesis, and pipes preserve formatting in place of bases
     private String[] names; //
     private String CAS;     // Chemical Abstracts Service (CAS) identifier
-    private Element[] elements;
+    private List<Element> elements;
     private double weight;
 
 
-    public Element[] getElements() {
+    public List<Element> getElements() {
         return elements;
     }
 
     public void setElements(Element[] elements) {
-        this.elements = elements;
+        this.elements = Arrays.asList(elements);
     }
 
     public void setElements(List<Element> elements) {
-        Element[] elementArray = new Element[elements.size()];
-        this.elements = elements.toArray(elementArray);
+        this.elements = elements;
+    }
+
+    public boolean hasElements(List<Element> elements, boolean exact) {
+        List<Element> copyOfElementsWeHave = new ArrayList<>();
+
+        for (Element element : this.elements) {
+            copyOfElementsWeHave.add((Element) element.clone());
+        }
+
+        for (Element element : elements) {
+            if (copyOfElementsWeHave.contains(element)) {
+                copyOfElementsWeHave.remove(element);
+            } else {
+                return false;
+            }
+        }
+
+        if (exact) {
+            return copyOfElementsWeHave.size() == 0;
+        }
+        return true;
     }
 
     public double getWeight() {
@@ -88,7 +109,7 @@ public class Compound implements Comparable<Compound> {
         DecimalFormat df = new DecimalFormat("#.###");
         df.setRoundingMode(RoundingMode.HALF_UP);
         return "Name: " + getName() + "\nFormula: " + getFormula() + "\nMolar mass: " +
-                df.format(getWeight()) + "\nAtoms: " + Arrays.toString(elements) + "\n";
+                df.format(getWeight()) + "\nAtoms: " + elements.toString() + "\n";
     }
 
     @Override

@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+import elements.Element;
+
 /**
  * @author Taylor Veith
  *         Created by Taylor on 3/5/2016.
@@ -36,22 +38,66 @@ public class CompoundList {
 
     public void addCompound(Compound compound) {
         compounds.add(compound);
-        compoundMap.put(compound.getName().toLowerCase(), compound);
-        compoundMap.put(compound.getFormula().toLowerCase(), compound);
+        compoundMap.put(compound.getName(), compound);
+        compoundMap.put(compound.getFormula(), compound);
     }
 
     /**
-     * Returns the Compound object associated with a passed formula
+     * Returns the Compound object associated with a passed formula.
      *
-     * @param formula Must be exact
+     * If formula is not found verbatim in database, formula will be broken down into elements
+     * and searched that way.
+     *
+     * @param formula Formula representing
      * @return Compound associated with passed formula
      */
     public Compound getCompoundByFormula(String formula) {
-        return compoundMap.get(formula.toLowerCase());
+        Compound compound = compoundMap.get(formula);
+        if (compound != null) {
+            return compound;
+        }
+
+        return getCompoundByElements(formula);
     }
 
     public Compound getCompoundByName(String symbol) {
-        return compoundMap.get(symbol.toLowerCase());
+        return compoundMap.get(symbol);
+    }
+
+    public Compound getCompoundByElements(String queryElement) {
+        CompoundBuilder cb = new CompoundBuilder();
+        List<Element> elements = cb.deriveElementsFromFormula(queryElement);
+
+        return getCompoundByElements(elements);
+    }
+
+    public Compound getCompoundByElements(List<Element> elements) {
+        for (Compound compound : compounds) {
+            if (compound.hasElements(elements, true)) {
+                return compound;
+            }
+        }
+
+        return null;
+    }
+
+    public List<Compound> getCompoundsByElements(String queryElements) {
+        CompoundBuilder cb = new CompoundBuilder();
+        List<Element> elements = cb.deriveElementsFromFormula(queryElements);
+
+        return getCompoundsByElements(elements);
+    }
+
+    public List<Compound> getCompoundsByElements(List<Element> elements) {
+        List<Compound> results = new ArrayList<>();
+
+        for (Compound compound : compounds) {
+            if (compound.hasElements(elements, false)) {
+                results.add(compound);
+            }
+        }
+
+        return results;
     }
 
     public int getCompoundCount() {
