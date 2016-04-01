@@ -1,0 +1,135 @@
+Function KELVIN to KELVIN using input -2000000 
+	with expected value -2000000.000000 and actual value -2000000.000000:
+		passed.
+Function CELSIUS to KELVIN using input -2000000 
+	with expected value -1999726.850000 and actual value -1999726.850000:
+		passed.
+Function FAHRENHEIT to KELVIN using input -2000000 
+	with expected value -1110855.739000 and actual value -1110855.739000:
+		passed.
+Function KELVIN to CELSIUS using input -2000000 
+	with expected value -2000273.150000 and actual value -2000273.150000:
+		passed.
+Function CELSIUS to CELSIUS using input -2000000 
+	with expected value -2000000.000000 and actual value -2000000.000000:
+		passed.
+Function FAHRENHEIT to CELSIUS using input -2000000 
+	with expected value -1111128.889000 and actual value -1111128.889000:
+		passed.
+Function KELVIN to FAHRENHEIT using input -2000000 
+	with expected value -3600459.670000 and actual value -3600459.670000:
+		passed.
+Function CELSIUS to FAHRENHEIT using input -2000000 
+	with expected value -3599968.000000 and actual value -3599968.000000:
+		passed.
+Function FAHRENHEIT to FAHRENHEIT using input -2000000 
+	with expected value -2000000.000000 and actual value -2000000.000000:
+		passed.
+Function KELVIN to KELVIN using input -250 
+	with expected value -250.000000 and actual value -250.000000:
+		passed.
+Function CELSIUS to KELVIN using input -250 
+	with expected value 23.150000 and actual value 23.150000:
+		passed.
+Function FAHRENHEIT to KELVIN using input -250 
+	with expected value 116.483000 and actual value 116.483333:
+		passed.
+Function KELVIN to CELSIUS using input -250 
+	with expected value -523.150000 and actual value -523.150000:
+		passed.
+Function CELSIUS to CELSIUS using input -250 
+	with expected value -250.000000 and actual value -250.000000:
+		passed.
+Function FAHRENHEIT to CELSIUS using input -250 
+	with expected value -156.667000 and actual value -156.666667:
+		passed.
+Function KELVIN to FAHRENHEIT using input -250 
+	with expected value -909.670000 and actual value -909.670000:
+		passed.
+Function CELSIUS to FAHRENHEIT using input -250 
+	with expected value -418.000000 and actual value -418.000000:
+		passed.
+Function FAHRENHEIT to FAHRENHEIT using input -250 
+	with expected value -250.000000 and actual value -250.000000:
+		passed.
+Function KELVIN to KELVIN using input 0 
+	with expected value 0.000000 and actual value 0.000000:
+		passed.
+Function CELSIUS to KELVIN using input 0 
+	with expected value 273.150000 and actual value 273.150000:
+		passed.
+Function FAHRENHEIT to KELVIN using input 0 
+	with expected value 255.372000 and actual value 255.372222:
+		passed.
+Function KELVIN to CELSIUS using input 0 
+	with expected value -273.150000 and actual value -273.150000:
+		passed.
+Function CELSIUS to CELSIUS using input 0 
+	with expected value 0.000000 and actual value 0.000000:
+		passed.
+Function FAHRENHEIT to CELSIUS using input 0 
+	with expected value -17.778000 and actual value -17.777778:
+		passed.
+Function KELVIN to FAHRENHEIT using input 0 
+	with expected value -459.670000 and actual value -459.670000:
+		passed.
+Function CELSIUS to FAHRENHEIT using input 0 
+	with expected value 32.000000 and actual value 32.000000:
+		passed.
+Function FAHRENHEIT to FAHRENHEIT using input 0 
+	with expected value 0.000000 and actual value 0.000000:
+		passed.
+Function KELVIN to KELVIN using input 250 
+	with expected value 250.000000 and actual value 250.000000:
+		passed.
+Function CELSIUS to KELVIN using input 250 
+	with expected value 523.150000 and actual value 523.150000:
+		passed.
+Function FAHRENHEIT to KELVIN using input 250 
+	with expected value 394.261000 and actual value 394.261111:
+		passed.
+Function KELVIN to CELSIUS using input 250 
+	with expected value -23.150000 and actual value -23.150000:
+		passed.
+Function CELSIUS to CELSIUS using input 250 
+	with expected value 250.000000 and actual value 250.000000:
+		passed.
+Function FAHRENHEIT to CELSIUS using input 250 
+	with expected value 121.111000 and actual value 121.111111:
+		passed.
+Function KELVIN to FAHRENHEIT using input 250 
+	with expected value -9.670000 and actual value -9.670000:
+		passed.
+Function CELSIUS to FAHRENHEIT using input 250 
+	with expected value 482.000000 and actual value 482.000000:
+		passed.
+Function FAHRENHEIT to FAHRENHEIT using input 250 
+	with expected value 250.000000 and actual value 250.000000:
+		passed.
+Function KELVIN to KELVIN using input 2000000 
+	with expected value 2000000.000000 and actual value 2000000.000000:
+		passed.
+Function CELSIUS to KELVIN using input 2000000 
+	with expected value 2000273.150000 and actual value 2000273.150000:
+		passed.
+Function FAHRENHEIT to KELVIN using input 2000000 
+	with expected value 1111366.483000 and actual value 1111366.483000:
+		passed.
+Function KELVIN to CELSIUS using input 2000000 
+	with expected value 1999726.850000 and actual value 1999726.850000:
+		passed.
+Function CELSIUS to CELSIUS using input 2000000 
+	with expected value 2000000.000000 and actual value 2000000.000000:
+		passed.
+Function FAHRENHEIT to CELSIUS using input 2000000 
+	with expected value 1111093.333000 and actual value 1111093.333000:
+		passed.
+Function KELVIN to FAHRENHEIT using input 2000000 
+	with expected value 3599540.330000 and actual value 3599540.330000:
+		passed.
+Function CELSIUS to FAHRENHEIT using input 2000000 
+	with expected value 3600032.000000 and actual value 3600032.000000:
+		passed.
+Function FAHRENHEIT to FAHRENHEIT using input 2000000 
+	with expected value 2000000.000000 and actual value 2000000.000000:
+		passed.

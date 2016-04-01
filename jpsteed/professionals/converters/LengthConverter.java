@@ -920,7 +920,7 @@ public class LengthConverter {
 	 * @return double
 	 */
 	public static double nanoToMicro(double inputLength) {
-		inputLength = picoToMeter(inputLength);
+		inputLength = nanoToMeter(inputLength);
 		return meterToMicro(inputLength);
 	}
 	

@@ -1,0 +1,20 @@
+Make meter to feet conversion more precise:
+	Updated FEETPERMETER constant.
+Fix nanoToMicroMeter function.
+	Change from pico to nano.
+Make sq foot to sq meter conversion more precise:
+	Updated SQFOOTSQMETER constant.
+Make gallon to cubic meter conversion more precise:
+	Updated GALLONSPERCUBICMETER constant.
+Make cubic foot per cubic meter conversion more precise:
+	Updated CUBICFOOTPERCUBICMETER constant.
+Make atoms to gram conversion more precise:
+	Updated ATOMSPERGRAM constant.
+Make grams to pound conversion more precise:
+	Updated GRAMSPERPOUND constant.
+Make pascal to mmHg more precise:
+	Updated PASCALMMMERCURY constant.
+Make pascal to psi more precise:
+	Updated PASCALPERPSI constant.
+Make pascal to torr more precise:
+	Updated PASCALTORR constant.
