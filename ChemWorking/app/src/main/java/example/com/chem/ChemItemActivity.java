@@ -68,19 +68,19 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
                         Toast.LENGTH_SHORT ).show();
             }
         });
-        /* Long Click is giving me problems
+        // Long Click is giving me problems
         lvChemItem.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 //show msg with item id, get from view.getTag
                 // can use (int) view.getTag() as item id to search by item id
-                String string = scoreData[(int)view.getTag()];
+                //String string = scoreData[(int)view.getTag()];
                 Toast.makeText(getApplicationContext(), "Long Click =" + view.getTag(),
                         Toast.LENGTH_LONG ).show();
                 return true;
             }
         });
-        */
+
     }
 
     private void setupSearchView()

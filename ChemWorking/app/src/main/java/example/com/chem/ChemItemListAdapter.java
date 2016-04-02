@@ -102,7 +102,8 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
             @Override
             protected void publishResults(CharSequence constraint,
                                           FilterResults results) {
-                mChemItemList = (ArrayList<ChemItem>) results.values;
+                mChemItemList = (List<ChemItem>) results.values;
+                //mChemItemList = (ArrayList<ChemItem>) results.values;
                 notifyDataSetChanged();
             }
         };
