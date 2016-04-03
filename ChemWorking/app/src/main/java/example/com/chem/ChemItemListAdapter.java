@@ -46,9 +46,7 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        String ChemItemID = mChemItemList.get(position).getId();
-        //ChemItemID = String.format("%"+ 3 +"s", " ");
-
+        String ChemItemID = " " + mChemItemList.get(position).getId();
 
         View v = View.inflate(mContext, R.layout.item_chem_list, null);
         TextView itemName = (TextView)v.findViewById(R.id.item_name);
@@ -56,7 +54,7 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
         TextView itemFormula = (TextView)v.findViewById(R.id.item_formula);
         //Set text for TextView
         itemFormula.setText(mChemItemList.get(position).getChemFormula() );
-        itemName.setText(mChemItemList.get(position).getName() + " " + ChemItemID);
+        itemName.setText(mChemItemList.get(position).getName() + ChemItemID);
         itemMolarMass.setText(String.valueOf(mChemItemList.get(position).getMolMass()) + "g");
 
 
@@ -103,7 +101,6 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
             protected void publishResults(CharSequence constraint,
                                           FilterResults results) {
                 mChemItemList = (List<ChemItem>) results.values;
-                //mChemItemList = (ArrayList<ChemItem>) results.values;
                 notifyDataSetChanged();
             }
         };

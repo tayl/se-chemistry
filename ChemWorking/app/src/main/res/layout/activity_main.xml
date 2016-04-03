@@ -27,4 +27,15 @@
         android:layout_marginTop="106dp"
         android:clickable="false"
         android:onClick="onButtonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compounds List"
+        android:id="@+id/btnCompLst"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnElst"
+        android:layout_alignStart="@+id/btnElst"
+        android:clickable="false"
+        android:onClick="onButtonClick"/>
 </RelativeLayout>

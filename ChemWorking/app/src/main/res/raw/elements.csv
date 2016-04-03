@@ -2,10 +2,19 @@
 22,He,4.0026,Helium
 33,Li,6.941,Lithium
 4,Be,9.0122,Beryllium
-5,B,10.811,Boron
+5,B,10.8110,Boron
 6,C,12.0107,Carbon
 7,N,14.0067,Nitrogen
 8,O,15.9993,Oxygen
 9,F,18.9984,Fluorine
 10,Ne,20.1707,Neon
-11,Rv,100,Robert
+119,C2H4O,59.067,Acetaldehyde
+120,C2H5NO,60.052,Acetamide
+121,CH3COOH,96.086,Acetic acid
+122,C3H6O,17.031,Acetone
+123,C2H3N,77.082,Acetonitrile
+124,AlCl3,62.068,Aluminium chloride
+125,Al(NO3)3,368.343,Aluminium nitrate
+126,Al2(SO4)3,68.007,Aluminium sulfate
+127,NH3,158.355,Ammonia
+128,CH3COONH4,41.052,Ammonium acetate
