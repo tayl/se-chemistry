@@ -19,8 +19,6 @@ import java.util.List;
 
 public class ChemItemActivity extends Activity implements SearchView.OnQueryTextListener{
     private ListView lvChemItem;
-    private ChemItemListAdapter adapter;
-    private List<ChemItem> mChemItemList;
     private List<String[]> readFileList;
 
     private SearchView mSearchView;
@@ -39,7 +37,7 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
         Intent intent = getIntent();
         boolean biReadElements = intent.getBooleanExtra("elements", false);
 
-        mChemItemList = new ArrayList<>();
+        List<ChemItem> mChemItemList = new ArrayList<>();
         // read elements.csv file into string[] list
         InputStream inputStream = getResources().openRawResource(R.raw.elements);
         CSVFile csvFile = new CSVFile(inputStream);
@@ -57,7 +55,7 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
         }
 
         //Init adapter
-        adapter = new ChemItemListAdapter(getApplicationContext(), mChemItemList);
+        ChemItemListAdapter adapter = new ChemItemListAdapter(getApplicationContext(), mChemItemList);
         lvChemItem.setAdapter(adapter);
         lvChemItem.setTextFilterEnabled(true);
         setupSearchView();
@@ -67,8 +65,10 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //show msg with item id, get from view.getTag
+                /*
                 Toast.makeText(getApplicationContext(), "Clicked item id =" + view.getTag(),
                         Toast.LENGTH_SHORT ).show();
+                */
             }
         });
         // handle when user presses LONG PRESS
@@ -76,12 +76,9 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view,
                                            int position, long id) {
-                //show msg with item id, get from view.getTag
-                //Toast.makeText(getApplicationContext(), "Long Click =" + view.getTag(), Toast.LENGTH_LONG ).show();
                 //call activity to convert grams to moles
-                String txt = "" + view.getTag();
-                //Toast.makeText(getApplicationContext(), "Clicked  =" + txt,Toast.LENGTH_SHORT ).show();
-                onItemLongPress(txt);
+                String chemItemId = "" + view.getTag();
+                onItemLongPress(chemItemId);
                 return true;
             }
         });
@@ -110,12 +107,15 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
         }
         return true;
     }
-
+    
+    // Handle the OnLongPress to open the Grams to Moles activity for that
+    // specific item, it finds the item, then passes the name, formula, mass
+    // to be used in the conversion
     public void onItemLongPress(String chemItemId){
         String singleChemItem[] = null;
-        String ChemItemName = null;
-        String ChemItemMolarMass = null;
-        String ChemItemFormula = null;
+        String ChemItemName;
+        String ChemItemMolarMass;
+        String ChemItemFormula;
         boolean foundItem = false;
         Intent i = new Intent(this, MoleActivity.class);
         // handle the ChemItem id to pass Chem Item name and Formula and Molar Mass
@@ -127,18 +127,7 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
                 break;
             }
         }
-        /*
-        singleChemItem.getChemFormula();
-        singleChemItem.getName();
-        singleChemItem.getMolMass();
-        */
-        /*
-        i.putExtra("ChemItemName", singleChemItem.getName());
-        i.putExtra("ChemItemFormula",singleChemItem.getChemFormula());
-        i.putExtra("ChemItemMolarMass",singleChemItem.getMolMass());
-        startActivity(i);
-        */
-        Toast.makeText(getApplicationContext(), "name " + singleChemItem[3] ,Toast.LENGTH_SHORT ).show();
+
         if (foundItem){
             ChemItemFormula = singleChemItem[1];
             ChemItemMolarMass = singleChemItem[2];

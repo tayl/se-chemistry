@@ -82,4 +82,14 @@
         android:layout_alignLeft="@+id/textMoles"
         android:layout_alignStart="@+id/textMoles" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Molar Mass"
+        android:id="@+id/textChemItemMolMass"
+        android:layout_below="@+id/textChemItemFormula"
+        android:layout_alignLeft="@+id/textChemItemFormula"
+        android:layout_alignStart="@+id/textChemItemFormula" />
+
 </RelativeLayout>

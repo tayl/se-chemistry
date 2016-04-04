@@ -24,10 +24,11 @@ public class MoleActivity extends Activity {
         setContentView(R.layout.activity_mole);
         final EditText EditGrams = (EditText) findViewById(R.id.editGrams);
         final TextView EditMoles = (TextView)findViewById(R.id.editMoles);
-        Button buttonConvert = (Button)findViewById(R.id.buttonConvert);
+        final Button buttonConvert = (Button)findViewById(R.id.buttonConvert);
         // set the textFields to the corresponding layout items
         final TextView EditChemItemName = (TextView)findViewById(R.id.textChemName);
         final TextView EditChemItemFormula = (TextView)findViewById(R.id.textChemItemFormula);
+        final TextView EditChemItemMolarMass = (TextView)findViewById(R.id.textChemItemMolMass);
 
         // read the chemical items parameters passed with the intent
         Intent intent = getIntent();
@@ -38,6 +39,7 @@ public class MoleActivity extends Activity {
         // set the text to be displayed on the top of the activity for chemical name and formula
         EditChemItemName.setText(ipChemItemName);
         EditChemItemFormula.setText(ipChemItemFormula);
+        EditChemItemMolarMass.setText(ipChemItemMolarMass);
         // if the passed molar mass is 0, handle division by 0 here to avoid errors
         // in molar calculation
         if((mChemItemMolarMass = Double.parseDouble(ipChemItemMolarMass))== 0){
@@ -51,7 +53,7 @@ public class MoleActivity extends Activity {
             @Override
             public void onClick(View arg0) {
                 double readGrams;
-                double moles = 0.0;
+                double moles;
                 // set the result field "EditMoles" to empty unless
                 // user enters valid input
                 EditMoles.setText(String.valueOf(" "));
@@ -61,7 +63,6 @@ public class MoleActivity extends Activity {
                     readGrams = Double.parseDouble(EditGrams.getText().toString());
                     // transform from grams to moles
                     moles = readGrams * (1/mChemItemMolarMass);
-                    //moles = readGrams * 0.393700787;
                     // Set the value of the return in moles
                     EditMoles.setText(String.valueOf(moles));
                 }
