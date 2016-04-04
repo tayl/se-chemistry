@@ -1,5 +1,9 @@
 package example.com.chem;
 
+/**
+ * Created by robertvalladares on 3/14/16.
+ */
+
 import android.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;

@@ -77,16 +77,18 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
             public boolean onItemLongClick(AdapterView<?> parent, View view,
                                            int position, long id) {
                 //show msg with item id, get from view.getTag
-                Toast.makeText(getApplicationContext(), "Long Click =" + view.getTag(),
-                        Toast.LENGTH_LONG ).show();
+                //Toast.makeText(getApplicationContext(), "Long Click =" + view.getTag(), Toast.LENGTH_LONG ).show();
+                //call activity to convert grams to moles
+                String txt = "" + view.getTag();
+                //Toast.makeText(getApplicationContext(), "Clicked  =" + txt,Toast.LENGTH_SHORT ).show();
+                onItemLongPress(txt);
                 return true;
             }
         });
 
     }
     // set up the Search bar visuals
-    private void setupSearchView()
-    {
+    private void setupSearchView() {
         mSearchView.setIconifiedByDefault(false);
         mSearchView.setOnQueryTextListener(this);
         mSearchView.setSubmitButtonEnabled(true);
@@ -107,5 +109,47 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
             lvChemItem.setFilterText(newText);
         }
         return true;
+    }
+
+    public void onItemLongPress(String chemItemId){
+        String singleChemItem[] = null;
+        String ChemItemName = null;
+        String ChemItemMolarMass = null;
+        String ChemItemFormula = null;
+        boolean foundItem = false;
+        Intent i = new Intent(this, MoleActivity.class);
+        // handle the ChemItem id to pass Chem Item name and Formula and Molar Mass
+        // NOT the most efficient search, but it works right now
+        for (String[] singleChemItemRow:readFileList){
+            if (singleChemItemRow[0].equals(chemItemId)){
+                singleChemItem = singleChemItemRow;
+                foundItem = true;
+                break;
+            }
+        }
+        /*
+        singleChemItem.getChemFormula();
+        singleChemItem.getName();
+        singleChemItem.getMolMass();
+        */
+        /*
+        i.putExtra("ChemItemName", singleChemItem.getName());
+        i.putExtra("ChemItemFormula",singleChemItem.getChemFormula());
+        i.putExtra("ChemItemMolarMass",singleChemItem.getMolMass());
+        startActivity(i);
+        */
+        Toast.makeText(getApplicationContext(), "name " + singleChemItem[3] ,Toast.LENGTH_SHORT ).show();
+        if (foundItem){
+            ChemItemFormula = singleChemItem[1];
+            ChemItemMolarMass = singleChemItem[2];
+            ChemItemName = singleChemItem[3];
+            i.putExtra("ChemItemName", ChemItemName);
+            i.putExtra("ChemItemFormula",ChemItemFormula);
+            i.putExtra("ChemItemMolarMass",ChemItemMolarMass);
+            startActivity(i);
+
+        }
+
+
     }
 }
