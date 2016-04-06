@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Chemistry</string>
+    <string name="app_label">Chemistry</string>
+    <string name="search_hint">Search formulas</string>
+    <string name="title_activity_compound_results">Compound Results</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Chemistry</string>
+    <string name="also_known_as">"Also known as: "</string>
+    <string name="formula">"Formula: "</string>
+    <string name="molar_mass">"Molar mass: "</string>
+    <string name="unknown_compound">Not Listed/Unknown</string>
+    <string name="compound_elements_header">Elements</string>
+</resources>

@@ -1,17 +1,19 @@
-package compounds;
+package com.taylor.test.chemistry.compounds;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import com.taylor.test.chemistry.elements.Element;
+import com.taylor.test.chemistry.elements.Table;
+import com.taylor.test.chemistry.elements.TableBuilder;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import elements.Element;
-import elements.Table;
-import elements.TableBuilder;
 
 /**
  * @author Taylor Veith
@@ -19,30 +21,39 @@ import elements.TableBuilder;
  */
 public class CompoundBuilder {
 
-    //We'll be referencing the elements, so we need a table
-    Table table = new Table();
+    /**
+     * We'll be referencing the elements, so we need a table
+     */
+    private Table table = new Table();
 
-    public CompoundList build(String filename) {
+    /**
+     * This Class has a heavy method with recursion that benefits from a cache
+     */
+    private Map<String, List<Element>> cache;
+
+    public CompoundBuilder(InputStream elementInputStream) {
+        TableBuilder tb = new TableBuilder();
+        table = tb.build(elementInputStream);
+
+        cache = new HashMap<>();
+    }
+
+    public CompoundList build(InputStream compoundInputStream) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(compoundInputStream));
+
         //CompoundList accepts List or generic array, using List for variable length
         List<Compound> compounds = new ArrayList<>();
 
-        //use passed input filename as compound list
-        File input = new File(filename);
-
         try {
-            Scanner scanner = new Scanner(input);
+            String line;
 
-            String line = null;
-
-            while (scanner.hasNext()) {
-
+            while ((line = reader.readLine()) != null) {
                 //Lines are in the format:
                 //[formula] [name|names]    [CAS]
                 //e.g.:
                 //H2O	Water	7732-18-5
                 //OR
                 //H2SO4 Sulfuric Acid|Hydrogen Sulfate  7664-93-9
-                line = scanner.nextLine();
 
                 //break the line into its 3 parts
                 String[] parts = line.split("\t", 3);
@@ -70,12 +81,8 @@ public class CompoundBuilder {
                 //add the new Compound to the list of Compounds
                 compounds.add(compound);
             }
-        } catch (FileNotFoundException e) {
-            System.out.println(filename + " not found");
-//            e.printStackTrace();
-        } catch (NoSuchElementException nsee) {
-            System.out.println("No such element found");
-//            nsee.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         CompoundList compoundList = new CompoundList();
@@ -85,8 +92,12 @@ public class CompoundBuilder {
         return compoundList;
     }
 
+    public Element getElementBySymbol(String symbol) {
+        return table.getElementBySymbol(symbol);
+    }
+
     /**
-     * Given a chemical compounds formula, this method will determine which elements make it up
+     * Given a chemical parser formula, this method will determine which elements make it up
      * and how many of each. This is useful for determining properties of the compound (weight)
      *
      * @param formula The chemical formula (e.g. "H2O", "Mg3(Si4O10)(OH)2", "(NH4)2(Pt(SCN)6)")
@@ -94,32 +105,26 @@ public class CompoundBuilder {
      */
     public List<Element> deriveElementsFromFormula(String formula) {
 
-        //create a new TableBuilder and build a table of elements from it
-        if (table.getElementCount() == 0) {
-            TableBuilder tb = new TableBuilder();
-            table = tb.build(TableBuilder.LIST_OF_ELEMENTS_FILENAME);
+        List<Element> elements;
+
+        elements = cache.get(formula);
+        if (elements != null) {
+            return elements;
         }
 
-        List<Element> elements = new ArrayList<>();
+        elements = new ArrayList<>();
 
         if (formula.isEmpty()) {
+            cache.put(formula, elements);
             return elements;
         }
 
         //this regular expression will match nested parenthesis up to two levels deep, possibly
         //followed by a number
         String pattern = "(\\((([^()]*|\\([^()]*\\))*)\\))([0-9]*)";
-//        String pattern = "(.*)([0-9]*)";
 
         Pattern regPattern = Pattern.compile(pattern);
         Matcher matcher = regPattern.matcher(formula);
-
-/*        int firstIndex = formula.indexOf('(');
-        int lastIndex = formula.lastIndexOf(')');
-        String nestedFormula = null;
-        if (firstIndex != -1 && lastIndex != -1) {
-            nestedFormula = formula.substring(firstIndex + 1, lastIndex);
-        }*/
 
         //iterate over the matches
         while (matcher.find()) {
@@ -148,7 +153,6 @@ public class CompoundBuilder {
         //at this point, we've processed any portions of the formula nested in parenthesis
         //to avoid erroneously counting elements multiple times, we'll remove all nested
         //parts of the formula
-        formula = formula.replaceAll("\\(.+?\\)[0-9]*", "");
 
         //this regular expression matches one of the following:
         //a possible coefficient followed by the literal "H2O"
@@ -160,7 +164,11 @@ public class CompoundBuilder {
          *///groups
 
         regPattern = Pattern.compile(pattern);
-        matcher = regPattern.matcher(formula);
+
+        //at this point, we've processed any portions of the formula nested in parenthesis
+        //to avoid erroneously counting elements multiple times, we'll remove all nested
+        //parts of the formula
+        matcher = regPattern.matcher(formula.replaceAll("\\(.+?\\)[0-9]*", ""));
 
         //the matcher will return true as it consumes matches
         while (matcher.find()) {
@@ -171,6 +179,10 @@ public class CompoundBuilder {
 
                 //get the Element once
                 Element matchedElement = table.getElementBySymbol(match);
+
+                if (matchedElement == null) {
+                    continue;
+                }
 
                 //group 3 is the element base
                 String countAsString = matcher.group(3);
@@ -214,6 +226,7 @@ public class CompoundBuilder {
             }
         }
 
+        cache.put(formula, elements);
         return elements;
     }
 }

@@ -1,23 +1,21 @@
-package compounds;
-
-import java.util.List;
-
-import elements.Element;
+package com.taylor.test.chemistry.compounds;
 
 /**
  * @author Taylor Veith
  *         Created by Taylor on 3/5/2016.
  */
+
+
 public class Test {
     public static void main(String[] s) {
-        CompoundBuilder cb = new CompoundBuilder();
-        CompoundList compoundList = cb.build("tayl/compounds/data/compounds.txt");
-
-
+//        CompoundBuilder cb = new CompoundBuilder();
+//        CompoundList compoundList = cb.build("tayl/parser/data/parser.txt");
+//
+//
 //        // returns ALL Compounds that have AT LEAST the given elements
 //        System.out.println("----------All Compounds containing Cu and Te");
-//        List<Compound> compounds = compoundList.getCompoundsByElements("CuTe");
-//        System.out.println(compounds);
+//        List<Compound> parser = compoundList.getCompoundsByElements("CuTe");
+//        System.out.println(parser);
 //        System.out.println();
 //
 //        // returns THE Compound that has the EXACT elements, if it exists (null otherwise)
@@ -43,11 +41,6 @@ public class Test {
 //        System.out.println("----------Searches for compound with the name Water");
 //        compound = compoundList.getCompoundByName("Water");
 //        System.out.println(compound);
-
-        List<Element> elements = cb.deriveElementsFromFormula("(Na(H2O)4Cl)2");
-        System.out.println(elements);
-        elements = cb.deriveElementsFromFormula("(NaCl(H2O)4)2");
-        System.out.println(elements);
-        return;
+//        return;
     }
 }
