@@ -17,16 +17,15 @@ public class CompoundList {
 
     private HashMap<String, Compound> compoundMap = new HashMap<>();
 
-    public Compound[] getCompounds() {
-        Compound[] c = new Compound[compounds.size()];
-        return compounds.toArray(c);
+    public List<Compound> getCompounds() {
+        return this.compounds;
     }
 
     public void setCompounds(List<Compound> compounds) {
         for (Compound compound : compounds) {
             addCompound(compound);
         }
-        //Collections.sort(this.compounds);
+        Collections.sort(this.compounds);
     }
 
     public void setCompounds(Compound[] compounds) {
@@ -34,6 +33,18 @@ public class CompoundList {
             addCompound(compound);
         }
         Collections.sort(this.compounds);
+    }
+
+    public List<Compound> getCompounds(int limit) {
+        if (limit > compounds.size()) {
+            return compounds;
+        }
+        return compounds.subList(0, limit);
+    }
+
+    public Compound[] getCompoundsAsArray() {
+        Compound[] c = new Compound[compounds.size()];
+        return compounds.toArray(c);
     }
 
     public void addCompound(Compound compound) {
@@ -44,45 +55,55 @@ public class CompoundList {
 
     /**
      * Returns the Compound object associated with a passed formula.
-     *
+     * <p/>
      * If formula is not found verbatim in database, formula will be broken down into elements
      * and searched that way.
      *
      * @param formula Formula representing
      * @return Compound associated with passed formula
      */
-    public Compound getCompoundByFormula(String formula) {
+    public Compound getCompoundByFormula(CompoundBuilder cb, String formula) {
+        if (formula.isEmpty()) {
+            return null;
+        }
+
         Compound compound = compoundMap.get(formula);
         if (compound != null) {
             return compound;
         }
 
-        return getCompoundByElements(formula);
+        return getCompoundByElements(cb, formula);
     }
 
     public Compound getCompoundByName(String symbol) {
         return compoundMap.get(symbol);
     }
 
-    public Compound getCompoundByElements(String queryElement) {
-        CompoundBuilder cb = new CompoundBuilder();
+    public Compound getCompoundByElements(CompoundBuilder cb, String queryElement) {
         List<Element> elements = cb.deriveElementsFromFormula(queryElement);
 
         return getCompoundByElements(elements);
     }
 
     public Compound getCompoundByElements(List<Element> elements) {
+        if (elements == null || elements.size() == 0) {
+            return null;
+        }
+
         for (Compound compound : compounds) {
             if (compound.hasElements(elements, true)) {
                 return compound;
             }
         }
 
-        return null;
+        Compound unknownCompound = new Compound();
+        unknownCompound.setElements(elements);
+//        unknownCompound.setExactMatch(false);
+
+        return unknownCompound;
     }
 
-    public List<Compound> getCompoundsByElements(String queryElements) {
-        CompoundBuilder cb = new CompoundBuilder();
+    public List<Compound> getCompoundsByElements(CompoundBuilder cb, String queryElements) {
         List<Element> elements = cb.deriveElementsFromFormula(queryElements);
 
         return getCompoundsByElements(elements);

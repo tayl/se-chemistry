@@ -1,9 +1,13 @@
 package elements;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.NoSuchElementException;
-import java.util.Scanner;
 
 /**
  * @author Taylor Veith
@@ -11,22 +15,26 @@ import java.util.Scanner;
  *         Builds the Periodic Table from elements in data folder
  */
 public class TableBuilder {
-    
-    public static String LIST_OF_ELEMENTS_FILENAME = "tayl/elements/data/elements.csv";
 
     public Table build(String filename) {
-        Table table = new Table();
+        try {
+            return build(new FileInputStream(new File(filename)));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
-        File input = new File(filename);
+    public Table build(InputStream is) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+
+        Table table = new Table();
 
         try {
             //num	aw	name	symbol	mp	bp	density	% earth crust
             //year	group	electron conf	ionization energy
-            Scanner scanner = new Scanner(input);
-            String line = null;
-            while (scanner.hasNext()) {
-
-                line = scanner.nextLine();
+            String line;
+            while ((line = reader.readLine()) != null) {
 
                 String[] parts = line.split(",");
 
@@ -42,7 +50,6 @@ public class TableBuilder {
                 element.setPercentageComposition(parseDouble(parts[7]));
                 element.setYearDiscovered(parseInt(parts[8]));
                 element.setGroup(parseInt(parts[9]));
-                element.setElectronConfiguration(new Configuration());
 
                 table.addElement(element);
             }
@@ -51,6 +58,8 @@ public class TableBuilder {
         } catch (NoSuchElementException nsee) {
             System.out.println("No such element found");
 //            nsee.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         return table;
