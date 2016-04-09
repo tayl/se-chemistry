@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MoleActivity">
+
+    <TextView android:id="@+id/textGrams" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" android:layout_below="@+id/textChemItemFormula"
+        android:layout_marginTop="65dp" android:text="Grams:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/textMoles" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignEnd="@+id/textGrams"
+        android:layout_alignRight="@+id/textGrams" android:layout_below="@+id/textGrams"
+        android:layout_marginTop="65dp" android:text="Moles:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/editMoles" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/textMoles"
+        android:layout_alignEnd="@+id/editGrams" android:layout_alignLeft="@+id/editGrams"
+        android:layout_alignRight="@+id/editGrams" android:layout_alignStart="@+id/editGrams"
+        android:layout_alignTop="@+id/textMoles" android:ems="10" />
+
+    <EditText android:id="@+id/editGrams" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/textGrams"
+        android:layout_alignParentRight="true" android:ems="10" android:inputType="numberDecimal" />
+
+    <Button android:id="@+id/buttonConvert" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:text="Convert" />
+
+    <TextView android:id="@+id/textChemName" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignEnd="@+id/editGrams"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" android:layout_alignRight="@+id/editGrams"
+        android:text="Name" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/textChemItemFormula" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignLeft="@+id/textMoles"
+        android:layout_alignStart="@+id/textMoles" android:layout_below="@+id/textChemName"
+        android:text="Chemical Formula"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/textChemItemMolMass" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignLeft="@+id/textChemItemFormula"
+        android:layout_alignStart="@+id/textChemItemFormula"
+        android:layout_below="@+id/textChemItemFormula" android:text="Molar Mass"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
