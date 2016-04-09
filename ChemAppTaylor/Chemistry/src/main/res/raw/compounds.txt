@@ -381,8 +381,8 @@ C3H5N3	3-amino-1h-pyrazole	1820-80-0
 C3H5N3O9	Nitroglycerine	55-63-0
 C3H6	Cyclopropane	75-19-4
 C3H6	Propylene	115-07-1
-C3H7NO2	?-Alanine	56-41-7
-C3H7NO2	?-Alanine	107-95-9
+C3H7NO2	α-Alanine	56-41-7
+C3H7NO2	β-Alanine	107-95-9
 C3H7NO2S	Cysteine|Cys	52-90-4
 C3H7NO3	Serine|Ser	56-45-1
 C3H8	Propane	74-98-6
@@ -407,15 +407,15 @@ C4H6N4O	2,4-diamino-6-hydroxypyrimidine	56-06-4
 C4H6O4	Succinic Acid	110-15-6
 C4H7BrO2	2-bromobutyric Acid	80-58-0
 C4H7BrO2	4-bromobutyric Acid	2623-87-2
-C4H7BrO2	?-Bromoisobutyric Acid	2052-01-9
+C4H7BrO2	α-Bromoisobutyric Acid	2052-01-9
 C4H7BrO2	Ethyl Bromoacetate	105-36-2
 C4H7NO2	1-aminocyclopropanecarboxylic Acid	22059-21-8
 C4H7NO4	Aspartic Acid|Asp	56-84-8
 C4H8	Cyclobutane	287-23-0
 C4H8N2O3	Asparagine|Asn	70-47-3
 C4H8O	Tetrahydrofuran|Thf	109-99-9
-C4H8O2	Ethyl Acetate	
-C4H9NO2	?-Aminobutyric Acid	56-12-2
+C4H8O2	Ethyl Acetate
+C4H9NO2	γ-Aminobutyric Acid	56-12-2
 C4H9NO3	Threonine|Thr	72-19-5
 C4H9OH	Butyl Alcohol	71-36-3
 C4H10	Butane	106-97-8
@@ -433,7 +433,7 @@ C5H4N4O	Hypoxanthine	68-94-0
 C5H4N4O2	Xanthine	69-89-6
 C5H4N4S	Mercaptopurine	50-44-2
 C5H4O2S	B-thiophenic Acid	88-13-1
-C5H5	Cyclopentadienyl Anion	
+C5H5	Cyclopentadienyl Anion
 C5H5BrN2	2-amino-5-bromopyridine	1072-97-5
 C5H5ClN2	2-amino-4-chloropyridine	19798-80-2
 C5H5ClN2	2-amino-5-chloropyridine	1072-98-6
@@ -452,7 +452,7 @@ C5H6N2	2-aminopyridine	504-29-0
 C5H6N2O	2-amino-3-hydroxypyridine	16867-03-1
 C5H6N2OS	Methylthiouracil	56-04-2
 C5H6N2O2	Thymine	65-71-4
-C5H6O5	?-Ketoglutaric Acid	328-50-7
+C5H6O5	α-Ketoglutaric Acid	328-50-7
 C5H7N3	3,4-diaminopyridine	54-96-6
 C5H9NO2	Proline|Pro	147-85-3
 C5H9NO4	Glutamic Acid|Glu	56-86-0
@@ -640,7 +640,7 @@ C12H18O	Propofol	2078-54-8
 C12H26	Dodecane	112-40-3
 C13H10O	Benzophenone	119-61-9
 C13H12F2N6O	Fluconazole	86386-73-4
-C13H12O	?-Ionone	2484-16-4
+C13H12O	β-Ionone	2484-16-4
 C13H12O2	Monobenzene	103-16-2
 C13H16N2O2	Melatonin	73-31-4
 C13H18O2	Ibuprofen	15687-27-1
