@@ -33,4 +33,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, PeriodicTableActivity.class);
         startActivity(intent);
     }
+
+    public void openElementActivity(View v) {
+        Intent intent = new Intent(this, ChemItemActivity.class);
+        startActivity(intent);
+    }
 }

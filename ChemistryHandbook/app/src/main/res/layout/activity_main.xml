@@ -94,7 +94,8 @@
                 android:width="150dp"
                 android:height="150dp"
                 android:layout_below="@id/conversions"
-                android:background="#676767" />
+                android:background="#676767"
+                android:onClick="openElementActivity" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -1,5 +1,6 @@
 package compounds;
 
+
 import elements.Element;
 
 import java.util.ArrayList;
@@ -21,14 +22,14 @@ public class CompoundList {
         return this.compounds;
     }
 
-    public void setCompounds(Compound[] compounds) {
+    public void setCompounds(List<Compound> compounds) {
         for (Compound compound : compounds) {
             addCompound(compound);
         }
         Collections.sort(this.compounds);
     }
 
-    public void setCompounds(List<Compound> compounds) {
+    public void setCompounds(Compound[] compounds) {
         for (Compound compound : compounds) {
             addCompound(compound);
         }

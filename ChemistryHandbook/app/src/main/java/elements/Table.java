@@ -31,12 +31,8 @@ public class Table {
         elementMap.put(element.getSymbol(), element);
     }
 
-    public Element getElementBySymbol(String symbol) {
-        return elementMap.get(symbol);
-    }
-
-    public Element getElementByName(String symbol) {
-        return elementMap.get(symbol);
+    public Element getElement(String element) {
+        return elementMap.get(element);
     }
 
     public int getElementCount() {

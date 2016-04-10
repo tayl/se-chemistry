@@ -1,51 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MoleActivity">
 
-    <TextView android:id="@+id/textGrams" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_below="@+id/textChemItemFormula"
-        android:layout_marginTop="65dp" android:text="Grams:"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/textGrams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grams:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textChemItemFormula"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp" />
 
-    <TextView android:id="@+id/textMoles" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignEnd="@+id/textGrams"
-        android:layout_alignRight="@+id/textGrams" android:layout_below="@+id/textGrams"
-        android:layout_marginTop="65dp" android:text="Moles:"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/textMoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Moles:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textGrams"
+        android:layout_alignRight="@+id/textGrams"
+        android:layout_alignEnd="@+id/textGrams" />
 
-    <TextView android:id="@+id/editMoles" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignBottom="@+id/textMoles"
-        android:layout_alignEnd="@+id/editGrams" android:layout_alignLeft="@+id/editGrams"
-        android:layout_alignRight="@+id/editGrams" android:layout_alignStart="@+id/editGrams"
-        android:layout_alignTop="@+id/textMoles" android:ems="10" />
+    <TextView
+        android:id="@+id/editMoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textMoles"
+        android:layout_alignLeft="@+id/editGrams"
+        android:layout_alignStart="@+id/editGrams"
+        android:layout_alignTop="@+id/textMoles"
+        android:layout_alignRight="@+id/editGrams"
+        android:layout_alignEnd="@+id/editGrams" />
 
-    <EditText android:id="@+id/editGrams" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignBottom="@+id/textGrams"
-        android:layout_alignParentRight="true" android:ems="10" android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/editGrams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textGrams"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        />
 
-    <Button android:id="@+id/buttonConvert" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" android:text="Convert" />
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Convert" />
 
-    <TextView android:id="@+id/textChemName" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignEnd="@+id/editGrams"
-        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" android:layout_alignRight="@+id/editGrams"
-        android:text="Name" android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/textChemName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editGrams"
+        android:layout_alignEnd="@+id/editGrams" />
 
-    <TextView android:id="@+id/textChemItemFormula" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignLeft="@+id/textMoles"
-        android:layout_alignStart="@+id/textMoles" android:layout_below="@+id/textChemName"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Chemical Formula"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:id="@+id/textChemItemFormula"
+        android:layout_below="@+id/textChemName"
+        android:layout_alignLeft="@+id/textMoles"
+        android:layout_alignStart="@+id/textMoles" />
 
-    <TextView android:id="@+id/textChemItemMolMass" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignLeft="@+id/textChemItemFormula"
-        android:layout_alignStart="@+id/textChemItemFormula"
-        android:layout_below="@+id/textChemItemFormula" android:text="Molar Mass"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Molar Mass"
+        android:id="@+id/textChemItemMolMass"
+        android:layout_below="@+id/textChemItemFormula"
+        android:layout_alignLeft="@+id/textChemItemFormula"
+        android:layout_alignStart="@+id/textChemItemFormula" />
 
 </RelativeLayout>

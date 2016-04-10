@@ -21,7 +21,11 @@
         </activity>
 
         <activity
+            android:name=".ChemItemActivity" />
+
+        <activity
             android:name=".ConversionActivity"/>
+
         <activity
             android:name=".HelpActivity"/>
 

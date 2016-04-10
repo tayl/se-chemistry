@@ -17,6 +17,8 @@
     <string name="converterbuttontext">Unit Converter</string>
     <string name="elementsbuttontext">Elements</string>
 
+    <string name="title_activity_mole">MoleActivity</string>
+
     <string-array name="converstionTypes">
         <item>Area</item>
         <item>Density</item>

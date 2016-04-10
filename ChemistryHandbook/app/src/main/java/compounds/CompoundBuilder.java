@@ -5,6 +5,9 @@ import elements.Table;
 import elements.TableBuilder;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,8 +15,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * @author Taylor Veith
@@ -36,6 +37,15 @@ public class CompoundBuilder {
         table = tb.build(elementInputStream);
 
         cache = new HashMap<>();
+    }
+
+    public CompoundList build(String compoundInputFilename) {
+        try {
+            return build(new FileInputStream(new File(compoundInputFilename)));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public CompoundList build(InputStream compoundInputStream) {
@@ -65,7 +75,6 @@ public class CompoundBuilder {
                 compound.setFormula(parts[0]);
                 //split() will return an array regardless of whether or not it finds the splitter
                 compound.setNames(parts[1].split("\\|"));
-                //compound.setCAS(parts[2]);
 
                 //given the chemical formula, determine the elements that make it up
                 List<Element> compoundElementList = deriveElementsFromFormula(compound.getFormula());
@@ -92,8 +101,128 @@ public class CompoundBuilder {
         return compoundList;
     }
 
-    public Element getElementBySymbol(String symbol) {
-        return table.getElementBySymbol(symbol);
+    public Element getElement(String symbol) {
+        return table.getElement(symbol);
+    }
+
+    public NestedToken getDeepestNest(String formula) {
+        NestedToken result = new NestedToken();
+
+        result.originalFormula = formula;
+
+        if (formula.isEmpty()) {
+            return result;
+        }
+
+        int positionLastOpenParenthesis = 0;
+        int positionMatchingCloseParenthesis = 0;
+        int positionEndingCoefficient = 0;
+
+        for (int i = 0; i < formula.length(); i++) {
+            if (formula.charAt(i) == '(') {
+                positionLastOpenParenthesis = i;
+            }
+        }
+
+        for (int i = positionLastOpenParenthesis + 1; i < formula.length(); i++) {
+            if (formula.charAt(i) == ')') {
+                positionMatchingCloseParenthesis = i;
+                break;
+            }
+        }
+
+        if (positionLastOpenParenthesis == positionMatchingCloseParenthesis) {
+            return result;
+        }
+
+        positionEndingCoefficient = positionMatchingCloseParenthesis;
+
+        for (int i = positionMatchingCloseParenthesis + 1; i < formula.length(); i++) {
+            if (Character.isDigit(formula.charAt(i))) {
+                positionEndingCoefficient = i;
+            } else {
+                break;
+            }
+        }
+
+        result.nestedFormula = formula.substring(positionLastOpenParenthesis + 1, positionMatchingCloseParenthesis);
+        result.modifiedFormula = formula.substring(0, positionLastOpenParenthesis) + formula.substring(positionEndingCoefficient + 1, formula.length());
+        result.modifiedLeftFormula = formula.substring(0, positionLastOpenParenthesis);
+        result.modifiedRightFormula = formula.substring(positionEndingCoefficient + 1, formula.length());
+        if (positionEndingCoefficient != positionMatchingCloseParenthesis) {
+            result.coefficient = Integer.parseInt(formula.substring(positionMatchingCloseParenthesis + 1, positionEndingCoefficient + 1));
+        }
+        return result;
+    }
+
+    private Token getNextToken(String formula) {
+        Token result = new Token();
+
+        result.originalFormula = formula;
+
+        if (formula.isEmpty()) {
+            return result;
+        }
+
+        int positionFirstUpper = -1;
+        int positionLastLower = -1;
+        int positionFirstNumber = -1;
+        int positionLastNumber = -1;
+        int positionLastRelevantCharacter = -1;
+
+        for (int i = 0; i < formula.length(); i++) {
+            if (Character.isUpperCase(formula.charAt(i))) {
+                positionFirstUpper = i;
+                positionLastRelevantCharacter = i;
+                break;
+            }
+        }
+
+        if (positionFirstUpper == -1) {
+            return result;
+        }
+
+        positionLastLower = positionFirstUpper;
+
+        for (int i = positionFirstUpper + 1; i < formula.length(); i++) {
+            if (!Character.isLowerCase(formula.charAt(i))) {
+                break;
+            }
+            positionLastLower = i;
+            positionLastRelevantCharacter = i;
+        }
+
+        for (int i = positionLastLower + 1; i < formula.length(); i++) {
+            if (Character.isDigit(formula.charAt(i))) {
+                positionFirstNumber = i;
+                positionLastRelevantCharacter = i;
+            } else {
+                break;
+            }
+        }
+
+        positionLastNumber = positionFirstNumber;
+
+        for (int i = positionFirstNumber + 1; i < formula.length(); i++) {
+            if (Character.isDigit(formula.charAt(i))) {
+                positionLastNumber = i;
+                positionLastRelevantCharacter = i;
+            } else {
+                break;
+            }
+        }
+
+        result.element = formula.substring(positionFirstUpper, positionLastLower + 1);
+
+        if (positionFirstNumber != -1) {
+            result.coefficient = Integer.parseInt(formula.substring(positionFirstNumber, positionLastNumber + 1));
+        } else {
+            result.coefficient = 1;
+        }
+
+        result.remainingFormula = formula.substring(positionLastRelevantCharacter + 1);
+
+        return result;
     }
 
     /**
@@ -108,6 +237,7 @@ public class CompoundBuilder {
         List<Element> elements;
 
         elements = cache.get(formula);
+
         if (elements != null) {
             return elements;
         }
@@ -119,114 +249,85 @@ public class CompoundBuilder {
             return elements;
         }
 
-        //this regular expression will match nested parenthesis up to two levels deep, possibly
-        //followed by a number
-        String pattern = "(\\((([^()]*|\\([^()]*\\))*)\\))([0-9]*)";
+        NestedToken nestedToken = getDeepestNest(formula);
 
-        Pattern regPattern = Pattern.compile(pattern);
-        Matcher matcher = regPattern.matcher(formula);
+        while (nestedToken.nestedFormula != null) {
 
-        //iterate over the matches
-        while (matcher.find()) {
+            StringBuilder sb = new StringBuilder();
 
-            //the second group contains the nested formula without parenthesis
-            //to prevent superfluous calls further down, we'll call once and save it for later
-            //this recursive call further breaks down this subsegment of the formula
-            List<Element> tempElements = deriveElementsFromFormula(matcher.group(2));
-
-            //the fourth group is a number (possibly) that represents how many times the 
-            //contained elements are repeated in the formula
-            if (!matcher.group(4).isEmpty()) { // ()n
-                //the number is there, so parse it as an integer so that we may
-                //add the elements that many times
-                int count = Integer.parseInt(matcher.group(4));
-
-                for (int i = 0; i < count; i++) {
-                    elements.addAll(tempElements);
+            if (nestedToken.coefficient > 1) {
+                for (int i = 0; i < nestedToken.coefficient; i++) {
+                    sb.append(nestedToken.nestedFormula);
                 }
-            } else { // ()
-                //otherwise, there was no number so just add the elements once
-                elements.addAll(tempElements);
+            } else {
+                sb.append(nestedToken.nestedFormula);
             }
+
+            nestedToken.modifiedFormula = nestedToken.modifiedLeftFormula + sb.toString() + nestedToken.modifiedRightFormula;
+
+            nestedToken = getDeepestNest(nestedToken.modifiedFormula);
         }
 
-        //at this point, we've processed any portions of the formula nested in parenthesis
-        //to avoid erroneously counting elements multiple times, we'll remove all nested
-        //parts of the formula
+        Token token = getNextToken(nestedToken.originalFormula);
 
-        //this regular expression matches one of the following:
-        //a possible coefficient followed by the literal "H2O"
-        //an element symbol followed by an optional base
-        pattern = "(([A-Z][a-z]*)([0-9]*))|(([0-9]*)(H2O))";
-        /*          2            3          5       6
-                   1                       4
-                  0
-         *///groups
+        do {
+            Element element = getElement(token.element);
 
-        regPattern = Pattern.compile(pattern);
-
-        //at this point, we've processed any portions of the formula nested in parenthesis
-        //to avoid erroneously counting elements multiple times, we'll remove all nested
-        //parts of the formula
-        matcher = regPattern.matcher(formula.replaceAll("\\(.+?\\)[0-9]*", ""));
-
-        //the matcher will return true as it consumes matches
-        while (matcher.find()) {
-            String match;
-
-            //group 2 is the element symbol - if this is null, H2O was matched
-            if ((match = matcher.group(2)) != null) {
-
-                //get the Element once
-                Element matchedElement = table.getElementBySymbol(match);
-
-                if (matchedElement == null) {
-                    continue;
-                }
-
-                //group 3 is the element base
-                String countAsString = matcher.group(3);
-
-                //if the base contains a number, add the element that many times
-                if (!countAsString.isEmpty()) {
-                    int count = Integer.parseInt(countAsString);
-                    for (int i = 0; i < count; i++) {
-                        elements.add(matchedElement);
-                    }
-                } else { //otherwise, just add it once
-                    elements.add(matchedElement);
-                }
-                continue;
+            if (element == null) {
+                return elements;
             }
 
-            //group 6 is the literal H2O, we're going to manually add water
-            if ((match = matcher.group(6)) != null) {
-
-                //cache the Hydrogen and Oxygen Element objects in case we need to add them more than once
-                Element hydrogen = table.getElementBySymbol("H");
-                Element oxygen = table.getElementBySymbol("O");
-
-                //group 5 is waters coefficient
-                String countAsString = matcher.group(5);
-
-                //if the coefficient exists, add the elements that many times
-                if (!countAsString.isEmpty()) {
-                    int count = Integer.parseInt(countAsString);
-                    for (int i = 0; i < count; i++) {
-                        elements.add(hydrogen);
-                        elements.add(hydrogen);
-                        elements.add(oxygen);
-                    }
-                } else { //otherwise, just add it once
-                    elements.add(hydrogen);
-                    elements.add(hydrogen);
-                    elements.add(oxygen);
-                }
-                continue;
+            for (int i = 0; i < token.coefficient; i++) {
+                elements.add(element);
             }
-        }
+
+            token = getNextToken(token.remainingFormula);
+        } while (token.hasNextToken());
 
         cache.put(formula, elements);
+
         return elements;
+    }
+
+    private static class NestedToken {
+        private String originalFormula;
+        private String nestedFormula;
+        private String modifiedFormula;
+        private String modifiedLeftFormula;
+        private String modifiedRightFormula;
+        private int coefficient;
+
+        @Override
+        public String toString() {
+            return "{" +
+                    "\n  originalFormula:" + originalFormula +
+                    "\n  nestedFormula:" + nestedFormula +
+                    "\n  modifiedFormula:" + modifiedFormula +
+                    "\n  modifiedLeftFormula:" + modifiedLeftFormula +
+                    "\n  modifiedRightFormula:" + modifiedRightFormula +
+                    "\n  coefficient:" + coefficient +
+                    "\n}";
+        }
+    }
+
+    private static class Token {
+        private String originalFormula;
+        private String element;
+        private int coefficient;
+        private String remainingFormula;
+
+        public boolean hasNextToken() {
+            return remainingFormula != null;
+        }
+
+        @Override
+        public String toString() {
+            return "{" +
+                    "\n  originalFormula:" + originalFormula +
+                    "\n  element:" + element +
+                    "\n  coefficient:" + coefficient +
+                    "\n  remainingFormula:" + remainingFormula +
+                    "\n}";
+        }
     }
 }
