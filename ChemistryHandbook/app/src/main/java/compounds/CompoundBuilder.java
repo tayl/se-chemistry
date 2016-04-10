@@ -1,9 +1,5 @@
 package compounds;
 
-import elements.Element;
-import elements.Table;
-import elements.TableBuilder;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,6 +11,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import elements.Element;
+import elements.Table;
+import elements.TableBuilder;
 
 /**
  * @author Taylor Veith
@@ -114,8 +114,8 @@ public class CompoundBuilder {
             return result;
         }
 
-        int positionLastOpenParenthesis = 0;
-        int positionMatchingCloseParenthesis = 0;
+        int positionLastOpenParenthesis = -1;
+        int positionMatchingCloseParenthesis = -1;
         int positionEndingCoefficient = 0;
 
         for (int i = 0; i < formula.length(); i++) {
@@ -131,7 +131,7 @@ public class CompoundBuilder {
             }
         }
 
-        if (positionLastOpenParenthesis == positionMatchingCloseParenthesis) {
+        if (positionLastOpenParenthesis == -1 || positionMatchingCloseParenthesis == -1) {
             return result;
         }
 
@@ -196,9 +196,8 @@ public class CompoundBuilder {
             if (Character.isDigit(formula.charAt(i))) {
                 positionFirstNumber = i;
                 positionLastRelevantCharacter = i;
-            } else {
-                break;
             }
+            break;
         }
 
         positionLastNumber = positionFirstNumber;
