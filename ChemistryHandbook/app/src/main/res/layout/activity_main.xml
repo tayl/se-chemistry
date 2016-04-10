@@ -47,13 +47,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="placeholder"
+                android:text="Help"
                 android:id="@+id/placeholder1"
                 android:layout_margin="15dp"
                 android:width="150dp"
                 android:height="150dp"
                 android:layout_below="@id/periodictable"
-                android:background="#676767" />
+                android:background="#676767"
+                android:onClick="openHelpActivity" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

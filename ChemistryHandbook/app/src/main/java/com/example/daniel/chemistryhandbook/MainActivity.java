@@ -23,4 +23,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, CompoundResults.class);
         startActivity(intent);
     }
+
+    public void openHelpActivity(View v) {
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
+    }
 }

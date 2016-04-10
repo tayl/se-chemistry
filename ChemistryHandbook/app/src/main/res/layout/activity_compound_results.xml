@@ -5,7 +5,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.taylor.test.chemistry.CompoundResults">
+    tools:context="com.taylor.test.chemistry.CompoundResults"
+    android:background="#bbb3b3">
 
     <SearchView android:id="@+id/list_search" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_alignParentEnd="true"

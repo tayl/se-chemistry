@@ -21,6 +21,8 @@
 
         <activity
             android:name=".ConversionActivity"/>
+        <activity
+            android:name=".HelpActivity"/>
 
         <activity android:name=".CompoundResults"
             android:label="@string/title_activity_main"

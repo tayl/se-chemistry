@@ -10,6 +10,7 @@
     <string name="molar_mass">"Molar mass: "</string>
     <string name="unknown_compound">Not Listed/Unknown</string>
     <string name="compound_elements_header">Elements</string>
+    <string name="help_text">This is the help text, right now it does not offer much help</string>
 
     <string-array name="converstionTypes">
         <item>Area</item>
