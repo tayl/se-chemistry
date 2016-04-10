@@ -12,15 +12,17 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
-
+import android.widget.Filter;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+//import java.util.logging.Filter;
 
 
 public class ChemItemActivity extends Activity implements SearchView.OnQueryTextListener{
     private ListView lvChemItem;
     private SearchView mSearchView;
+    private Filter filter;
 
 
     @Override
@@ -38,8 +40,9 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
 
         // add the data from the "elements_table.csvle.csv" file to the listview
         for(String[] singleChemItemRow: readFileList) {
-            mChemItemList.add(new ChemItem(singleChemItemRow[0], singleChemItemRow[1],
-                    singleChemItemRow[2], singleChemItemRow[3]));
+            // id, symbol, mass, name    1,1.0079,Hydrogen,H
+            mChemItemList.add(new ChemItem(singleChemItemRow[0], singleChemItemRow[3],
+                    singleChemItemRow[1], singleChemItemRow[2]));
 
         }
 
@@ -48,14 +51,18 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
         lvChemItem.setAdapter(adapter);
         lvChemItem.setTextFilterEnabled(true);
         setupSearchView();
+        //filter = adapter.getFilter();
+        filter = adapter.getFilter();
 
         // handle when user presses SHORT PRESS
         lvChemItem.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //show msg with item id, get from view.getTag
-                Toast.makeText(getApplicationContext(), "Press and Hold to open Mole Convertion",
-                        Toast.LENGTH_SHORT).show();
+                /*
+                Toast.makeText(getApplicationContext(), "Press and Hold to open Mole Conversion",
+                        Toast.LENGTH_SHORT).cancel();
+                */
 
             }
         });
@@ -94,10 +101,15 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
     // Handle the event after the users starts entering or editing text in the search bar
     @Override
     public boolean onQueryTextChange(String newText) {
+        filter.filter(newText);
+
         if (TextUtils.isEmpty(newText)){
-            lvChemItem.clearTextFilter();
+            //filter.filter(null);
+            //lvChemItem.clearTextFilter();
+
         } else {
-            lvChemItem.setFilterText(newText);
+            //filter.filter(newText);
+            //lvChemItem.setFilterText(newText);
         }
         return true;
     }
