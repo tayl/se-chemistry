@@ -28,4 +28,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, HelpActivity.class);
         startActivity(intent);
     }
+
+    public void openPeriodicTableActivity(View v) {
+        Intent intent = new Intent(this, PeriodicTableActivity.class);
+        startActivity(intent);
+    }
 }

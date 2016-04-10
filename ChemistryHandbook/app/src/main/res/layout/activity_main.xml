@@ -25,19 +25,14 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            >
+            android:orientation="vertical">
 
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Compound Search"
-                android:id="@+id/periodictable"
+                android:text="@string/compoundsearchbuttontext"
+                android:id="@+id/compoundsearch"
                 android:layout_margin="15dp"
                 android:width="150dp"
                 android:height="150dp"
@@ -47,8 +42,19 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Help"
-                android:id="@+id/placeholder1"
+                android:text="@string/tablebuttontext"
+                android:id="@+id/periodictable"
+                android:layout_margin="15dp"
+                android:width="150dp"
+                android:height="150dp"
+                android:layout_below="@id/compoundsearch"
+                android:background="#676767"
+                android:onClick="openPeriodicTableActivity" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helpbuttontext"
+                android:id="@+id/placeholder3"
                 android:layout_margin="15dp"
                 android:width="150dp"
                 android:height="150dp"
@@ -58,30 +64,20 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="placeholder"
-                android:id="@+id/placeholder3"
-                android:layout_margin="15dp"
-                android:width="150dp"
-                android:height="150dp"
-                android:layout_below="@id/placeholder1"
-                android:background="#676767" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="placeholder"
                 android:id="@+id/placeholder5"
                 android:layout_margin="15dp"
                 android:width="150dp"
                 android:height="150dp"
                 android:layout_below="@id/placeholder3"
-                android:background="#676767" />
+                android:background="#676767"
+                android:visibility="invisible" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Unit Converter"
+                android:text="@string/converterbuttontext"
                 android:id="@+id/conversions"
-                android:layout_toRightOf="@+id/periodictable"
+                android:layout_toRightOf="@+id/compoundsearch"
                 android:layout_marginTop="15dp"
                 android:width="150dp"
                 android:height="150dp"
@@ -91,10 +87,10 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="placeholder"
+                android:text="@string/elementsbuttontext"
                 android:layout_marginTop="30dp"
                 android:id="@+id/placeholder2"
-                android:layout_toRightOf="@+id/periodictable"
+                android:layout_toRightOf="@+id/compoundsearch"
                 android:width="150dp"
                 android:height="150dp"
                 android:layout_below="@id/conversions"
@@ -102,26 +98,27 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="placeholder"
                 android:layout_marginTop="30dp"
                 android:id="@+id/placeholder4"
-                android:layout_toRightOf="@+id/periodictable"
+                android:layout_toRightOf="@+id/compoundsearch"
                 android:width="150dp"
                 android:height="150dp"
                 android:layout_below="@id/placeholder2"
-                android:background="#676767" />
+                android:background="#676767"
+                android:enabled="false"
+                android:visibility="invisible" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="placeholder"
                 android:layout_marginTop="30dp"
                 android:id="@+id/placeholder6"
-                android:layout_toRightOf="@+id/periodictable"
+                android:layout_toRightOf="@+id/compoundsearch"
                 android:width="150dp"
                 android:height="150dp"
                 android:layout_below="@id/placeholder4"
-                android:background="#676767" />
+                android:background="#676767"
+                android:visibility="invisible" />
         </RelativeLayout>
     </ScrollView>
 

@@ -4,6 +4,7 @@
 
     <application
 
+        android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@drawable/icon1"
         android:label="@string/app_name"
@@ -23,6 +24,12 @@
             android:name=".ConversionActivity"/>
         <activity
             android:name=".HelpActivity"/>
+
+        <activity
+            android:name=".PeriodicTableActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="landscape"
+            />
 
         <activity android:name=".CompoundResults"
             android:label="@string/title_activity_main"
