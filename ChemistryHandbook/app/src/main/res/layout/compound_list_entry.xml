@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="10dp">
+
+    <TextView android:id="@+id/compound_name" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="1dp"
+        android:text="@string/unknown_compound" android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView android:id="@+id/compound_additional_names" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="1dp"
+        android:text="@string/also_known_as" android:textColor="#000000" android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView android:id="@+id/compound_formula" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="1sp" android:text="@string/formula"
+        android:textColor="#000000" android:textSize="15sp" />
+
+    <TextView android:id="@+id/compound_mass" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="1sp" android:text="@string/molar_mass"
+        android:textColor="#000000" android:textSize="15sp" />
+
+</LinearLayout>
