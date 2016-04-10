@@ -101,35 +101,4 @@ public class CompoundResults extends Activity implements SearchView.OnQueryTextL
         filter.filter(newText);
         return true;
     }
-
-//    // Handle the OnLongPress to open the Grams to Moles activity for that
-//    // specific item, it finds the item, then passes the name, formula, mass
-//    // to be used in the conversion
-//    public void onItemLongPress(String chemItemId) {
-//        String singleChemItem[] = null;
-//        String ChemItemName;
-//        String ChemItemMolarMass;
-//        String ChemItemFormula;
-//        boolean foundItem = false;
-//        Intent i = new Intent(this, MoleActivity.class);
-//        // handle the ChemItem id to pass Chem Item name and Formula and Molar Mass
-//        // NOT the most efficient search, but it works right now
-//        for (String[] singleChemItemRow : readFileList) {
-//            if (singleChemItemRow[0].equals(chemItemId)) {
-//                singleChemItem = singleChemItemRow;
-//                foundItem = true;
-//                break;
-//            }
-//        }
-//
-//        if (foundItem) {
-//            ChemItemFormula = singleChemItem[1];
-//            ChemItemMolarMass = singleChemItem[2];
-//            ChemItemName = singleChemItem[3];
-//            i.putExtra("ChemItemName", ChemItemName);
-//            i.putExtra("ChemItemFormula", ChemItemFormula);
-//            i.putExtra("ChemItemMolarMass", ChemItemMolarMass);
-//            startActivity(i);
-//        }
-//    }
 }

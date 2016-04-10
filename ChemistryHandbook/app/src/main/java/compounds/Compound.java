@@ -234,13 +234,4 @@ public class Compound implements Comparable<Compound> {
 
         return thisName.compareToIgnoreCase(thatName);
     }
-
-//    @Override
-//    public int compareTo(Compound that) {
-//        if (this.getWeight() < that.getWeight()) {
-//            return -1;
-//        } else {
-//            return 1;
-//        }
-//    }
 }

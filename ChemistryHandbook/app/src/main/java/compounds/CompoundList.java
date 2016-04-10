@@ -99,8 +99,7 @@ public class CompoundList {
 
         Compound unknownCompound = new Compound();
         unknownCompound.setElements(elements);
-//        unknownCompound.setExactMatch(false);
-
+        
         return unknownCompound;
     }
 
