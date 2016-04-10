@@ -46,16 +46,18 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        String ChemItemID = " " + mChemItemList.get(position).getId();
+        String ChemItemID = String.format("%-3d",Integer.parseInt(
+                mChemItemList.get(position).getId())) + " ";
 
         View v = View.inflate(mContext, R.layout.item_chem_list, null);
+
         TextView itemName = (TextView)v.findViewById(R.id.item_name);
         TextView itemMolarMass = (TextView)v.findViewById(R.id.item_molmass);
         TextView itemFormula = (TextView)v.findViewById(R.id.item_formula);
 
         //Set text for TextView
-        itemFormula.setText(mChemItemList.get(position).getChemFormula() );
-        itemName.setText(mChemItemList.get(position).getName() + ChemItemID);
+        itemFormula.setText(mChemItemList.get(position).getChemFormula());
+        itemName.setText(ChemItemID +  mChemItemList.get(position).getName());
         itemMolarMass.setText(String.valueOf(mChemItemList.get(position).getMolMass()) + "g");
 
 
@@ -73,8 +75,10 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
     public Filter getFilter() {
         return new Filter() {
 
+
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
+
                 final FilterResults oReturn = new FilterResults();
                 final List<ChemItem> results = new ArrayList<>();
                 if (orig == null)
