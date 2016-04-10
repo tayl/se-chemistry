@@ -35,21 +35,20 @@ public class CompoundBuilder {
     private Map<String, List<Element>> cache;
 
     public CompoundBuilder(String elementInputFilename) {
-        TableBuilder tb = new TableBuilder();
-
-        InputStream is = null;
+        InputStream elementInputStream = null;
 
         try {
-            is = new FileInputStream(new File(elementInputFilename));
+            elementInputStream = new FileInputStream(new File(elementInputFilename));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
-        if (is == null) {
+        if (elementInputStream == null) {
             System.out.println("Cannot open file " + elementInputFilename);
         }
 
-        table = tb.build(is);
+        TableBuilder tb = new TableBuilder();
+        table = tb.build(elementInputStream);
 
         cache = new HashMap<>();
     }

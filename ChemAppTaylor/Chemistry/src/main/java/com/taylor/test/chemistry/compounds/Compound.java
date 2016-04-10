@@ -32,11 +32,6 @@ public class Compound implements Comparable<Compound> {
     private String[] names;
 
     /**
-     * the Chemical Abstracts Service (CAS) identifier
-     */
-    private String CAS;
-
-    /**
      * the Elements this Compound is made up of. Elements can exist multiple times
      * CO2 = {C, O, O}, NOT {C, O}
      */
@@ -203,14 +198,6 @@ public class Compound implements Comparable<Compound> {
         this.names = names;
     }
 
-    public String getCAS() {
-        return CAS;
-    }
-
-    public void setCAS(String CAS) {
-        this.CAS = CAS;
-    }
-
     @Override
     public String toString() {
         DecimalFormat df = new DecimalFormat("#.###");
@@ -224,27 +211,22 @@ public class Compound implements Comparable<Compound> {
         return formula.equals(((Compound) that).formula);
     }
 
-    /**
-     * Sorts by first alphabetic character
-     * @param that
-     * @return {-1,0,1}
-     */
     @Override
     public int compareTo(Compound that) {
         String thisName = this.getName();
         String thatName = that.getName();
 
-        if(!Character.isAlphabetic(thisName.charAt(0))) {
+        if (!Character.isAlphabetic(thisName.charAt(0))) {
             int i = 1;
-            while(!Character.isAlphabetic(thisName.charAt(i))) {
+            while (!Character.isAlphabetic(thisName.charAt(i))) {
                 i++;
             }
             thisName = thisName.substring(i);
         }
 
-        if(!Character.isAlphabetic(thatName.charAt(0))) {
+        if (!Character.isAlphabetic(thatName.charAt(0))) {
             int i = 1;
-            while(!Character.isAlphabetic(thatName.charAt(i))) {
+            while (!Character.isAlphabetic(thatName.charAt(i))) {
                 i++;
             }
             thatName = thatName.substring(i);
@@ -252,4 +234,13 @@ public class Compound implements Comparable<Compound> {
 
         return thisName.compareToIgnoreCase(thatName);
     }
+
+//    @Override
+//    public int compareTo(Compound that) {
+//        if (this.getWeight() < that.getWeight()) {
+//            return -1;
+//        } else {
+//            return 1;
+//        }
+//    }
 }

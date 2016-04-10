@@ -104,7 +104,7 @@ public class ResultsAdapter extends BaseAdapter implements Filterable {
 
                     //we want the Toast to show the full Element name. The entry in the GridView was
                     //downed to a String, so it holds no context as to what Element it was.
-                    //compoundBuilder.getElementBySymbol() could turn "H" or "Na" into "Hydrogen" or
+                    //compoundBuilder.getElement() could turn "H" or "Na" into "Hydrogen" or
                     //"Sodium" respectively, but not "H2" or "Na3", etc. This solution solves that
                     //but introduces overhead of parsing the formula. Not extreme, but a better
                     //solution probably exists
@@ -197,6 +197,22 @@ public class ResultsAdapter extends BaseAdapter implements Filterable {
                 // if the formula contains some valid Elements, we've found matches. set this true
                 // so we can build a user query result display card thing
                 foundMatches = elements.size() > 0;
+
+                if (!foundMatches && !query.isEmpty()) {
+                    Compound noMatches = new Compound();
+                    Element filler = compoundBuilder.getElement("O");
+                    noMatches.setElements(new Element[]{filler, filler});
+                    noMatches.setNames(new String[]{
+                            "I couldn't find any elements in \"" + query + "\"\n\n" +
+                                    "Remember, elements are case sensitive!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                    });
+                    noMatches.setFormula("");
+                    resultList.add(noMatches);
+
+                    results.values = resultList;
+
+                    return results;
+                }
 
                 // take those Elements from the formula and get all Compounds that contain any
                 // combination of those Elements
