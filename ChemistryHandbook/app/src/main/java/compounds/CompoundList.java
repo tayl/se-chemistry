@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.PriorityQueue;
 
 /**
  * @author Taylor Veith
@@ -101,6 +102,16 @@ public class CompoundList {
         unknownCompound.setElements(elements);
         
         return unknownCompound;
+    }
+
+    public List<Compound> getCompoundsByPartialName(String query) {
+        List<Compound> results = new ArrayList<>();
+        for(Compound compound : compounds) {
+            if(compound.getName().toLowerCase().startsWith(query.toLowerCase())) {
+                results.add(compound);
+            }
+        }
+        return results;
     }
 
     public List<Compound> getCompoundsByElements(CompoundBuilder cb, String queryElements) {

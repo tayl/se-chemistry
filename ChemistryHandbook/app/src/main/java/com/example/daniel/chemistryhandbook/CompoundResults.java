@@ -9,11 +9,11 @@ import android.widget.Filter;
 import android.widget.ListView;
 import android.widget.SearchView;
 
+import java.io.InputStream;
+
 import compounds.Compound;
 import compounds.CompoundBuilder;
 import compounds.CompoundList;
-
-import java.io.InputStream;
 
 public class CompoundResults extends Activity implements SearchView.OnQueryTextListener {
 
