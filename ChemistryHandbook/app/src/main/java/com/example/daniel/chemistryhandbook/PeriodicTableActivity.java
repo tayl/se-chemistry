@@ -1,7 +1,6 @@
 package com.example.daniel.chemistryhandbook;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -19,7 +18,7 @@ public class PeriodicTableActivity extends Activity{
         setContentView(R.layout.activity_periodic_table);
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-                R.drawable.j);
+                R.drawable.periodic_table_of_elements);
         ZoomableImageView touch = (ZoomableImageView)findViewById(R.id.IMAGEID);
         touch.setImageBitmap(bitmap);
 
