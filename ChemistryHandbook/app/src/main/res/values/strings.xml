@@ -18,6 +18,7 @@
     <string name="elementsbuttontext">Elements</string>
 
     <string name="title_activity_mole">MoleActivity</string>
+    <string name="splash_screen">Splash screen</string>
 
     <string-array name="converstionTypes">
         <item>Area</item>
