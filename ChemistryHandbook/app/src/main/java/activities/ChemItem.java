@@ -1,4 +1,4 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
 /**
  * Created by robertvalladares on 3/14/16.

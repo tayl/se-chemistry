@@ -1,4 +1,4 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.Filter;
 import android.widget.ListView;
 import android.widget.SearchView;
+
+import com.chemistry.R;
 
 import java.io.InputStream;
 

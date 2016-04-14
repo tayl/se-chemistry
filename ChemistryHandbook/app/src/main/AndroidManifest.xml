@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.daniel.chemistryhandbook">
-    <uses-sdk android:minSdkVersion="15" />
-    <supports-screens android:largeScreens="true" android:resizeable="true" />
-
+    package="com.chemistry">
     <application
 
         android:allowBackup="true" android:icon="@drawable/ic_launcher"
@@ -11,7 +8,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreen" android:label="@string/app_name">
+            android:name="activities.SplashScreen"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,26 +17,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ChemItemActivity" />
+        <activity android:name="activities.ChemItemActivity" />
 
-        <activity android:name=".ConversionActivity" />
+        <activity android:name="activities.ConversionActivity" />
 
-        <activity android:name=".HelpActivity" />
+        <activity android:name="activities.HelpActivity" />
 
         <activity
-            android:name=".PeriodicTableActivity"
+            android:name="activities.PeriodicTableActivity"
             android:screenOrientation="landscape" android:theme="@style/NoActionBar" />
 
-        <activity android:name=".CompoundResults"
-            android:label="@string/title_activity_main"
-            android:theme="@style/NoActionBar"></activity>
-
-        <activity android:name=".MoleActivity"
+        <activity
+            android:name="activities.CompoundResults"
             android:label="@string/title_activity_main"
             android:theme="@style/NoActionBar"></activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name="activities.MoleActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/NoActionBar"></activity>
+
+        <activity
+            android:name="activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBar">
             <intent-filter>

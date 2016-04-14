@@ -1,4 +1,4 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -12,6 +12,8 @@ import android.widget.Filterable;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.chemistry.R;
 
 import java.util.ArrayList;
 import java.util.List;

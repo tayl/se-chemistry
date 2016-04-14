@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Chemistry\nHandbook</string>
+    <string name="app_name">Chemistry</string>
     <string name="app_label">Chemistry</string>
     <string name="search_hint">Search formulas</string>
     <string name="title_activity_compound_results">Compound Results</string>

@@ -1,6 +1,5 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
-import converters.*;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,7 +10,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.chemistry.R;
+
 import java.text.DecimalFormat;
+
+import converters.*;
 
 
 /**
@@ -39,15 +42,15 @@ public class ConversionActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conversion);
 
-        calculatedValue = (TextView)findViewById(R.id.calculatedTextView);
-        inputTextView = (EditText)findViewById(R.id.inputText);
+        calculatedValue = (TextView) findViewById(R.id.calculatedTextView);
+        inputTextView = (EditText) findViewById(R.id.inputText);
 
         //Sets object to respective ui element
-        conversionSpinner = (Spinner)findViewById(R.id.conversionTypeSpinner);
-        unitFromnSpinner =(Spinner)findViewById(R.id.conversionFromSpinner);
-        unitToSpinner = (Spinner)findViewById(R.id.conversionToSpinner);
-        densityFromSpinner = (Spinner)findViewById((R.id.densityMassFrom));
-        densityToSpinner = (Spinner)findViewById((R.id.densityMassTo));
+        conversionSpinner = (Spinner) findViewById(R.id.conversionTypeSpinner);
+        unitFromnSpinner = (Spinner) findViewById(R.id.conversionFromSpinner);
+        unitToSpinner = (Spinner) findViewById(R.id.conversionToSpinner);
+        densityFromSpinner = (Spinner) findViewById((R.id.densityMassFrom));
+        densityToSpinner = (Spinner) findViewById((R.id.densityMassTo));
 
         conversionTypeAdaptor = ArrayAdapter.createFromResource(this, R.array.converstionTypes, android.R.layout.simple_spinner_item);
         conversionTypeAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -94,13 +97,14 @@ public class ConversionActivity extends Activity {
 
     }
 
-    private void populateSpinnerArea () {
+    private void populateSpinnerArea() {
         unitAdaptor = ArrayAdapter.createFromResource(this, R.array.areaUnits, android.R.layout.simple_spinner_item);
         unitAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         unitFromnSpinner.setAdapter(unitAdaptor);
         unitToSpinner.setAdapter(unitAdaptor);
     }
-    private void populateSpinnerDensity () {
+
+    private void populateSpinnerDensity() {
         densityFromSpinner.setVisibility(View.VISIBLE);
         densityToSpinner.setVisibility(View.VISIBLE);
         unitAdaptor = ArrayAdapter.createFromResource(this, R.array.volumeUnits, android.R.layout.simple_spinner_item);
@@ -113,38 +117,43 @@ public class ConversionActivity extends Activity {
         densityToSpinner.setAdapter(unitAdaptor);
 
     }
-    private void populateSpinnerLength () {
+
+    private void populateSpinnerLength() {
         unitAdaptor = ArrayAdapter.createFromResource(this, R.array.lengthUnits, android.R.layout.simple_spinner_item);
         unitAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         unitFromnSpinner.setAdapter(unitAdaptor);
         unitToSpinner.setAdapter(unitAdaptor);
     }
-    private void populateSpinnerMass () {
+
+    private void populateSpinnerMass() {
         unitAdaptor = ArrayAdapter.createFromResource(this, R.array.massUnits, android.R.layout.simple_spinner_item);
         unitAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         unitFromnSpinner.setAdapter(unitAdaptor);
         unitToSpinner.setAdapter(unitAdaptor);
     }
-    private void populateSpinnerPressure () {
+
+    private void populateSpinnerPressure() {
         unitAdaptor = ArrayAdapter.createFromResource(this, R.array.pressureUnits, android.R.layout.simple_spinner_item);
         unitAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         unitFromnSpinner.setAdapter(unitAdaptor);
         unitToSpinner.setAdapter(unitAdaptor);
     }
-    private void populateSpinnerTemperature () {
+
+    private void populateSpinnerTemperature() {
         unitAdaptor = ArrayAdapter.createFromResource(this, R.array.temperatureUnits, android.R.layout.simple_spinner_item);
         unitAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         unitFromnSpinner.setAdapter(unitAdaptor);
         unitToSpinner.setAdapter(unitAdaptor);
     }
-    private void populateSpinnerVolume () {
+
+    private void populateSpinnerVolume() {
         unitAdaptor = ArrayAdapter.createFromResource(this, R.array.volumeUnits, android.R.layout.simple_spinner_item);
         unitAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         unitFromnSpinner.setAdapter(unitAdaptor);
         unitToSpinner.setAdapter(unitAdaptor);
     }
 
-    public void calculateButtonListener (View v) {
+    public void calculateButtonListener(View v) {
         int conversionType = conversionSpinner.getSelectedItemPosition();
         Double output = new Double(0);
 
@@ -175,7 +184,7 @@ public class ConversionActivity extends Activity {
                 output = converters.MassConverter.convertMass(fromUnit, toUnit, inputValue);
                 break;
             case 4:
-                output =  converters.PressureConverter.convertPressure(fromUnit, toUnit, inputValue);
+                output = converters.PressureConverter.convertPressure(fromUnit, toUnit, inputValue);
                 break;
             case 5:
                 output = converters.TemperatureConverter.convertTemperature(fromUnit, toUnit, inputValue);
@@ -191,160 +200,160 @@ public class ConversionActivity extends Activity {
 
     public ConversionLiterals.Unit getUnit(Spinner spinner) {
 
-        switch(spinner.getSelectedItem().toString()) {
+        switch (spinner.getSelectedItem().toString()) {
             // LengthConverter
 
-            case "Acre" :
+            case "Acre":
                 return ConversionLiterals.Unit.ACRE;
 
-            case "Hectare" :
+            case "Hectare":
                 return ConversionLiterals.Unit.HECTARE;
 
-            case "Sq Metre" :
+            case "Sq Metre":
                 return ConversionLiterals.Unit.SQMETER;
 
-            case "Sq Centimetre" :
+            case "Sq Centimetre":
                 return ConversionLiterals.Unit.SQCENTIMETER;
 
-            case "Sq Millimetre" :
+            case "Sq Millimetre":
                 return ConversionLiterals.Unit.SQMILLIMETER;
 
-            case "Sq Kilometre" :
+            case "Sq Kilometre":
                 return ConversionLiterals.Unit.SQKILOMETER;
 
-            case "Sq Mile" :
+            case "Sq Mile":
                 return ConversionLiterals.Unit.SQMILE;
 
-            case "Sq Inch" :
+            case "Sq Inch":
                 return ConversionLiterals.Unit.SQINCH;
 
-            case "Sq Foot" :
+            case "Sq Foot":
                 return ConversionLiterals.Unit.SQFOOT;
 
-            case "Sq Yard" :
+            case "Sq Yard":
                 return ConversionLiterals.Unit.SQYARD;
 
-            case "Inch" :
+            case "Inch":
                 return ConversionLiterals.Unit.INCH;
 
-            case "Foot" :
+            case "Foot":
                 return ConversionLiterals.Unit.FOOT;
 
-            case "Yard" :
+            case "Yard":
                 return ConversionLiterals.Unit.YARD;
 
-            case "Mile" :
+            case "Mile":
                 return ConversionLiterals.Unit.MILE;
 
-            case "Picometre" :
+            case "Picometre":
                 return ConversionLiterals.Unit.PICOMETER;
 
-            case "Nanometre" :
+            case "Nanometre":
                 return ConversionLiterals.Unit.NANOMETER;
 
-            case "Micrometre" :
+            case "Micrometre":
                 return ConversionLiterals.Unit.MICROMETER;
 
-            case "Millimetre" :
+            case "Millimetre":
                 return ConversionLiterals.Unit.MILLIMETER;
 
-            case "Centimetre" :
+            case "Centimetre":
                 return ConversionLiterals.Unit.CENTIMETER;
 
-            case "Decimetre" :
+            case "Decimetre":
                 return ConversionLiterals.Unit.DECIMETER;
 
-            case "Metre" :
+            case "Metre":
                 return ConversionLiterals.Unit.METER;
 
-            case "Kilometre" :
+            case "Kilometre":
                 return ConversionLiterals.Unit.KILOMETER;
 
-            case "Megametre" :
+            case "Megametre":
                 return ConversionLiterals.Unit.MEGAMETER;
 
-            case "Gigametre" :
+            case "Gigametre":
                 return ConversionLiterals.Unit.GIGAMETER;
 
-            case "Ounce" :
+            case "Ounce":
                 return ConversionLiterals.Unit.OUNCE;
 
-            case "Pound" :
+            case "Pound":
                 return ConversionLiterals.Unit.POUND;
 
-            case "Atomic Mass Unit/Dalton" :
+            case "Atomic Mass Unit/Dalton":
                 return ConversionLiterals.Unit.ATOMICMASSUNIT;
 
-            case "Gram" :
+            case "Gram":
                 return ConversionLiterals.Unit.GRAM;
 
-            case "Milligram" :
+            case "Milligram":
                 return ConversionLiterals.Unit.MILLIGRAM;
 
-            case "Kilogram" :
+            case "Kilogram":
                 return ConversionLiterals.Unit.KILOGRAM;
 
-            case "Metric Fuck Ton" :
+            case "Metric Fuck Ton":
                 return ConversionLiterals.Unit.METRICTON;
 
-            case "Atmosphere" :
+            case "Atmosphere":
                 return ConversionLiterals.Unit.ATMOSPHERE;
 
-            case "Torr" :
+            case "Torr":
                 return ConversionLiterals.Unit.TORR;
 
-            case "Pascal" :
+            case "Pascal":
                 return ConversionLiterals.Unit.PASCAL;
 
-            case "Kilopascal" :
+            case "Kilopascal":
                 return ConversionLiterals.Unit.KILOPASCAL;
 
-            case "Millimetre of Mercury" :
+            case "Millimetre of Mercury":
                 return ConversionLiterals.Unit.MILLIMERCURY;
 
-            case "Pounds per Sq Inch" :
+            case "Pounds per Sq Inch":
                 return ConversionLiterals.Unit.POUNDSSQINCH;
 
-            case "Cubic Metre" :
+            case "Cubic Metre":
                 return ConversionLiterals.Unit.CUBMETER;
 
-            case "Cubic Centimetre" :
+            case "Cubic Centimetre":
                 return ConversionLiterals.Unit.CUBCENTIMETER;
 
-            case "Cubic Millimetre" :
+            case "Cubic Millimetre":
                 return ConversionLiterals.Unit.CUBMILLIMETER;
 
-            case "Cubic Kilometre" :
+            case "Cubic Kilometre":
                 return ConversionLiterals.Unit.CUBKILOMETER;
 
-            case "Litre" :
+            case "Litre":
                 return ConversionLiterals.Unit.LITER;
 
-            case "Gallon" :
+            case "Gallon":
                 return ConversionLiterals.Unit.GALLON;
 
-            case "Quart" :
+            case "Quart":
                 return ConversionLiterals.Unit.QUART;
 
-            case "Cup" :
+            case "Cup":
                 return ConversionLiterals.Unit.CUP;
 
-            case "Cubic Feet" :
+            case "Cubic Feet":
                 return ConversionLiterals.Unit.CUBFOOT;
 
-            case "Millilitre" :
+            case "Millilitre":
                 return ConversionLiterals.Unit.MILLILITER;
 
-            case "Kilolitre" :
+            case "Kilolitre":
                 return ConversionLiterals.Unit.KILOLITER;
 
-            case "Kelvin" :
+            case "Kelvin":
                 return ConversionLiterals.Unit.KELVIN;
 
-            case "Celsius" :
+            case "Celsius":
                 return ConversionLiterals.Unit.CELSIUS;
 
-            case "Fahrenheit" :
+            case "Fahrenheit":
                 return ConversionLiterals.Unit.FAHRENHEIT;
 
         }

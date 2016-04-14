@@ -1,8 +1,9 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
 /**
  * Created by robertvalladares on 3/14/16.
  */
+
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,16 +11,18 @@ import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
+
+import com.chemistry.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class ChemItemListAdapter extends BaseAdapter implements Filterable {
 
+    public List<ChemItem> orig;
     private Context mContext;
     private List<ChemItem> mChemItemList;
-    public List<ChemItem> orig;
 
     //Constructor
 
@@ -46,18 +49,18 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        String ChemItemID = String.format("%-3d",Integer.parseInt(
+        String ChemItemID = String.format("%-3d", Integer.parseInt(
                 mChemItemList.get(position).getId())) + " ";
 
         View v = View.inflate(mContext, R.layout.item_chem_list, null);
 
-        TextView itemName = (TextView)v.findViewById(R.id.item_name);
-        TextView itemMolarMass = (TextView)v.findViewById(R.id.item_molmass);
-        TextView itemFormula = (TextView)v.findViewById(R.id.item_formula);
+        TextView itemName = (TextView) v.findViewById(R.id.item_name);
+        TextView itemMolarMass = (TextView) v.findViewById(R.id.item_molmass);
+        TextView itemFormula = (TextView) v.findViewById(R.id.item_formula);
 
         //Set text for TextView
         itemFormula.setText(mChemItemList.get(position).getChemFormula());
-        itemName.setText(ChemItemID +  mChemItemList.get(position).getName());
+        itemName.setText(ChemItemID + mChemItemList.get(position).getName());
         itemMolarMass.setText(String.valueOf(mChemItemList.get(position).getMolMass()) + "g");
 
 
@@ -88,8 +91,8 @@ public class ChemItemListAdapter extends BaseAdapter implements Filterable {
                         for (final ChemItem g : orig) {
 
                             if (g.getName().toLowerCase().contains(constraint.toString()) ||
-                                    g.getChemFormula().toLowerCase().contains(constraint.toString())||
-                                    g.getId().toLowerCase().contains(constraint.toString())||
+                                    g.getChemFormula().toLowerCase().contains(constraint.toString()) ||
+                                    g.getId().toLowerCase().contains(constraint.toString()) ||
                                     g.getMolMass().toLowerCase().contains(constraint.toString())
                                     )
                                 results.add(g);
