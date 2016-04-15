@@ -1,0 +1,42 @@
+Chem: from Ac to Zr/n
+
+Alex Doan/n
+Daniel Kinney/n
+Robert Valladares/n
+John-Paul Steed/n
+Taylor Veith/n
+Victoria Rivas/n
+
+Tips to navigate:/n/n
+
+Unit Converter/n
+
+Choose the conversion type from the drop-down menu first/n
+Choose your from - to units first by pressing on the drop-down menus/n
+Enter the value of the unit to convert at the bottom and press/n
+"Calculate"/n
+Result is displayed under the "Calculate" button/n/n
+
+Compound Search/n
+
+Choose from compounds displayed or search from the bar at the top/n
+Can search via compound formula or compound name/n
+If searching by formula:/n
+    * Search is case sensitive!/n
+    * Don't forget parentheses if in the formula/n
+If searching by compound name:/n
+    * Start typing in the compound name/n
+    * Choose the compound from the list generated/n
+Choose a compound for conversion of grams to moles/n/n
+
+Elements/n
+
+Elemented displayed in the list by the atomic number/n
+Search for elements at the top of the screen by name/n
+Choose an element for additional information and conversion/n
+from grams to moles/n/n
+
+Periodic Table/n
+
+Table will display in landscape - rotate your phone!/n
+Zoom in to the display as normal/n
