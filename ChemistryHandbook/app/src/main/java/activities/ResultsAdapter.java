@@ -1,4 +1,4 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -13,13 +13,15 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.chemistry.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import compounds.Compound;
 import compounds.CompoundBuilder;
 import compounds.CompoundList;
 import elements.Element;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author Taylor Veith
@@ -199,18 +201,26 @@ public class ResultsAdapter extends BaseAdapter implements Filterable {
                 foundMatches = elements.size() > 0;
 
                 if (!foundMatches && !query.isEmpty()) {
+
+                    List<Compound> partialNameResults = compoundList.getCompoundsByPartialName(query);
+
+                    if (partialNameResults.size() > 0) {
+                        results.values = partialNameResults;
+                        return results;
+                    }
+
+
                     Compound noMatches = new Compound();
                     Element filler = compoundBuilder.getElement("O");
                     noMatches.setElements(new Element[]{filler, filler});
                     noMatches.setNames(new String[]{
-                            "I couldn't find any elements in \"" + query + "\"\n\n" +
+                            "I couldn't find any results in \"" + query + "\"\n\n" +
                                     "Remember, elements are case sensitive!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                     });
                     noMatches.setFormula("");
                     resultList.add(noMatches);
 
                     results.values = resultList;
-
                     return results;
                 }
 

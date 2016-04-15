@@ -1,12 +1,12 @@
 package compounds;
 
 
-import elements.Element;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+
+import elements.Element;
 
 /**
  * @author Taylor Veith
@@ -99,8 +99,18 @@ public class CompoundList {
 
         Compound unknownCompound = new Compound();
         unknownCompound.setElements(elements);
-        
+
         return unknownCompound;
+    }
+
+    public List<Compound> getCompoundsByPartialName(String query) {
+        List<Compound> results = new ArrayList<>();
+        for (Compound compound : compounds) {
+            if (compound.getName().toLowerCase().contains(query.toLowerCase())) {
+                results.add(compound);
+            }
+        }
+        return results;
     }
 
     public List<Compound> getCompoundsByElements(CompoundBuilder cb, String queryElements) {

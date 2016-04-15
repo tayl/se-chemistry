@@ -1,7 +1,9 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.chemistry.R;
 
 /**
  * Created by Daniel on 4/9/16.

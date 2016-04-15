@@ -1,10 +1,11 @@
-package com.example.daniel.chemistryhandbook;
+package activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.chemistry.R;
 
 public class MainActivity extends Activity {
 
