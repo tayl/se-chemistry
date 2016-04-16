@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context="activities.MainActivity">
+
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:overScrollMode="never"
+        android:scrollbars="none">
+
+    </ScrollView>
+
+    <GridLayout android:layout_width="fill_parent" android:layout_height="match_parent"
+        android:layout_centerInParent="true" android:layout_gravity="center" android:columnCount="1"
+        android:columnOrderPreserved="false" android:rowCount="3" android:rowOrderPreserved="false"
+        android:useDefaultMargins="false">
+
+        <Button android:id="@+id/compoundsearch" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000"
+            android:onClick="openCompoundResults" android:text="@string/compoundsearchbuttontext" />
+
+        <Button android:id="@+id/conversions" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000"
+            android:onClick="openConversionActivity" android:text="@string/converterbuttontext" />
+
+        <Button android:id="@+id/periodictable" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000"
+            android:onClick="openPeriodicTableActivity" android:text="@string/tablebuttontext" />
+
+        <Button android:id="@+id/placeholder2" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000"
+            android:onClick="openElementActivity" android:text="@string/elementsbuttontext" />
+
+        <Button android:id="@+id/placeholder3" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000" android:onClick="openHelpActivity"
+            android:text="@string/helpbuttontext" />
+
+        <Button android:id="@+id/contactbutton" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000"
+            android:onClick="openContactActivity" android:text="@string/contactbuttontext" />
+
+        <Button android:id="@+id/placeholder6" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000" android:visibility="invisible" />
+
+        <Button android:id="@+id/placeholder4" android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_margin="10dp" android:width="100dp"
+            android:height="100dp" android:background="#2d000000" android:enabled="false"
+            android:visibility="invisible" />
+    </GridLayout>
+
+
+</RelativeLayout>
