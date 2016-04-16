@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    public void openCompoundResults(View v) {
+    public void openCompundResults(View v) {
         Intent intent = new Intent(this, CompoundResults.class);
         startActivity(intent);
     }
@@ -37,11 +37,6 @@ public class MainActivity extends Activity {
 
     public void openElementActivity(View v) {
         Intent intent = new Intent(this, ChemItemActivity.class);
-        startActivity(intent);
-    }
-
-    public void openContactActivity(View v) {
-        Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
 }
