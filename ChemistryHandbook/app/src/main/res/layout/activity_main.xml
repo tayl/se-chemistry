@@ -12,116 +12,115 @@
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:overScrollMode="never"
-        android:scrollbars="none"
-        >
+        android:scrollbars="none">
 
-        <RelativeLayout
+    </ScrollView>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        android:rowOrderPreserved="true">
+
+        <Button
+            android:id="@+id/compoundsearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_margin="5dp"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:onClick="openCompoundResults"
+            android:text="@string/compoundsearchbuttontext" />
 
+        <Button
+            android:id="@+id/conversions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:onClick="openConversionActivity"
+            android:text="@string/converterbuttontext" />
 
-            <Button
-                android:id="@+id/compoundsearch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:onClick="openCompundResults"
-                android:text="@string/compoundsearchbuttontext"/>
+        <Button
+            android:id="@+id/periodictable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:onClick="openPeriodicTableActivity"
+            android:text="@string/tablebuttontext" />
 
-            <Button
-                android:id="@+id/periodictable"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/compoundsearch"
-                android:layout_margin="15dp"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:onClick="openPeriodicTableActivity"
-                android:text="@string/tablebuttontext" />
-            <Button
-                android:id="@+id/placeholder3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/periodictable"
-                android:layout_margin="15dp"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:onClick="openHelpActivity"
-                android:text="@string/helpbuttontext" />
-            <Button
-                android:id="@+id/placeholder5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/placeholder3"
-                android:layout_margin="15dp"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:visibility="invisible" />
+        <Button
+            android:id="@+id/placeholder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:onClick="openElementActivity"
+            android:text="@string/elementsbuttontext" />
 
-            <Button
-                android:id="@+id/conversions"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_toRightOf="@+id/compoundsearch"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:onClick="openConversionActivity"
-                android:text="@string/converterbuttontext" />
+        <Button
+            android:id="@+id/placeholder3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:onClick="openHelpActivity"
+            android:text="@string/helpbuttontext" />
 
-            <Button
-                android:id="@+id/placeholder2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/conversions"
-                android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/compoundsearch"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:onClick="openElementActivity"
-                android:text="@string/elementsbuttontext" />
-            <Button
-                android:id="@+id/placeholder4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/placeholder2"
-                android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/compoundsearch"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:enabled="false"
-                android:visibility="invisible" />
+        <Button
+            android:id="@+id/contactbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:nestedScrollingEnabled="false"
+            android:onClick="openContactActivity"
+            android:text="@string/contactbuttontext" />
 
-            <Button
-                android:id="@+id/placeholder6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/placeholder4"
-                android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/compoundsearch"
-                android:width="150dp"
-                android:height="150dp"
-                android:background="#676767"
-                android:visibility="invisible" />
-        </RelativeLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/placeholder6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactbutton"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/compoundsearch"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/placeholder4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeholder3"
+            android:layout_margin="5dp"
+            android:width="150dp"
+            android:height="150dp"
+            android:background="#676767"
+            android:enabled="false"
+            android:visibility="invisible" />
+    </GridLayout>
 
 
 </RelativeLayout>

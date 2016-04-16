@@ -19,6 +19,10 @@
 
     <string name="title_activity_mole">MoleActivity</string>
     <string name="splash_screen">Splash screen</string>
+    <string name="contactbuttontext">Contact Us</string>
+    <string name="send_button">send</string>
+    <string name="contactmessagehint">fix this, implement this, you\'re doing a good job, etc</string>
+    <string name="contactsubjecthint">subject</string>
 
     <string-array name="converstionTypes">
         <item>Area</item>
