@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -20,8 +21,9 @@ import java.util.Map;
 public class ContactActivity extends AppCompatActivity {
 
     Context context;
-    EditText subject;
-    EditText message;
+    String subject;
+    String message;
+    Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,21 +37,22 @@ public class ContactActivity extends AppCompatActivity {
     public void sendMessage(View v) {
         String url = "https://script.google.com/macros/s/AKfycbzr0kSFLxTdgKwvJw_yYkx7krZ9CicThuLOI1NXG7QyQH2gBJI/exec";
 
-        subject = (EditText) findViewById(R.id.contactsubject);
-        message = (EditText) findViewById(R.id.contactmessage);
+        subject = ((EditText) findViewById(R.id.contactsubject)).getText().toString();
+        message = ((EditText) findViewById(R.id.contactmessage)).getText().toString();
+        submit = ((Button) findViewById(R.id.contactsubmit));
 
-        if(subject.getText() == null) {
+        if (subject.isEmpty()) {
             Toast toast = Toast.makeText(context, "Please enter a subject", Toast.LENGTH_SHORT);
             toast.show();
             return;
         }
 
-        if(message.getText() == null) {
+        if (message.isEmpty()) {
             Toast toast = Toast.makeText(context, "Please enter a message", Toast.LENGTH_SHORT);
             toast.show();
             return;
         }
-        
+
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
                 url,
@@ -59,6 +62,7 @@ public class ContactActivity extends AppCompatActivity {
                         Toast toast = Toast.makeText(context, response, Toast.LENGTH_SHORT);
                         toast.show();
                         System.out.println(response);
+                        submit.setEnabled(true);
                     }
                 },
                 new Response.ErrorListener() {
@@ -67,18 +71,20 @@ public class ContactActivity extends AppCompatActivity {
                         Toast toast = Toast.makeText(context, "Sending failed", Toast.LENGTH_SHORT);
                         toast.show();
                         error.printStackTrace();
+                        submit.setEnabled(true);
                     }
                 }
         ) {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
-                
-                System.out.println("Subject: " + subject.getText().toString());
-                System.out.println("Message: " + message.getText().toString());
 
-                params.put("subject", subject.getText().toString());
-                params.put("message", message.getText().toString());
+                System.out.println("Subject: " + subject);
+                System.out.println("Message: " + message);
+
+                params.put("subject", subject);
+                params.put("message", message);
+
                 return params;
             }
 
@@ -91,5 +97,7 @@ public class ContactActivity extends AppCompatActivity {
         };
 
         Volley.newRequestQueue(this).add(stringRequest);
+
+        submit.setEnabled(false);
     }
 }
