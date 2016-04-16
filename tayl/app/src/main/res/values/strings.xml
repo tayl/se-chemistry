@@ -11,6 +11,7 @@
     <string name="unknown_compound">Not Listed/Unknown</string>
     <string name="compound_elements_header">Elements</string>
     <string name="help_text">"Chem: from Ac to Zr
+        v1.0.0
 
         Alex Doan
         Daniel Kinney
@@ -18,42 +19,51 @@
         John-Paul Steed
         Taylor Veith
         Victoria Rivas
-        
-        
+
         Tips to navigate:
 
         
         Unit Converter
 
-        Choose the conversion type from the drop-down menu first
-        Choose your from - to units first by pressing on the drop-down menus
-        Enter the value of the unit to convert at the bottom and press "Calculate"
+        Choose the conversion type from the
+        drop-down menu first
+        Choose your from - to units first by pressing on
+        the drop-down menus
+        Enter the value of the unit to convert at the
+        bottom and press "Calculate"
         Result is displayed under the "Calculate" button
 
         
         Compound Search
 
-        Choose from compounds displayed or search from the bar at the top
-        Can search via compound formula or compound name
+        Choose from compounds displayed or search
+        from the bar at the top
+        Can search via compound formula or compound
+        name
         If searching by formula:
         * Search is case sensitive!
         * Don't forget parentheses if in the formula
         If searching by compound name:
         * Start typing in the compound name
         * Choose the compound from the list generated
-        Choose a compound for conversion of grams to moles
+        Choose a compound for conversion of grams to
+        moles
 
         
         Elements
 
-        Elements displayed in the list by the atomic number
-        Search for elements at the top of the screen by name
-        Choose an element for additional information and conversion from grams to moles
+        Elements displayed in the list by the atomic
+        number
+        Search for elements at the top of the screen
+        by name
+        Choose an element for additional information
+        and conversion from grams to moles
 
         
         Periodic Table
 
-        Table will display in landscape - rotate your phone! Zoom in to the display as normal"
+        Table will display in landscape - rotate your
+        phone! Zoom in to the display as normal"
     </string>
     <string name="compoundsearchbuttontext">Compound Search</string>
     <string name="tablebuttontext">Periodic Table</string>

@@ -99,5 +99,7 @@ public class ContactActivity extends AppCompatActivity {
         Volley.newRequestQueue(this).add(stringRequest);
 
         submit.setEnabled(false);
+
+        finish();
     }
 }
