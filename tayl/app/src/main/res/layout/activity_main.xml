@@ -7,12 +7,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin" tools:context="activities.MainActivity">
 
-    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:overScrollMode="never"
-        android:scrollbars="none">
-
-    </ScrollView>
-
     <GridLayout android:layout_width="fill_parent" android:layout_height="match_parent"
         android:layout_centerInParent="true" android:layout_gravity="center" android:columnCount="1"
         android:columnOrderPreserved="false" android:rowCount="3" android:rowOrderPreserved="false"

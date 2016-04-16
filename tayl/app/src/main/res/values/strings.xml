@@ -43,9 +43,9 @@
 
         Elements
 
-        Elemented displayed in the list by the atomic number/n
-        Search for elements at the top of the screen by name/n
-        Choose an element for additional information and conversion/n
+        Elemented displayed in the list by the atomic number
+        Search for elements at the top of the screen by name
+        Choose an element for additional information and conversion
         from grams to moles
 
         Periodic Table
@@ -62,9 +62,8 @@
     <string name="title_activity_mole">MoleActivity</string>
     <string name="splash_screen">Splash screen</string>
     <string name="contactbuttontext">Contact Us</string>
-    <string name="send_button">send</string>
-    <string name="contactmessagehint">fix this, implement this, you\'re doing a good job, etc
-    </string>
+    <string name="send_button">Send</string>
+    <string name="contactmessagehint">message</string>
     <string name="contactsubjecthint">subject</string>
 
     <string-array name="converstionTypes">
