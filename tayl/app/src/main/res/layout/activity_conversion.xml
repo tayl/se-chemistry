@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#bbb3b3" android:orientation="vertical">
+    android:background="#ffffff" android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView android:id="@+id/textView" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_alignBottom="@+id/conversionTypeSpinner"
@@ -50,8 +51,9 @@
     <Button android:id="@+id/calculateButton" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_below="@+id/inputText"
         android:layout_centerHorizontal="true" android:layout_gravity="center_horizontal"
-        android:background="#777575" android:onClick="calculateButtonListener"
-        android:text="Calculate" />
+        android:background="#2196F3" android:onClick="calculateButtonListener"
+        android:text="Calculate"
+        android:textColor="#FFFFFF" />
 
     <TextView android:id="@+id/calculatedTextView" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_below="@+id/calculateButton"

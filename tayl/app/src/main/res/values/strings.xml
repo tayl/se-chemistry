@@ -18,17 +18,19 @@
         John-Paul Steed
         Taylor Veith
         Victoria Rivas
-
+        
+        
         Tips to navigate:
 
+        
         Unit Converter
 
         Choose the conversion type from the drop-down menu first
         Choose your from - to units first by pressing on the drop-down menus
-        Enter the value of the unit to convert at the bottom and press
-        "Calculate"
+        Enter the value of the unit to convert at the bottom and press "Calculate"
         Result is displayed under the "Calculate" button
 
+        
         Compound Search
 
         Choose from compounds displayed or search from the bar at the top
@@ -41,17 +43,17 @@
         * Choose the compound from the list generated
         Choose a compound for conversion of grams to moles
 
+        
         Elements
 
-        Elemented displayed in the list by the atomic number
+        Elements displayed in the list by the atomic number
         Search for elements at the top of the screen by name
-        Choose an element for additional information and conversion
-        from grams to moles
+        Choose an element for additional information and conversion from grams to moles
 
+        
         Periodic Table
 
-        Table will display in landscape - rotate your phone!
-        Zoom in to the display as normal"
+        Table will display in landscape - rotate your phone! Zoom in to the display as normal"
     </string>
     <string name="compoundsearchbuttontext">Compound Search</string>
     <string name="tablebuttontext">Periodic Table</string>
@@ -65,6 +67,7 @@
     <string name="send_button">Send</string>
     <string name="contactmessagehint">message</string>
     <string name="contactsubjecthint">subject</string>
+    <string name="questionsuggestionbugprompt">Have a question, suggestion, or bug to report? Let us know here.</string>
 
     <string-array name="converstionTypes">
         <item>Area</item>
