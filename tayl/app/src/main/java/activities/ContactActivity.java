@@ -20,6 +20,8 @@ import java.util.Map;
 public class ContactActivity extends AppCompatActivity {
 
     Context context;
+    EditText subject;
+    EditText message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +35,28 @@ public class ContactActivity extends AppCompatActivity {
     public void sendMessage(View v) {
         String url = "https://script.google.com/macros/s/AKfycbzr0kSFLxTdgKwvJw_yYkx7krZ9CicThuLOI1NXG7QyQH2gBJI/exec";
 
+        subject = (EditText) findViewById(R.id.contactsubject);
+        message = (EditText) findViewById(R.id.contactmessage);
+
+        if(subject.getText() == null) {
+            Toast toast = Toast.makeText(context, "Please enter a subject", Toast.LENGTH_SHORT);
+            toast.show();
+            return;
+        }
+
+        if(message.getText() == null) {
+            Toast toast = Toast.makeText(context, "Please enter a message", Toast.LENGTH_SHORT);
+            toast.show();
+            return;
+        }
+        
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
                 url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast toast = Toast.makeText(context, response, Toast.LENGTH_LONG);
+                        Toast toast = Toast.makeText(context, response, Toast.LENGTH_SHORT);
                         toast.show();
                         System.out.println(response);
                     }
@@ -47,6 +64,8 @@ public class ContactActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        Toast toast = Toast.makeText(context, "Sending failed", Toast.LENGTH_SHORT);
+                        toast.show();
                         error.printStackTrace();
                     }
                 }
@@ -54,10 +73,7 @@ public class ContactActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
-
-                EditText subject = (EditText) findViewById(R.id.contactsubject);
-                EditText message = (EditText) findViewById(R.id.contactmessage);
-
+                
                 System.out.println("Subject: " + subject.getText().toString());
                 System.out.println("Message: " + message.getText().toString());
 
