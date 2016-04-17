@@ -14,7 +14,7 @@ import com.chemistry.R;
 
 import java.text.DecimalFormat;
 
-import converters.*;
+import converters.ConversionLiterals;
 
 
 /**

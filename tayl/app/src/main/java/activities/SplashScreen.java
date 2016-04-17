@@ -16,7 +16,7 @@ public class SplashScreen extends Activity {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-        
+
         ImageView imageView = (ImageView) findViewById(R.id.splashimageview);
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.fade);
         imageView.startAnimation(animation);

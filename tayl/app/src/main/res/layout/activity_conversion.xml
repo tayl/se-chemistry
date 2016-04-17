@@ -1,75 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#ffffff" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView android:id="@+id/textView" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignBottom="@+id/conversionTypeSpinner"
-        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
-        android:text="Conversion Type" android:textColor="#000000" android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/conversionTypeSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Conversion Type"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
-    <Spinner android:id="@+id/conversionTypeSpinner" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" android:layout_alignParentTop="true"
-        android:layout_marginTop="34dp" android:layout_toEndOf="@+id/calculateButton"
-        android:layout_toRightOf="@+id/calculateButton" android:spinnerMode="dropdown"
-        android:textAlignment="center" android:textSize="20sp"
+    <Spinner
+        android:id="@+id/conversionTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/calculateButton"
+        android:layout_toRightOf="@+id/calculateButton"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:textSize="20sp"
         android:touchscreenBlocksFocus="false" />
 
-    <TextView android:id="@+id/textView2" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_below="@+id/conversionTypeSpinner"
-        android:layout_marginTop="45dp" android:text="From Unit" android:textColor="#000000"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/conversionTypeSpinner"
+        android:layout_marginTop="45dp"
+        android:text="From Unit"
+        android:textColor="#000000"
         android:textSize="20sp" />
 
-    <Spinner android:id="@+id/conversionFromSpinner" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:layout_alignBottom="@+id/textView2"
+    <Spinner
+        android:id="@+id/conversionFromSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
         android:layout_toEndOf="@+id/calculateButton"
-        android:layout_toRightOf="@+id/calculateButton" android:spinnerMode="dropdown"
-        android:textAlignment="center" android:textSize="20sp" />
-
-    <EditText android:id="@+id/inputText" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:layout_alignEnd="@+id/conversionToSpinner"
-        android:layout_alignRight="@+id/conversionToSpinner" android:layout_below="@+id/textView2"
-        android:layout_marginTop="161dp" android:backgroundTint="#084d93" android:ems="10"
-        android:hint="Value" android:inputType="numberDecimal" android:textAlignment="center"
-        android:textColor="#000000" android:textCursorDrawable="@null" />
-
-    <TextView android:id="@+id/textView3" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_below="@+id/textView2"
-        android:layout_marginTop="82dp" android:text="To Unit" android:textColor="#000000"
+        android:layout_toRightOf="@+id/calculateButton"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
         android:textSize="20sp" />
 
-    <Spinner android:id="@+id/conversionToSpinner" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:layout_alignBottom="@+id/textView3"
-        android:layout_toEndOf="@+id/calculateButton"
-        android:layout_toRightOf="@+id/calculateButton" android:spinnerMode="dropdown"
-        android:textAlignment="center" android:textSize="20sp" />
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/conversionToSpinner"
+        android:layout_alignRight="@+id/conversionToSpinner"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="161dp"
+        android:backgroundTint="#084d93"
+        android:ems="10"
+        android:hint="Value"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" />
 
-    <Button android:id="@+id/calculateButton" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/inputText"
-        android:layout_centerHorizontal="true" android:layout_gravity="center_horizontal"
-        android:background="#2196F3" android:onClick="calculateButtonListener"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="82dp"
+        android:text="To Unit"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/conversionToSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/calculateButton"
+        android:layout_toRightOf="@+id/calculateButton"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputText"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#2196F3"
+        android:onClick="calculateButtonListener"
         android:text="Calculate"
         android:textColor="#FFFFFF" />
 
-    <TextView android:id="@+id/calculatedTextView" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/calculateButton"
-        android:layout_centerHorizontal="true" android:layout_gravity="center_horizontal"
-        android:textAlignment="center" android:textAppearance="?android:attr/textAppearanceMedium"
+    <TextView
+        android:id="@+id/calculatedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#000000" />
 
-    <Spinner android:id="@+id/densityMassFrom" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_above="@+id/densityMassTo"
-        android:layout_alignBottom="@id/conversionFromSpinner" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_marginLeft="100dp"
-        android:layout_toLeftOf="@id/conversionFromSpinner" android:spinnerMode="dropdown" />
+    <Spinner
+        android:id="@+id/densityMassFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/densityMassTo"
+        android:layout_alignBottom="@id/conversionFromSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="100dp"
+        android:layout_toLeftOf="@id/conversionFromSpinner"
+        android:spinnerMode="dropdown" />
 
-    <Spinner android:id="@+id/densityMassTo" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignBottom="@id/conversionToSpinner"
-        android:layout_marginLeft="100dp" android:layout_toLeftOf="@id/conversionToSpinner"
+    <Spinner
+        android:id="@+id/densityMassTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/conversionToSpinner"
+        android:layout_marginLeft="100dp"
+        android:layout_toLeftOf="@id/conversionToSpinner"
         android:spinnerMode="dropdown" />
 
 </RelativeLayout>

@@ -1,40 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical" android:padding="10dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
 
-    <TextView android:id="@+id/compound_name" android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:layout_alignParentLeft="false"
-        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal" android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp" android:text="@string/unknown_compound"
-        android:textAlignment="center" android:textColor="#000000" android:textSize="20sp" />
+    <TextView
+        android:id="@+id/compound_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/unknown_compound"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
-    <TextView android:id="@+id/compound_additional_names" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/compound_name"
-        android:layout_centerHorizontal="true" android:text="@string/also_known_as"
-        android:textAlignment="center" android:textColor="#000000" android:textSize="12sp"
+    <TextView
+        android:id="@+id/compound_additional_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compound_name"
+        android:layout_centerHorizontal="true"
+        android:text="@string/also_known_as"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
         android:visibility="gone" />
 
-    <TextView android:id="@+id/compound_formula" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/compound_additional_names"
-        android:layout_centerHorizontal="true" android:layout_gravity="left|center"
-        android:text="@string/formula" android:textAlignment="center" android:textColor="#000000"
+    <TextView
+        android:id="@+id/compound_formula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compound_additional_names"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="left|center"
+        android:text="@string/formula"
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="15sp" />
 
-    <TextView android:id="@+id/compound_mass" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/compound_formula"
-        android:layout_centerHorizontal="true" android:layout_gravity="left|center"
-        android:text="@string/molar_mass" android:textAlignment="center" android:textColor="#000000"
+    <TextView
+        android:id="@+id/compound_mass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compound_formula"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="left|center"
+        android:text="@string/molar_mass"
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="15sp" />
 
-    <TextView android:id="@+id/compound_elements_header" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/compound_mass"
-        android:layout_centerHorizontal="true" android:text="@string/compound_elements_header"
-        android:textColor="#000000" android:textSize="12sp" />
+    <TextView
+        android:id="@+id/compound_elements_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compound_mass"
+        android:layout_centerHorizontal="true"
+        android:text="@string/compound_elements_header"
+        android:textColor="#000000"
+        android:textSize="12sp" />
 
-    <GridView android:id="@+id/compound_elements" android:layout_width="fill_parent"
-        android:layout_height="45sp" android:layout_alignParentStart="true"
-        android:layout_below="@+id/compound_elements_header" android:layout_centerHorizontal="true"
-        android:numColumns="4" android:textAlignment="center" />
+    <GridView
+        android:id="@+id/compound_elements"
+        android:layout_width="fill_parent"
+        android:layout_height="45sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/compound_elements_header"
+        android:layout_centerHorizontal="true"
+        android:numColumns="4"
+        android:textAlignment="center" />
 </RelativeLayout>

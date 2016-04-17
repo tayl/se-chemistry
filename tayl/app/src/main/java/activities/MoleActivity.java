@@ -3,9 +3,8 @@ package activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -14,6 +13,7 @@ import com.chemistry.R;
 
 /**
  * Created by robertvalladares on 4/03/16.
+ * Updated to add text listener 04/16/16 by Robert Valladares
  */
 public class MoleActivity extends Activity {
 
@@ -26,7 +26,6 @@ public class MoleActivity extends Activity {
         setContentView(R.layout.activity_mole);
         final EditText EditGrams = (EditText) findViewById(R.id.editGrams);
         final TextView EditMoles = (TextView) findViewById(R.id.editMoles);
-        final Button buttonConvert = (Button) findViewById(R.id.buttonConvert);
         // set the textFields to the corresponding layout items
         final TextView EditChemItemName = (TextView) findViewById(R.id.textChemName);
         final TextView EditChemItemFormula = (TextView) findViewById(R.id.textChemItemFormula);
@@ -48,17 +47,23 @@ public class MoleActivity extends Activity {
             mChemItemMolarMass = 1.0D;
         }
 
+        // *****************TEXT LISTENER FOR IMPUT CHANGE **************
+        // set up a text listener to EditGrams to react anytime user
+        // enters a grams amount or edit its
+        // DANIEL OR TAYLOR THIS HAS BEEN ADDED TO LISTEN TO TEXT CHANGE 04/16/2016
+        EditGrams.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-        // what to do once the "Convert" button is pressed
-        buttonConvert.setOnClickListener(new OnClickListener() {
+            }
 
             @Override
-            public void onClick(View arg0) {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 double readGrams;
                 double moles;
                 // set the result field "EditMoles" to empty unless
                 // user enters valid input
-                EditMoles.setText(String.valueOf(" "));
+                EditMoles.setText("");
                 // get input from users as a double, put it in the grams
                 // prevent the user from converting an empty input
                 if (!(EditGrams.getText().toString().equals(""))) {
@@ -69,10 +74,14 @@ public class MoleActivity extends Activity {
                     EditMoles.setText(String.valueOf(moles));
                 }
 
-            } // end of public void onClick
+            }
 
-        });// end of "buttonConvert.setOnClickListener"
+            @Override
+            public void afterTextChanged(Editable s) {
 
+            }
+        }); // this could replace the Button action, and allow the button to disapear
+        // *****************END OF TEXT LISTENER FOR IMPUT CHANGE **************
 
     }// end of protected void onCreate
 

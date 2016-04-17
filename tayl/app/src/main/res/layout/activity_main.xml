@@ -25,7 +25,7 @@
         <Button
             android:id="@+id/compoundsearch"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
@@ -37,7 +37,7 @@
         <Button
             android:id="@+id/conversions"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
@@ -49,7 +49,7 @@
         <Button
             android:id="@+id/periodictable"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
@@ -61,7 +61,7 @@
         <Button
             android:id="@+id/placeholder2"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
@@ -73,7 +73,7 @@
         <Button
             android:id="@+id/placeholder3"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
@@ -85,7 +85,7 @@
         <Button
             android:id="@+id/contactbutton"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
@@ -97,7 +97,7 @@
         <Button
             android:id="@+id/placeholder6"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
@@ -108,7 +108,7 @@
         <Button
             android:id="@+id/placeholder4"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_margin="10dp"
             android:width="100dp"
             android:height="100dp"
