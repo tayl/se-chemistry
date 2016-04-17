@@ -23,6 +23,18 @@
         android:rowCount="3">
 
         <Button
+            android:id="@+id/placeholder2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:background="#2196F3"
+            android:onClick="openElementActivity"
+            android:text="@string/elementsbuttontext"
+            android:textColor="#FFFFFF" />
+
+        <Button
             android:id="@+id/compoundsearch"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
@@ -56,18 +68,6 @@
             android:background="#2196F3"
             android:onClick="openPeriodicTableActivity"
             android:text="@string/tablebuttontext"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/placeholder2"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:width="100dp"
-            android:height="100dp"
-            android:background="#2196F3"
-            android:onClick="openElementActivity"
-            android:text="@string/elementsbuttontext"
             android:textColor="#FFFFFF" />
 
         <Button
