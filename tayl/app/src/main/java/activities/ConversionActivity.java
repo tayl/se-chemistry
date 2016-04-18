@@ -293,7 +293,7 @@ public class ConversionActivity extends Activity {
             case "Kilogram":
                 return ConversionLiterals.Unit.KILOGRAM;
 
-            case "Metric Fuck Ton":
+            case "Metric Ton":
                 return ConversionLiterals.Unit.METRICTON;
 
             case "Atmosphere":

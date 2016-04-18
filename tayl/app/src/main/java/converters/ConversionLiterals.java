@@ -29,7 +29,6 @@ public class ConversionLiterals {
     static final double GRAMSPERPOUND = 453.59237; //Updated
     // Volume Conversions
     static final int QUARTSPERGALLON = 4;
-    static final int PINTSPERGALLON = 8;
     static final int CUPSPERGALLON = 16;
     static final double GALLONSPERCUBICMETER = 264.17205; //Updated
     static final int LITERSPERCUBICMETER = 1000;

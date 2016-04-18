@@ -123,7 +123,7 @@
         <item>Gram</item>
         <item>Milligram</item>
         <item>Kilogram</item>
-        <item>Metric Fuck Ton</item>
+        <item>Metric Ton</item>
     </string-array>
     <string-array name="pressureUnits">
         <item>Atmosphere</item>
@@ -142,7 +142,6 @@
         <item>Gallon</item>
         <item>Quart</item>
         <item>Cup</item>
-        <item>Pint</item>
         <item>Cubic Feet</item>
         <item>Millilitre</item>
         <item>Kilolitre</item>
