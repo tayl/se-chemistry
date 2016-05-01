@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chimie</string>
+  <string name="search_hint">Formules de recherche</string>
+  <string name="also_known_as">"Aussi connu sous le nom:"</string>
+  <string name="formula">« Formule: »</string>
+  <string name="molar_mass">« La masse molaire: »</string>
+  <string name="unknown_compound">Pas répertorié/inconnu</string>
+  <string name="compound_elements_header">Éléments</string>
+  <string name="help_text">"Chem : de Ac à Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Conseils pour naviguer :
+
+Convertisseur d\'unité
+
+Choisissez le type de conversion de la
+        menu déroulant première
+        Choisissez votre de - a unités d\'abord en appuyant sur
+        les menus déroulants
+        Entrez la valeur de l\'unité à convertir à la
+        bas et appuyez sur « Calculer »
+        Résultat s\'affiche sous le bouton « Calculer »
+
+Recherche de composés
+
+Choisissez des composés affichées ou Rechercher
+        dans la barre en haut de
+        Pouvez effectuer une recherche par formule composé ou composé
+        nom
+        Si la recherche par formule :
+        * Recherche respecte la casse !
+        * N\'oubliez pas entre parenthèses si dans la formule
+        Si la recherche par nom composé :
+        * Commencez à taper dans le nom composé
+        * Choisissez le composé dans la liste générée
+        Choisir un composé pour la conversion des grammes
+        grains de beauté
+
+Éléments
+
+Éléments affichés dans la liste de l\'atome
+        nombre
+        Rechercher des éléments en haut de l\'écran
+        par nom
+        Choisissez un élément pour plus d\'informations
+        et la conversion des grammes de grains de beauté
+
+Tableau périodique
+
+Table s\'affichent dans le paysage - tournez votre
+        Téléphone ! Effectuer un zoom avant à l\'écran comme d\'habitude"
+    </string>
+  <string name="compoundsearchbuttontext">Recherche de composés</string>
+  <string name="tablebuttontext">Tableau périodique</string>
+  <string name="helpbuttontext">Aide</string>
+  <string name="converterbuttontext">Convertisseur d\'unité</string>
+  <string name="elementsbuttontext">Éléments</string>
+  <string name="contactbuttontext">Contactez-nous</string>
+  <string name="send_button">Envoyer</string>
+  <string name="contactmessagehint">Message</string>
+  <string name="contactsubjecthint">Objet</string>
+  <string name="questionsuggestionbugprompt">Avez une question, une suggestion ou bogue au rapport ? Faites-le-nous savoir ici.</string>
+  <string name="splashScreen">C\'est le conteneur pour l\'écran de démarrage</string>
+  <string name="mainImgView">conteneur pour le logo de l\'écran d\'accueil</string>
+  <string name="conversion_type">Type de conversion</string>
+  <string name="value">Valeur</string>
+  <string name="from_unit">De l\'unité</string>
+  <string name="to_unit">À l\'unité</string>
+  <string name="calculate">Calculer</string>
+  <string name="name">Nom</string>
+  <string name="chemical_formula">Formule chimique</string>
+  <string name="molar_mass_display">Masse molaire</string>
+  <string name="grams">Grammes :</string>
+  <string name="moles">Grains de beauté :</string>
+  <string name="alumininum">Aluminium</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26,98 g</string>
+  <string name="aka_string">"Aussi connu sous le nom:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic masse unité/DaltonGramMilligramKilogramMetric tonne</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre de MercuryPounds par pouce Sq</string-array>
+  <string-array name="volumeUnits">Cubes MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

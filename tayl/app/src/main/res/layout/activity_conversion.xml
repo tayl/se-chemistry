@@ -13,7 +13,7 @@
         android:layout_alignBottom="@+id/conversionTypeSpinner"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="Conversion Type"
+        android:text="@string/conversion_type"
         android:textColor="#000000"
         android:textSize="20sp" />
 
@@ -40,7 +40,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/conversionTypeSpinner"
         android:layout_marginTop="45dp"
-        android:text="From Unit"
+        android:text="@string/from_unit"
         android:textColor="#000000"
         android:textSize="20sp" />
 
@@ -65,7 +65,7 @@
         android:layout_marginTop="161dp"
         android:backgroundTint="#084d93"
         android:ems="10"
-        android:hint="Value"
+        android:hint="@string/value"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -79,7 +79,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="82dp"
-        android:text="To Unit"
+        android:text="@string/to_unit"
         android:textColor="#000000"
         android:textSize="20sp" />
 
@@ -103,7 +103,7 @@
         android:layout_gravity="center_horizontal"
         android:background="#2196F3"
         android:onClick="calculateButtonListener"
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -126,7 +126,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
         android:layout_toLeftOf="@id/conversionFromSpinner"
+        android:layout_toStartOf="@id/conversionFromSpinner"
         android:spinnerMode="dropdown" />
 
     <Spinner
@@ -135,7 +137,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/conversionToSpinner"
         android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
         android:layout_toLeftOf="@id/conversionToSpinner"
+        android:layout_toStartOf="@id/conversionToSpinner"
         android:spinnerMode="dropdown" />
 
 </RelativeLayout>

@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">เคมี</string>
+  <string name="search_hint">ค้นหาสูตร</string>
+  <string name="also_known_as">"รู้จักกัน: "</string>
+  <string name="formula">"สูตร: "</string>
+  <string name="molar_mass">"มวลโมเลกุล: "</string>
+  <string name="unknown_compound">ไม่ระบุ/ไม่รู้จัก</string>
+  <string name="compound_elements_header">องค์ประกอบ</string>
+  <string name="help_text">"เคมี: จาก Ac กับ Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John Paul Steed
+        Taylor Veith
+        Victoria ผมบลอนด์ขนเยอะ
+
+เคล็ดลับเพื่อ:
+
+ตัวแปลงหน่วย
+
+เลือกชนิดการแปลงจากการ
+        เมนูแบบหล่นลงแรก
+        เลือกของคุณจาก- หน่วยแรกโดยกดบน
+        เมนูแบบหล่นลง
+        ป้อนค่าของหน่วยที่จะแปลง
+        ด้านล่างและกด "คำนวณ"
+        ผลลัพธ์จะแสดงขึ้นภายใต้ปุ่ม "คำนวณ"
+
+ค้นหาสาร
+
+เลือกสารประกอบที่แสดง หรือค้น
+        จากแถบด้านบน
+        สามารถค้นหาสูตรผสม หรือผสม
+        ชื่อ
+        หากค้นตามสูตร:
+        * ค้นหาจะเล็ก
+        * อย่าลืมวงเล็บถ้าในสูตร
+        ถ้าค้นหา ด้วยชื่อสาร:
+        * เริ่มพิมพ์ชื่อสาร
+        * กรุณาเลือกสินค้าจากรายการสร้างสารประกอบ
+        เลือกสารแปลงกรัมเพื่อ
+        ไฝ
+
+องค์ประกอบ
+
+องค์ประกอบที่แสดงในรายการ โดยที่อะตอม
+        หมายเลข
+        ค้นหาองค์ประกอบด้านบนของหน้าจอ
+        โดยชื่อ
+        เลือกองค์ประกอบสำหรับข้อมูลเพิ่มเติม
+        และการแปลงจากกรัมเป็นไฝ
+
+ตารางธาตุ
+
+ตารางจะแสดงในแนวนอน - หมุนของคุณ
+        โทรศัพท์ ขยายการแสดงผลเป็นปกติ"
+    </string>
+  <string name="compoundsearchbuttontext">ค้นหาสาร</string>
+  <string name="tablebuttontext">ตารางธาตุ</string>
+  <string name="helpbuttontext">วิธีใช้</string>
+  <string name="converterbuttontext">ตัวแปลงหน่วย</string>
+  <string name="elementsbuttontext">องค์ประกอบ</string>
+  <string name="contactbuttontext">ติดต่อเรา</string>
+  <string name="send_button">ส่ง</string>
+  <string name="contactmessagehint">ข้อความ</string>
+  <string name="contactsubjecthint">ชื่อเรื่อง</string>
+  <string name="questionsuggestionbugprompt">มีคำถาม ข้อเสนอแนะ หรือข้อผิดพลาดในการรายงานหรือไม่ แจ้งให้เราทราบที่นี่</string>
+  <string name="splashScreen">เป็นภาชนะสำหรับหน้าจอสแปล</string>
+  <string name="mainImgView">ภาชนะสำหรับโลโก้หน้าจอ</string>
+  <string name="conversion_type">ชนิดแปลง</string>
+  <string name="value">ค่า</string>
+  <string name="from_unit">จากหน่วย</string>
+  <string name="to_unit">หน่วย</string>
+  <string name="calculate">คำนวณ</string>
+  <string name="name">ชื่อ</string>
+  <string name="chemical_formula">สูตรเคมี</string>
+  <string name="molar_mass_display">มวลโมเลกุล</string>
+  <string name="grams">กรัม:</string>
+  <string name="moles">ไฝ:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">อัล</string>
+  <string name="gram_default">26.98 กรัม</string>
+  <string name="aka_string">"รู้จักกัน: "</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq หลา</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">มวล OuncePoundAtomic หน่วย/DaltonGramMilligramKilogramMetric ตัน</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre ของ MercuryPounds ต่อนิ้ว Sq</string-array>
+  <string-array name="volumeUnits">KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre MillimetreCubic MetreCubic CentimetreCubic ลูกบาศก์</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

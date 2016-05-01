@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chemie</string>
+  <string name="search_hint">Zoek formules</string>
+  <string name="also_known_as">"Ook bekend als:"</string>
+  <string name="formula">"Formule:"</string>
+  <string name="molar_mass">"Molaire massa:"</string>
+  <string name="unknown_compound">Niet vermelde/onbekend</string>
+  <string name="compound_elements_header">Elementen</string>
+  <string name="help_text">"Chem: van Ac naar Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Tips om te navigeren:
+
+Unit Converter
+
+Kies het conversietype uit de
+        waterdruppel-waas spijskaart eerste
+        Kies uw van - tot eenheden eerst door te drukken op
+        de drop-down menu 's
+        Voer de waarde van de eenheid te converteren op de
+        onderkant en druk op "Berekenen"
+        Resultaat wordt weergegeven onder de knop "Berekenen"
+
+Samengestelde zoeken
+
+Kies uit verbindingen weergegeven of zoeken
+        van de balk aan de bovenkant
+        Kunt zoeken via samengestelde formule of samengestelde
+        naam
+        Als zoeken door de formule:
+        * Zoek is hoofdlettergevoelig!
+        * Niet vergeten haakjes als in de formule
+        Als zoeken op samengestelde naam:
+        * Begin met typen in de samengestelde naam
+        * Kies de verbinding in de lijst gegenereerd
+        Kies een compound voor conversie van gram naar
+        mollen
+
+Elementen
+
+Elementen die worden weergegeven in de lijst door de atomaire
+        nummer
+        Zoekt u elementen aan de bovenkant van het scherm
+        door naam
+        Kies een element voor meer informatie
+        en conversie van gram naar mol
+
+Periodiek systeem
+
+Tabel wordt weergegeven in landschap - draaien uw
+        telefoon! Inzoomen op het display als normaal"
+    </string>
+  <string name="compoundsearchbuttontext">Samengestelde zoeken</string>
+  <string name="tablebuttontext">Periodiek systeem</string>
+  <string name="helpbuttontext">Help</string>
+  <string name="converterbuttontext">Unit Converter</string>
+  <string name="elementsbuttontext">Elementen</string>
+  <string name="contactbuttontext">Neem contact op met ons</string>
+  <string name="send_button">Verzenden</string>
+  <string name="contactmessagehint">Bericht</string>
+  <string name="contactsubjecthint">Onderwerp</string>
+  <string name="questionsuggestionbugprompt">Heb een vraag, een suggestie of een bug rapport? Laat het ons weten hier.</string>
+  <string name="splashScreen">Dit is de container voor het splash-scherm</string>
+  <string name="mainImgView">container voor huisscherm logo</string>
+  <string name="conversion_type">Conversietype</string>
+  <string name="value">Waarde</string>
+  <string name="from_unit">Van eenheid</string>
+  <string name="to_unit">Naar eenheid</string>
+  <string name="calculate">Berekenen</string>
+  <string name="name">Naam</string>
+  <string name="chemical_formula">Chemische formule</string>
+  <string name="molar_mass_display">Molaire massa</string>
+  <string name="grams">Gram:</string>
+  <string name="moles">Mollen:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Ook bekend als:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic massa eenheid/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre van MercuryPounds per Sq duim</string-array>
+  <string-array name="volumeUnits">Kubieke MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

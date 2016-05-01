@@ -1,13 +1,8 @@
 package activities;
 
-/**
- * Created by robertvalladares on 3/14/16.
- */
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Filter;
@@ -19,11 +14,9 @@ import com.chemistry.R;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.logging.Filter;
 
 
 public class ChemItemActivity extends Activity implements SearchView.OnQueryTextListener {
-    private ListView lvChemItem;
     private SearchView mSearchView;
     private Filter filter;
 
@@ -32,7 +25,7 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chem_item);
-        lvChemItem = (ListView) findViewById(R.id.listview_chem_item);
+        ListView lvChemItem = (ListView) findViewById(R.id.listview_chem_item);
         mSearchView = (SearchView) findViewById(R.id.searchView);
 
         List<ChemItem> mChemItemList = new ArrayList<>();
@@ -105,16 +98,8 @@ public class ChemItemActivity extends Activity implements SearchView.OnQueryText
     // Handle the event after the users starts entering or editing text in the search bar
     @Override
     public boolean onQueryTextChange(String newText) {
-        filter.filter(newText);
+        filter.filter(newText.toLowerCase());
 
-        if (TextUtils.isEmpty(newText)) {
-            //filter.filter(null);
-            //lvChemItem.clearTextFilter();
-
-        } else {
-            //filter.filter(newText);
-            //lvChemItem.setFilterText(newText);
-        }
         return true;
     }
 

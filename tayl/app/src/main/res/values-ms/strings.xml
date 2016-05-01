@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kimia</string>
+  <string name="search_hint">Cari Formula</string>
+  <string name="also_known_as">"Juga dikenali sebagai:"</string>
+  <string name="formula">"Formula:"</string>
+  <string name="molar_mass">"Jisim molar:"</string>
+  <string name="unknown_compound">Tidak tersenarai/tidak diketahui</string>
+  <string name="compound_elements_header">Unsur-unsur</string>
+  <string name="help_text">"Kim: dari JA untuk saya Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        Steed John Paul
+        Taylor Veith
+        Victoria Rivas
+
+Tips untuk menavigasi:
+
+Penukar unit
+
+Pilih jenis Pertukaran dari dalam
+        menu drop-down pertama
+        Memilih anda - kepada unit pertama dengan menekan pada
+        dalam menu juntai ke bawah
+        Masukkan nilai unit untuk menukar pada yang
+        bawah dan tekan "Kira"
+        Keputusan akan dipaparkan di bawah butang "Kira"
+
+Cari kompaun
+
+Pilih daripada Kata majmuk yang dipaparkan atau mencari
+        dari bar di atas
+        Boleh Cari melalui formula sebatian atau sebatian
+        nama
+        Jika mencari dengan formula:
+        * Carian adalah sensitif!
+        * Jangan lupa kurungan jika dalam formula
+        Jika mencari dengan nama majmuk:
+        * Mulakan menaip nama sebatian
+        * Pilih di perkarangan daripada senarai dijana
+        Kompaun bagi penukaran gram untuk memilih
+        tahi lalat
+
+Unsur-unsur
+
+Unsur-unsur yang dipaparkan dalam senarai oleh itu atom
+        nombor
+        Mencari unsur-unsur di atas skrin
+        mengikut nama
+        Pilih elemen untuk maklumat tambahan
+        dan penukaran dari gram ke tahi lalat
+
+Jadual berkala
+
+Jadual akan dipaparkan dalam landskap - berputar anda
+        telefon! Zum masuk ke paparan seperti biasa"
+    </string>
+  <string name="compoundsearchbuttontext">Cari kompaun</string>
+  <string name="tablebuttontext">Jadual berkala</string>
+  <string name="helpbuttontext">Bantuan</string>
+  <string name="converterbuttontext">Penukar unit</string>
+  <string name="elementsbuttontext">Unsur-unsur</string>
+  <string name="contactbuttontext">Hubungi kami</string>
+  <string name="send_button">Hantar</string>
+  <string name="contactmessagehint">mesej</string>
+  <string name="contactsubjecthint">subjek</string>
+  <string name="questionsuggestionbugprompt">Ada soalan, cadangan, atau bug Laporan? Marilah kita tahu di sini.</string>
+  <string name="splashScreen">ini adalah wadah untuk skrin splash</string>
+  <string name="mainImgView">kontena logo skrin utama</string>
+  <string name="conversion_type">Penukaran jenis</string>
+  <string name="value">Nilai</string>
+  <string name="from_unit">Daripada Unit</string>
+  <string name="to_unit">Kepada Unit</string>
+  <string name="calculate">Mengira</string>
+  <string name="name">Nama</string>
+  <string name="chemical_formula">Formula kimia</string>
+  <string name="molar_mass_display">Jisim molar</string>
+  <string name="grams">Gram:</string>
+  <string name="moles">Tahi lalat:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Juga dikenali sebagai:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Taman</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">Tan Unit/DaltonGramMilligramKilogramMetric OuncePoundAtomic jisim</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds per inci Sq</string-array>
+  <string-array name="volumeUnits">Padu MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

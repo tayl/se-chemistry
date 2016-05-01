@@ -18,7 +18,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double ouncesToPound(double inputMass) {
+    private static double ouncesToPound(double inputMass) {
         return (inputMass / ConversionLiterals.OUNCESPERPOUND);
     }
 
@@ -28,7 +28,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double poundToOunces(double inputMass) {
+    private static double poundToOunces(double inputMass) {
         return (inputMass * ConversionLiterals.OUNCESPERPOUND);
     }
 
@@ -38,7 +38,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double poundsToGram(double inputMass) {
+    private static double poundsToGram(double inputMass) {
         return (inputMass * ConversionLiterals.GRAMSPERPOUND);
     }
 
@@ -48,7 +48,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double gramsToPound(double inputMass) {
+    private static double gramsToPound(double inputMass) {
         return (inputMass / ConversionLiterals.GRAMSPERPOUND);
     }
 
@@ -58,7 +58,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double atomsToGram(double inputMass) {
+    private static double atomsToGram(double inputMass) {
         return (inputMass / ConversionLiterals.ATOMSPERGRAM);
     }
 
@@ -68,7 +68,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double gramsToAtom(double inputMass) {
+    private static double gramsToAtom(double inputMass) {
         return (inputMass * ConversionLiterals.ATOMSPERGRAM);
     }
 
@@ -78,7 +78,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double gramsToMilli(double inputMass) {
+    private static double gramsToMilli(double inputMass) {
         return (inputMass / ConversionLiterals.MILLI);
     }
 
@@ -88,7 +88,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double milliToGrams(double inputMass) {
+    private static double milliToGrams(double inputMass) {
         return (inputMass * ConversionLiterals.MILLI);
     }
 
@@ -98,7 +98,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double gramsToKilo(double inputMass) {
+    private static double gramsToKilo(double inputMass) {
         return (inputMass / ConversionLiterals.KILO);
     }
 
@@ -108,7 +108,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double kiloToGrams(double inputMass) {
+    private static double kiloToGrams(double inputMass) {
         return (inputMass * ConversionLiterals.KILO);
     }
 
@@ -118,7 +118,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double gramsToTon(double inputMass) {
+    private static double gramsToTon(double inputMass) {
         return (inputMass / ConversionLiterals.MEGA);
     }
 
@@ -128,7 +128,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double tonsToGram(double inputMass) {
+    private static double tonsToGram(double inputMass) {
         return (inputMass * ConversionLiterals.MEGA);
     }
 
@@ -143,7 +143,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double ouncesToGram(double inputMass) {
+    private static double ouncesToGram(double inputMass) {
         inputMass = ouncesToPound(inputMass);
         return poundsToGram(inputMass);
     }
@@ -154,7 +154,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double ouncesToMilligram(double inputMass) {
+    private static double ouncesToMilligram(double inputMass) {
         inputMass = ouncesToGram(inputMass);
         return gramsToMilli(inputMass);
     }
@@ -165,7 +165,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double ouncesToKilogram(double inputMass) {
+    private static double ouncesToKilogram(double inputMass) {
         inputMass = ouncesToGram(inputMass);
         return gramsToKilo(inputMass);
     }
@@ -176,7 +176,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double ouncesToTon(double inputMass) {
+    private static double ouncesToTon(double inputMass) {
         inputMass = ouncesToGram(inputMass);
         return gramsToTon(inputMass);
     }
@@ -187,7 +187,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double ouncesToAtom(double inputMass) {
+    private static double ouncesToAtom(double inputMass) {
         inputMass = ouncesToGram(inputMass);
         return gramsToAtom(inputMass);
     }
@@ -200,7 +200,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double poundsToMilligram(double inputMass) {
+    private static double poundsToMilligram(double inputMass) {
         inputMass = poundsToGram(inputMass);
         return gramsToMilli(inputMass);
     }
@@ -211,7 +211,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double poundsToKilogram(double inputMass) {
+    private static double poundsToKilogram(double inputMass) {
         inputMass = poundsToGram(inputMass);
         return gramsToKilo(inputMass);
     }
@@ -222,7 +222,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double poundsToTon(double inputMass) {
+    private static double poundsToTon(double inputMass) {
         inputMass = poundsToGram(inputMass);
         return gramsToTon(inputMass);
     }
@@ -233,7 +233,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double poundsToAtom(double inputMass) {
+    private static double poundsToAtom(double inputMass) {
         inputMass = poundsToGram(inputMass);
         return gramsToAtom(inputMass);
     }
@@ -246,7 +246,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double gramsToOunces(double inputMass) {
+    private static double gramsToOunces(double inputMass) {
         inputMass = gramsToPound(inputMass);
         return poundToOunces(inputMass);
     }
@@ -259,7 +259,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double milligramsToOunces(double inputMass) {
+    private static double milligramsToOunces(double inputMass) {
         inputMass = milliToGrams(inputMass);
         return gramsToOunces(inputMass);
     }
@@ -270,7 +270,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double milligramsToPound(double inputMass) {
+    private static double milligramsToPound(double inputMass) {
         inputMass = milliToGrams(inputMass);
         return gramsToPound(inputMass);
     }
@@ -281,7 +281,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double milligramsToKilo(double inputMass) {
+    private static double milligramsToKilo(double inputMass) {
         inputMass = milliToGrams(inputMass);
         return gramsToKilo(inputMass);
     }
@@ -292,7 +292,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double milligramsToTon(double inputMass) {
+    private static double milligramsToTon(double inputMass) {
         inputMass = milliToGrams(inputMass);
         return gramsToTon(inputMass);
     }
@@ -303,7 +303,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double milligramsToAtom(double inputMass) {
+    private static double milligramsToAtom(double inputMass) {
         inputMass = milliToGrams(inputMass);
         return gramsToAtom(inputMass);
     }
@@ -317,7 +317,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double kilogramsToOunces(double inputMass) {
+    private static double kilogramsToOunces(double inputMass) {
         inputMass = kiloToGrams(inputMass);
         return gramsToOunces(inputMass);
     }
@@ -328,7 +328,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double kilogramsToPound(double inputMass) {
+    private static double kilogramsToPound(double inputMass) {
         inputMass = kiloToGrams(inputMass);
         return gramsToPound(inputMass);
     }
@@ -339,7 +339,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double kilogramsToMilli(double inputMass) {
+    private static double kilogramsToMilli(double inputMass) {
         inputMass = kiloToGrams(inputMass);
         return gramsToMilli(inputMass);
     }
@@ -350,7 +350,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double kilogramsToTon(double inputMass) {
+    private static double kilogramsToTon(double inputMass) {
         inputMass = kiloToGrams(inputMass);
         return gramsToTon(inputMass);
     }
@@ -361,7 +361,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double kilogramsToAtom(double inputMass) {
+    private static double kilogramsToAtom(double inputMass) {
         inputMass = kiloToGrams(inputMass);
         return gramsToAtom(inputMass);
     }
@@ -374,7 +374,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double tonToOunces(double inputMass) {
+    private static double tonToOunces(double inputMass) {
         inputMass = tonsToGram(inputMass);
         return gramsToOunces(inputMass);
     }
@@ -385,7 +385,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double tonToPound(double inputMass) {
+    private static double tonToPound(double inputMass) {
         inputMass = tonsToGram(inputMass);
         return gramsToPound(inputMass);
     }
@@ -396,7 +396,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double tonToMilli(double inputMass) {
+    private static double tonToMilli(double inputMass) {
         inputMass = tonsToGram(inputMass);
         return gramsToMilli(inputMass);
     }
@@ -407,7 +407,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double tonToKilogram(double inputMass) {
+    private static double tonToKilogram(double inputMass) {
         inputMass = tonsToGram(inputMass);
         return gramsToKilo(inputMass);
     }
@@ -418,7 +418,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double tonToAtom(double inputMass) {
+    private static double tonToAtom(double inputMass) {
         inputMass = tonsToGram(inputMass);
         return gramsToAtom(inputMass);
     }
@@ -431,7 +431,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double atomsToOunces(double inputMass) {
+    private static double atomsToOunces(double inputMass) {
         inputMass = atomsToGram(inputMass);
         return gramsToOunces(inputMass);
     }
@@ -442,7 +442,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double atomsToPound(double inputMass) {
+    private static double atomsToPound(double inputMass) {
         inputMass = atomsToGram(inputMass);
         return gramsToPound(inputMass);
     }
@@ -453,7 +453,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double atomsToMilli(double inputMass) {
+    private static double atomsToMilli(double inputMass) {
         inputMass = atomsToGram(inputMass);
         return gramsToMilli(inputMass);
     }
@@ -464,7 +464,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double atomsToKilogram(double inputMass) {
+    private static double atomsToKilogram(double inputMass) {
         inputMass = atomsToGram(inputMass);
         return gramsToKilo(inputMass);
     }
@@ -475,7 +475,7 @@ public class MassConverter {
      * @param inputMass
      * @return double
      */
-    public static double atomsToTon(double inputMass) {
+    private static double atomsToTon(double inputMass) {
         inputMass = atomsToGram(inputMass);
         return gramsToTon(inputMass);
     }
@@ -493,7 +493,7 @@ public class MassConverter {
      * @return double
      */
     public static double convertMass(Unit inputUnit, Unit outputUnit, double inputMass) {
-        double outputMass = 0;
+        double outputMass;
         String choice = inputUnit.toString() + outputUnit.toString();
 
         // Determine conversion function.

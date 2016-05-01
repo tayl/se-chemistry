@@ -13,7 +13,8 @@
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_margin="30dp"
-        android:src="@drawable/chemistryhandbooklogox300" />
+        android:src="@drawable/chemistryhandbooklogox300"
+        android:contentDescription="@string/mainImgView"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -23,7 +24,6 @@
         android:rowCount="3">
 
         <Button
-            android:id="@+id/placeholder2"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
@@ -35,7 +35,6 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/compoundsearch"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
@@ -47,7 +46,6 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/conversions"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
@@ -59,7 +57,6 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/periodictable"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
@@ -71,7 +68,6 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/placeholder3"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
@@ -83,7 +79,6 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/contactbutton"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
@@ -95,7 +90,6 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/placeholder6"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
@@ -106,7 +100,6 @@
             android:visibility="invisible" />
 
         <Button
-            android:id="@+id/placeholder4"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"

@@ -17,7 +17,7 @@ import com.chemistry.R;
  */
 public class MoleActivity extends Activity {
 
-    Double mChemItemMolarMass = 1.0;
+    private Double mChemItemMolarMass = 1.0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

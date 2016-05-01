@@ -10,16 +10,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="1dp"
-        android:text="Alumininum"
+        android:text="@string/alumininum"
         android:textColor="#000000"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/item_formula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="1sp"
-        android:text="Al"
+        android:text="@string/al"
         android:textColor="#000000"
         android:textSize="15sp" />
 
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="1sp"
-        android:text="26.98 g"
+        android:text="@string/gram_default"
         android:textColor="#000000"
         android:textSize="15sp" />
 

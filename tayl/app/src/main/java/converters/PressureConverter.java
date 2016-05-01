@@ -18,7 +18,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double pascalToKilopascal(double inputPressure) {
+    private static double pascalToKilopascal(double inputPressure) {
         return (inputPressure / ConversionLiterals.KILO);
     }
 
@@ -28,7 +28,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double kilopascalToPascal(double inputPressure) {
+    private static double kilopascalToPascal(double inputPressure) {
         return (inputPressure * ConversionLiterals.KILO);
     }
 
@@ -38,7 +38,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double pascalToAtmosphere(double inputPressure) {
+    private static double pascalToAtmosphere(double inputPressure) {
         return (inputPressure / ConversionLiterals.PASCALATMOSPHERE);
     }
 
@@ -48,7 +48,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double atmosphereToPascal(double inputPressure) {
+    private static double atmosphereToPascal(double inputPressure) {
         return (inputPressure * ConversionLiterals.PASCALATMOSPHERE);
     }
 
@@ -58,7 +58,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double pascalToTorr(double inputPressure) {
+    private static double pascalToTorr(double inputPressure) {
         return (inputPressure / ConversionLiterals.PASCALTORR);
     }
 
@@ -68,7 +68,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double torrToPascal(double inputPressure) {
+    private static double torrToPascal(double inputPressure) {
         return (inputPressure * ConversionLiterals.PASCALTORR);
     }
 
@@ -78,7 +78,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double pascalToPSI(double inputPressure) {
+    private static double pascalToPSI(double inputPressure) {
         return (inputPressure / ConversionLiterals.PASCALPERPSI);
     }
 
@@ -88,7 +88,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double psiToPascal(double inputPressure) {
+    private static double psiToPascal(double inputPressure) {
         return (inputPressure * ConversionLiterals.PASCALPERPSI);
     }
 
@@ -98,7 +98,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double pascalToMilliMercury(double inputPressure) {
+    private static double pascalToMilliMercury(double inputPressure) {
         return (inputPressure / ConversionLiterals.PASCALMMMERCURY);
     }
 
@@ -108,7 +108,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double milliMercuryToPascal(double inputPressure) {
+    private static double milliMercuryToPascal(double inputPressure) {
         return (inputPressure * ConversionLiterals.PASCALMMMERCURY);
     }
 
@@ -122,7 +122,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double kilopascalToAtmosphere(double inputPressure) {
+    private static double kilopascalToAtmosphere(double inputPressure) {
         inputPressure = kilopascalToPascal(inputPressure);
         return pascalToAtmosphere(inputPressure);
     }
@@ -133,7 +133,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double kilopascalToTorr(double inputPressure) {
+    private static double kilopascalToTorr(double inputPressure) {
         inputPressure = kilopascalToPascal(inputPressure);
         return pascalToTorr(inputPressure);
     }
@@ -144,7 +144,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double kilopascalToPSI(double inputPressure) {
+    private static double kilopascalToPSI(double inputPressure) {
         inputPressure = kilopascalToPascal(inputPressure);
         return pascalToPSI(inputPressure);
     }
@@ -155,7 +155,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double kilopascalToMilliMercury(double inputPressure) {
+    private static double kilopascalToMilliMercury(double inputPressure) {
         inputPressure = kilopascalToPascal(inputPressure);
         return pascalToMilliMercury(inputPressure);
     }
@@ -168,7 +168,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double atmosphereToKilopascal(double inputPressure) {
+    private static double atmosphereToKilopascal(double inputPressure) {
         inputPressure = atmosphereToPascal(inputPressure);
         return pascalToKilopascal(inputPressure);
     }
@@ -179,7 +179,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double atmosphereToTorr(double inputPressure) {
+    private static double atmosphereToTorr(double inputPressure) {
         inputPressure = atmosphereToPascal(inputPressure);
         return pascalToTorr(inputPressure);
     }
@@ -190,7 +190,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double atmosphereToPSI(double inputPressure) {
+    private static double atmosphereToPSI(double inputPressure) {
         inputPressure = atmosphereToPascal(inputPressure);
         return pascalToPSI(inputPressure);
     }
@@ -201,7 +201,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double atmosphereToMilliMercury(double inputPressure) {
+    private static double atmosphereToMilliMercury(double inputPressure) {
         inputPressure = atmosphereToPascal(inputPressure);
         return pascalToMilliMercury(inputPressure);
     }
@@ -214,7 +214,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double torrToKilopascal(double inputPressure) {
+    private static double torrToKilopascal(double inputPressure) {
         inputPressure = torrToPascal(inputPressure);
         return pascalToKilopascal(inputPressure);
     }
@@ -225,7 +225,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double torrToAtmosphere(double inputPressure) {
+    private static double torrToAtmosphere(double inputPressure) {
         inputPressure = torrToPascal(inputPressure);
         return pascalToAtmosphere(inputPressure);
     }
@@ -236,7 +236,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double torrToPSI(double inputPressure) {
+    private static double torrToPSI(double inputPressure) {
         inputPressure = torrToPascal(inputPressure);
         return pascalToPSI(inputPressure);
     }
@@ -247,7 +247,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double torrToMilliMercury(double inputPressure) {
+    private static double torrToMilliMercury(double inputPressure) {
         inputPressure = torrToPascal(inputPressure);
         return pascalToMilliMercury(inputPressure);
     }
@@ -260,7 +260,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double psiToKilopascal(double inputPressure) {
+    private static double psiToKilopascal(double inputPressure) {
         inputPressure = psiToPascal(inputPressure);
         return pascalToKilopascal(inputPressure);
     }
@@ -271,7 +271,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double psiToAtmosphere(double inputPressure) {
+    private static double psiToAtmosphere(double inputPressure) {
         inputPressure = psiToPascal(inputPressure);
         return pascalToAtmosphere(inputPressure);
     }
@@ -282,7 +282,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double psiToTorr(double inputPressure) {
+    private static double psiToTorr(double inputPressure) {
         inputPressure = psiToPascal(inputPressure);
         return pascalToTorr(inputPressure);
     }
@@ -293,7 +293,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double psiToMilliMercury(double inputPressure) {
+    private static double psiToMilliMercury(double inputPressure) {
         inputPressure = psiToPascal(inputPressure);
         return pascalToMilliMercury(inputPressure);
     }
@@ -306,7 +306,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double milliMercuryToKilopascal(double inputPressure) {
+    private static double milliMercuryToKilopascal(double inputPressure) {
         inputPressure = milliMercuryToPascal(inputPressure);
         return pascalToKilopascal(inputPressure);
     }
@@ -317,7 +317,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double milliMercuryToAtmosphere(double inputPressure) {
+    private static double milliMercuryToAtmosphere(double inputPressure) {
         inputPressure = milliMercuryToPascal(inputPressure);
         return pascalToAtmosphere(inputPressure);
     }
@@ -328,7 +328,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double milliMercuryToTorr(double inputPressure) {
+    private static double milliMercuryToTorr(double inputPressure) {
         inputPressure = milliMercuryToPascal(inputPressure);
         return pascalToTorr(inputPressure);
     }
@@ -339,7 +339,7 @@ public class PressureConverter {
      * @param inputPressure
      * @return double
      */
-    public static double milliMercuryToPSI(double inputPressure) {
+    private static double milliMercuryToPSI(double inputPressure) {
         inputPressure = milliMercuryToPascal(inputPressure);
         return pascalToPSI(inputPressure);
     }
@@ -357,7 +357,7 @@ public class PressureConverter {
      * @return double
      */
     public static double convertPressure(Unit inputUnit, Unit outputUnit, double inputPressure) {
-        double outputPressure = 0;
+        double outputPressure;
         String choice = inputUnit.toString() + outputUnit.toString();
 
         // Determine conversion function.

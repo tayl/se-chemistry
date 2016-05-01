@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chemia</string>
+  <string name="search_hint">Szukaj formuł</string>
+  <string name="also_known_as">"Znany również jako:"</string>
+  <string name="formula">"Formuła:"</string>
+  <string name="molar_mass">"Masa molowa:"</string>
+  <string name="unknown_compound">Nie wymienione nieznany</string>
+  <string name="compound_elements_header">Elementy</string>
+  <string name="help_text">"Chem: z Ac do Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        Jan Paul rumak
+        Taylor Veith
+        Victoria Rivas
+
+Wskazówki do nawigacji:
+
+Rakietą.
+
+Wybierz typ konwersji z
+        menu rozwijanego pierwszy
+        Wybierz twój od - do jednostek najpierw naciskając
+        rozwijane menu
+        Wprowadź wartość jednostki przerobic na
+        dole i naciśnij "Oblicz"
+        Wynik jest wyświetlany po naciśnięciu przycisku "Oblicz"
+
+Złożone wyszukiwania
+
+Wybierz od związków wyświetlane lub wyszukiwania
+        z paska u góry
+        Można wyszukiwać za pomocą formuły mieszanek lub mieszanek
+        Nazwa
+        Jeśli wyszukiwanie według wzoru:
+        * Szukaj jest wielkość liter!
+        * Nie zapominaj nawiasów, jeśli w formule
+        Jeśli wyszukiwanie według nazwy złożone:
+        * Zacznij wpisywać nazwę związek
+        * Wybierz związek z listy generowane
+        Wybrać związek do przeliczenia gramów do
+        moli
+
+Elementy
+
+Elementy wyświetlane na liście przez Atomowej
+        numer
+        Wyszukiwanie elementów w górnej części ekranu
+        według nazwy
+        Wybierz element, aby uzyskać dodatkowe informacje
+        a konwersja gramów na Krety
+
+Układ okresowy pierwiastków
+
+Tabeli będą wyświetlane w krajobraz - obracać twój
+        telefon! Powiększyć do wyświetlania jako normalny"
+    </string>
+  <string name="compoundsearchbuttontext">Złożone wyszukiwania</string>
+  <string name="tablebuttontext">Układ okresowy pierwiastków</string>
+  <string name="helpbuttontext">Pomoc</string>
+  <string name="converterbuttontext">Rakietą.</string>
+  <string name="elementsbuttontext">Elementy</string>
+  <string name="contactbuttontext">Skontaktuj się z nami</string>
+  <string name="send_button">Wyślij</string>
+  <string name="contactmessagehint">Komunikat</string>
+  <string name="contactsubjecthint">Temat</string>
+  <string name="questionsuggestionbugprompt">Mam pytanie, sugestie lub błąd do raportu? Daj nam znać tutaj.</string>
+  <string name="splashScreen">jest to pojemnik do ekranu powitalnego</string>
+  <string name="mainImgView">pojemnik na ekranie logo</string>
+  <string name="conversion_type">Konwersja typu</string>
+  <string name="value">Wartość</string>
+  <string name="from_unit">Od jednostki</string>
+  <string name="to_unit">Do jednostki</string>
+  <string name="calculate">Obliczyć</string>
+  <string name="name">Nazwa</string>
+  <string name="chemical_formula">Wzór chemiczny</string>
+  <string name="molar_mass_display">Masa molowa</string>
+  <string name="grams">Gramy:</string>
+  <string name="moles">Moli:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Znany również jako:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic masa jednostki/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds na cal Sq</string-array>
+  <string-array name="volumeUnits">Sześciennych MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

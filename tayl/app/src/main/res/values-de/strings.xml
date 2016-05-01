@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chemie</string>
+  <string name="search_hint">Suche Formeln</string>
+  <string name="also_known_as">"Auch bekannt als:"</string>
+  <string name="formula">"Formel:"</string>
+  <string name="molar_mass">"Molare Masse:"</string>
+  <string name="unknown_compound">Nicht aufgeführt/unbekannt</string>
+  <string name="compound_elements_header">Elemente</string>
+  <string name="help_text">"Chem: von Ac bis Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor-Veith
+        Victoria-Rivas
+
+Tipps zu navigieren:
+
+Currency Converter
+
+Wählen Sie die Art der Konvertierung aus dem
+        Drop-Down-Menü erste
+        Wählen Sie Ihre aus - Einheiten zuerst durch Drücken auf
+        die Drop-Down-Menüs
+        Geben Sie den Wert der Einheit zu konvertieren die
+        unten ein und drücken Sie "Berechnen"
+        Ergebnis ist unter dem Button "Berechnen" angezeigt.
+
+Zusammengesetzte Suche
+
+Wählen Sie aus Verbindungen angezeigt oder suchen
+        von der Bar an der Spitze
+        Können über zusammengesetzte Formel oder zusammengesetzte suchen
+        Name
+        Wenn anhand der Formel zu suchen:
+        * Suche ist Groß-/Kleinschreibung beachten!
+        * Vergessen Sie Klammern nicht, wenn in der Formel
+        Wenn auf der Suche nach zusammengesetzten Namen:
+        * Starten Sie den zusammengesetzten Namen eingeben
+        * Wählen Sie die Verbindung aus der Liste generiert
+        Wählen Sie eine Verbindung für die Konvertierung von Gramm bis
+        Maulwürfe
+
+Elemente
+
+Elemente in der Liste angezeigt wird, indem der Atom-
+        Anzahl
+        Suche nach Elemente am oberen Rand des Bildschirms
+        nach Namen
+        Wählen Sie ein Element für Zusatzinformationen
+        und Konvertierung von Gramm in mol
+
+Periodische Tabelle
+
+Tabelle zeigt die in der Landschaft - drehen Ihre
+        Telefon! Vergrößern Sie die Anzeige als normal"
+    </string>
+  <string name="compoundsearchbuttontext">Zusammengesetzte Suche</string>
+  <string name="tablebuttontext">Periodische Tabelle</string>
+  <string name="helpbuttontext">Hilfe</string>
+  <string name="converterbuttontext">Currency Converter</string>
+  <string name="elementsbuttontext">Elemente</string>
+  <string name="contactbuttontext">Kontaktieren Sie uns</string>
+  <string name="send_button">Senden</string>
+  <string name="contactmessagehint">Nachricht</string>
+  <string name="contactsubjecthint">Betreff</string>
+  <string name="questionsuggestionbugprompt">Haben Sie eine Frage, Anregung oder Fehler zu berichten? Teilen Sie uns hier.</string>
+  <string name="splashScreen">Dies ist der Container für den Splash-screen</string>
+  <string name="mainImgView">Container für home-Bildschirm logo</string>
+  <string name="conversion_type">Konvertierungstyp</string>
+  <string name="value">Wert</string>
+  <string name="from_unit">Von Einheit</string>
+  <string name="to_unit">Zur Einheit</string>
+  <string name="calculate">Berechnen</string>
+  <string name="name">Name</string>
+  <string name="chemical_formula">Chemische Formel</string>
+  <string name="molar_mass_display">Molare Masse</string>
+  <string name="grams">Gramm:</string>
+  <string name="moles">Maulwürfe:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26,98 g</string>
+  <string name="aka_string">"Auch bekannt als:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Hof</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">Ton der OuncePoundAtomic Masse-Einheit/DaltonGramMilligramKilogramMetric</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre von MercuryPounds pro Sq Inch</string-array>
+  <string-array name="volumeUnits">Kubische MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

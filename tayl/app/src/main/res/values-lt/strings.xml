@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chemija</string>
+  <string name="search_hint">Paieškos formules</string>
+  <string name="also_known_as">"Taip pat žinomas kaip:"</string>
+  <string name="formula">"Formulę:"</string>
+  <string name="molar_mass">"Molinė masė:"</string>
+  <string name="unknown_compound">Nėra išvardytos/nežinoma</string>
+  <string name="compound_elements_header">Elementai</string>
+  <string name="help_text">"Chemija: nuo Ac į Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robertas Valladares
+        John Paul žirgas
+        Taylor Veith
+        Victoria Rivas
+
+Patarimai naršyti:
+
+Keitiklis
+
+Pasirinkite konversijos tipą iš to
+        drop-down meniu pirmą
+        Pasirinkti savo nuo - iki vienetų pirmą kartą paspausdami ant
+        Išplečiamajame meniu
+        Įveskite konvertuoti tuo vieneto vertė,
+        apačioje ir paspauskite "Skaičiuoti"
+        Rezultatas parodomas pagal mygtuką "Apskaičiuokite"
+
+Junginys paieškos
+
+Pasirinkite iš junginių rodoma arba ieškoti
+        iš juostoje viršuje
+        Galite ieškoti per junginio formulę arba mišrūs
+        vardas, pavadinimas
+        Jei paieška pagal formulę:
+        * Paieška yra mažosios raidės!
+        * Nepamirškite skliaustelių jei formulėje
+        Jei paieška pagal vieną sudėtinį pavadinimą:
+        * Pradėkite rašyti į vieną sudėtinį pavadinimą
+        * Sukurtas sąraše pasirinkite junginys
+        Pasirinkite konvertavimo gramų į junginys
+        kurmiai
+
+Elementai
+
+Elementai sąraše rodomi iš atominės
+        numeris
+        Viešbučių paieška: elementai ekrano viršuje
+        pagal pavadinimą
+        Pasirinkite elementą, papildomos informacijos
+        ir konversijos iš gramų, molių
+
+Periodinė elementų lentelė
+
+Lentelė bus rodoma kraštovaizdžio - pasukti savo
+        telefonas! Priartinti prie ekrano kaip įprasta"
+    </string>
+  <string name="compoundsearchbuttontext">Junginys paieškos</string>
+  <string name="tablebuttontext">Periodinė elementų lentelė</string>
+  <string name="helpbuttontext">pagalba</string>
+  <string name="converterbuttontext">Keitiklis</string>
+  <string name="elementsbuttontext">Elementai</string>
+  <string name="contactbuttontext">Susisiekite su mumis</string>
+  <string name="send_button">Siųsti</string>
+  <string name="contactmessagehint">pranešimas</string>
+  <string name="contactsubjecthint">tema</string>
+  <string name="questionsuggestionbugprompt">Turite klausimų, pasiūlymų ar klaidų ataskaitos? Susisiekti su mumis čia.</string>
+  <string name="splashScreen">tai yra laikykla ekrano užsklanda</string>
+  <string name="mainImgView">konteineris, skirtas pradinio ekrano logotipas</string>
+  <string name="conversion_type">Konversijos tipą</string>
+  <string name="value">Vertė</string>
+  <string name="from_unit">Iš vieneto</string>
+  <string name="to_unit">Vienetui</string>
+  <string name="calculate">Apskaičiuoti</string>
+  <string name="name">vardas, pavadinimas</string>
+  <string name="chemical_formula">Cheminė formulė</string>
+  <string name="molar_mass_display">Molio masė</string>
+  <string name="grams">G:</string>
+  <string name="moles">Apgamai:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Taip pat žinomas kaip:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq kiemas</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic masės vienetas/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre, MercuryPounds Sq colyje</string-array>
+  <string-array name="volumeUnits">Kubinių MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

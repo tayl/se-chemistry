@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kemi</string>
+  <string name="search_hint">Søg formler</string>
+  <string name="also_known_as">"Også kendt som:"</string>
+  <string name="formula">"Formel:"</string>
+  <string name="molar_mass">"Molar masse:"</string>
+  <string name="unknown_compound">Ikke angivet/ukendt</string>
+  <string name="compound_elements_header">Elementer</string>
+  <string name="help_text">"Chem: fra Ac til Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Tips til at navigere:
+
+Unit Converter
+
+Vælg konverteringstypen fra den
+        drop-down menuen første
+        Vælg din fra - til enheder først ved at trykke på
+        drop-down menuer
+        Angiv værdien af enheden for at konvertere på den
+        bund og tryk på "Beregn"
+        Resultatet vises under knappen "Beregn"
+
+Sammensatte søgning
+
+Vælg fra forbindelser vises eller Søg
+        fra baren på toppen
+        Kan søge via sammensatte formel eller sammensatte
+        Navn
+        Hvis søgning af formlen:
+        * Søg er store og små bogstaver!
+        * Glem ikke parenteserne i formlen
+        Hvis søgning af sammensatte navn:
+        * Begynd at skrive i den sammensatte navn
+        * Vælg sammensat listen genereret
+        Vælg en sammensat for konvertering af gram til
+        modermærker
+
+Elementer
+
+Elementer vises på listen af det atomare
+        antallet
+        Søgning efter elementer i toppen af skærmen
+        ved navn
+        Vælg et element for at få yderligere oplysninger
+        og konvertering fra gram til modermærker
+
+Periodiske tabel
+
+Tabellen vises i landskab - rotere din
+        telefon! Zoom ind på skærmen som normalt"
+    </string>
+  <string name="compoundsearchbuttontext">Sammensatte søgning</string>
+  <string name="tablebuttontext">Periodiske tabel</string>
+  <string name="helpbuttontext">Hjælp</string>
+  <string name="converterbuttontext">Unit Converter</string>
+  <string name="elementsbuttontext">Elementer</string>
+  <string name="contactbuttontext">Kontakt os</string>
+  <string name="send_button">Send</string>
+  <string name="contactmessagehint">besked</string>
+  <string name="contactsubjecthint">emne</string>
+  <string name="questionsuggestionbugprompt">Har et spørgsmål, forslag eller bug-betænkningen? Lad os vide her.</string>
+  <string name="splashScreen">Dette er beholderen til splash raster</string>
+  <string name="mainImgView">beholder til startskærmen logo</string>
+  <string name="conversion_type">Konverteringstype</string>
+  <string name="value">Værdi</string>
+  <string name="from_unit">Fra enhed</string>
+  <string name="to_unit">Til enhed</string>
+  <string name="calculate">Beregne</string>
+  <string name="name">Navn</string>
+  <string name="chemical_formula">Kemiske formel</string>
+  <string name="molar_mass_display">Molar masse</string>
+  <string name="grams">Gram:</string>
+  <string name="moles">Muldvarpe:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Også kendt som:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq værftet</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic masse enhed/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre af MercuryPounds per Sq tommer</string-array>
+  <string-array name="volumeUnits">Kubisk MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

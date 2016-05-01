@@ -15,7 +15,7 @@ public class TemperatureConverter {
      * @param tempInput
      * @return double
      */
-    public static double celsiusToKelvin(double tempInput) {
+    private static double celsiusToKelvin(double tempInput) {
         return (tempInput + ConversionLiterals.CELSIUSKELVIN);
     }
 
@@ -25,7 +25,7 @@ public class TemperatureConverter {
      * @param tempInput
      * @return double
      */
-    public static double kelvinToCelsius(double tempInput) {
+    private static double kelvinToCelsius(double tempInput) {
         return (tempInput - ConversionLiterals.CELSIUSKELVIN);
     }
 
@@ -35,7 +35,7 @@ public class TemperatureConverter {
      * @param tempInput
      * @return double
      */
-    public static double celsiusToFahrenheit(double tempInput) {
+    private static double celsiusToFahrenheit(double tempInput) {
         return ((ConversionLiterals.FAHRENHEITCELSIUS1 * tempInput) + ConversionLiterals.FAHRENHEITCELSIUS2);
     }
 
@@ -45,7 +45,7 @@ public class TemperatureConverter {
      * @param tempInput
      * @return double
      */
-    public static double fahrenheitToCelsius(double tempInput) {
+    private static double fahrenheitToCelsius(double tempInput) {
         return ((tempInput - ConversionLiterals.FAHRENHEITCELSIUS2) / ConversionLiterals.FAHRENHEITCELSIUS1);
     }
 
@@ -55,7 +55,7 @@ public class TemperatureConverter {
      * @param tempInput
      * @return double
      */
-    public static double kelvinToFahrenheit(double tempInput) {
+    private static double kelvinToFahrenheit(double tempInput) {
         tempInput = kelvinToCelsius(tempInput);
         return celsiusToFahrenheit(tempInput);
     }
@@ -66,7 +66,7 @@ public class TemperatureConverter {
      * @param tempInput
      * @return double.
      */
-    public static double fahrenheitToKelvin(double tempInput) {
+    private static double fahrenheitToKelvin(double tempInput) {
         tempInput = fahrenheitToCelsius(tempInput);
         return celsiusToKelvin(tempInput);
     }
@@ -83,7 +83,7 @@ public class TemperatureConverter {
      * @return double
      */
     public static double convertTemperature(Unit inputUnit, Unit outputUnit, double tempInput) {
-        double outputTemperature = 0;
+        double outputTemperature;
         String choice = inputUnit.toString() + outputUnit.toString();
 
         // Determine conversion function.

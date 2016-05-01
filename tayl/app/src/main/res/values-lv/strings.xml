@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Ķīmija</string>
+  <string name="search_hint">Meklēšanas formulām</string>
+  <string name="also_known_as">"Arī pazīstams kā:"</string>
+  <string name="formula">"Formula:"</string>
+  <string name="molar_mass">"Molmasa:"</string>
+  <string name="unknown_compound">Nav uzskaitīti/Unknown</string>
+  <string name="compound_elements_header">Elementi</string>
+  <string name="help_text">"Chem: no Ac Zr
+        v 1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John Paul rumaku
+        Taylor Veith
+        Victoria Rivas
+
+Padomi, kā pārvietoties:
+
+Unit Converter
+
+Izvēlieties pārvēršanas tipu no
+        nolaižamās izvēlnes pirmo
+        Izvēlieties savu no - uz vienībām, kas pirmo reizi, nospiežot
+        nolaižamās izvēlnes
+        Ievadiet vienības pārvērst par vērtību
+        grunts un nospiediet "Aprēķināt"
+        Rezultāts tiek parādīts sadaļā pogu "Aprēķināt"
+
+Barības meklēšanas
+
+Izvēlēties no savienojumiem, kas tiek rādīta vai meklēšanas
+        no joslas augšpusē
+        Var meklēt, izmantojot saliktu formulu vai barības
+        vārds
+        Ja meklēšanu pēc formulas:
+        * Meklēšana ir reģistrjutīga!
+        * Neaizmirstiet iekavās, ja formulā
+        Ja meklēšana pēc barības nosaukums:
+        * Sāciet rakstīt maisījumu nosaukumu
+        * Ģenerē sarakstā izvēlieties savienojums
+        Izvēlas salikta gramus uz pārvēršanas
+        kurmji
+
+Elementi
+
+Elementi, kas parādīti sarakstā pēc atomu
+        numurs
+        Meklētu elementu, kas atrodas ekrāna augšpusē
+        pēc nosaukuma
+        Izvēlieties elementu papildu informāciju
+        un pārvēršanu no grami uz molu
+
+Periodiskā tabula
+
+Tabula parāda ainavas - pagriezt savu
+        telefons! Tuvināt displejā kā parasti"
+    </string>
+  <string name="compoundsearchbuttontext">Barības meklēšanas</string>
+  <string name="tablebuttontext">Periodiskā tabula</string>
+  <string name="helpbuttontext">palīgā</string>
+  <string name="converterbuttontext">Unit Converter</string>
+  <string name="elementsbuttontext">Elementi</string>
+  <string name="contactbuttontext">Sazinieties ar mums</string>
+  <string name="send_button">Sūtīt</string>
+  <string name="contactmessagehint">ziņojums</string>
+  <string name="contactsubjecthint">tēma</string>
+  <string name="questionsuggestionbugprompt">Ir jautājums, ierosinājums vai kļūdu ziņojumu? Ļaujiet mums uzzināt šeit.</string>
+  <string name="splashScreen">Šis ir konteiners uzplaiksnījuma ekrāns</string>
+  <string name="mainImgView">konteiners ar maināmiem izmēriem mājās ekrāns logotips</string>
+  <string name="conversion_type">Konversijas veids</string>
+  <string name="value">Vērtība</string>
+  <string name="from_unit">No vienības</string>
+  <string name="to_unit">Vienību</string>
+  <string name="calculate">Aprēķināt</string>
+  <string name="name">vārds</string>
+  <string name="chemical_formula">Ķīmiskā Formula</string>
+  <string name="molar_mass_display">Molmasa</string>
+  <string name="grams">Gramiem:</string>
+  <string name="moles">Molu:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Arī pazīstams kā:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic masas vienības/DaltonGramMilligramKilogramMetric tonnu</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds Sq collā</string-array>
+  <string-array name="volumeUnits">Kubikmetru MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

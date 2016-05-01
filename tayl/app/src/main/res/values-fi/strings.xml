@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kemia</string>
+  <string name="search_hint">Kaavat</string>
+  <string name="also_known_as">"Tunnetaan myös nimellä:"</string>
+  <string name="formula">"Kaava:"</string>
+  <string name="molar_mass">"Moolimassa:"</string>
+  <string name="unknown_compound">Lueteltu/Unknown</string>
+  <string name="compound_elements_header">Elementit</string>
+  <string name="help_text">"Chem: AC Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John Paul ratsu
+        Taylor Veith
+        Victoria Rivas
+
+Vinkkejä navigoida:
+
+Ilomantsi
+
+Valitse muuntaminen tyypin
+        avattavan valikon ensimmäinen
+        Valitse sinun - yksikköä ensin painamalla
+        alentaa-heittää ruokalista
+        Kirjoita arvo yksikkö muuntaa
+        pohjaan ja paina "Laske"
+        Tulos näkyy "Laske"-painiketta
+
+Yhdiste Etsi
+
+Valitse yhdisteet näyttää tai Etsi
+        yläosan palkista
+        Etsiä kautta yhdiste kaava tai yhdiste
+        Nimi
+        Jos kaavan:
+        * Etsi ottaa huomioon kirjainkoon!
+        * Älä unohda suluissa Jos kaavassa
+        Jos hakee yhdiste nimeltä:
+        * Kirjoittamalla yhdisteen nimen
+        * Valitse yhdiste luetteloa
+        Valitse yhdiste muuntaminen grammaa
+        myyrät
+
+Elementit
+
+Elementit näytetään luettelossa Atomic
+        numero
+        Etsi osien näytön yläreunassa
+        nimen mukaan
+        Valitse elementin lisätietoja
+        ja muuntaminen grammaa moolia
+
+Jaksollinen
+
+Maisema - Kierrä tulevat näkyviin taulukkoon sinun
+        Puhelin! Suurentaa näytön normaalisti"
+    </string>
+  <string name="compoundsearchbuttontext">Yhdiste Etsi</string>
+  <string name="tablebuttontext">Jaksollinen</string>
+  <string name="helpbuttontext">Apua</string>
+  <string name="converterbuttontext">Ilomantsi</string>
+  <string name="elementsbuttontext">Elementit</string>
+  <string name="contactbuttontext">Ota yhteyttä</string>
+  <string name="send_button">Lähetä</string>
+  <string name="contactmessagehint">viesti</string>
+  <string name="contactsubjecthint">Aihe</string>
+  <string name="questionsuggestionbugprompt">On kysymys, ehdotus tai bug mietintöön? Kerro meille kiinnostuksesi täällä.</string>
+  <string name="splashScreen">Tämä on säiliö aloitusruutu</string>
+  <string name="mainImgView">kontti kotiin näytön logo</string>
+  <string name="conversion_type">Muunnon tyyppi</string>
+  <string name="value">Arvo</string>
+  <string name="from_unit">Yksikkö</string>
+  <string name="to_unit">Yksikkö</string>
+  <string name="calculate">Laske</string>
+  <string name="name">Nimi</string>
+  <string name="chemical_formula">Kemiallinen kaava</string>
+  <string name="molar_mass_display">Moolimassa</string>
+  <string name="grams">Grammaa:</string>
+  <string name="moles">Myyrät:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Tunnetaan myös nimellä:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq pihalla</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic massan yksikkö/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds Sq tuumalla</string-array>
+  <string-array name="volumeUnits">Kuutiometriä MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

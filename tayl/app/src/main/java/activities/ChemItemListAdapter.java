@@ -1,9 +1,5 @@
 package activities;
 
-/**
- * Created by robertvalladares on 3/14/16.
- */
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ChemItemListAdapter extends BaseAdapter implements Filterable {
+class ChemItemListAdapter extends BaseAdapter implements Filterable {
 
-    public List<ChemItem> orig;
-    private Context mContext;
+    private List<ChemItem> orig;
+    private final Context mContext;
     private List<ChemItem> mChemItemList;
 
     //Constructor

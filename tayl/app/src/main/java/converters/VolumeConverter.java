@@ -19,7 +19,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToCenti(double inputVolume) {
+    private static double cubicMeterToCenti(double inputVolume) {
         return (inputVolume / Math.pow(ConversionLiterals.CENTI, 3));
     }
 
@@ -29,7 +29,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToMeter(double inputVolume) {
+    private static double cubicCentiToMeter(double inputVolume) {
         return (inputVolume * Math.pow(ConversionLiterals.CENTI, 3));
     }
 
@@ -39,7 +39,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToMilli(double inputVolume) {
+    private static double cubicMeterToMilli(double inputVolume) {
         return (inputVolume / Math.pow(ConversionLiterals.MILLI, 3));
     }
 
@@ -49,7 +49,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToMeter(double inputVolume) {
+    private static double cubicMilliToMeter(double inputVolume) {
         return (inputVolume * Math.pow(ConversionLiterals.MILLI, 3));
     }
 
@@ -59,7 +59,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToKilo(double inputVolume) {
+    private static double cubicMeterToKilo(double inputVolume) {
         return (inputVolume / Math.pow(ConversionLiterals.KILO, 3));
     }
 
@@ -69,7 +69,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToMeter(double inputVolume) {
+    private static double cubicKiloToMeter(double inputVolume) {
         return (inputVolume * Math.pow(ConversionLiterals.KILO, 3));
     }
 
@@ -79,7 +79,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToLiter(double inputVolume) {
+    private static double cubicMeterToLiter(double inputVolume) {
         return (inputVolume * ConversionLiterals.LITERSPERCUBICMETER);
     }
 
@@ -89,7 +89,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToCubicMeter(double inputVolume) {
+    private static double literToCubicMeter(double inputVolume) {
         return (inputVolume / ConversionLiterals.LITERSPERCUBICMETER);
     }
 
@@ -99,7 +99,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToGallon(double inputVolume) {
+    private static double cubicMeterToGallon(double inputVolume) {
         return (inputVolume * ConversionLiterals.GALLONSPERCUBICMETER);
     }
 
@@ -109,7 +109,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToCubicMeter(double inputVolume) {
+    private static double gallonToCubicMeter(double inputVolume) {
         return (inputVolume / ConversionLiterals.GALLONSPERCUBICMETER);
     }
 
@@ -119,7 +119,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToQuart(double inputVolume) {
+    private static double gallonToQuart(double inputVolume) {
         return (inputVolume * ConversionLiterals.QUARTSPERGALLON);
     }
 
@@ -129,7 +129,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartsToGallon(double inputVolume) {
+    private static double quartsToGallon(double inputVolume) {
         return (inputVolume / ConversionLiterals.QUARTSPERGALLON);
     }
 
@@ -139,7 +139,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return
      */
-    public static double gallonToCup(double inputVolume) {
+    private static double gallonToCup(double inputVolume) {
         return (inputVolume * ConversionLiterals.CUPSPERGALLON);
     }
 
@@ -149,7 +149,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToGallon(double inputVolume) {
+    private static double cupsToGallon(double inputVolume) {
         return (inputVolume / ConversionLiterals.CUPSPERGALLON);
     }
 
@@ -159,7 +159,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToFeet(double inputVolume) {
+    private static double cubicMeterToFeet(double inputVolume) {
         return (inputVolume * ConversionLiterals.CUBICFOOTPERCUBICMETER);
     }
 
@@ -169,7 +169,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToMeter(double inputVolume) {
+    private static double cubicFeetToMeter(double inputVolume) {
         return (inputVolume / ConversionLiterals.CUBICFOOTPERCUBICMETER);
     }
 
@@ -179,7 +179,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToMilliliter(double inputVolume) {
+    private static double literToMilliliter(double inputVolume) {
         return (inputVolume / ConversionLiterals.MILLI);
     }
 
@@ -189,7 +189,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToLiter(double inputVolume) {
+    private static double milliliterToLiter(double inputVolume) {
         return (inputVolume * ConversionLiterals.MILLI);
     }
 
@@ -199,7 +199,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToKiloliter(double inputVolume) {
+    private static double literToKiloliter(double inputVolume) {
         return (inputVolume / ConversionLiterals.KILO);
     }
 
@@ -209,7 +209,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToLiter(double inputVolume) {
+    private static double kiloliterToLiter(double inputVolume) {
         return (inputVolume * ConversionLiterals.KILO);
     }
 
@@ -223,7 +223,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToQuart(double inputVolume) {
+    private static double cubicMeterToQuart(double inputVolume) {
         inputVolume = cubicMeterToGallon(inputVolume);
         return gallonToQuart(inputVolume);
     }
@@ -234,7 +234,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToCup(double inputVolume) {
+    private static double cubicMeterToCup(double inputVolume) {
         inputVolume = cubicMeterToGallon(inputVolume);
         return gallonToCup(inputVolume);
     }
@@ -245,7 +245,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToMilliliter(double inputVolume) {
+    private static double cubicMeterToMilliliter(double inputVolume) {
         inputVolume = cubicMeterToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -256,7 +256,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMeterToKiloliter(double inputVolume) {
+    private static double cubicMeterToKiloliter(double inputVolume) {
         inputVolume = cubicMeterToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -269,7 +269,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToMilli(double inputVolume) {
+    private static double cubicCentiToMilli(double inputVolume) {
         inputVolume = cubicCentiToMeter(inputVolume);
         return cubicMeterToMilli(inputVolume);
     }
@@ -280,7 +280,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToKilo(double inputVolume) {
+    private static double cubicCentiToKilo(double inputVolume) {
         inputVolume = cubicCentiToMeter(inputVolume);
         return cubicMeterToKilo(inputVolume);
     }
@@ -291,7 +291,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToLiter(double inputVolume) {
+    private static double cubicCentiToLiter(double inputVolume) {
         inputVolume = cubicCentiToMeter(inputVolume);
         return cubicMeterToLiter(inputVolume);
     }
@@ -302,7 +302,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToGallon(double inputVolume) {
+    private static double cubicCentiToGallon(double inputVolume) {
         inputVolume = cubicCentiToMeter(inputVolume);
         return cubicMeterToGallon(inputVolume);
     }
@@ -313,7 +313,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToQuart(double inputVolume) {
+    private static double cubicCentiToQuart(double inputVolume) {
         inputVolume = cubicCentiToMeter(inputVolume);
         return cubicMeterToQuart(inputVolume);
     }
@@ -324,7 +324,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToCup(double inputVolume) {
+    private static double cubicCentiToCup(double inputVolume) {
         inputVolume = cubicCentiToMeter(inputVolume);
         return cubicMeterToCup(inputVolume);
     }
@@ -335,7 +335,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToFeet(double inputVolume) {
+    private static double cubicCentiToFeet(double inputVolume) {
         inputVolume = cubicCentiToMeter(inputVolume);
         return cubicMeterToFeet(inputVolume);
     }
@@ -346,7 +346,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToMilliliter(double inputVolume) {
+    private static double cubicCentiToMilliliter(double inputVolume) {
         inputVolume = cubicCentiToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -357,7 +357,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicCentiToKiloliter(double inputVolume) {
+    private static double cubicCentiToKiloliter(double inputVolume) {
         inputVolume = cubicCentiToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -370,7 +370,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToCenti(double inputVolume) {
+    private static double cubicMilliToCenti(double inputVolume) {
         inputVolume = cubicMilliToMeter(inputVolume);
         return cubicMeterToCenti(inputVolume);
     }
@@ -381,7 +381,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToKilo(double inputVolume) {
+    private static double cubicMilliToKilo(double inputVolume) {
         inputVolume = cubicMilliToMeter(inputVolume);
         return cubicMeterToKilo(inputVolume);
     }
@@ -392,7 +392,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToLiter(double inputVolume) {
+    private static double cubicMilliToLiter(double inputVolume) {
         inputVolume = cubicMilliToMeter(inputVolume);
         return cubicMeterToLiter(inputVolume);
     }
@@ -403,7 +403,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToGallon(double inputVolume) {
+    private static double cubicMilliToGallon(double inputVolume) {
         inputVolume = cubicMilliToMeter(inputVolume);
         return cubicMeterToGallon(inputVolume);
     }
@@ -414,7 +414,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToQuart(double inputVolume) {
+    private static double cubicMilliToQuart(double inputVolume) {
         inputVolume = cubicMilliToMeter(inputVolume);
         return cubicMeterToQuart(inputVolume);
     }
@@ -425,7 +425,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToCup(double inputVolume) {
+    private static double cubicMilliToCup(double inputVolume) {
         inputVolume = cubicMilliToMeter(inputVolume);
         return cubicMeterToCup(inputVolume);
     }
@@ -436,7 +436,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToFeet(double inputVolume) {
+    private static double cubicMilliToFeet(double inputVolume) {
         inputVolume = cubicMilliToMeter(inputVolume);
         return cubicMeterToFeet(inputVolume);
     }
@@ -447,7 +447,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToMilliliter(double inputVolume) {
+    private static double cubicMilliToMilliliter(double inputVolume) {
         inputVolume = cubicMilliToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -458,7 +458,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicMilliToKiloliter(double inputVolume) {
+    private static double cubicMilliToKiloliter(double inputVolume) {
         inputVolume = cubicMilliToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -471,7 +471,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToCenti(double inputVolume) {
+    private static double cubicKiloToCenti(double inputVolume) {
         inputVolume = cubicKiloToMeter(inputVolume);
         return cubicMeterToCenti(inputVolume);
     }
@@ -482,7 +482,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToMilli(double inputVolume) {
+    private static double cubicKiloToMilli(double inputVolume) {
         inputVolume = cubicKiloToMeter(inputVolume);
         return cubicMeterToMilli(inputVolume);
     }
@@ -493,7 +493,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToLiter(double inputVolume) {
+    private static double cubicKiloToLiter(double inputVolume) {
         inputVolume = cubicKiloToMeter(inputVolume);
         return cubicMeterToLiter(inputVolume);
     }
@@ -504,7 +504,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToGallon(double inputVolume) {
+    private static double cubicKiloToGallon(double inputVolume) {
         inputVolume = cubicKiloToMeter(inputVolume);
         return cubicMeterToGallon(inputVolume);
     }
@@ -515,7 +515,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToQuart(double inputVolume) {
+    private static double cubicKiloToQuart(double inputVolume) {
         inputVolume = cubicKiloToMeter(inputVolume);
         return cubicMeterToQuart(inputVolume);
     }
@@ -526,7 +526,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToCup(double inputVolume) {
+    private static double cubicKiloToCup(double inputVolume) {
         inputVolume = cubicKiloToMeter(inputVolume);
         return cubicMeterToCup(inputVolume);
     }
@@ -537,7 +537,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToFeet(double inputVolume) {
+    private static double cubicKiloToFeet(double inputVolume) {
         inputVolume = cubicKiloToMeter(inputVolume);
         return cubicMeterToFeet(inputVolume);
     }
@@ -548,7 +548,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToMilliliter(double inputVolume) {
+    private static double cubicKiloToMilliliter(double inputVolume) {
         inputVolume = cubicKiloToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -559,7 +559,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicKiloToKiloliter(double inputVolume) {
+    private static double cubicKiloToKiloliter(double inputVolume) {
         inputVolume = cubicKiloToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -572,7 +572,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToCubicCenti(double inputVolume) {
+    private static double literToCubicCenti(double inputVolume) {
         inputVolume = literToCubicMeter(inputVolume);
         return cubicMeterToCenti(inputVolume);
     }
@@ -583,7 +583,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToCubicMilli(double inputVolume) {
+    private static double literToCubicMilli(double inputVolume) {
         inputVolume = literToCubicMeter(inputVolume);
         return cubicMeterToMilli(inputVolume);
     }
@@ -594,7 +594,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToCubicKilo(double inputVolume) {
+    private static double literToCubicKilo(double inputVolume) {
         inputVolume = literToCubicMeter(inputVolume);
         return cubicMeterToKilo(inputVolume);
     }
@@ -605,7 +605,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToGallon(double inputVolume) {
+    private static double literToGallon(double inputVolume) {
         inputVolume = literToCubicMeter(inputVolume);
         return cubicMeterToGallon(inputVolume);
     }
@@ -616,7 +616,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToQuart(double inputVolume) {
+    private static double literToQuart(double inputVolume) {
         inputVolume = literToCubicMeter(inputVolume);
         return cubicMeterToQuart(inputVolume);
     }
@@ -627,7 +627,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToCup(double inputVolume) {
+    private static double literToCup(double inputVolume) {
         inputVolume = literToCubicMeter(inputVolume);
         return cubicMeterToCup(inputVolume);
     }
@@ -638,7 +638,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double literToCubicFeet(double inputVolume) {
+    private static double literToCubicFeet(double inputVolume) {
         inputVolume = literToCubicMeter(inputVolume);
         return cubicMeterToFeet(inputVolume);
     }
@@ -651,7 +651,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToCubicCenti(double inputVolume) {
+    private static double gallonToCubicCenti(double inputVolume) {
         inputVolume = gallonToCubicMeter(inputVolume);
         return cubicMeterToCenti(inputVolume);
     }
@@ -662,7 +662,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToCubicMilli(double inputVolume) {
+    private static double gallonToCubicMilli(double inputVolume) {
         inputVolume = gallonToCubicMeter(inputVolume);
         return cubicMeterToMilli(inputVolume);
     }
@@ -673,7 +673,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToCubicKilo(double inputVolume) {
+    private static double gallonToCubicKilo(double inputVolume) {
         inputVolume = gallonToCubicMeter(inputVolume);
         return cubicMeterToKilo(inputVolume);
     }
@@ -684,7 +684,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToLiter(double inputVolume) {
+    private static double gallonToLiter(double inputVolume) {
         inputVolume = gallonToCubicMeter(inputVolume);
         return cubicMeterToLiter(inputVolume);
     }
@@ -695,7 +695,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToCubicFeet(double inputVolume) {
+    private static double gallonToCubicFeet(double inputVolume) {
         inputVolume = gallonToCubicMeter(inputVolume);
         return cubicMeterToFeet(inputVolume);
     }
@@ -706,7 +706,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToMilliliter(double inputVolume) {
+    private static double gallonToMilliliter(double inputVolume) {
         inputVolume = gallonToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -717,7 +717,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double gallonToKiloliter(double inputVolume) {
+    private static double gallonToKiloliter(double inputVolume) {
         inputVolume = gallonToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -730,7 +730,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToCubicMeter(double inputVolume) {
+    private static double quartToCubicMeter(double inputVolume) {
         inputVolume = quartsToGallon(inputVolume);
         return gallonToCubicMeter(inputVolume);
     }
@@ -741,7 +741,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToCubicCenti(double inputVolume) {
+    private static double quartToCubicCenti(double inputVolume) {
         inputVolume = quartToCubicMeter(inputVolume);
         return cubicMeterToCenti(inputVolume);
     }
@@ -752,7 +752,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToCubicMilli(double inputVolume) {
+    private static double quartToCubicMilli(double inputVolume) {
         inputVolume = quartToCubicMeter(inputVolume);
         return cubicMeterToMilli(inputVolume);
     }
@@ -763,7 +763,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToCubicKilo(double inputVolume) {
+    private static double quartToCubicKilo(double inputVolume) {
         inputVolume = quartToCubicMeter(inputVolume);
         return cubicMeterToKilo(inputVolume);
     }
@@ -774,7 +774,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToLiter(double inputVolume) {
+    private static double quartToLiter(double inputVolume) {
         inputVolume = quartToCubicMeter(inputVolume);
         return cubicMeterToLiter(inputVolume);
     }
@@ -785,7 +785,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToCup(double inputVolume) {
+    private static double quartToCup(double inputVolume) {
         inputVolume = quartsToGallon(inputVolume);
         return gallonToCup(inputVolume);
     }
@@ -796,7 +796,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToCubicFeet(double inputVolume) {
+    private static double quartToCubicFeet(double inputVolume) {
         inputVolume = quartToCubicMeter(inputVolume);
         return cubicMeterToFeet(inputVolume);
     }
@@ -807,7 +807,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToMilliliter(double inputVolume) {
+    private static double quartToMilliliter(double inputVolume) {
         inputVolume = quartToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -818,7 +818,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double quartToKiloliter(double inputVolume) {
+    private static double quartToKiloliter(double inputVolume) {
         inputVolume = quartToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -831,7 +831,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToCubicMeter(double inputVolume) {
+    private static double cupsToCubicMeter(double inputVolume) {
         inputVolume = cupsToGallon(inputVolume);
         return gallonToCubicMeter(inputVolume);
     }
@@ -842,7 +842,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToCubicCenti(double inputVolume) {
+    private static double cupsToCubicCenti(double inputVolume) {
         inputVolume = cupsToCubicMeter(inputVolume);
         return cubicMeterToCenti(inputVolume);
     }
@@ -853,7 +853,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToCubicMilli(double inputVolume) {
+    private static double cupsToCubicMilli(double inputVolume) {
         inputVolume = cupsToCubicMeter(inputVolume);
         return cubicMeterToMilli(inputVolume);
     }
@@ -864,7 +864,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToCubicKilo(double inputVolume) {
+    private static double cupsToCubicKilo(double inputVolume) {
         inputVolume = cupsToCubicMeter(inputVolume);
         return cubicMeterToKilo(inputVolume);
     }
@@ -875,7 +875,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToLiter(double inputVolume) {
+    private static double cupsToLiter(double inputVolume) {
         inputVolume = cupsToCubicMeter(inputVolume);
         return cubicMeterToLiter(inputVolume);
     }
@@ -886,7 +886,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToQuart(double inputVolume) {
+    private static double cupsToQuart(double inputVolume) {
         inputVolume = cupsToGallon(inputVolume);
         return gallonToQuart(inputVolume);
     }
@@ -897,7 +897,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToCubicFeet(double inputVolume) {
+    private static double cupsToCubicFeet(double inputVolume) {
         inputVolume = cupsToCubicMeter(inputVolume);
         return cubicMeterToFeet(inputVolume);
     }
@@ -908,7 +908,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToMilliliter(double inputVolume) {
+    private static double cupsToMilliliter(double inputVolume) {
         inputVolume = cupsToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -919,7 +919,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cupsToKiloliter(double inputVolume) {
+    private static double cupsToKiloliter(double inputVolume) {
         inputVolume = cupsToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -932,7 +932,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToCenti(double inputVolume) {
+    private static double cubicFeetToCenti(double inputVolume) {
         inputVolume = cubicFeetToMeter(inputVolume);
         return cubicMeterToCenti(inputVolume);
     }
@@ -943,7 +943,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToMilli(double inputVolume) {
+    private static double cubicFeetToMilli(double inputVolume) {
         inputVolume = cubicFeetToMeter(inputVolume);
         return cubicMeterToMilli(inputVolume);
     }
@@ -954,7 +954,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToKilo(double inputVolume) {
+    private static double cubicFeetToKilo(double inputVolume) {
         inputVolume = cubicFeetToMeter(inputVolume);
         return cubicMeterToKilo(inputVolume);
     }
@@ -965,7 +965,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToLiter(double inputVolume) {
+    private static double cubicFeetToLiter(double inputVolume) {
         inputVolume = cubicFeetToMeter(inputVolume);
         return cubicMeterToLiter(inputVolume);
     }
@@ -976,7 +976,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToGallon(double inputVolume) {
+    private static double cubicFeetToGallon(double inputVolume) {
         inputVolume = cubicFeetToMeter(inputVolume);
         return cubicMeterToGallon(inputVolume);
     }
@@ -987,7 +987,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToQuart(double inputVolume) {
+    private static double cubicFeetToQuart(double inputVolume) {
         inputVolume = cubicFeetToMeter(inputVolume);
         return cubicMeterToQuart(inputVolume);
     }
@@ -998,7 +998,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToCup(double inputVolume) {
+    private static double cubicFeetToCup(double inputVolume) {
         inputVolume = cubicFeetToMeter(inputVolume);
         return cubicMeterToCup(inputVolume);
     }
@@ -1009,7 +1009,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToMilliliter(double inputVolume) {
+    private static double cubicFeetToMilliliter(double inputVolume) {
         inputVolume = cubicFeetToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -1020,7 +1020,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double cubicFeetToKiloliter(double inputVolume) {
+    private static double cubicFeetToKiloliter(double inputVolume) {
         inputVolume = cubicFeetToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -1033,7 +1033,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToCubicMeter(double inputVolume) {
+    private static double milliliterToCubicMeter(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToCubicMeter(inputVolume);
     }
@@ -1044,7 +1044,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToCubicCenti(double inputVolume) {
+    private static double milliliterToCubicCenti(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToCubicCenti(inputVolume);
     }
@@ -1055,7 +1055,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToCubicMilli(double inputVolume) {
+    private static double milliliterToCubicMilli(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToCubicMilli(inputVolume);
     }
@@ -1066,7 +1066,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToCubicKilo(double inputVolume) {
+    private static double milliliterToCubicKilo(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToCubicKilo(inputVolume);
     }
@@ -1077,7 +1077,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToGallon(double inputVolume) {
+    private static double milliliterToGallon(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToGallon(inputVolume);
     }
@@ -1088,7 +1088,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToQuart(double inputVolume) {
+    private static double milliliterToQuart(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToQuart(inputVolume);
     }
@@ -1099,7 +1099,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToCup(double inputVolume) {
+    private static double milliliterToCup(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToCup(inputVolume);
     }
@@ -1110,7 +1110,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToCubicFeet(double inputVolume) {
+    private static double milliliterToCubicFeet(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToCubicFeet(inputVolume);
     }
@@ -1121,7 +1121,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double milliliterToKiloliter(double inputVolume) {
+    private static double milliliterToKiloliter(double inputVolume) {
         inputVolume = milliliterToLiter(inputVolume);
         return literToKiloliter(inputVolume);
     }
@@ -1135,7 +1135,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToCubicMeter(double inputVolume) {
+    private static double kiloliterToCubicMeter(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToCubicMeter(inputVolume);
     }
@@ -1146,7 +1146,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToCubicCenti(double inputVolume) {
+    private static double kiloliterToCubicCenti(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToCubicCenti(inputVolume);
     }
@@ -1157,7 +1157,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToCubicMilli(double inputVolume) {
+    private static double kiloliterToCubicMilli(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToCubicMilli(inputVolume);
     }
@@ -1168,7 +1168,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToCubicKilo(double inputVolume) {
+    private static double kiloliterToCubicKilo(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToCubicKilo(inputVolume);
     }
@@ -1179,7 +1179,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToGallon(double inputVolume) {
+    private static double kiloliterToGallon(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToGallon(inputVolume);
     }
@@ -1190,7 +1190,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToQuart(double inputVolume) {
+    private static double kiloliterToQuart(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToQuart(inputVolume);
     }
@@ -1201,7 +1201,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToCup(double inputVolume) {
+    private static double kiloliterToCup(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToCup(inputVolume);
     }
@@ -1212,7 +1212,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToCubicFeet(double inputVolume) {
+    private static double kiloliterToCubicFeet(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToCubicFeet(inputVolume);
     }
@@ -1223,7 +1223,7 @@ public class VolumeConverter {
      * @param inputVolume
      * @return double
      */
-    public static double kiloliterToMilliliter(double inputVolume) {
+    private static double kiloliterToMilliliter(double inputVolume) {
         inputVolume = kiloliterToLiter(inputVolume);
         return literToMilliliter(inputVolume);
     }
@@ -1241,7 +1241,7 @@ public class VolumeConverter {
      * @return double
      */
     public static double convertVolume(Unit inputUnit, Unit outputUnit, double inputVolume) {
-        double outputVolume = 0;
+        double outputVolume;
         String choice = inputUnit.toString() + outputUnit.toString();
 
         // Determine conversion function.

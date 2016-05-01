@@ -30,7 +30,7 @@ public class CompoundBuilder {
     /**
      * This Class has a heavy method with recursion that benefits from a cache
      */
-    private Map<String, List<Element>> cache;
+    private final Map<String, List<Element>> cache;
 
     public CompoundBuilder(InputStream elementInputStream) {
         TableBuilder tb = new TableBuilder();
@@ -105,7 +105,7 @@ public class CompoundBuilder {
         return table.getElement(symbol);
     }
 
-    public NestedToken getDeepestNest(String formula) {
+    private NestedToken getDeepestNest(String formula) {
         NestedToken result = new NestedToken();
 
         result.originalFormula = formula;
@@ -116,7 +116,7 @@ public class CompoundBuilder {
 
         int positionLastOpenParenthesis = -1;
         int positionMatchingCloseParenthesis = -1;
-        int positionEndingCoefficient = 0;
+        int positionEndingCoefficient;
 
         for (int i = 0; i < formula.length(); i++) {
             if (formula.charAt(i) == '(') {
@@ -165,9 +165,9 @@ public class CompoundBuilder {
         }
 
         int positionFirstUpper = -1;
-        int positionLastLower = -1;
+        int positionLastLower;
         int positionFirstNumber = -1;
-        int positionLastNumber = -1;
+        int positionLastNumber;
         int positionLastRelevantCharacter = -1;
 
         for (int i = 0; i < formula.length(); i++) {

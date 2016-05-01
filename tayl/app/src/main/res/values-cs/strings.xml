@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chemie</string>
+  <string name="search_hint">Hledat vzorce</string>
+  <string name="also_known_as">"Také známý jako:"</string>
+  <string name="formula">"Formule:"</string>
+  <string name="molar_mass">"Molární hmotnost:"</string>
+  <string name="unknown_compound">Nejsou uvedeny/neznámé</string>
+  <string name="compound_elements_header">Prvky</string>
+  <string name="help_text">"Chem: od Ac do Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul oř
+        Taylor Veith
+        Victoria Rivas
+
+Tipy k navigaci:
+
+Převodník jednotek
+
+Zvolte typ konverze z
+        rozevírací nabídka první
+        Vyberte si své od - do jednotky nejprve stisknutím tlačítka na
+        drop-down menu
+        Zadejte hodnotu jednotky převést na
+        dole a stiskněte tlačítko "Vypočítat"
+        Výsledek je zobrazen pod tlačítko "Vypočítat"
+
+Složené hledání
+
+Vyberte si z sloučeniny zobrazeny nebo Hledat
+        v baru v horní
+        Můžete vyhledávat přes složené vzorce nebo složené
+        Jméno
+        Je-li hledání podle vzorce:
+        * Vyhledávání rozlišována malá a velká písmena!
+        * Nezapomeňte závorky-li ve vzorci
+        Je-li hledání podle složeného jména:
+        * Začít psát v názvu složeného
+        * Zvolte sloučenina ze seznamu generovaných
+        Zvolte sloučenina převodu gramů na
+        krtci
+
+Prvky
+
+Prvky zobrazené v seznamu atomových
+        číslo
+        Vyhledávání pro prvky v horní části obrazovky
+        podle jména
+        Zvolte prvek další informace
+        a převod z gramů na krtky
+
+Periodická tabulka prvků
+
+Tabulka se zobrazí v krajině - otočení vaší
+        telefon! Přiblížit se na displeji jako normální"
+    </string>
+  <string name="compoundsearchbuttontext">Složené hledání</string>
+  <string name="tablebuttontext">Periodická tabulka prvků</string>
+  <string name="helpbuttontext">Pomoc</string>
+  <string name="converterbuttontext">Převodník jednotek</string>
+  <string name="elementsbuttontext">Prvky</string>
+  <string name="contactbuttontext">Kontaktujte nás</string>
+  <string name="send_button">Odeslat</string>
+  <string name="contactmessagehint">zpráva</string>
+  <string name="contactsubjecthint">Předmět</string>
+  <string name="questionsuggestionbugprompt">Máte dotaz, návrh či chybu hlásit? Dejte nám vědět zde.</string>
+  <string name="splashScreen">To je kontejner pro úvodní obrazovku</string>
+  <string name="mainImgView">kontejner pro logo na domovské obrazovce</string>
+  <string name="conversion_type">Typ převodu</string>
+  <string name="value">Hodnota</string>
+  <string name="from_unit">Z jednotky</string>
+  <string name="to_unit">Na jednotku</string>
+  <string name="calculate">Výpočet</string>
+  <string name="name">Jméno</string>
+  <string name="chemical_formula">Chemický vzorec</string>
+  <string name="molar_mass_display">Molární hmotnost</string>
+  <string name="grams">Gramů:</string>
+  <string name="moles">Mol:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Také známý jako:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq loděnice</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic hmotnost jednotky/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds na čtvereční palec</string-array>
+  <string-array name="volumeUnits">Krychlové MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

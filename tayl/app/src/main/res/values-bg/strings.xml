@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Химия</string>
+  <string name="search_hint">Формули за търсене</string>
+  <string name="also_known_as">"Известен също като:"</string>
+  <string name="formula">"Формула:"</string>
+  <string name="molar_mass">"Моларна маса:"</string>
+  <string name="unknown_compound">Не изброени/неизвестен</string>
+  <string name="compound_elements_header">Елементи</string>
+  <string name="help_text">"ХИМ: от Ac до Zr
+        v1.0.0
+
+Alex Стиляна
+        Daniel Кини
+        Робърт Valladares
+        Джон-Paul жребец
+        Veith Тейлър
+        Виктория Rivas
+
+Съвети за навигация:
+
+Единица конвертор
+
+Изберете типа на преобразуването от
+        падащото меню първо
+        Изберете си от – до единици първо чрез натискане на
+        падащите менюта
+        Въведете стойността на единица за конвертиране в
+        отдолу и натиснете "Изчисли"
+        Резултатът се показва под бутона "Изчисли"
+
+Комбинирани търсене
+
+Изберете от съединения, които показват или търсене
+        от лентата в горната част
+        Да търсите чрез съединение формула или комбинирани
+        Име
+        Ако търсите по формулата:
+        * Търсене е чувствителна!
+        * Не забравяйте скоби ако във формулата
+        Ако търсене по име на комбинирани:
+        * Започнете да въвеждате името на съединение
+        * Изберете съединение от списъка, генериран
+        Изберете съединение за превръщане на грама до
+        бенки
+
+Елементи
+
+Елементи, показани в списъка от атомна
+        номер
+        Търсене на елементи в горната част на екрана
+        по име
+        Изберете елемент за допълнителна информация
+        и конверсия от грама за бенки
+
+Периодична таблица
+
+Таблицата ще се покаже в пейзаж - върти си
+        телефон! Увеличаване на дисплея като нормални"
+    </string>
+  <string name="compoundsearchbuttontext">Комбинирани търсене</string>
+  <string name="tablebuttontext">Периодична таблица</string>
+  <string name="helpbuttontext">Помощ</string>
+  <string name="converterbuttontext">Единица конвертор</string>
+  <string name="elementsbuttontext">Елементи</string>
+  <string name="contactbuttontext">Свържете се с нас</string>
+  <string name="send_button">Изпрати</string>
+  <string name="contactmessagehint">съобщение</string>
+  <string name="contactsubjecthint">темата</string>
+  <string name="questionsuggestionbugprompt">Имам един въпрос, предложение или бъг да докладва? Нека знае тук.</string>
+  <string name="splashScreen">Това е контейнер за началния екран</string>
+  <string name="mainImgView">контейнер за началния екран лого</string>
+  <string name="conversion_type">Тип реализация</string>
+  <string name="value">Стойност</string>
+  <string name="from_unit">От единица</string>
+  <string name="to_unit">За единица</string>
+  <string name="calculate">Изчисляване</string>
+  <string name="name">Име</string>
+  <string name="chemical_formula">Химична формула</string>
+  <string name="molar_mass_display">Моларна маса</string>
+  <string name="grams">Грама:</string>
+  <string name="moles">Бенки:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Ал</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Известен също като:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq двор</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic маса единица/DaltonGramMilligramKilogramMetric тон</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre на MercuryPounds на квадратен инч</string-array>
+  <string-array name="volumeUnits">Кубичен MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

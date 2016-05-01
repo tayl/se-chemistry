@@ -10,20 +10,24 @@ import java.util.List;
  */
 public class Table {
 
-    private List<Element> elements = new ArrayList<>();
+    private final List<Element> elements = new ArrayList<>();
 
-    private HashMap<String, Element> elementMap = new HashMap<>();
+    private final HashMap<String, Element> elementMap = new HashMap<>();
 
-    public Element[] getElements() {
-        Element[] e = new Element[elements.size()];
-        return elements.toArray(e);
-    }
+// --Commented out by Inspection START (5/1/16 4:51 PM):
+//    public Element[] getElements() {
+//        Element[] e = new Element[elements.size()];
+//        return elements.toArray(e);
+//    }
+// --Commented out by Inspection STOP (5/1/16 4:51 PM)
 
-    public void setElements(Element[] elements) {
-        for (Element element : elements) {
-            addElement(element);
-        }
-    }
+// --Commented out by Inspection START (5/1/16 4:51 PM):
+//    public void setElements(Element[] elements) {
+//        for (Element element : elements) {
+//            addElement(element);
+//        }
+//    }
+// --Commented out by Inspection STOP (5/1/16 4:51 PM)
 
     public void addElement(Element element) {
         elements.add(element);
@@ -35,13 +39,17 @@ public class Table {
         return elementMap.get(element);
     }
 
-    public int getElementCount() {
-        return elements.size();
-    }
+// --Commented out by Inspection START (5/1/16 4:51 PM):
+//    public int getElementCount() {
+//        return elements.size();
+//    }
+// --Commented out by Inspection STOP (5/1/16 4:51 PM)
 
-    public void printTable() {
-        for (Element element : elements) {
-            System.out.print(element.getName());
-        }
-    }
+// --Commented out by Inspection START (5/1/16 4:52 PM):
+//    public void printTable() {
+//        for (Element element : elements) {
+//            System.out.print(element.getName());
+//        }
+//    }
+// --Commented out by Inspection STOP (5/1/16 4:52 PM)
 }

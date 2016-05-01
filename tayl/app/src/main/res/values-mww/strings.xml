@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Science News for KIDS</string>
+  <string name="search_hint">Tus qauv nrhiav</string>
+  <string name="also_known_as">"Los yog:"</string>
+  <string name="formula">"Mis mos:"</string>
+  <string name="molar_mass">"Pawg hniav puas:"</string>
+  <string name="unknown_compound">Tsis teev/tsis paub</string>
+  <string name="compound_elements_header">Ntsiab</string>
+  <string name="help_text">"Chem: ntawm Ac mus Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John Paul tug txiv nees
+        TAYLOR Veith
+        Victoria Rivas
+
+Tswv yim rau next:
+
+Chav tsev Converter
+
+Xaiv conversion hom ntawm tus
+        tshuab raj nco-down thawj
+        Xaiv koj los - los rau lwm thawj zaug los nias
+        txoj kev nco-down menus
+        Sau tus nqi xauj yuav hloov ua lwm yam thaum lub
+        hauv qab thiab nias "Calculate"
+        No yog tso tawm kom pom nyob rau hauv "Calculate" khawm
+
+Cov nrhiav
+
+Xaiv tebchaw dlhau theem teev tseg los yog mus nrhiav
+        ntawm qhov bar rau saum
+        Yuav mus nrhiav ntawm cov mis los sis cov
+        lub npe
+        Yog los ntawm mis searching:
+        * Nrhiav yog nab rhiab!
+        * Tsis txhob hnov qab quas yog nyob hauv cov mis
+        Yog searching uas muaj cov npe:
+        * Pib typing lub npe txog
+        * Xaiv tus compound ntawm daim ntawv generated
+        Xaiv ib compound rau conversion ntawm grams los
+        moles
+
+Ntsiab
+
+Ntsiab dlhau theem teev tseg rau hauv daim ntawv los ntawm lub atomic
+        naj npawb
+        Hais rau saum qhov tshuaj ntsuam nrhiav
+        npe
+        Xaiv ib lub caij ntxiv
+        thiab conversion ntawm grams los moles
+
+Cov lus Periodic
+
+Cov lus yuav tso tau rau hauv toj roob hauv pes - rotate saib koj
+        xov tooj! Zoom rau cov zaub ua dab tsi"
+    </string>
+  <string name="compoundsearchbuttontext">Cov nrhiav</string>
+  <string name="tablebuttontext">Cov lus Periodic</string>
+  <string name="helpbuttontext">Pab</string>
+  <string name="converterbuttontext">Chav tsev Converter</string>
+  <string name="elementsbuttontext">Ntsiab</string>
+  <string name="contactbuttontext">Tiv tauj peb</string>
+  <string name="send_button">Xa</string>
+  <string name="contactmessagehint">xov</string>
+  <string name="contactsubjecthint">kawm</string>
+  <string name="questionsuggestionbugprompt">Muaj lus nug, suggestion, lossis kab qhia? Qhia rau peb paub hauv qab no.</string>
+  <string name="splashScreen">qhov no yog lub thawv rau qhov txaws screen</string>
+  <string name="mainImgView">thawv rau tsev tshuaj ntsuam logo</string>
+  <string name="conversion_type">Conversion hom</string>
+  <string name="value">Tus nqi</string>
+  <string name="from_unit">Los tsev</string>
+  <string name="to_unit">Los tsev</string>
+  <string name="calculate">Xam</string>
+  <string name="name">Lub npe</string>
+  <string name="chemical_formula">Noj mis nyuj tov tshuaj</string>
+  <string name="molar_mass_display">Hniav puas pawg</string>
+  <string name="grams">Grams:</string>
+  <string name="moles">Moles:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Los yog:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq vaj</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">Nyhav ib toos Unit/DaltonGramMilligramKilogramMetric OuncePoundAtomic pawg</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre txog MercuryPounds ib Sq nti</string-array>
+  <string-array name="volumeUnits">Sau lo lus teb MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

@@ -1,5 +1,7 @@
 package compounds;
 
+import android.support.annotation.NonNull;
+
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -127,10 +129,7 @@ public class Compound implements Comparable<Compound> {
             }
         }
 
-        if (exact) {
-            return copyOfElementsWeHave.size() == 0;
-        }
-        return true;
+        return !exact || copyOfElementsWeHave.size() == 0;
     }
 
     public boolean isExactMatch() {
@@ -212,7 +211,7 @@ public class Compound implements Comparable<Compound> {
     }
 
     @Override
-    public int compareTo(Compound that) {
+    public int compareTo(@NonNull Compound that) {
         String thisName = this.getName();
         String thatName = that.getName();
 

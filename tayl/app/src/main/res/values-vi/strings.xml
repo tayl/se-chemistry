@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Hóa học</string>
+  <string name="search_hint">Tìm công thức</string>
+  <string name="also_known_as">"Còn được gọi là:"</string>
+  <string name="formula">"Công thức:"</string>
+  <string name="molar_mass">"Khối lượng Mol:"</string>
+  <string name="unknown_compound">Không liệt kê/không rõ</string>
+  <string name="compound_elements_header">Yếu tố</string>
+  <string name="help_text">"Chem: từ Ac đến Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Mẹo để di chuyển:
+
+Chuyển đổi đơn vị
+
+Chọn loại chuyển đổi từ các
+        trình đơn thả xuống đầu tiên
+        Lựa chọn của bạn - đơn vị đầu tiên bằng cách nhấn
+        Các trình đơn thả xuống
+        Nhập giá trị của đơn vị để chuyển đổi các
+        dưới cùng và bấm "Tính toán"
+        Kết quả sẽ được hiển thị dưới nút "Tính toán"
+
+Hợp chất tìm
+
+Chọn từ các hợp chất Hiển thị hoặc tìm kiếm
+        quầy bar ở đầu trang
+        Có thể tìm kiếm thông qua công thức hợp chất hoặc hợp chất
+        Tên
+        Nếu tìm kiếm bằng công thức:
+        * Tìm kiếm là trường hợp nhạy cảm!
+        * Đừng quên dấu ngoặc đơn nếu trong công thức
+        Nếu tìm kiếm bằng tên hợp chất:
+        * Bắt đầu nhập vào tên hợp chất
+        * Chọn một hợp chất từ danh sách được tạo ra
+        Chọn một hợp chất chuyển đổi gam để
+        nốt ruồi
+
+Yếu tố
+
+Yếu tố được hiển thị trong danh sách của các nguyên tử
+        số
+        Tìm kiếm các yếu tố ở trên cùng của màn hình
+        theo tên
+        Chọn một phần tử cho thông tin bổ sung
+        và chuyển đổi từ gam sang nốt ruồi
+
+Bảng tuần hoàn
+
+Bảng sẽ hiển thị trong cảnh quan - xoay của bạn
+        điện thoại! Phóng to để hiển thị như bình thường"
+    </string>
+  <string name="compoundsearchbuttontext">Hợp chất tìm</string>
+  <string name="tablebuttontext">Bảng tuần hoàn</string>
+  <string name="helpbuttontext">Trợ giúp</string>
+  <string name="converterbuttontext">Chuyển đổi đơn vị</string>
+  <string name="elementsbuttontext">Yếu tố</string>
+  <string name="contactbuttontext">Liên hệ với chúng tôi</string>
+  <string name="send_button">Gửi</string>
+  <string name="contactmessagehint">tin nhắn</string>
+  <string name="contactsubjecthint">chủ đề</string>
+  <string name="questionsuggestionbugprompt">Có một câu hỏi, gợi ý hoặc lỗi để báo cáo? Hãy cho chúng tôi biết dưới đây.</string>
+  <string name="splashScreen">Điều này là container cho màn hình giật gân</string>
+  <string name="mainImgView">container cho biểu tượng màn hình chủ</string>
+  <string name="conversion_type">Chuyển đổi kiểu</string>
+  <string name="value">Giá trị</string>
+  <string name="from_unit">Từ đơn vị</string>
+  <string name="to_unit">Đơn vị</string>
+  <string name="calculate">Tính toán</string>
+  <string name="name">Tên</string>
+  <string name="chemical_formula">Công thức hóa học</string>
+  <string name="molar_mass_display">Khối lượng Mol</string>
+  <string name="grams">Gam:</string>
+  <string name="moles">Nốt ruồi:</string>
+  <string name="alumininum">Nhôm</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Còn được gọi là:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic khối lượng đơn vị/DaltonGramMilligramKilogramMetric tấn</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre của MercuryPounds mỗi Sq Inch</string-array>
+  <string-array name="volumeUnits">Khối MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

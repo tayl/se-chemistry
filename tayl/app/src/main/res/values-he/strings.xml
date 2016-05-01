@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">כימיה</string>
+  <string name="search_hint">נוסחאות החיפוש</string>
+  <string name="also_known_as">"ידוע גם בשם:"</string>
+  <string name="formula">"הנוסחה:"</string>
+  <string name="molar_mass">"המסה טוחנת:"</string>
+  <string name="unknown_compound">לא רשום/לא ידוע</string>
+  <string name="compound_elements_header">אלמנטים</string>
+  <string name="help_text">"כימיה: מ- Ac כדי Zr
+        v 1.0.0
+
+Alex Doan
+        Daniel קיני
+        רוברט Valladares
+        ג'ון-Paul סטיד
+        Veith טיילור
+        ויקטוריה ריבאס
+
+טיפים כדי לנווט:
+
+ממיר יחידת
+
+לבחור את סוג ההמרה מ-
+        בתפריט הנפתח הראשון
+        לבחור שלך מיחידות תחילה על-ידי לחיצה על
+        התפריטים הנפתחים
+        הזן את הערך של היחידה להמיר ב
+        התחתונה והקש "לחשב"
+        התוצאה מוצגת תחת כפתור "חישוב"
+
+חיפוש מורכבים
+
+לבחור מתוך תרכובות מוצגים או חיפוש
+        מהבר בקומה העליונה
+        באפשרותך לבצע חיפוש באמצעות נוסחה מורכבת או תרכובת
+        שם
+        אם חיפוש לפי הנוסחה:
+        * חיפוש תלוי רישיות!
+        * אל תשכח בסוגריים אם בנוסחה
+        אם חיפוש לפי שם המתחם:
+        התחל להקליד את שם מתחם
+        לבחור את המתחם מהרשימה שנוצר
+        בוחרים תרכובת עבור המרה של גרמים
+        שומות
+
+אלמנטים
+
+הרכיבים המוצגים ברשימה על ידי אטומי
+        מספר
+        חיפוש של אלמנטים בחלק העליון של המסך
+        לפי שם
+        בחר רכיב למידע נוסף
+        המרה מ גרם כדי שומות
+
+הטבלה המחזורית
+
+הטבלה יציג בנוף - סיבוב שלך
+        טלפון! התקרבות אל התצוגה כרגיל"
+    </string>
+  <string name="compoundsearchbuttontext">חיפוש מורכבים</string>
+  <string name="tablebuttontext">הטבלה המחזורית</string>
+  <string name="helpbuttontext">עזרה</string>
+  <string name="converterbuttontext">ממיר יחידת</string>
+  <string name="elementsbuttontext">אלמנטים</string>
+  <string name="contactbuttontext">צור קשר</string>
+  <string name="send_button">שלח</string>
+  <string name="contactmessagehint">ההודעה</string>
+  <string name="contactsubjecthint">נושא</string>
+  <string name="questionsuggestionbugprompt">יש לי שאלה, הצעה, או באג לדווח? תן לנו לדעת כאן.</string>
+  <string name="splashScreen">. זה הגורם המכיל עבור מסך הפתיחה</string>
+  <string name="mainImgView">מיכל על מסך הבית לוגו</string>
+  <string name="conversion_type">סוג ההמרה</string>
+  <string name="value">ערך</string>
+  <string name="from_unit">מהיחידה</string>
+  <string name="to_unit">ליחידה</string>
+  <string name="calculate">לחשב</string>
+  <string name="name">שם</string>
+  <string name="chemical_formula">כתיב כימי</string>
+  <string name="molar_mass_display">המסה טוחנת</string>
+  <string name="grams">גרם:</string>
+  <string name="moles">שומות:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"ידוע גם בשם:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq יארד</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic מסה יחידה/DaltonGramMilligramKilogramMetric טון</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre של MercuryPounds לאינץ קמ ר</string-array>
+  <string-array name="volumeUnits">מ ק MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

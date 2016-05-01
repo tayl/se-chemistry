@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Химия</string>
+  <string name="search_hint">Поиск формулы</string>
+  <string name="also_known_as">«Также известен как:»</string>
+  <string name="formula">«Формула:»</string>
+  <string name="molar_mass">«Молярная масса:»</string>
+  <string name="unknown_compound">Не перечисленные/неизвестные</string>
+  <string name="compound_elements_header">Элементы</string>
+  <string name="help_text">«Хим: от сети переменного тока для Zr
+        v1.0.0
+
+Alex Доан
+        Daniel Кинни
+        Роберт Valladares
+        Джон Paul Steed
+        Veith Тейлор
+        Виктория Ривас
+
+Советы для навигации:
+
+Конвертер единиц
+
+Выберите тип преобразования из
+        раскрывающееся меню первого
+        Выберите ваш с - до единицы сначала нажав
+        раскрывающееся меню
+        Введите значение единицы с конвертировать в
+        внизу и нажмите «Рассчитать»
+        Результат отображается под кнопкой «Рассчитать»
+
+Составные Поиск
+
+Выберите из соединений отображается или Поиск
+        на панели в верхней части
+        Можно искать через соединение формулы или составные
+        имя
+        Если поиск по формуле:
+        * Поиск чувствителен к регистру!
+        * Не забывайте скобки, если в формуле
+        Если поиск по составное имя:
+        * Начните вводить в составное имя
+        * Выберите соединение из списка созданных
+        Выберите соединение для преобразование грамм до
+        моль
+
+Элементы
+
+Элементы, отображаемые в списке по атомной
+        номер
+        Поиск элементов в верхней части экрана
+        по имени
+        Выберите элемент для получения дополнительной информации
+        и преобразование грамм родинки
+
+Периодическая таблица
+
+Таблицы будут отображаться в пейзаж - поворот ваш
+        Телефон! Увеличить масштаб отображения как нормальный»
+    </string>
+  <string name="compoundsearchbuttontext">Составные Поиск</string>
+  <string name="tablebuttontext">Периодическая таблица</string>
+  <string name="helpbuttontext">Справка</string>
+  <string name="converterbuttontext">Конвертер единиц</string>
+  <string name="elementsbuttontext">Элементы</string>
+  <string name="contactbuttontext">Свяжитесь с нами</string>
+  <string name="send_button">Отправить</string>
+  <string name="contactmessagehint">Сообщение</string>
+  <string name="contactsubjecthint">Тема</string>
+  <string name="questionsuggestionbugprompt">Есть вопрос, предложение или ошибка отчет? Дайте нам знаете, здесь.</string>
+  <string name="splashScreen">это контейнер для экрана-заставки</string>
+  <string name="mainImgView">контейнер для домашнего экрана логотип</string>
+  <string name="conversion_type">Тип преобразования</string>
+  <string name="value">Значение</string>
+  <string name="from_unit">От блока</string>
+  <string name="to_unit">Блок</string>
+  <string name="calculate">Вычислить</string>
+  <string name="name">Имя</string>
+  <string name="chemical_formula">Химическая формула</string>
+  <string name="molar_mass_display">Молярная масса</string>
+  <string name="grams">Грамм:</string>
+  <string name="moles">Моль:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">«Также известен как:»</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq двор</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic массы единицы/DaltonGramMilligramKilogramMetric тонн</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds на дюйм Sq</string-array>
+  <string-array name="volumeUnits">Кубический MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

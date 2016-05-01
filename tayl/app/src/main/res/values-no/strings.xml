@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kjemi</string>
+  <string name="search_hint">Søk etter formler</string>
+  <string name="also_known_as">"Også kjent som:"</string>
+  <string name="formula">"Formelen:"</string>
+  <string name="molar_mass">"Molmasse:"</string>
+  <string name="unknown_compound">Ikke oppført/ukjent</string>
+  <string name="compound_elements_header">Elementer</string>
+  <string name="help_text">"Chem: fra Ac til Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Tips for å navigere:
+
+Konverterer
+
+Velg konverteringstypen fra den
+        rullegardinmenyen første
+        Velg din fra - enheter første ved å trykke på
+        drop-down menyer
+        Angi verdien for enheten for å konvertere den
+        bunnen og trykke "Beregn"
+        Resultatet vises under "Beregn"
+
+Sammensatte søk
+
+Velg forbindelser vises eller søk
+        i baren på toppen
+        Kan søke via sammensatte formel eller sammensatte
+        navn
+        Hvis søker formelen:
+        * Søk er case sensitive!
+        * Ikke glem parentesene i formelen
+        Hvis søker etter sammensatte navn:
+        * Start å skrive i sammensatte navnet
+        * Velg sammensatt fra listen generert
+        Velge en sammensatt for konvertering av gram til
+        føflekker
+
+Elementer
+
+Elementene som vises i listen av det fysiske
+        nummer
+        Søk etter elementer på toppen av skjermen
+        etter navn
+        Velg et element for mer informasjon
+        og konvertering fra gram til føflekker
+
+Periodesystemet
+
+Tabellen vises i landskapet - Roter din
+        telefon! Zoome inn til skjermen som normalt"
+    </string>
+  <string name="compoundsearchbuttontext">Sammensatte søk</string>
+  <string name="tablebuttontext">Periodesystemet</string>
+  <string name="helpbuttontext">hjelp</string>
+  <string name="converterbuttontext">Konverterer</string>
+  <string name="elementsbuttontext">Elementer</string>
+  <string name="contactbuttontext">Kontakt oss</string>
+  <string name="send_button">Sende</string>
+  <string name="contactmessagehint">melding</string>
+  <string name="contactsubjecthint">emne</string>
+  <string name="questionsuggestionbugprompt">Har spørsmål, forslag eller feilrapport? La oss vite her.</string>
+  <string name="splashScreen">Dette er for velkomstbildet</string>
+  <string name="mainImgView">beholder for Hjem-skjermen-logoen</string>
+  <string name="conversion_type">Konverteringstypen</string>
+  <string name="value">Verdi</string>
+  <string name="from_unit">Fra enhet</string>
+  <string name="to_unit">Enhet</string>
+  <string name="calculate">Beregne</string>
+  <string name="name">navn</string>
+  <string name="chemical_formula">Kjemisk formel</string>
+  <string name="molar_mass_display">Molmasse</string>
+  <string name="grams">Gram:</string>
+  <string name="moles">Føflekker:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Også kjent som:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic masse enhet/DaltonGramMilligramKilogramMetric tonn</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre av MercuryPounds per kvadrat tomme</string-array>
+  <string-array name="volumeUnits">Kubikk MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

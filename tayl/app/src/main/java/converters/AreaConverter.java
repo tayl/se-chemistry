@@ -19,7 +19,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToSquareMillimeter(double inputArea) {
+    private static double squareMeterToSquareMillimeter(double inputArea) {
         return (inputArea / Math.pow(ConversionLiterals.MILLI, 2));
     }
 
@@ -29,7 +29,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToSquareMeter(double inputArea) {
+    private static double squareMillimeterToSquareMeter(double inputArea) {
         return (inputArea * Math.pow(ConversionLiterals.MILLI, 2));
     }
 
@@ -39,7 +39,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToSquareCentimeter(double inputArea) {
+    private static double squareMeterToSquareCentimeter(double inputArea) {
         return (inputArea / Math.pow(ConversionLiterals.CENTI, 2));
     }
 
@@ -49,7 +49,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToSquareMeter(double inputArea) {
+    private static double squareCentimeterToSquareMeter(double inputArea) {
         return (inputArea * Math.pow(ConversionLiterals.CENTI, 2));
     }
 
@@ -59,7 +59,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToSquareKilometer(double inputArea) {
+    private static double squareMeterToSquareKilometer(double inputArea) {
         return (inputArea / Math.pow(ConversionLiterals.KILO, 2));
     }
 
@@ -69,7 +69,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToSquareMeter(double inputArea) {
+    private static double squareKilometerToSquareMeter(double inputArea) {
         return (inputArea * Math.pow(ConversionLiterals.KILO, 2));
     }
 
@@ -79,7 +79,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareKilometer(double inputArea) {
+    private static double hectareToSquareKilometer(double inputArea) {
         return (inputArea / ConversionLiterals.HECTARESQKILOMETER);
     }
 
@@ -89,7 +89,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToHectare(double inputArea) {
+    private static double squareKilometerToHectare(double inputArea) {
         return (inputArea * ConversionLiterals.HECTARESQKILOMETER);
     }
 
@@ -99,7 +99,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToSquareMeter(double inputArea) {
+    private static double squareFootToSquareMeter(double inputArea) {
         return (inputArea / ConversionLiterals.SQFOOTSQMETER);
     }
 
@@ -109,7 +109,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToSquareFoot(double inputArea) {
+    private static double squareMeterToSquareFoot(double inputArea) {
         return (inputArea * ConversionLiterals.SQFOOTSQMETER);
     }
 
@@ -119,7 +119,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToSquareInch(double inputArea) {
+    private static double squareFootToSquareInch(double inputArea) {
         return (inputArea * ConversionLiterals.SQINCHSQFOOT);
     }
 
@@ -129,7 +129,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToSquareFoot(double inputArea) {
+    private static double squareInchToSquareFoot(double inputArea) {
         return (inputArea / ConversionLiterals.SQINCHSQFOOT);
     }
 
@@ -139,7 +139,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToSquareYard(double inputArea) {
+    private static double squareFootToSquareYard(double inputArea) {
         return (inputArea / ConversionLiterals.SQFOOTSQYARD);
     }
 
@@ -149,7 +149,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToSquareFoot(double inputArea) {
+    private static double squareYardToSquareFoot(double inputArea) {
         return (inputArea * ConversionLiterals.SQFOOTSQYARD);
     }
 
@@ -159,7 +159,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareYard(double inputArea) {
+    private static double acreToSquareYard(double inputArea) {
         return (inputArea * ConversionLiterals.SQYARDPERACRE);
     }
 
@@ -169,7 +169,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToAcre(double inputArea) {
+    private static double squareYardToAcre(double inputArea) {
         return (inputArea / ConversionLiterals.SQYARDPERACRE);
     }
 
@@ -179,7 +179,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareMile(double inputArea) {
+    private static double acreToSquareMile(double inputArea) {
         return (inputArea / ConversionLiterals.ACRESQMILE);
     }
 
@@ -189,7 +189,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToAcre(double inputArea) {
+    private static double squareMileToAcre(double inputArea) {
         return (inputArea * ConversionLiterals.ACRESQMILE);
     }
 
@@ -203,7 +203,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToHectare(double inputArea) {
+    private static double squareMeterToHectare(double inputArea) {
         inputArea = squareMeterToSquareKilometer(inputArea);
         return squareKilometerToHectare(inputArea);
     }
@@ -214,7 +214,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToSquareInch(double inputArea) {
+    private static double squareMeterToSquareInch(double inputArea) {
         inputArea = squareMeterToSquareFoot(inputArea);
         return squareFootToSquareInch(inputArea);
     }
@@ -225,7 +225,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToSquareYard(double inputArea) {
+    private static double squareMeterToSquareYard(double inputArea) {
         inputArea = squareMeterToSquareFoot(inputArea);
         return squareFootToSquareYard(inputArea);
     }
@@ -236,7 +236,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToAcre(double inputArea) {
+    private static double squareMeterToAcre(double inputArea) {
         inputArea = squareMeterToSquareYard(inputArea);
         return squareYardToAcre(inputArea);
     }
@@ -247,7 +247,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMeterToSquareMile(double inputArea) {
+    private static double squareMeterToSquareMile(double inputArea) {
         inputArea = squareMeterToAcre(inputArea);
         return acreToSquareMile(inputArea);
     }
@@ -261,7 +261,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToSquareCentimeter(double inputArea) {
+    private static double squareMillimeterToSquareCentimeter(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -272,7 +272,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToSquareKilometer(double inputArea) {
+    private static double squareMillimeterToSquareKilometer(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToSquareKilometer(inputArea);
     }
@@ -283,7 +283,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToHectare(double inputArea) {
+    private static double squareMillimeterToHectare(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToHectare(inputArea);
     }
@@ -294,7 +294,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToSquareInch(double inputArea) {
+    private static double squareMillimeterToSquareInch(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToSquareInch(inputArea);
     }
@@ -305,7 +305,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToSquareFoot(double inputArea) {
+    private static double squareMillimeterToSquareFoot(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToSquareFoot(inputArea);
     }
@@ -316,7 +316,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToSquareYard(double inputArea) {
+    private static double squareMillimeterToSquareYard(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToSquareYard(inputArea);
     }
@@ -327,7 +327,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToSquareMile(double inputArea) {
+    private static double squareMillimeterToSquareMile(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToSquareMile(inputArea);
     }
@@ -338,7 +338,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMillimeterToAcre(double inputArea) {
+    private static double squareMillimeterToAcre(double inputArea) {
         inputArea = squareMillimeterToSquareMeter(inputArea);
         return squareMeterToAcre(inputArea);
     }
@@ -351,7 +351,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToSquareMillimeter(double inputArea) {
+    private static double squareCentimeterToSquareMillimeter(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -362,7 +362,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToSquareKilometer(double inputArea) {
+    private static double squareCentimeterToSquareKilometer(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToSquareKilometer(inputArea);
     }
@@ -373,7 +373,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToHectare(double inputArea) {
+    private static double squareCentimeterToHectare(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToHectare(inputArea);
     }
@@ -384,7 +384,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToSquareInch(double inputArea) {
+    private static double squareCentimeterToSquareInch(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToSquareInch(inputArea);
     }
@@ -395,7 +395,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToSquareFoot(double inputArea) {
+    private static double squareCentimeterToSquareFoot(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToSquareFoot(inputArea);
     }
@@ -406,7 +406,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToSquareYard(double inputArea) {
+    private static double squareCentimeterToSquareYard(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToSquareYard(inputArea);
     }
@@ -417,7 +417,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToSquareMile(double inputArea) {
+    private static double squareCentimeterToSquareMile(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToSquareMile(inputArea);
     }
@@ -428,7 +428,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareCentimeterToAcre(double inputArea) {
+    private static double squareCentimeterToAcre(double inputArea) {
         inputArea = squareCentimeterToSquareMeter(inputArea);
         return squareMeterToAcre(inputArea);
     }
@@ -441,7 +441,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToSquareMillimeter(double inputArea) {
+    private static double squareKilometerToSquareMillimeter(double inputArea) {
         inputArea = squareKilometerToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -452,7 +452,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToSquareCentimeter(double inputArea) {
+    private static double squareKilometerToSquareCentimeter(double inputArea) {
         inputArea = squareKilometerToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -463,7 +463,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToSquareInch(double inputArea) {
+    private static double squareKilometerToSquareInch(double inputArea) {
         inputArea = squareKilometerToSquareMeter(inputArea);
         return squareMeterToSquareInch(inputArea);
     }
@@ -474,7 +474,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToSquareFoot(double inputArea) {
+    private static double squareKilometerToSquareFoot(double inputArea) {
         inputArea = squareKilometerToSquareMeter(inputArea);
         return squareMeterToSquareFoot(inputArea);
     }
@@ -485,7 +485,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToSquareYard(double inputArea) {
+    private static double squareKilometerToSquareYard(double inputArea) {
         inputArea = squareKilometerToSquareMeter(inputArea);
         return squareMeterToSquareYard(inputArea);
     }
@@ -496,7 +496,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToSquareMile(double inputArea) {
+    private static double squareKilometerToSquareMile(double inputArea) {
         inputArea = squareKilometerToSquareMeter(inputArea);
         return squareMeterToSquareMile(inputArea);
     }
@@ -507,7 +507,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareKilometerToAcre(double inputArea) {
+    private static double squareKilometerToAcre(double inputArea) {
         inputArea = squareKilometerToSquareMeter(inputArea);
         return squareMeterToAcre(inputArea);
     }
@@ -520,7 +520,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareMeter(double inputArea) {
+    private static double hectareToSquareMeter(double inputArea) {
         inputArea = hectareToSquareKilometer(inputArea);
         return squareKilometerToSquareMeter(inputArea);
     }
@@ -531,7 +531,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareMillimeter(double inputArea) {
+    private static double hectareToSquareMillimeter(double inputArea) {
         inputArea = hectareToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -542,7 +542,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareCentimeter(double inputArea) {
+    private static double hectareToSquareCentimeter(double inputArea) {
         inputArea = hectareToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -553,7 +553,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareInch(double inputArea) {
+    private static double hectareToSquareInch(double inputArea) {
         inputArea = hectareToSquareMeter(inputArea);
         return squareMeterToSquareInch(inputArea);
     }
@@ -564,7 +564,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareFoot(double inputArea) {
+    private static double hectareToSquareFoot(double inputArea) {
         inputArea = hectareToSquareMeter(inputArea);
         return squareMeterToSquareFoot(inputArea);
     }
@@ -575,7 +575,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareYard(double inputArea) {
+    private static double hectareToSquareYard(double inputArea) {
         inputArea = hectareToSquareMeter(inputArea);
         return squareMeterToSquareYard(inputArea);
     }
@@ -586,7 +586,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToSquareMile(double inputArea) {
+    private static double hectareToSquareMile(double inputArea) {
         inputArea = hectareToSquareMeter(inputArea);
         return squareMeterToSquareMile(inputArea);
     }
@@ -597,7 +597,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double hectareToAcre(double inputArea) {
+    private static double hectareToAcre(double inputArea) {
         inputArea = hectareToSquareMeter(inputArea);
         return squareMeterToAcre(inputArea);
     }
@@ -610,7 +610,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToSquareMeter(double inputArea) {
+    private static double squareInchToSquareMeter(double inputArea) {
         inputArea = squareInchToSquareFoot(inputArea);
         return squareFootToSquareMeter(inputArea);
     }
@@ -621,7 +621,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToSquareMillimeter(double inputArea) {
+    private static double squareInchToSquareMillimeter(double inputArea) {
         inputArea = squareInchToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -632,7 +632,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToSquareCentimeter(double inputArea) {
+    private static double squareInchToSquareCentimeter(double inputArea) {
         inputArea = squareInchToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -643,7 +643,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToSquareKilometer(double inputArea) {
+    private static double squareInchToSquareKilometer(double inputArea) {
         inputArea = squareInchToSquareMeter(inputArea);
         return squareMeterToSquareKilometer(inputArea);
     }
@@ -654,7 +654,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToHectare(double inputArea) {
+    private static double squareInchToHectare(double inputArea) {
         inputArea = squareInchToSquareMeter(inputArea);
         return squareMeterToHectare(inputArea);
     }
@@ -665,7 +665,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToSquareYard(double inputArea) {
+    private static double squareInchToSquareYard(double inputArea) {
         inputArea = squareInchToSquareMeter(inputArea);
         return squareMeterToSquareYard(inputArea);
     }
@@ -676,7 +676,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToSquareMile(double inputArea) {
+    private static double squareInchToSquareMile(double inputArea) {
         inputArea = squareInchToSquareMeter(inputArea);
         return squareMeterToSquareMile(inputArea);
     }
@@ -687,7 +687,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareInchToAcre(double inputArea) {
+    private static double squareInchToAcre(double inputArea) {
         inputArea = squareInchToSquareMeter(inputArea);
         return squareMeterToAcre(inputArea);
     }
@@ -700,7 +700,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToSquareMillimeter(double inputArea) {
+    private static double squareFootToSquareMillimeter(double inputArea) {
         inputArea = squareFootToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -711,7 +711,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToSquareCentimeter(double inputArea) {
+    private static double squareFootToSquareCentimeter(double inputArea) {
         inputArea = squareFootToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -722,7 +722,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToSquareKilometer(double inputArea) {
+    private static double squareFootToSquareKilometer(double inputArea) {
         inputArea = squareFootToSquareMeter(inputArea);
         return squareMeterToSquareKilometer(inputArea);
     }
@@ -733,7 +733,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToHectare(double inputArea) {
+    private static double squareFootToHectare(double inputArea) {
         inputArea = squareFootToSquareMeter(inputArea);
         return squareMeterToHectare(inputArea);
     }
@@ -744,7 +744,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToSquareMile(double inputArea) {
+    private static double squareFootToSquareMile(double inputArea) {
         inputArea = squareFootToSquareMeter(inputArea);
         return squareMeterToSquareMile(inputArea);
     }
@@ -755,7 +755,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareFootToAcre(double inputArea) {
+    private static double squareFootToAcre(double inputArea) {
         inputArea = squareFootToSquareMeter(inputArea);
         return squareMeterToAcre(inputArea);
     }
@@ -768,7 +768,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToSquareMeter(double inputArea) {
+    private static double squareYardToSquareMeter(double inputArea) {
         inputArea = squareYardToSquareFoot(inputArea);
         return squareFootToSquareMeter(inputArea);
     }
@@ -779,7 +779,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToSquareMillimeter(double inputArea) {
+    private static double squareYardToSquareMillimeter(double inputArea) {
         inputArea = squareYardToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -790,7 +790,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToSquareCentimeter(double inputArea) {
+    private static double squareYardToSquareCentimeter(double inputArea) {
         inputArea = squareYardToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -801,7 +801,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToSquareKilometer(double inputArea) {
+    private static double squareYardToSquareKilometer(double inputArea) {
         inputArea = squareYardToSquareMeter(inputArea);
         return squareMeterToSquareKilometer(inputArea);
     }
@@ -812,7 +812,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToHectare(double inputArea) {
+    private static double squareYardToHectare(double inputArea) {
         inputArea = squareYardToSquareMeter(inputArea);
         return squareMeterToHectare(inputArea);
     }
@@ -823,7 +823,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToSquareInch(double inputArea) {
+    private static double squareYardToSquareInch(double inputArea) {
         inputArea = squareYardToSquareMeter(inputArea);
         return squareMeterToSquareInch(inputArea);
     }
@@ -834,7 +834,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareYardToSquareMile(double inputArea) {
+    private static double squareYardToSquareMile(double inputArea) {
         inputArea = squareYardToSquareMeter(inputArea);
         return squareMeterToSquareMile(inputArea);
     }
@@ -847,7 +847,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToSquareMeter(double inputArea) {
+    private static double squareMileToSquareMeter(double inputArea) {
         inputArea = squareMileToAcre(inputArea);
         return acreToSquareMeter(inputArea);
     }
@@ -858,7 +858,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToSquareMillimeter(double inputArea) {
+    private static double squareMileToSquareMillimeter(double inputArea) {
         inputArea = squareMileToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -869,7 +869,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToSquareCentimeter(double inputArea) {
+    private static double squareMileToSquareCentimeter(double inputArea) {
         inputArea = squareMileToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -880,7 +880,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToSquareKilometer(double inputArea) {
+    private static double squareMileToSquareKilometer(double inputArea) {
         inputArea = squareMileToSquareMeter(inputArea);
         return squareMeterToSquareKilometer(inputArea);
     }
@@ -891,7 +891,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToHectare(double inputArea) {
+    private static double squareMileToHectare(double inputArea) {
         inputArea = squareMileToSquareMeter(inputArea);
         return squareMeterToHectare(inputArea);
     }
@@ -902,7 +902,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToSquareInch(double inputArea) {
+    private static double squareMileToSquareInch(double inputArea) {
         inputArea = squareMileToSquareMeter(inputArea);
         return squareMeterToSquareInch(inputArea);
     }
@@ -913,7 +913,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToSquareFoot(double inputArea) {
+    private static double squareMileToSquareFoot(double inputArea) {
         inputArea = squareMileToSquareMeter(inputArea);
         return squareMeterToSquareFoot(inputArea);
     }
@@ -924,7 +924,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double squareMileToSquareYard(double inputArea) {
+    private static double squareMileToSquareYard(double inputArea) {
         inputArea = squareMileToSquareMeter(inputArea);
         return squareMeterToSquareYard(inputArea);
     }
@@ -938,7 +938,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareMeter(double inputArea) {
+    private static double acreToSquareMeter(double inputArea) {
         inputArea = acreToSquareYard(inputArea);
         return squareYardToSquareMeter(inputArea);
     }
@@ -949,7 +949,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareMillimeter(double inputArea) {
+    private static double acreToSquareMillimeter(double inputArea) {
         inputArea = acreToSquareMeter(inputArea);
         return squareMeterToSquareMillimeter(inputArea);
     }
@@ -960,7 +960,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareCentimeter(double inputArea) {
+    private static double acreToSquareCentimeter(double inputArea) {
         inputArea = acreToSquareMeter(inputArea);
         return squareMeterToSquareCentimeter(inputArea);
     }
@@ -971,7 +971,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareKilometer(double inputArea) {
+    private static double acreToSquareKilometer(double inputArea) {
         inputArea = acreToSquareMeter(inputArea);
         return squareMeterToSquareKilometer(inputArea);
     }
@@ -982,7 +982,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToHectare(double inputArea) {
+    private static double acreToHectare(double inputArea) {
         inputArea = acreToSquareMeter(inputArea);
         return squareMeterToHectare(inputArea);
     }
@@ -993,7 +993,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareInch(double inputArea) {
+    private static double acreToSquareInch(double inputArea) {
         inputArea = acreToSquareMeter(inputArea);
         return squareMeterToSquareInch(inputArea);
     }
@@ -1004,7 +1004,7 @@ public class AreaConverter {
      * @param inputArea
      * @return double
      */
-    public static double acreToSquareFoot(double inputArea) {
+    private static double acreToSquareFoot(double inputArea) {
         inputArea = acreToSquareMeter(inputArea);
         return squareMeterToSquareFoot(inputArea);
     }
@@ -1022,7 +1022,7 @@ public class AreaConverter {
      * @return double
      */
     public static double convertArea(Unit inputUnit, Unit outputUnit, double inputArea) {
-        double outputArea = 0;
+        double outputArea;
         String choice = inputUnit.toString() + outputUnit.toString();
 
         // Determine conversion function.

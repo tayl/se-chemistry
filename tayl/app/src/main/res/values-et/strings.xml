@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Keemia</string>
+  <string name="search_hint">Otsi valemid</string>
+  <string name="also_known_as">"Ka:"</string>
+  <string name="formula">"Valem:"</string>
+  <string name="molar_mass">"Molaarne mass:"</string>
+  <string name="unknown_compound">Ei ole loetletud/tundmatu</string>
+  <string name="compound_elements_header">Elemendid</string>
+  <string name="help_text">"Chem: Ac Zr:
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul ratsu
+        Taylor Veith
+        Victoria Rivas
+
+Näpunäiteid liikumiseks:
+
+Unit Converter
+
+Vali konversiooni tüüp alates selle
+        vaikimisi esimene
+        Vali oma - ühikule esmalt vajutades
+        drop-down menüüd
+        Sisestage üksuse teisendada kell on
+        alt ja vajutage "Arvuta"
+        Tulemus kuvatakse jaotises "Arvuta" nuppu
+
+Ühend otsing
+
+Valige kuvatud ühendid või otsida
+        Bar ülaosas
+        Saate otsida liitintressi valemi abil või ühend
+        Nimi
+        Kui otsingut valemi abil:
+        * Otsing on tõstutundlik!
+        * Ära unusta sulgude kui valemis
+        Kui ühend nime järgi otsimine:
+        * Liitnimetust kirjutama hakata
+        * Vali ühendi loodud nimekirja
+        Vali konverteerimiseks grammid ühend
+        mutid
+
+Elemendid
+
+Elemendid kuvatakse loendis esitatud Atomic
+        number
+        Otsi elementide ekraani ülaservas
+        nime järgi
+        Valige element lisateabe
+        ja mutid grammi konverteerimine
+
+Perioodiline tabel
+
+Tabel kuvab maastiku - Pööra oma
+        telefoni! Suurenda kuva nagu tavaliselt"
+    </string>
+  <string name="compoundsearchbuttontext">Ühend otsing</string>
+  <string name="tablebuttontext">Perioodiline tabel</string>
+  <string name="helpbuttontext">Abi</string>
+  <string name="converterbuttontext">Unit Converter</string>
+  <string name="elementsbuttontext">Elemendid</string>
+  <string name="contactbuttontext">Võtke meiega ühendust</string>
+  <string name="send_button">Saada</string>
+  <string name="contactmessagehint">sõnumi</string>
+  <string name="contactsubjecthint">Teema</string>
+  <string name="questionsuggestionbugprompt">On küsimus, ettepanek või bug aru? Andke teada siin.</string>
+  <string name="splashScreen">See on konteiner tarkvarad</string>
+  <string name="mainImgView">konteineri avakuva logo</string>
+  <string name="conversion_type">Konversiooni tüüp</string>
+  <string name="value">Väärtus</string>
+  <string name="from_unit">Üksusest</string>
+  <string name="to_unit">Üksusele</string>
+  <string name="calculate">Arvuta</string>
+  <string name="name">Nimi</string>
+  <string name="chemical_formula">Keemiline valem</string>
+  <string name="molar_mass_display">Molaarne Mass</string>
+  <string name="grams">Vanaema:</string>
+  <string name="moles">Mutid:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Ka:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq õue</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic massi ühiku/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds per Sq Inch</string-array>
+  <string-array name="volumeUnits">Kuupmeetri MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

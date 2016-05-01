@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chimie</string>
+  <string name="search_hint">Formule de căutare</string>
+  <string name="also_known_as">"De asemenea, cunoscut sub numele:"</string>
+  <string name="formula">"Formula:"</string>
+  <string name="molar_mass">"Masa molară:"</string>
+  <string name="unknown_compound">Nu enumerate/necunoscut</string>
+  <string name="compound_elements_header">Elemente</string>
+  <string name="help_text">"Chem: la Ac la Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        Ioan-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Sfaturi pentru a naviga:
+
+Unitatea Converter
+
+Alege tipul de conversie de la
+        drop-jos meniu prima
+        Alegeţi dumneavoastră la - la unităţi în primul rând prin apăsarea
+        meniurile derulante
+        Introduceţi valoarea de unitate pentru a converti la
+        de jos şi apăsaţi "Calculeaza"
+        Rezultatul este afişat sub butonul "Calculeaza"
+
+Căutaţi combinate
+
+Alege din compuşi afisate sau cautare
+        din bara de sus
+        Puteţi să căutaţi prin intermediul compus formula sau combinate
+        nume
+        În cazul în care căutarea prin formula:
+        * Căutare este case sensitive!
+        * Nu uitaţi paranteze în cazul în care formula
+        Daca cautarea dupa nume compus:
+        * Începeţi să tastaţi în numele de combinate
+        * Alegeţi compus din lista generată
+        Alege un compus pentru conversie de grame la
+        alunite
+
+Elemente
+
+Elementele afişate în lista de atomic
+        numărul
+        Căutare pentru elemente în partea de sus a ecranului
+        numele de
+        Alege un element pentru mai multe informaţii
+        şi conversia din grame alunite
+
+Tabelul periodic
+
+Tabelul se va afişa în peisaj - roti dumneavoastră
+        telefon! Transfocare pentru a afişa în mod normal"
+    </string>
+  <string name="compoundsearchbuttontext">Căutaţi combinate</string>
+  <string name="tablebuttontext">Tabelul periodic</string>
+  <string name="helpbuttontext">ajutor</string>
+  <string name="converterbuttontext">Unitatea Converter</string>
+  <string name="elementsbuttontext">Elemente</string>
+  <string name="contactbuttontext">Contactati-ne</string>
+  <string name="send_button">Trimite</string>
+  <string name="contactmessagehint">mesaj</string>
+  <string name="contactsubjecthint">subiect</string>
+  <string name="questionsuggestionbugprompt">Am o intrebare, sugestie sau bug raport? Sa ne anuntati aici.</string>
+  <string name="splashScreen">Acest lucru este recipientul pentru splash ecran</string>
+  <string name="mainImgView">container pentru logo-ul ecranul de start</string>
+  <string name="conversion_type">Tipul de conversie</string>
+  <string name="value">Valoarea</string>
+  <string name="from_unit">Din unitate</string>
+  <string name="to_unit">La unitate</string>
+  <string name="calculate">Se calculează</string>
+  <string name="name">nume</string>
+  <string name="chemical_formula">Formulă chimică</string>
+  <string name="molar_mass_display">Masa molară</string>
+  <string name="grams">Grame:</string>
+  <string name="moles">Alunite:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"De asemenea, cunoscut sub numele:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Curtea</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">Ton de unitate/DaltonGramMilligramKilogramMetric OuncePoundAtomic masa</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre de MercuryPounds pe Sq Inch</string-array>
+  <string-array name="volumeUnits">Cubică MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kemija</string>
+  <string name="search_hint">Išči formule</string>
+  <string name="also_known_as">»Znan tudi kot: «</string>
+  <string name="formula">"Formula:"</string>
+  <string name="molar_mass">"Molska masa:"</string>
+  <string name="unknown_compound">Niso navedeni/neznano</string>
+  <string name="compound_elements_header">Elementi</string>
+  <string name="help_text">"Chem: iz Ac na Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John Paul žrebec
+        Taylor Veith
+        Victoria Rivas
+
+Nasveti za navigacijo:
+
+Enota spreobračevalec
+
+Izberite vrsto pretvorbe iz na
+        kaplja-niz jedilnik prvi
+        Izberite svoj iz - za enote najprej s pritiskom
+        spustnih menijih
+        Vnesite vrednost enote pretvoriti v na
+        dno in pritisnite "Izračun"
+        Rezultat se prikaže pod gumb "Izračunaj"
+
+Spojina Išči
+
+Izbirate spojine prikazane ali iskanje
+        v vrstici na vrhu
+        Lahko iščete preko krmnih formulo ali sestavljenih
+        ime
+        Če iskanje po formuli:
+        * Iskanje je male črke!
+        * Ne pozabite oklepaji, če v formuli
+        Če iskanje po imenu spojine:
+        * Začnite tipkati ime spojine
+        * Izberite spojine s seznama, ki
+        Izberite spojina za pretvorbo v grame
+        moli
+
+Elementi
+
+Elemente, prikazane na seznamu z atomsko
+        število
+        Iskanje elementov na vrhu zaslona
+        po imenu
+        Izberite element za dodatne informacije
+        in pretvorbo iz gramov moli
+
+Periodnega sistema
+
+Tabela prikaže v pokrajini - vrtenje vaš
+        telefon! Povečava zaslona kot običajno"
+    </string>
+  <string name="compoundsearchbuttontext">Spojina Išči</string>
+  <string name="tablebuttontext">Periodnega sistema</string>
+  <string name="helpbuttontext">pomoč</string>
+  <string name="converterbuttontext">Enota spreobračevalec</string>
+  <string name="elementsbuttontext">Elementi</string>
+  <string name="contactbuttontext">Kontakt</string>
+  <string name="send_button">Pošlji</string>
+  <string name="contactmessagehint">sporočilo</string>
+  <string name="contactsubjecthint">predmet</string>
+  <string name="questionsuggestionbugprompt">Imate vprašanje, predlog ali bug poročilo? Nam povejte tukaj.</string>
+  <string name="splashScreen">To je posoda za za─ìetni zaslon</string>
+  <string name="mainImgView">posoda za enete logotip</string>
+  <string name="conversion_type">Pretvorba vrsta</string>
+  <string name="value">Vrednost</string>
+  <string name="from_unit">Iz enote</string>
+  <string name="to_unit">Enoto</string>
+  <string name="calculate">Izračun</string>
+  <string name="name">ime</string>
+  <string name="chemical_formula">Kemijska Formula</string>
+  <string name="molar_mass_display">Molska masa</string>
+  <string name="grams">Gramov:</string>
+  <string name="moles">Moli:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">»Znan tudi kot: «</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq dvorišče</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic masa enote/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds na Sq palec</string-array>
+  <string-array name="volumeUnits">Kubičnih MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

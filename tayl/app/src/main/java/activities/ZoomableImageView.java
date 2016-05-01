@@ -11,26 +11,32 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class ZoomableImageView extends ImageView {
-    static final int NONE = 0;
-    static final int DRAG = 1;
-    static final int ZOOM = 2;
-    static final int CLICK = 3;
-    Matrix matrix = new Matrix();
-    int mode = NONE;
+    private static final int NONE = 0;
+    private static final int DRAG = 1;
+    private static final int ZOOM = 2;
+    private static final int CLICK = 3;
+    private final Matrix matrix = new Matrix();
+    private int mode = NONE;
 
-    PointF last = new PointF();
-    PointF start = new PointF();
-    float minScale = 1f;
-    float maxScale = 4f;
-    float[] m;
+    private final PointF last = new PointF();
+    private final PointF start = new PointF();
+    private final float minScale = 1f;
+    private final float[] m;
 
-    float redundantXSpace, redundantYSpace;
-    float width, height;
-    float saveScale = 1f;
-    float right, bottom, origWidth, origHeight, bmWidth, bmHeight;
+    private float redundantXSpace;
+    private float redundantYSpace;
+    private float width;
+    private float height;
+    private float saveScale = 1f;
+    private float right;
+    private float bottom;
+    private float origWidth;
+    private float origHeight;
+    private float bmWidth;
+    private float bmHeight;
 
-    ScaleGestureDetector mScaleDetector;
-    Context context;
+    private final ScaleGestureDetector mScaleDetector;
+    private final Context context;
 
     public ZoomableImageView(Context context, AttributeSet attr) {
         super(context, attr);
@@ -145,9 +151,11 @@ public class ZoomableImageView extends ImageView {
         bmHeight = bm.getHeight();
     }
 
-    public void setMaxZoom(float x) {
-        maxScale = x;
-    }
+// --Commented out by Inspection START (5/1/16 4:52 PM):
+//    public void setMaxZoom(float x) {
+//        maxScale = x;
+//    }
+// --Commented out by Inspection STOP (5/1/16 4:52 PM)
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -191,6 +199,7 @@ public class ZoomableImageView extends ImageView {
             float mScaleFactor = detector.getScaleFactor();
             float origScale = saveScale;
             saveScale *= mScaleFactor;
+            float maxScale = 4f;
             if (saveScale > maxScale) {
                 saveScale = maxScale;
                 mScaleFactor = maxScale / origScale;

@@ -12,30 +12,21 @@ import android.widget.TextView;
 
 import com.chemistry.R;
 
-import java.text.DecimalFormat;
-
 import converters.ConversionLiterals;
 
-
-/**
- * Created by Daniel on 3/23/16.
- */
 public class ConversionActivity extends Activity {
 
-    TextView calculatedValue;
-    EditText inputTextView;
+    private TextView calculatedValue;
+    private EditText inputTextView;
 
     //Drop down menus on UI
-    Spinner conversionSpinner;
-    Spinner unitFromnSpinner;
-    Spinner unitToSpinner;
-    Spinner densityFromSpinner;
-    Spinner densityToSpinner;
+    private Spinner conversionSpinner;
+    private Spinner unitFromnSpinner;
+    private Spinner unitToSpinner;
+    private Spinner densityFromSpinner;
+    private Spinner densityToSpinner;
 
-    ArrayAdapter<CharSequence> conversionTypeAdaptor;
-    ArrayAdapter<CharSequence> unitAdaptor;
-
-    DecimalFormat df = new DecimalFormat("#.####");
+    private ArrayAdapter<CharSequence> unitAdaptor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +43,7 @@ public class ConversionActivity extends Activity {
         densityFromSpinner = (Spinner) findViewById((R.id.densityMassFrom));
         densityToSpinner = (Spinner) findViewById((R.id.densityMassTo));
 
-        conversionTypeAdaptor = ArrayAdapter.createFromResource(this, R.array.converstionTypes, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> conversionTypeAdaptor = ArrayAdapter.createFromResource(this, R.array.converstionTypes, android.R.layout.simple_spinner_item);
         conversionTypeAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         conversionSpinner.setAdapter(conversionTypeAdaptor);
         conversionSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -153,9 +144,9 @@ public class ConversionActivity extends Activity {
         unitToSpinner.setAdapter(unitAdaptor);
     }
 
-    public void calculateButtonListener(View v) {
+    public void calculateButtonListener() {
         int conversionType = conversionSpinner.getSelectedItemPosition();
-        Double output = new Double(0);
+        Double output = 0d;
 
 
         if (TextUtils.isEmpty(inputTextView.getText())) {
@@ -198,7 +189,7 @@ public class ConversionActivity extends Activity {
         calculatedValue.setText(output.toString());
     }
 
-    public ConversionLiterals.Unit getUnit(Spinner spinner) {
+    private ConversionLiterals.Unit getUnit(Spinner spinner) {
 
         switch (spinner.getSelectedItem().toString()) {
             // LengthConverter

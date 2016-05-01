@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kimya</string>
+  <string name="search_hint">Ara formüller</string>
+  <string name="also_known_as">"Olarak da bilinir:"</string>
+  <string name="formula">"Formülü:"</string>
+  <string name="molar_mass">"Molar kütle:"</string>
+  <string name="unknown_compound">Değil listelenen/bilinmeyen</string>
+  <string name="compound_elements_header">Öğeleri</string>
+  <string name="help_text">"Kimya: Ac Zr için gelen
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Gezinmek için ipuçları:
+
+Birim Çeviricisi
+
+Dönüştürme türünü seçin
+        damla-aşağı yemek listesi ilk
+        Seçmek senin - ilk basarak birimlerine
+        açılır menüler
+        Dönüştürmek için birim değerini girin
+        alt ve basın "Hesapla"
+        Sonuç "Hesapla" düğmesi altında görüntülenir
+
+Bileşik arama
+
+Görüntülenen bileşikleri seçin veya arama
+        üst çubuğu'ndan
+        Bileşik formül yoluyla veya bileşik arama yapabilirsiniz
+        adı
+        Eğer formülüne göre arama:
+        * Arama büyük küçük harf duyarlıdır.
+        * Parantez formül Eğer unutmayın
+        Eğer bileşik adına göre arama:
+        * Bileşik isim yazmaya başlayın
+        * Bileşik oluşturulan listeden seçin
+        Bir bileşik gram için dönüşüm için seçin
+        benler
+
+Öğeleri
+
+Listede atom tarafından görüntülenen öğeleri
+        numarası
+        Ekranın en üstündeki öğeler için arama
+        ada göre
+        Ek bilgi için bir öğe seçin
+        ve mol gram dönüştürme
+
+Periyodik tablo
+
+Tablo peyzaj - Döndür görüntüler,
+        telefon! Normal olarak görüntülenecek yakınlaştırmak"
+    </string>
+  <string name="compoundsearchbuttontext">Bileşik arama</string>
+  <string name="tablebuttontext">Periyodik tablo</string>
+  <string name="helpbuttontext">Yardım</string>
+  <string name="converterbuttontext">Birim Çeviricisi</string>
+  <string name="elementsbuttontext">Öğeleri</string>
+  <string name="contactbuttontext">Bize ulaşın</string>
+  <string name="send_button">Gönder</string>
+  <string name="contactmessagehint">İleti</string>
+  <string name="contactsubjecthint">Konu</string>
+  <string name="questionsuggestionbugprompt">Soru, öneri veya hata raporu için var? Burada bize bildirin.</string>
+  <string name="splashScreen">Bu ekranı için kapsayıcıdır</string>
+  <string name="mainImgView">Ana ekran logosu için kapsayıcı</string>
+  <string name="conversion_type">Dönüştürme türünü</string>
+  <string name="value">Değer</string>
+  <string name="from_unit">Birimden</string>
+  <string name="to_unit">Birimine</string>
+  <string name="calculate">Hesaplamak</string>
+  <string name="name">Adı</string>
+  <string name="chemical_formula">Kimyasal formülü</string>
+  <string name="molar_mass_display">Molar kütle</string>
+  <string name="grams">Gram:</string>
+  <string name="moles">Benler:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Olarak da bilinir:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic kütle birimi/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre olarak Sq inç başına MercuryPounds</string-array>
+  <string-array name="volumeUnits">Kübik MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

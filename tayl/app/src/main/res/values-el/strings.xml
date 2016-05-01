@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Χημεία</string>
+  <string name="search_hint">Αναζήτηση τύποι</string>
+  <string name="also_known_as">«Επίσης γνωστή ως:»</string>
+  <string name="formula">«Τύπος:»</string>
+  <string name="molar_mass">«Μοριακή μάζα:»</string>
+  <string name="unknown_compound">Δεν απαριθμούνται/άγνωστες</string>
+  <string name="compound_elements_header">Στοιχεία</string>
+  <string name="help_text">«Chem: από Ac να Zr
+        v1.0.0
+
+Alex Doan
+        Daniel ΚΙΝΙ
+        Ρόμπερτ Valladares
+        John-Paul άτι
+        Veith Τέιλορ
+        Victoria Rivas
+
+Συμβουλές για να περιηγηθείτε:
+
+Μετατροπέας μονάδων
+
+Επιλέξτε τον τύπο μετατροπής από το
+        drop-down μενού πρώτη
+        Επιλέξτε σας από - εώς μονάδες πρώτα πατώντας στο
+        το drop-down μενού
+        Εισαγάγετε την τιμή της μονάδας για τη μετατροπή σε το
+        κάτω μέρος και πατήστε "Υπολογίστε"
+        Το αποτέλεσμα εμφανίζεται κάτω από το κουμπί "Υπολογίστε"
+
+Σύνθετη αναζήτηση
+
+Επιλέξτε από ενώσεις που εμφανίζεται ή αναζητήστε
+        από τη γραμμή στο επάνω μέρος
+        Να κάνετε αναζήτηση μέσω σύνθετων φόρμουλα ή σύνθετων
+        Όνομα
+        Εάν η αναζήτηση από τον τύπο:
+        * Αναζήτηση είναι διάκριση πεζών-κεφαλαίων!
+        * Μην ξεχάσετε παρενθέσεις αν στον τύπο
+        Εάν ψάχνοντας από σύνθετο όνομα:
+        * Αρχίστε να πληκτρολογείτε στο σύνθετο όνομα
+        * Επιλέξτε το σύνθετο από τη λίστα που δημιουργείται
+        Επιλέξτε μια Ένωση για μετατροπή γραμμάρια σε
+        κρεατοελιές
+
+Στοιχεία
+
+Στοιχεία που εμφανίζονται στη λίστα από το ατομικό
+        Αριθμός
+        Αναζήτηση για στοιχεία στο επάνω μέρος της οθόνης
+        με βάση το όνομα
+        Επιλέξτε ένα στοιχείο για πρόσθετες πληροφορίες
+        και μετατροπή γραμμάρια σε τυφλοπόντικες
+
+Περιοδικός Πίνακας
+
+Πίνακα θα εμφανίσει στο τοπίο - περιστροφή σας
+        τηλέφωνο! Μεγέθυνση στην οθόνη ως κανονική"
+    </string>
+  <string name="compoundsearchbuttontext">Σύνθετη αναζήτηση</string>
+  <string name="tablebuttontext">Περιοδικός Πίνακας</string>
+  <string name="helpbuttontext">Βοήθεια</string>
+  <string name="converterbuttontext">Μετατροπέας μονάδων</string>
+  <string name="elementsbuttontext">Στοιχεία</string>
+  <string name="contactbuttontext">Επικοινωνήστε μαζί μας</string>
+  <string name="send_button">Αποστολή</string>
+  <string name="contactmessagehint">μήνυμα</string>
+  <string name="contactsubjecthint">θέμα</string>
+  <string name="questionsuggestionbugprompt">Έχουν μια ερώτηση, πρόταση ή bug στην έκθεση; Ας γνωρίζουν εδώ.</string>
+  <string name="splashScreen">Αυτό είναι το κοντέινερ για την οθόνη παφλασμών</string>
+  <string name="mainImgView">δοχείο για αρχική οθόνη λογότυπο</string>
+  <string name="conversion_type">Τύπο μετατροπής</string>
+  <string name="value">Τιμή</string>
+  <string name="from_unit">Από μονάδα</string>
+  <string name="to_unit">Μονάδα</string>
+  <string name="calculate">Υπολογισμός</string>
+  <string name="name">Όνομα</string>
+  <string name="chemical_formula">Χημικός τύπος</string>
+  <string name="molar_mass_display">Γραμμομοριακή μάζα</string>
+  <string name="grams">Γραμμάρια:</string>
+  <string name="moles">Κρεατοελιές:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">«Επίσης γνωστή ως:»</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq αυλή</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">Ton OuncePoundAtomic μάζα μονάδα/DaltonGramMilligramKilogramMetric</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre των MercuryPounds ανά τετραγωνικά ίντσα</string-array>
+  <string-array name="volumeUnits">Κυβικά MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

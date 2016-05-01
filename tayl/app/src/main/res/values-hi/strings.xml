@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">रसायन विज्ञान</string>
+  <string name="search_hint">खोज सूत्र</string>
+  <string name="also_known_as">\' रूप में भी जाना जाता: \'</string>
+  <string name="formula">"सूत्र:"</string>
+  <string name="molar_mass">"दाढ़ मास:"</string>
+  <string name="unknown_compound">नहीं सूचीबद्ध/अज्ञात</string>
+  <string name="compound_elements_header">तत्वों</string>
+  <string name="help_text">"रसायन: Zr करने के लिए एसी से
+        v 1.0.0
+
+Alex Doan
+        Daniel Kinney
+        रॉबर्ट Valladares
+        जॉन-Paul घोड़ा
+        टेलर Veith
+        विक्टोरिया Rivas
+
+नेविगेट करने के लिए युक्तियाँ:
+
+यूनिट कन्वर्टर
+
+रूपांतरण प्रकार से चुनें
+        ड्रॉप-डाउन मेनू पहले
+        चुनें अपने से - इकाइयों दबाव द्वारा पहली बार के लिए
+        ड्रॉप-डाउन मेनू
+        इकाई में कनवर्ट करने के लिए का मान दर्ज करें
+        नीचे और प्रेस "गणना"
+        परिणाम के अंतर्गत "गणना" बटन प्रदर्शित होता है
+
+यौगिक खोज
+
+प्रदर्शित किया जाता यौगिकों से का चयन करें या खोजें
+        पट्टी से शीर्ष पर
+        या यौगिक यौगिक सूत्र के माध्यम से खोज कर सकते हैं
+        नाम
+        यदि सूत्र द्वारा खोज:
+        * खोज केस-संवेदी है!
+        * यदि सूत्र में लघुकोष्ठकों मत भूलना
+        यदि यौगिक नाम द्वारा खोज:
+        * में यौगिक का नाम लिखना प्रारंभ करें
+        * यौगिक उत्पन्न सूची में से चुनें
+        एक यौगिक के रूपांतरण के लिए ग्राम के लिए चयन
+        moles
+
+तत्वों
+
+तत्व सूची में परमाणु द्वारा प्रदर्शित
+        संख्या
+        स्क्रीन के शीर्ष पर तत्वों के लिए खोज
+        नाम द्वारा
+        अतिरिक्त जानकारी के लिए कोई तत्व चुनें
+        और moles के ग्राम से रूपांतरण
+
+आवर्त सारणी
+
+तालिका में परिदृश्य - बारी बारी से प्रदर्शित करेगा अपने
+        फोन! सामान्य रूप में प्रदर्शित करने के लिए ज़ूम इन करें\'
+    </string>
+  <string name="compoundsearchbuttontext">यौगिक खोज</string>
+  <string name="tablebuttontext">आवर्त सारणी</string>
+  <string name="helpbuttontext">मदद</string>
+  <string name="converterbuttontext">यूनिट कन्वर्टर</string>
+  <string name="elementsbuttontext">तत्वों</string>
+  <string name="contactbuttontext">हमसे संपर्क करें</string>
+  <string name="send_button">भेजें</string>
+  <string name="contactmessagehint">संदेश</string>
+  <string name="contactsubjecthint">विषय</string>
+  <string name="questionsuggestionbugprompt">एक प्रश्न, सुझाव, या बग रिपोर्ट करने के लिए है? हमें यहाँ पता है।</string>
+  <string name="splashScreen">यह छप स्क्रीन के लिए पात्र है</string>
+  <string name="mainImgView">होम स्क्रीन लोगो के लिए कंटेनर</string>
+  <string name="conversion_type">कनवर्ज़न का प्रकार</string>
+  <string name="value">मान</string>
+  <string name="from_unit">इकाई से</string>
+  <string name="to_unit">इकाई को</string>
+  <string name="calculate">की गणना</string>
+  <string name="name">नाम</string>
+  <string name="chemical_formula">रासायनिक सूत्र</string>
+  <string name="molar_mass_display">दाढ़ मास</string>
+  <string name="grams">ग्राम:</string>
+  <string name="moles">Moles:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">अल</string>
+  <string name="gram_default">26.98 जी</string>
+  <string name="aka_string">\' रूप में भी जाना जाता: \'</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq यार्ड</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic द्रव्यमान इकाई/DaltonGramMilligramKilogramMetric टन</string-array>
+  <string-array name="pressureUnits">MercuryPounds प्रति वर्ग इंच की AtmosphereTorrPascalKilopascalMillimetre</string-array>
+  <string-array name="volumeUnits">घन MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

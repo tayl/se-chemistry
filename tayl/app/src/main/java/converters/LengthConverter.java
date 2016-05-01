@@ -19,7 +19,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToMiles(double inputLength) {
+    private static double feetToMiles(double inputLength) {
         return (inputLength / ConversionLiterals.FEETPERMILE);
     }
 
@@ -29,7 +29,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milesToFeet(double inputLength) {
+    private static double milesToFeet(double inputLength) {
         return (inputLength * ConversionLiterals.FEETPERMILE);
     }
 
@@ -39,7 +39,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchesToFeet(double inputLength) {
+    private static double inchesToFeet(double inputLength) {
         return (inputLength / ConversionLiterals.INCHESPERFOOT);
     }
 
@@ -49,7 +49,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToInches(double inputLength) {
+    private static double feetToInches(double inputLength) {
         return (inputLength * ConversionLiterals.INCHESPERFOOT);
     }
 
@@ -59,7 +59,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToYard(double inputLength) {
+    private static double feetToYard(double inputLength) {
         return (inputLength / ConversionLiterals.FEETPERYARD);
     }
 
@@ -69,7 +69,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToFeet(double inputLength) {
+    private static double yardToFeet(double inputLength) {
         return (inputLength * ConversionLiterals.FEETPERYARD);
     }
 
@@ -79,7 +79,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToMeter(double inputLength) {
+    private static double feetToMeter(double inputLength) {
         return (inputLength / ConversionLiterals.FEETPERMETER);
     }
 
@@ -89,7 +89,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToFeet(double inputLength) {
+    private static double meterToFeet(double inputLength) {
         return (inputLength * ConversionLiterals.FEETPERMETER);
     }
 
@@ -99,7 +99,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToPico(double inputLength) {
+    private static double meterToPico(double inputLength) {
         return (inputLength / ConversionLiterals.PICO);
     }
 
@@ -109,7 +109,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToMeter(double inputLength) {
+    private static double picoToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.PICO);
     }
 
@@ -119,7 +119,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToNano(double inputLength) {
+    private static double meterToNano(double inputLength) {
         return (inputLength / ConversionLiterals.NANO);
     }
 
@@ -129,7 +129,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToMeter(double inputLength) {
+    private static double nanoToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.NANO);
     }
 
@@ -139,7 +139,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToMicro(double inputLength) {
+    private static double meterToMicro(double inputLength) {
         return (inputLength / ConversionLiterals.MICRO);
     }
 
@@ -149,7 +149,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToMeter(double inputLength) {
+    private static double microToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.MICRO);
     }
 
@@ -159,7 +159,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToMilli(double inputLength) {
+    private static double meterToMilli(double inputLength) {
         return (inputLength / ConversionLiterals.MILLI);
     }
 
@@ -169,7 +169,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToMeter(double inputLength) {
+    private static double milliToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.MILLI);
     }
 
@@ -179,7 +179,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToCenti(double inputLength) {
+    private static double meterToCenti(double inputLength) {
         return (inputLength / ConversionLiterals.CENTI);
     }
 
@@ -189,7 +189,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToMeter(double inputLength) {
+    private static double centiToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.CENTI);
     }
 
@@ -199,7 +199,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToDeci(double inputLength) {
+    private static double meterToDeci(double inputLength) {
         return (inputLength / ConversionLiterals.DECI);
     }
 
@@ -209,7 +209,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToMeter(double inputLength) {
+    private static double deciToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.DECI);
     }
 
@@ -219,7 +219,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToKilo(double inputLength) {
+    private static double meterToKilo(double inputLength) {
         return (inputLength / ConversionLiterals.KILO);
     }
 
@@ -229,7 +229,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToMeter(double inputLength) {
+    private static double kiloToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.KILO);
     }
 
@@ -239,7 +239,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToMega(double inputLength) {
+    private static double meterToMega(double inputLength) {
         return (inputLength / ConversionLiterals.MEGA);
     }
 
@@ -249,7 +249,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToMeter(double inputLength) {
+    private static double megaToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.MEGA);
     }
 
@@ -259,7 +259,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToGiga(double inputLength) {
+    private static double meterToGiga(double inputLength) {
         return (inputLength / ConversionLiterals.GIGA);
     }
 
@@ -269,7 +269,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToMeter(double inputLength) {
+    private static double gigaToMeter(double inputLength) {
         return (inputLength * ConversionLiterals.GIGA);
     }
 
@@ -283,7 +283,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToMeter(double inputLength) {
+    private static double inchToMeter(double inputLength) {
         inputLength = inchesToFeet(inputLength);
         return feetToMeter(inputLength);
     }
@@ -294,7 +294,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToPicoMeter(double inputLength) {
+    private static double inchToPicoMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -305,7 +305,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToNanoMeter(double inputLength) {
+    private static double inchToNanoMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -316,7 +316,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToMicroMeter(double inputLength) {
+    private static double inchToMicroMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -327,7 +327,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToMilliMeter(double inputLength) {
+    private static double inchToMilliMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -338,7 +338,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToCentiMeter(double inputLength) {
+    private static double inchToCentiMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -349,7 +349,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToDeciMeter(double inputLength) {
+    private static double inchToDeciMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -360,7 +360,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToKiloMeter(double inputLength) {
+    private static double inchToKiloMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -371,7 +371,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToMegaMeter(double inputLength) {
+    private static double inchToMegaMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -382,7 +382,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToGigaMeter(double inputLength) {
+    private static double inchToGigaMeter(double inputLength) {
         inputLength = inchToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -393,7 +393,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToMile(double inputLength) {
+    private static double inchToMile(double inputLength) {
         inputLength = inchesToFeet(inputLength);
         return feetToMiles(inputLength);
     }
@@ -404,7 +404,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double inchToYard(double inputLength) {
+    private static double inchToYard(double inputLength) {
         inputLength = inchesToFeet(inputLength);
         return feetToYard(inputLength);
     }
@@ -417,7 +417,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToPicoMeter(double inputLength) {
+    private static double feetToPicoMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -428,7 +428,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToNanoMeter(double inputLength) {
+    private static double feetToNanoMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -439,7 +439,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToMicroMeter(double inputLength) {
+    private static double feetToMicroMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -450,7 +450,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToMilliMeter(double inputLength) {
+    private static double feetToMilliMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -461,7 +461,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToCentiMeter(double inputLength) {
+    private static double feetToCentiMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -472,7 +472,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToDeciMeter(double inputLength) {
+    private static double feetToDeciMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -483,7 +483,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToKiloMeter(double inputLength) {
+    private static double feetToKiloMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -494,7 +494,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToMegaMeter(double inputLength) {
+    private static double feetToMegaMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -505,7 +505,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double feetToGigaMeter(double inputLength) {
+    private static double feetToGigaMeter(double inputLength) {
         inputLength = feetToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -518,7 +518,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToInch(double inputLength) {
+    private static double mileToInch(double inputLength) {
         inputLength = milesToFeet(inputLength);
         return feetToInches(inputLength);
     }
@@ -529,7 +529,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToYard(double inputLength) {
+    private static double mileToYard(double inputLength) {
         inputLength = milesToFeet(inputLength);
         return feetToYard(inputLength);
     }
@@ -540,7 +540,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToMeter(double inputLength) {
+    private static double mileToMeter(double inputLength) {
         inputLength = milesToFeet(inputLength);
         return feetToMeter(inputLength);
     }
@@ -551,7 +551,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToPicoMeter(double inputLength) {
+    private static double mileToPicoMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -562,7 +562,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToNanoMeter(double inputLength) {
+    private static double mileToNanoMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -573,7 +573,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToMicroMeter(double inputLength) {
+    private static double mileToMicroMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -584,7 +584,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToMilliMeter(double inputLength) {
+    private static double mileToMilliMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -595,7 +595,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToCentiMeter(double inputLength) {
+    private static double mileToCentiMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -606,7 +606,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToDeciMeter(double inputLength) {
+    private static double mileToDeciMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -617,7 +617,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToKiloMeter(double inputLength) {
+    private static double mileToKiloMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -628,7 +628,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToMegaMeter(double inputLength) {
+    private static double mileToMegaMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -639,7 +639,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double mileToGigaMeter(double inputLength) {
+    private static double mileToGigaMeter(double inputLength) {
         inputLength = mileToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -652,7 +652,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToInch(double inputLength) {
+    private static double yardToInch(double inputLength) {
         inputLength = yardToFeet(inputLength);
         return feetToInches(inputLength);
     }
@@ -663,7 +663,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToMile(double inputLength) {
+    private static double yardToMile(double inputLength) {
         inputLength = yardToFeet(inputLength);
         return feetToMiles(inputLength);
     }
@@ -674,7 +674,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToMeter(double inputLength) {
+    private static double yardToMeter(double inputLength) {
         inputLength = yardToFeet(inputLength);
         return feetToMeter(inputLength);
     }
@@ -685,7 +685,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToPico(double inputLength) {
+    private static double yardToPico(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -696,7 +696,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToNano(double inputLength) {
+    private static double yardToNano(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -707,7 +707,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToMicro(double inputLength) {
+    private static double yardToMicro(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -718,7 +718,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToMilli(double inputLength) {
+    private static double yardToMilli(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -729,7 +729,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToCenti(double inputLength) {
+    private static double yardToCenti(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -740,7 +740,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToDeci(double inputLength) {
+    private static double yardToDeci(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -751,7 +751,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToKilo(double inputLength) {
+    private static double yardToKilo(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -762,7 +762,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToMega(double inputLength) {
+    private static double yardToMega(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -773,7 +773,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double yardToGiga(double inputLength) {
+    private static double yardToGiga(double inputLength) {
         inputLength = yardToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -786,7 +786,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToInch(double inputLength) {
+    private static double meterToInch(double inputLength) {
         inputLength = meterToFeet(inputLength);
         return feetToInches(inputLength);
     }
@@ -797,7 +797,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToYard(double inputLength) {
+    private static double meterToYard(double inputLength) {
         inputLength = meterToFeet(inputLength);
         return feetToYard(inputLength);
     }
@@ -808,7 +808,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double meterToMile(double inputLength) {
+    private static double meterToMile(double inputLength) {
         inputLength = meterToFeet(inputLength);
         return feetToMiles(inputLength);
     }
@@ -821,7 +821,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToInch(double inputLength) {
+    private static double picoToInch(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -832,7 +832,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToFeet(double inputLength) {
+    private static double picoToFeet(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -843,7 +843,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToYard(double inputLength) {
+    private static double picoToYard(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -854,7 +854,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToMile(double inputLength) {
+    private static double picoToMile(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -865,7 +865,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToNano(double inputLength) {
+    private static double picoToNano(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -876,7 +876,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToMicro(double inputLength) {
+    private static double picoToMicro(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -887,7 +887,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToMilli(double inputLength) {
+    private static double picoToMilli(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -898,7 +898,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToCenti(double inputLength) {
+    private static double picoToCenti(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -909,7 +909,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToDeci(double inputLength) {
+    private static double picoToDeci(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -920,7 +920,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToKilo(double inputLength) {
+    private static double picoToKilo(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -931,7 +931,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToMega(double inputLength) {
+    private static double picoToMega(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -942,7 +942,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double picoToGiga(double inputLength) {
+    private static double picoToGiga(double inputLength) {
         inputLength = picoToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -956,7 +956,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToInch(double inputLength) {
+    private static double nanoToInch(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -967,7 +967,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToFeet(double inputLength) {
+    private static double nanoToFeet(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -978,7 +978,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToYard(double inputLength) {
+    private static double nanoToYard(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -989,7 +989,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToMile(double inputLength) {
+    private static double nanoToMile(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1000,7 +1000,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToPico(double inputLength) {
+    private static double nanoToPico(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1011,7 +1011,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToMicro(double inputLength) {
+    private static double nanoToMicro(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -1022,7 +1022,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToMilli(double inputLength) {
+    private static double nanoToMilli(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -1033,7 +1033,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToCenti(double inputLength) {
+    private static double nanoToCenti(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -1044,7 +1044,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToDeci(double inputLength) {
+    private static double nanoToDeci(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -1055,7 +1055,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToKilo(double inputLength) {
+    private static double nanoToKilo(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -1066,7 +1066,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToMega(double inputLength) {
+    private static double nanoToMega(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -1077,7 +1077,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double nanoToGiga(double inputLength) {
+    private static double nanoToGiga(double inputLength) {
         inputLength = nanoToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -1090,7 +1090,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToInch(double inputLength) {
+    private static double microToInch(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -1101,7 +1101,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToFeet(double inputLength) {
+    private static double microToFeet(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -1112,7 +1112,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToYard(double inputLength) {
+    private static double microToYard(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -1123,7 +1123,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToMile(double inputLength) {
+    private static double microToMile(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1134,7 +1134,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToPico(double inputLength) {
+    private static double microToPico(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1145,7 +1145,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToNano(double inputLength) {
+    private static double microToNano(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -1156,7 +1156,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToMilli(double inputLength) {
+    private static double microToMilli(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -1167,7 +1167,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToCenti(double inputLength) {
+    private static double microToCenti(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -1178,7 +1178,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToDeci(double inputLength) {
+    private static double microToDeci(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -1189,7 +1189,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToKilo(double inputLength) {
+    private static double microToKilo(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -1200,7 +1200,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToMega(double inputLength) {
+    private static double microToMega(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -1211,7 +1211,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double microToGiga(double inputLength) {
+    private static double microToGiga(double inputLength) {
         inputLength = microToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -1224,7 +1224,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToInch(double inputLength) {
+    private static double milliToInch(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -1235,7 +1235,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToFeet(double inputLength) {
+    private static double milliToFeet(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -1246,7 +1246,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToYard(double inputLength) {
+    private static double milliToYard(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -1257,7 +1257,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToMile(double inputLength) {
+    private static double milliToMile(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1268,7 +1268,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToPico(double inputLength) {
+    private static double milliToPico(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1279,7 +1279,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToNano(double inputLength) {
+    private static double milliToNano(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -1290,7 +1290,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToMicro(double inputLength) {
+    private static double milliToMicro(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -1301,7 +1301,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToCenti(double inputLength) {
+    private static double milliToCenti(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -1312,7 +1312,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToDeci(double inputLength) {
+    private static double milliToDeci(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -1323,7 +1323,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToKilo(double inputLength) {
+    private static double milliToKilo(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -1334,7 +1334,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToMega(double inputLength) {
+    private static double milliToMega(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -1345,7 +1345,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double milliToGiga(double inputLength) {
+    private static double milliToGiga(double inputLength) {
         inputLength = milliToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -1358,7 +1358,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToInch(double inputLength) {
+    private static double centiToInch(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -1369,7 +1369,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToFeet(double inputLength) {
+    private static double centiToFeet(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -1380,7 +1380,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToYard(double inputLength) {
+    private static double centiToYard(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -1391,7 +1391,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToMile(double inputLength) {
+    private static double centiToMile(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1402,7 +1402,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToPico(double inputLength) {
+    private static double centiToPico(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1413,7 +1413,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToNano(double inputLength) {
+    private static double centiToNano(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -1424,7 +1424,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToMicro(double inputLength) {
+    private static double centiToMicro(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -1435,7 +1435,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToMilli(double inputLength) {
+    private static double centiToMilli(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -1446,7 +1446,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToDeci(double inputLength) {
+    private static double centiToDeci(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -1457,7 +1457,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToKilo(double inputLength) {
+    private static double centiToKilo(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -1468,7 +1468,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToMega(double inputLength) {
+    private static double centiToMega(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -1479,7 +1479,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double centiToGiga(double inputLength) {
+    private static double centiToGiga(double inputLength) {
         inputLength = centiToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -1492,7 +1492,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToInch(double inputLength) {
+    private static double deciToInch(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -1503,7 +1503,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToFeet(double inputLength) {
+    private static double deciToFeet(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -1514,7 +1514,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToYard(double inputLength) {
+    private static double deciToYard(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -1525,7 +1525,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToMile(double inputLength) {
+    private static double deciToMile(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1536,7 +1536,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToPico(double inputLength) {
+    private static double deciToPico(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1547,7 +1547,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToNano(double inputLength) {
+    private static double deciToNano(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -1558,7 +1558,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToMicro(double inputLength) {
+    private static double deciToMicro(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -1569,7 +1569,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToMilli(double inputLength) {
+    private static double deciToMilli(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -1580,7 +1580,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToCenti(double inputLength) {
+    private static double deciToCenti(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -1591,7 +1591,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToKilo(double inputLength) {
+    private static double deciToKilo(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -1602,7 +1602,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToMega(double inputLength) {
+    private static double deciToMega(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -1613,7 +1613,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double deciToGiga(double inputLength) {
+    private static double deciToGiga(double inputLength) {
         inputLength = deciToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -1626,7 +1626,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToInch(double inputLength) {
+    private static double kiloToInch(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -1637,7 +1637,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToFeet(double inputLength) {
+    private static double kiloToFeet(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -1648,7 +1648,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToYard(double inputLength) {
+    private static double kiloToYard(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -1659,7 +1659,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToMile(double inputLength) {
+    private static double kiloToMile(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1670,7 +1670,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToPico(double inputLength) {
+    private static double kiloToPico(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1681,7 +1681,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToNano(double inputLength) {
+    private static double kiloToNano(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -1692,7 +1692,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToMicro(double inputLength) {
+    private static double kiloToMicro(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -1703,7 +1703,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToMilli(double inputLength) {
+    private static double kiloToMilli(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -1714,7 +1714,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToCenti(double inputLength) {
+    private static double kiloToCenti(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -1725,7 +1725,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToDeci(double inputLength) {
+    private static double kiloToDeci(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -1736,7 +1736,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToMega(double inputLength) {
+    private static double kiloToMega(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -1747,7 +1747,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double kiloToGiga(double inputLength) {
+    private static double kiloToGiga(double inputLength) {
         inputLength = kiloToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -1760,7 +1760,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToInch(double inputLength) {
+    private static double megaToInch(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -1771,7 +1771,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToFeet(double inputLength) {
+    private static double megaToFeet(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -1782,7 +1782,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToYard(double inputLength) {
+    private static double megaToYard(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -1793,7 +1793,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToMile(double inputLength) {
+    private static double megaToMile(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1804,7 +1804,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToPico(double inputLength) {
+    private static double megaToPico(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1815,7 +1815,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToNano(double inputLength) {
+    private static double megaToNano(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -1826,7 +1826,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToMicro(double inputLength) {
+    private static double megaToMicro(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -1837,7 +1837,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToMilli(double inputLength) {
+    private static double megaToMilli(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -1848,7 +1848,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToCenti(double inputLength) {
+    private static double megaToCenti(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -1859,7 +1859,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToDeci(double inputLength) {
+    private static double megaToDeci(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -1870,7 +1870,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToKilo(double inputLength) {
+    private static double megaToKilo(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -1881,7 +1881,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double megaToGiga(double inputLength) {
+    private static double megaToGiga(double inputLength) {
         inputLength = megaToMeter(inputLength);
         return meterToGiga(inputLength);
     }
@@ -1894,7 +1894,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToInch(double inputLength) {
+    private static double gigaToInch(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToInch(inputLength);
     }
@@ -1905,7 +1905,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToFeet(double inputLength) {
+    private static double gigaToFeet(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToFeet(inputLength);
     }
@@ -1916,7 +1916,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToYard(double inputLength) {
+    private static double gigaToYard(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToYard(inputLength);
     }
@@ -1927,7 +1927,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToMile(double inputLength) {
+    private static double gigaToMile(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToMile(inputLength);
     }
@@ -1938,7 +1938,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToPico(double inputLength) {
+    private static double gigaToPico(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToPico(inputLength);
     }
@@ -1949,7 +1949,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToNano(double inputLength) {
+    private static double gigaToNano(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToNano(inputLength);
     }
@@ -1960,7 +1960,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToMicro(double inputLength) {
+    private static double gigaToMicro(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToMicro(inputLength);
     }
@@ -1971,7 +1971,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToMilli(double inputLength) {
+    private static double gigaToMilli(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToMilli(inputLength);
     }
@@ -1982,7 +1982,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToCenti(double inputLength) {
+    private static double gigaToCenti(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToCenti(inputLength);
     }
@@ -1993,7 +1993,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToDeci(double inputLength) {
+    private static double gigaToDeci(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToDeci(inputLength);
     }
@@ -2004,7 +2004,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToKilo(double inputLength) {
+    private static double gigaToKilo(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToKilo(inputLength);
     }
@@ -2015,7 +2015,7 @@ public class LengthConverter {
      * @param inputLength
      * @return double
      */
-    public static double gigaToMega(double inputLength) {
+    private static double gigaToMega(double inputLength) {
         inputLength = gigaToMeter(inputLength);
         return meterToMega(inputLength);
     }
@@ -2034,7 +2034,7 @@ public class LengthConverter {
      * @return double
      */
     public static double convertLength(Unit inputUnit, Unit outputUnit, double inputLength) {
-        double outputLength = 0;
+        double outputLength;
         String choice = inputUnit.toString() + outputUnit.toString();
 
         // Determine conversion function.

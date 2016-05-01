@@ -55,7 +55,7 @@ public class ConversionLiterals {
      *
      * @author John-Paul Steed
      */
-    public static enum Unit {
+    public enum Unit {
         // LengthConverter
         INCH,
         FOOT,

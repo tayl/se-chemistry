@@ -3,7 +3,6 @@ package activities;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,10 +19,10 @@ import java.util.Map;
 
 public class ContactActivity extends AppCompatActivity {
 
-    Context context;
-    String subject;
-    String message;
-    Button submit;
+    private Context context;
+    private String subject;
+    private String message;
+    private Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +33,11 @@ public class ContactActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contact);
     }
 
-    public void sendMessage(View v) {
+    public void sendMessage() {
         String url = "https://script.google.com/macros/s/AKfycbzr0kSFLxTdgKwvJw_yYkx7krZ9CicThuLOI1NXG7QyQH2gBJI/exec";
 
-        subject = ((EditText) findViewById(R.id.contactsubject)).getText().toString();
-        message = ((EditText) findViewById(R.id.contactmessage)).getText().toString();
+        subject = findViewById(R.id.contactsubject) != null ? ((EditText) findViewById(R.id.contactsubject)).getText().toString() : null;
+        message = findViewById(R.id.contactmessage) != null ? ((EditText) findViewById(R.id.contactmessage)).getText().toString() : null;
         submit = ((Button) findViewById(R.id.contactsubmit));
 
         if (subject.isEmpty()) {
@@ -77,7 +76,7 @@ public class ContactActivity extends AppCompatActivity {
         ) {
             @Override
             protected Map<String, String> getParams() {
-                Map<String, String> params = new HashMap<String, String>();
+                Map<String, String> params = new HashMap<>();
 
                 System.out.println("Subject: " + subject);
                 System.out.println("Message: " + message);
@@ -90,7 +89,7 @@ public class ContactActivity extends AppCompatActivity {
 
             @Override
             public Map<String, String> getHeaders() {
-                Map<String, String> params = new HashMap<String, String>();
+                Map<String, String> params = new HashMap<>();
                 params.put("content-type", "application/x-www-form-urlencoded");
                 return params;
             }

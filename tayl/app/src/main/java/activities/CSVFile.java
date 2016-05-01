@@ -12,15 +12,15 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVFile {
-    InputStream inputStream;
+class CSVFile {
+    private final InputStream inputStream;
 
     public CSVFile(InputStream inputStream) {
         this.inputStream = inputStream;
     }
 
     public List<String[]> read() {
-        List<String[]> resultList = new ArrayList<String[]>();
+        List<String[]> resultList = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         try {
             String csvLine;

@@ -15,33 +15,34 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-    public void openConversionActivity(View v) {
+    public void openConversionActivity(View view) {
         Intent intent = new Intent(this, ConversionActivity.class);
         startActivity(intent);
     }
 
-    public void openCompoundResults(View v) {
+    public void openCompoundResults(View view) {
         Intent intent = new Intent(this, CompoundResults.class);
         startActivity(intent);
     }
 
-    public void openHelpActivity(View v) {
+    public void openHelpActivity(View view) {
         Intent intent = new Intent(this, HelpActivity.class);
         startActivity(intent);
     }
 
-    public void openPeriodicTableActivity(View v) {
+    public void openPeriodicTableActivity(View view) {
         Intent intent = new Intent(this, PeriodicTableActivity.class);
         startActivity(intent);
     }
 
-    public void openElementActivity(View v) {
+    public void openElementActivity(View view) {
         Intent intent = new Intent(this, ChemItemActivity.class);
         startActivity(intent);
     }
 
-    public void openContactActivity(View v) {
+    public void openContactActivity(View view) {
         Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
+
 }

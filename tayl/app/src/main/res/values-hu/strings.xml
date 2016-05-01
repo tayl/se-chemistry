@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kémia</string>
+  <string name="search_hint">Keresés képletek</string>
+  <string name="also_known_as">"Néven is ismert:"</string>
+  <string name="formula">"Formula:"</string>
+  <string name="molar_mass">"Moláris tömeg:"</string>
+  <string name="unknown_compound">Nem felsorolt/ismeretlen</string>
+  <string name="compound_elements_header">Elemek</string>
+  <string name="help_text">"Biokémia: AC-a Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Porkoláb-hoz hajózik:
+
+Mértékegység átváltó
+
+Válassza ki a konverzió típusát a
+        csepp-legyőz étlap első
+        Válassza ki az első megnyomásával egységek -
+        a legördülő menük
+        Írja be az értéket konvertálni, az egység a
+        alján, és nyomja meg a "Calculate"
+        Eredmény jelenik meg a "Számítás" gombot
+
+Összetett keresés
+
+Válasszon a vegyületek jelenik meg, vagy keresés
+        a bárban, a tetején
+        Tud kutatás keresztül összetett képletet vagy összetett
+        név
+        Ha keres a következő képlet adja:
+        * Keresés a kis-és nagybetűket!
+        * Ne felejtsük el zárójeleket, ha a képletben
+        Ha keres a vegyület neve:
+        * Kezdjük el a beírást a vegyület neve
+        * Válassza ki az összetett létrehoz listája
+        Válasszon egy összetett, a gramm, átalakítása
+        anyajegyek
+
+Elemek
+
+Elemek jelennek meg a listában az atomic által
+        szám
+        Keressen elemek a képernyő tetején
+        név szerint
+        Válassza ki a további eleme
+        és átváltás gramm, a anyajegyek
+
+Periódusos rendszer
+
+Táblázat akarat bemutatás-ban táj - forog a
+        telefon! Nagyítás a kijelző, mint a szokásos"
+    </string>
+  <string name="compoundsearchbuttontext">Összetett keresés</string>
+  <string name="tablebuttontext">Periódusos rendszer</string>
+  <string name="helpbuttontext">segítség</string>
+  <string name="converterbuttontext">Mértékegység átváltó</string>
+  <string name="elementsbuttontext">Elemek</string>
+  <string name="contactbuttontext">Lépjen kapcsolatba velünk</string>
+  <string name="send_button">Küldés</string>
+  <string name="contactmessagehint">üzenet</string>
+  <string name="contactsubjecthint">Tárgy</string>
+  <string name="questionsuggestionbugprompt">Van egy kérdés, javaslat, vagy a bug-jelentés? Tudassa velünk itt.</string>
+  <string name="splashScreen">Ez a tároló a splash képernyő</string>
+  <string name="mainImgView">konténer embléma haza képernyő</string>
+  <string name="conversion_type">A Conversion Type</string>
+  <string name="value">Érték</string>
+  <string name="from_unit">Egység</string>
+  <string name="to_unit">Egység</string>
+  <string name="calculate">Kiszámításához</string>
+  <string name="name">név</string>
+  <string name="chemical_formula">Kémiai képlet</string>
+  <string name="molar_mass_display">Moláris tömeg</string>
+  <string name="grams">Gramm:</string>
+  <string name="moles">Anyajegyek:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Néven is ismert:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq gyár</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic tömeg egység/DaltonGramMilligramKilogramMetric tonna</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre a MercuryPounds / Sq hüvelyk</string-array>
+  <string-array name="volumeUnits">Köbös MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

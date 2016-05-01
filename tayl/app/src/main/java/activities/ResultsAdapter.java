@@ -27,11 +27,11 @@ import elements.Element;
  * @author Taylor Veith
  *         Created by Taylor on 4/2/2016.
  */
-public class ResultsAdapter extends BaseAdapter implements Filterable {
+class ResultsAdapter extends BaseAdapter implements Filterable {
 
-    private Context context;
-    private CompoundBuilder compoundBuilder;
-    private CompoundList compoundList;
+    private final Context context;
+    private final CompoundBuilder compoundBuilder;
+    private final CompoundList compoundList;
     private List<Compound> results;
     private boolean foundMatches;
     private Toast lastToast;
@@ -144,7 +144,7 @@ public class ResultsAdapter extends BaseAdapter implements Filterable {
                 }
             }
 
-            viewHolder.additional_names.setText("Also known as: " + additionalNames.toString());
+            viewHolder.additional_names.setText(context.getString(R.string.aka_string) + additionalNames.toString());
 
             //by default, this view is set to GONE. make it VISIBLE
             viewHolder.additional_names.setVisibility(View.VISIBLE);

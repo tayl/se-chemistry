@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">کیمیاء</string>
+  <string name="search_hint">تلاش فارمولے</string>
+  <string name="also_known_as">"نام سے بھی جانا جاتا:"</string>
+  <string name="formula">"فارمولا:"</string>
+  <string name="molar_mass">"مولرکمیت:"</string>
+  <string name="unknown_compound">نہ فہرست/نامعلوم</string>
+  <string name="compound_elements_header">عناصر</string>
+  <string name="help_text">"انگریزی: Ac زر کے لیے سے
+        v 1.0.0
+
+Alex داوان
+        Daniel کاننیی
+        رابرٹ Valladares
+        جان-Paul ستید
+        ٹیلر ویاٹہ
+        وکٹوریہ راواس
+
+گھومنے پھرنے کے لئے تجاویز:
+
+یونٹ کنورٹر
+
+سے تبدیلیِ مذہب کی قسم کا انتخاب کریں
+        ڈراپ-ڈاؤن مینو پہلے
+        انتخاب کریں آپ سے - سب سے پہلے کی طرف سے دبانے یونٹس
+        ڈراپ ڈاؤن مینیو
+        یونٹ میں تبدیل کرنے کی قدر درج کریں
+        پایان اور پریس "کالکولاٹی"
+        نتیجہ "کالکولاٹی" کے تحت دکھائی جاتی ہے
+
+احاطے کی تلاش
+
+دکھائے گئے مرکبات سے انتخاب کریں یا تلاش کریں
+        بار سے سب سے اوپر
+        مرکب فارمولہ کے ذریعے یا احاطے میں تلاش کر سکتے ہیں
+        نام
+        اگر فارمولے کی طرف سے تلاش کر رہا ہے:
+        * تلاش حرفی شکل شناس ہے!
+        * قوسین میں فارمولا تو مت بھولو کہ
+        اگر مرکب نام سے تلاش کر رہا ہے:
+        * میں مرکب نام ٹائپ کاری کا آغاز
+        * پیدا کی فہرست سے مکان کا انتخاب
+        ایک مکان کے لئے گرام کے تبادلوں کے لئے انتخاب کریں
+        تل
+
+عناصر
+
+میں فہرست کی طرف سے ایٹمی دکھائے گئے عناصر
+        تعداد
+        اسکرین کے اوپری حصے میں عناصر کے لئے تلاش کریں
+        بمطابق نام
+        اضافی معلومات کے لیے کسی عنصر کا انتخاب کریں
+        اور تل گرام سے تبدیلئ مذہب
+
+دوری جدول
+
+جدول منظر نامے میں - گھمائیں دکھائیں گے آپ
+        فون! عام طور پر دکھانے کے لئے زوم "
+    </string>
+  <string name="compoundsearchbuttontext">احاطے کی تلاش</string>
+  <string name="tablebuttontext">دوری جدول</string>
+  <string name="helpbuttontext">مدد</string>
+  <string name="converterbuttontext">یونٹ کنورٹر</string>
+  <string name="elementsbuttontext">عناصر</string>
+  <string name="contactbuttontext">ہم سے رابطہ کریں</string>
+  <string name="send_button">بھیجیں</string>
+  <string name="contactmessagehint">پیغام</string>
+  <string name="contactsubjecthint">موضوع</string>
+  <string name="questionsuggestionbugprompt">ایک سوال، تجویز، یا بگ رپورٹ کرنے کا ہے؟ آئیے ہم یہاں جانتے ہیں ۔</string>
+  <string name="splashScreen">یہ کنٹینر سپلیش سکرین کے لئے ہے</string>
+  <string name="mainImgView">ہوم اسکرین علامت (لوگو) کے لئے ظرف</string>
+  <string name="conversion_type">تبدیلی کی قسم</string>
+  <string name="value">قدر</string>
+  <string name="from_unit">یونٹ سے</string>
+  <string name="to_unit">یونٹ کے لئے</string>
+  <string name="calculate">حساب کریں</string>
+  <string name="name">نام</string>
+  <string name="chemical_formula">کیمیائی صیغہ</string>
+  <string name="molar_mass_display">مولرکمیت</string>
+  <string name="grams">گرام:</string>
+  <string name="moles">تل:</string>
+  <string name="alumininum">الومانانم</string>
+  <string name="al">امام</string>
+  <string name="gram_default">26.98 گرام</string>
+  <string name="aka_string">"نام سے بھی جانا جاتا:"</string>
+  <string-array name="converstionTypes">اریڈانساٹیلانگٹہماسپریسسریٹمپاراٹوریوولومی</string-array>
+  <string-array name="areaUnits">اکریہیکتریسق میٹریسق کانٹامیٹریسق ماللامیٹریسق کالومیٹریسق مالیسق انکہسق فوٹسق یارڈ</string-array>
+  <string-array name="lengthUnits">انچفوٹیارڈمالیپاکومیٹرانانومیٹریماکرومیٹریماللامیٹریکانٹامیٹریڈکامیٹریمیٹریکیلومیٹریمیگامیٹریگگامیٹرا</string-array>
+  <string-array name="massUnits">انکپوونڈیٹوماک کمیت یونٹ/دالٹنگرامماللاگرامکلوگراممیٹراک ٹن</string-array>
+  <string-array name="pressureUnits">مرکوریپووندس فی مربع انچ کی اٹموسفرٹررپاسکالکالوپاسکالمالامیٹرا</string-array>
+  <string-array name="volumeUnits">کیوبیک میٹریکوباک کانٹامیٹریکباک مالامیٹریکباک کالومیٹریلاٹریگاللونقوارٹکوپکباک فیٹماللالاٹریکیلولاٹرا</string-array>
+  <string-array name="temperatureUnits">کیلوانکالساوسفہرانہیاٹ</string-array>
+</resources>

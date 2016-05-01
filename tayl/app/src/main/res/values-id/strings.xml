@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kimia</string>
+  <string name="search_hint">Cari rumus</string>
+  <string name="also_known_as">"Juga dikenal sebagai:"</string>
+  <string name="formula">"Formula:"</string>
+  <string name="molar_mass">"Massa molar:"</string>
+  <string name="unknown_compound">Tidak terdaftar/diketahui</string>
+  <string name="compound_elements_header">Elemen</string>
+  <string name="help_text">"Chem: dari Ac ke Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Walther Taylor Veith
+        Victoria Rivas
+
+Tips untuk menavigasi:
+
+Unit Converter
+
+Pilih jenis konversi dari
+        menu drop-down pertama
+        Pilih Anda dari - unit pertama dengan menekan
+        drop-down menu
+        Masukkan nilai unit untuk mengkonversi pada
+        bawah dan tekan "Hitung"
+        Hasilnya akan ditampilkan di bawah tombol "Hitung"
+
+Senyawa Cari
+
+Memilih dari senyawa-senyawa yang ditampilkan atau Cari
+        dari bar di bagian atas
+        Dapat mencari melalui senyawa formula atau senyawa
+        Nama
+        Jika mencari dengan rumus:
+        * Cari sensitif kasus!
+        * Jangan lupa tanda kurung jika dalam formula
+        Jika mencari dengan nama senyawa:
+        * Mulai mengetikkan nama senyawa
+        * Pilih senyawa dari daftar yang dihasilkan
+        Memilih senyawa untuk konversi gram untuk
+        tahi lalat
+
+Elemen
+
+Unsur-unsur yang ditampilkan dalam daftar oleh atom
+        nomor
+        Cari untuk elemen-elemen di bagian atas layar
+        oleh nama
+        Memilih elemen untuk informasi tambahan
+        dan konversi dari gram ke tahi lalat
+
+Tabel periodik
+
+Tabel akan menampilkan dalam lanskap - memutar Anda
+        telepon! Memperbesar ke layar seperti biasa"
+    </string>
+  <string name="compoundsearchbuttontext">Senyawa Cari</string>
+  <string name="tablebuttontext">Tabel periodik</string>
+  <string name="helpbuttontext">Tolong</string>
+  <string name="converterbuttontext">Unit Converter</string>
+  <string name="elementsbuttontext">Elemen</string>
+  <string name="contactbuttontext">Hubungi kami</string>
+  <string name="send_button">Kirim</string>
+  <string name="contactmessagehint">pesan</string>
+  <string name="contactsubjecthint">subjek</string>
+  <string name="questionsuggestionbugprompt">Memiliki pertanyaan, saran atau bug untuk laporan? Marilah kita tahu di sini.</string>
+  <string name="splashScreen">ini adalah wadah untuk layar splash</string>
+  <string name="mainImgView">wadah untuk logo layar awal</string>
+  <string name="conversion_type">Jenis konversi</string>
+  <string name="value">Nilai</string>
+  <string name="from_unit">Dari Unit</string>
+  <string name="to_unit">Untuk Unit</string>
+  <string name="calculate">Menghitung</string>
+  <string name="name">Nama</string>
+  <string name="chemical_formula">Rumus kimia</string>
+  <string name="molar_mass_display">Massa molekul</string>
+  <string name="grams">Gram:</string>
+  <string name="moles">Tahi lalat:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Juga dikenal sebagai:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">Massa OuncePoundAtomic Unit DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds per inci persegi</string-array>
+  <string-array name="volumeUnits">Kubik MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">شیمی</string>
+  <string name="search_hint">فرمول جستجو</string>
+  <string name="also_known_as">«همچنین شناخته شده به عنوان:»</string>
+  <string name="formula">"فرمول:"</string>
+  <string name="molar_mass">"جرم مولی:"</string>
+  <string name="unknown_compound">هنوز لیست/ناشناخته</string>
+  <string name="compound_elements_header">عناصر</string>
+  <string name="help_text">"شیمی: از Ac به Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        رابرت Valladares
+        جان Paul استید
+        تیلور Veith
+        ویکتوریا ریواس
+
+راهنمایی برای حرکت:
+
+تبدیل واحد
+
+انتخاب نوع تبدیل از
+        منوی اول
+        انتخاب شما - به واحد اول با فشار دادن
+        منوهای کشویی
+        ارزش واحد برای تبدیل در را وارد کنید
+        پایین و مطبوعات "محاسبه"
+        نتیجه زیر دکمه "محاسبه" نمایش داده می شود
+
+ترکیب جستجو
+
+از ترکیبات نمایش داده شده را انتخاب کنید و یا جستجو
+        از نوار در بالای
+        می توانید از طریق فرمول ترکیبی یا مرکب جستجو
+        نام
+        اگر در جستجوی با فرمول:
+        * جستجو حساس به حروف است!
+        * پرانتز را اگر در فرمول فراموش نمی
+        اگر در جستجوی نام ترکیب:
+        * شروع به تایپ نام ترکیب
+        * را انتخاب کنید ترکیب از لیست های تولید شده
+        انتخاب یک ترکیب برای تبدیل گرم به
+        خال
+
+عناصر
+
+در لیست نمایش داده شده توسط اتمی عناصر
+        شماره
+        جستجو برای عناصر در بالای صفحه نمایش
+        با نام
+        انتخاب یک عنصر برای اطلاعات بیشتر
+        و تبدیل گرم-خال
+
+جدول تناوبی
+
+جدول نمایش داده شده در چشم انداز - چرخش خود را
+        تلفن! زوم صفحه نمایش به صورت عادی"
+    </string>
+  <string name="compoundsearchbuttontext">ترکیب جستجو</string>
+  <string name="tablebuttontext">جدول تناوبی</string>
+  <string name="helpbuttontext">کمک</string>
+  <string name="converterbuttontext">تبدیل واحد</string>
+  <string name="elementsbuttontext">عناصر</string>
+  <string name="contactbuttontext">تماس با ما</string>
+  <string name="send_button">ارسال</string>
+  <string name="contactmessagehint">پیام</string>
+  <string name="contactsubjecthint">موضوع</string>
+  <string name="questionsuggestionbugprompt">سوال، پیشنهاد و یا اشکال به گزارش دارید؟ به ما بگویید اینجا.</string>
+  <string name="splashScreen">این ظرف برای صفحه نمایش چلپ چلوپ کردن است</string>
+  <string name="mainImgView">کانتینر برای صفحه نمایش موبایل</string>
+  <string name="conversion_type">تبدیل نوع</string>
+  <string name="value">ارزش</string>
+  <string name="from_unit">از واحد</string>
+  <string name="to_unit">به واحد</string>
+  <string name="calculate">محاسبه</string>
+  <string name="name">نام</string>
+  <string name="chemical_formula">فرمول شیمیایی</string>
+  <string name="molar_mass_display">جرم مولی</string>
+  <string name="grams">گرم:</string>
+  <string name="moles">خال:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">آل</string>
+  <string name="gram_default">26.98 گرم</string>
+  <string name="aka_string">«همچنین شناخته شده به عنوان:»</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq KilometreSq MileSq CentimetreSq MillimetreSq InchSq حیاط FootSq</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic جرم واحد/DaltonGramMilligramKilogramMetric تن</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds در هر اینچ مربع</string-array>
+  <string-array name="volumeUnits">مکعب MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

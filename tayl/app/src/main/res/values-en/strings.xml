@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chemistry</string>
+  <string name="search_hint">Search formulas</string>
+  <string name="also_known_as">"Also known as: "</string>
+  <string name="formula">"Formula: "</string>
+  <string name="molar_mass">"Molar mass: "</string>
+  <string name="unknown_compound">Not Listed/Unknown</string>
+  <string name="compound_elements_header">Elements</string>
+  <string name="help_text">"Chem: from Ac to Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Tips to navigate:
+
+Unit Converter
+
+Choose the conversion type from the
+        drop-down menu first
+        Choose your from - to units first by pressing on
+        the drop-down menus
+        Enter the value of the unit to convert at the
+        bottom and press "Calculate"
+        Result is displayed under the "Calculate" button
+
+Compound Search
+
+Choose from compounds displayed or search
+        from the bar at the top
+        Can search via compound formula or compound
+        name
+        If searching by formula:
+        * Search is case sensitive!
+        * Don't forget parentheses if in the formula
+        If searching by compound name:
+        * Start typing in the compound name
+        * Choose the compound from the list generated
+        Choose a compound for conversion of grams to
+        moles
+
+Elements
+
+Elements displayed in the list by the atomic
+        number
+        Search for elements at the top of the screen
+        by name
+        Choose an element for additional information
+        and conversion from grams to moles
+
+Periodic Table
+
+Table will display in landscape - rotate your
+        phone! Zoom in to the display as normal"
+    </string>
+  <string name="compoundsearchbuttontext">Compound Search</string>
+  <string name="tablebuttontext">Periodic Table</string>
+  <string name="helpbuttontext">Help</string>
+  <string name="converterbuttontext">Unit Converter</string>
+  <string name="elementsbuttontext">Elements</string>
+  <string name="contactbuttontext">Contact Us</string>
+  <string name="send_button">Send</string>
+  <string name="contactmessagehint">message</string>
+  <string name="contactsubjecthint">subject</string>
+  <string name="questionsuggestionbugprompt">Have a question, suggestion, or bug to report? Let us know here.</string>
+  <string name="splashScreen">this is the container for the splash screen</string>
+  <string name="mainImgView">container for home screen logo</string>
+  <string name="conversion_type">Conversion Type</string>
+  <string name="value">Value</string>
+  <string name="from_unit">From Unit</string>
+  <string name="to_unit">To Unit</string>
+  <string name="calculate">Calculate</string>
+  <string name="name">Name</string>
+  <string name="chemical_formula">Chemical Formula</string>
+  <string name="molar_mass_display">Molar Mass</string>
+  <string name="grams">Grams:</string>
+  <string name="moles">Moles:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Also known as: "</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq Yard</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic Mass Unit/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre of MercuryPounds per Sq Inch</string-array>
+  <string-array name="volumeUnits">Cubic MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

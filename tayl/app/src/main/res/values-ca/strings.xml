@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Química</string>
+  <string name="search_hint">Cerca les fórmules</string>
+  <string name="also_known_as">"També conegut com:"</string>
+  <string name="formula">"Fórmula:"</string>
+  <string name="molar_mass">"Massa molar:"</string>
+  <string name="unknown_compound">No llistat/desconegut</string>
+  <string name="compound_elements_header">Elements de</string>
+  <string name="help_text">"Química: des de l\'Ac a Zr
+        v 1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John Paul corser
+        Taylor Veith
+        Victoria Rivas
+
+Consells per navegar:
+
+Convertidor d\'unitats
+
+Triar el tipus de conversió de la
+        menú desplegable primer
+        Triar el seu de - a unitats primer prement
+        els menús desplegables
+        Entrar en el valor de la unitat de convertir a la
+        fons i premsa "Calcular"
+        Resultat es mostra sota el botó "Calcular"
+
+Cerca compost
+
+Triar entre compostos mostrats o Cerca
+        des de la barra a la part superior
+        Poden buscar mitjançant fórmula compost o compostos
+        nom
+        Si cerques per la fórmula:
+        * Cerca és sensible a majúscules!
+        * No t\'oblidis els parèntesis si en la fórmula
+        Si cerques per nom compost:
+        * Comenceu a escriure el nom compost
+        * Trieu el compost de la llista generada
+        Triar un compost per a la conversió de grams per
+        Moles
+
+Elements de
+
+Elements mostrats en la llista per atòmic
+        nombre
+        Cerca elements a la part superior de la pantalla
+        per nom
+        Trieu un element per obtenir informació addicional
+        i conversió de grams a mols
+
+Taula periòdica
+
+Taula es mostrarà en el paisatge - girar el seu
+        telèfon! Apropar fins a la visualització normal"
+    </string>
+  <string name="compoundsearchbuttontext">Cerca compost</string>
+  <string name="tablebuttontext">Taula periòdica</string>
+  <string name="helpbuttontext">Ajuda</string>
+  <string name="converterbuttontext">Convertidor d\'unitats</string>
+  <string name="elementsbuttontext">Elements de</string>
+  <string name="contactbuttontext">Contacti amb nosaltres</string>
+  <string name="send_button">Enviar</string>
+  <string name="contactmessagehint">missatge</string>
+  <string name="contactsubjecthint">tema</string>
+  <string name="questionsuggestionbugprompt">Té alguna pregunta, suggeriment o error per informe? Deixi \' ns saber aquí.</string>
+  <string name="splashScreen">Aquest és el contenidor per a la pantalla d\'esquitxada</string>
+  <string name="mainImgView">contenidor per a logo de pantalla d\'inici</string>
+  <string name="conversion_type">Tipus de conversió</string>
+  <string name="value">Valor</string>
+  <string name="from_unit">Des de la unitat de</string>
+  <string name="to_unit">A unitat</string>
+  <string name="calculate">Calcular</string>
+  <string name="name">Nom</string>
+  <string name="chemical_formula">Fórmula química</string>
+  <string name="molar_mass_display">Massa molar</string>
+  <string name="grams">G:</string>
+  <string name="moles">Talps:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"També conegut com:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq pati</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic massa unitat/DaltonGramMilligramKilogramMetric tona</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre de MercuryPounds per polzada Sq</string-array>
+  <string-array name="volumeUnits">Cúbics MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

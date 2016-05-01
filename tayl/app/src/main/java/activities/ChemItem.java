@@ -1,9 +1,6 @@
 package activities;
 
-/**
- * Created by robertvalladares on 3/14/16.
- */
-public class ChemItem {
+class ChemItem {
     private String id;
     private String name;
     private String molMass;

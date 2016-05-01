@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">كيمياء</string>
+  <string name="search_hint">البحث عن صيغ</string>
+  <string name="also_known_as">"يعرف أيضا باسم:"</string>
+  <string name="formula">"الصيغة:"</string>
+  <string name="molar_mass">"كتلة المولى:"</string>
+  <string name="unknown_compound">عدم سرد/المجهول</string>
+  <string name="compound_elements_header">عناصر</string>
+  <string name="help_text">"تشيم: من التيار المتردد إلى Zr
+        v1.0.0
+
+دوان Alex
+        كيني Daniel
+        روبرت Valladares
+        جون-Paul ستيد
+        فيث تايلور
+        فيكتوريا ريفاس
+
+نصائح للتنقل:
+
+تحويل الوحدة
+
+اختر نوع التحويل من
+        القائمة المنسدلة الأولى
+        اختر الخاص بك من-إلى وحدات أولاً عن طريق الضغط
+        القوائم المنسدلة
+        قم بإدخال قيمة لوحدة لتحويل في
+        أسفل واضغط "حساب"
+        يتم عرض النتيجة تحت زر "حساب"
+
+بحث مركب
+
+اختر من المركبات المعروضة أو البحث
+        من الشريط في أعلى
+        يمكن البحث عن طريق الصيغة المركبة أو المركبة
+        الاسم
+        إذا كان البحث بصيغة:
+        * البحث حساس لحالة الأحرف!
+        * لا تنسى الأقواس إذا كان في الصيغة
+        إذا كان البحث عن طريق الاسم المركب:
+        * ابدأ بكتابة اسم مركب
+        * اختيار المجمع من القائمة التي تم إنشاؤها
+        اختر مجمعا لتحويل غرام إلى
+        الشامات
+
+عناصر
+
+العناصر المعروضة في القائمة بالذرية
+        عدد
+        البحث عن العناصر في الجزء العلوي من الشاشة
+        حسب الاسم
+        اختر عنصرا للحصول على معلومات إضافية
+        والتحويل من غرام إلى جزيئات
+
+الجدول الدوري
+
+سيتم عرض الجدول في المناظر الطبيعية—تدوير الخاص بك
+        الهاتف! التكبير للعرض كالمعتاد "
+    </string>
+  <string name="compoundsearchbuttontext">بحث مركب</string>
+  <string name="tablebuttontext">الجدول الدوري</string>
+  <string name="helpbuttontext">تعليمات</string>
+  <string name="converterbuttontext">تحويل الوحدة</string>
+  <string name="elementsbuttontext">عناصر</string>
+  <string name="contactbuttontext">اتصل بنا</string>
+  <string name="send_button">إرسال</string>
+  <string name="contactmessagehint">رسالة</string>
+  <string name="contactsubjecthint">هذا الموضوع</string>
+  <string name="questionsuggestionbugprompt">لدى سؤال، اقتراح، أو علة للتقرير؟ اسمحوا لنا أن نعرف هنا.</string>
+  <string name="splashScreen">هذا هو الحاوية لشاشة البداية</string>
+  <string name="mainImgView">حاوية لشعار الشاشة الرئيسية</string>
+  <string name="conversion_type">نوع التحويل</string>
+  <string name="value">القيمة</string>
+  <string name="from_unit">من وحدة</string>
+  <string name="to_unit">إلى وحدة</string>
+  <string name="calculate">حساب</string>
+  <string name="name">الاسم</string>
+  <string name="chemical_formula">الصيغة الكيميائية</string>
+  <string name="molar_mass_display">كتلة المولى</string>
+  <string name="grams">غرام:</string>
+  <string name="moles">الشامات:</string>
+  <string name="alumininum">أعمال</string>
+  <string name="al">نادي</string>
+  <string name="gram_default">ز 26.98</string>
+  <string name="aka_string">"يعرف أيضا باسم:"</string>
+  <string-array name="converstionTypes">أريدينسيتيلينجثماسبريسوريتيمبيراتوريفولومي</string-array>
+  <string-array name="areaUnits">ميتريسق أكريهيكتاريسق ميليميتريسق سينتيميتريسق ملسك كيلوميتريسق إينتشسق فوتسق يارد</string-array>
+  <string-array name="lengthUnits">إينتشفوتياردميليبيكوميترينانوميتريميكروميتريميليمتريسينتيميتريديسيميتريميتريكيلوميتريميجاميتريجيجاميتري</string-array>
+  <string-array name="massUnits">كتلة أوونسيبونداتوميك وحدة/دالتونجرامميليجرامكيلوجراميتريك طن</string-array>
+  <string-array name="pressureUnits">أتموسفيريتورباسكالكيلوباسكالميليميتري ميركوريبوندس في ميدان البوصة</string-array>
+  <string-array name="volumeUnits">مكعب ميتريكوبيك سينتيميتريكوبيك ميليميتريكوبيك كيلوميتريليتريجالونقوارتكوبكوبيك فيتميليليتريكيلوليتري</string-array>
+  <string-array name="temperatureUnits">كيلفينسيلسيوسفاهرينهيت</string-array>
+</resources>

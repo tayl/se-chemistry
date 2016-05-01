@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Kemi</string>
+  <string name="search_hint">Sök formler</string>
+  <string name="also_known_as">"Även känd som:"</string>
+  <string name="formula">"Formel:"</string>
+  <string name="molar_mass">"Molmassa:"</string>
+  <string name="unknown_compound">Inte anges/okänd</string>
+  <string name="compound_elements_header">Element</string>
+  <string name="help_text">"Chem: från Ac till Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        John-Paul springare
+        Taylor Veith
+        Victoria Rivas
+
+Tips för att navigera:
+
+Enhetsomvandlare
+
+Välj konverteringstyp från den
+        rullgardinsmenyn första
+        Välj din från - till enheter först genom att trycka på
+        nedrullningsbara menyer
+        Ange värdet för enheten du konverterar på den
+        botten och tryck på "Beräkna"
+        Resultatet visas under knappen "Beräkna"
+
+Sammansatta Sök
+
+Välj från föreningar visas eller Sök
+        från baren högst upp
+        Kan söka via förening formel eller förening
+        Namn
+        Om sökning genom formeln:
+        * Sök är skiftlägeskänsliga!
+        * Glöm inte parenteser om i formeln
+        Om söka av sammansatta namn:
+        * Börja skriva i sammansatta namn
+        * Välj en förening i listan genereras
+        Välj en förening för konvertering av gram till
+        mullvadar
+
+Element
+
+Elementen som visas i listan av det Atom
+        antal
+        Söka efter element överst på skärmen
+        av namn
+        Välja ett element för ytterligare information
+        och konvertering från gram till mullvadar
+
+Periodiska systemet
+
+Tabellen visar i landskapet - rotera din
+        telefon! Zooma in till displayen som vanligt"
+    </string>
+  <string name="compoundsearchbuttontext">Sammansatta Sök</string>
+  <string name="tablebuttontext">Periodiska systemet</string>
+  <string name="helpbuttontext">Hjälp</string>
+  <string name="converterbuttontext">Enhetsomvandlare</string>
+  <string name="elementsbuttontext">Element</string>
+  <string name="contactbuttontext">Kontakta oss</string>
+  <string name="send_button">Skicka</string>
+  <string name="contactmessagehint">meddelande</string>
+  <string name="contactsubjecthint">ämne</string>
+  <string name="questionsuggestionbugprompt">Har en fråga, förslag, eller bugg rapport? Låt oss veta här.</string>
+  <string name="splashScreen">Detta är behållaren för startbilden</string>
+  <string name="mainImgView">behållare för startskärmen logotyp</string>
+  <string name="conversion_type">Konverteringstyp</string>
+  <string name="value">Värde</string>
+  <string name="from_unit">Från enheten</string>
+  <string name="to_unit">Till enheten</string>
+  <string name="calculate">Beräkna</string>
+  <string name="name">Namn</string>
+  <string name="chemical_formula">Kemisk formel</string>
+  <string name="molar_mass_display">Molmassa</string>
+  <string name="grams">Gram:</string>
+  <string name="moles">Mol:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Även känd som:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq gård</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic massa enhet/DaltonGramMilligramKilogramMetric Ton</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre av MercuryPounds per Sq tum</string-array>
+  <string-array name="volumeUnits">Kubik MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

@@ -14,9 +14,9 @@ import elements.Element;
  */
 public class CompoundList {
 
-    private List<Compound> compounds = new ArrayList<>();
+    private final List<Compound> compounds = new ArrayList<>();
 
-    private HashMap<String, Compound> compoundMap = new HashMap<>();
+    private final HashMap<String, Compound> compoundMap = new HashMap<>();
 
     public List<Compound> getCompounds() {
         return this.compounds;
@@ -48,7 +48,7 @@ public class CompoundList {
         return compounds.toArray(c);
     }
 
-    public void addCompound(Compound compound) {
+    private void addCompound(Compound compound) {
         compounds.add(compound);
         compoundMap.put(compound.getName(), compound);
         compoundMap.put(compound.getFormula(), compound);
@@ -80,13 +80,13 @@ public class CompoundList {
         return compoundMap.get(symbol);
     }
 
-    public Compound getCompoundByElements(CompoundBuilder cb, String queryElement) {
+    private Compound getCompoundByElements(CompoundBuilder cb, String queryElement) {
         List<Element> elements = cb.deriveElementsFromFormula(queryElement);
 
         return getCompoundByElements(elements);
     }
 
-    public Compound getCompoundByElements(List<Element> elements) {
+    private Compound getCompoundByElements(List<Element> elements) {
         if (elements == null || elements.size() == 0) {
             return null;
         }
@@ -135,20 +135,22 @@ public class CompoundList {
         return compounds.size();
     }
 
-    public void printList() {
-        char firstLetter = '\u0000';
-        for (Compound compound : compounds) {
-            String name = compound.getName();
-            if (name.isEmpty()) {
-                continue;
-            }
-            if (firstLetter != name.toUpperCase().charAt(0)) {
-                firstLetter = name.toUpperCase().charAt(0);
-                System.out.println(firstLetter + " -----------");
-            }
-            System.out.println("  " + name);
-        }
-    }
+// --Commented out by Inspection START (5/1/16 4:52 PM):
+//    public void printList() {
+//        char firstLetter = '\u0000';
+//        for (Compound compound : compounds) {
+//            String name = compound.getName();
+//            if (name.isEmpty()) {
+//                continue;
+//            }
+//            if (firstLetter != name.toUpperCase().charAt(0)) {
+//                firstLetter = name.toUpperCase().charAt(0);
+//                System.out.println(firstLetter + " -----------");
+//            }
+//            System.out.println("  " + name);
+//        }
+//    }
+// --Commented out by Inspection STOP (5/1/16 4:52 PM)
 
     @Override
     public String toString() {

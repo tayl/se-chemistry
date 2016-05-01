@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Хімія</string>
+  <string name="search_hint">Пошук формули</string>
+  <string name="also_known_as">"Також відомий як:"</string>
+  <string name="formula">"Формула:"</string>
+  <string name="molar_mass">"Молярна маса:"</string>
+  <string name="unknown_compound">Не перераховані/невідомий</string>
+  <string name="compound_elements_header">Елементи</string>
+  <string name="help_text">"Хім: від ПС до Zr
+        V1.0.0
+
+Alex Доан
+        Daniel кінні
+        Роберт Valladares
+        Джон Paul Стід
+        Тейлор Veith
+        Вікторія Рівас
+
+Поради для навігації:
+
+Unit Converter
+
+Виберіть тип конверсії від в
+        розкривне меню перший
+        Виберіть ваш звідки — куди одиниць, по-перше, натиснувши
+        розкриваються меню
+        Введіть значення пристрою, щоб перетворити в той
+        внизу та натисніть "Обчислити"
+        Результат відображається в розділі кнопку "Перерахувати"
+
+Складені пошук
+
+Вибір сполук відображається або пошуку
+        з бару на вершині
+        Можна шукати через формула гумової суміші або складений
+        Ім\'я
+        Якщо пошук за формулою:
+        * Пошук чутливий до регістру!
+        * Не забувайте дужках, якщо у формулі
+        Якщо пошук за назвою підключення:
+        * Почніть вводити текст у складених ім\'я
+        * Виберіть з\'єднання зі списку сгенерирована
+        Оберіть з\'єднання для перетворення грам до
+        молей
+
+Елементи
+
+Елементи, які відображаються у списку атомного
+        номер
+        Пошук елементів у верхній частині екрана
+        за іменем
+        Виберіть елемент, для отримання додаткової інформації
+        і перетворення з грамів до моль
+
+Періодична таблиця
+
+Таблиці буде відображено в ландшафт - обертати ваші
+        телефон! Збільшити масштаб для відображення у звичайному режимі"
+    </string>
+  <string name="compoundsearchbuttontext">Складені пошук</string>
+  <string name="tablebuttontext">Періодична таблиця</string>
+  <string name="helpbuttontext">Допомога</string>
+  <string name="converterbuttontext">Unit Converter</string>
+  <string name="elementsbuttontext">Елементи</string>
+  <string name="contactbuttontext">Зв\'язатися з нами</string>
+  <string name="send_button">Надіслати</string>
+  <string name="contactmessagehint">повідомлення</string>
+  <string name="contactsubjecthint">Тема</string>
+  <string name="questionsuggestionbugprompt">Є питання, пропозиції або помилка доповіді? Дайте нам знати, тут.</string>
+  <string name="splashScreen">Це контейнер для заставки</string>
+  <string name="mainImgView">контейнер для головному екрані логотип</string>
+  <string name="conversion_type">Тип конверсії</string>
+  <string name="value">Значення</string>
+  <string name="from_unit">Від одиниці</string>
+  <string name="to_unit">Одиниці</string>
+  <string name="calculate">Розрахувати</string>
+  <string name="name">Ім\'я</string>
+  <string name="chemical_formula">Хімічна формула</string>
+  <string name="molar_mass_display">Молярна маса</string>
+  <string name="grams">Грам:</string>
+  <string name="moles">Молі:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Також відомий як:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq двір</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic маса блок/DaltonGramMilligramKilogramMetric тонну</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre MercuryPounds на дюйм Sq</string-array>
+  <string-array name="volumeUnits">Кубічних MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

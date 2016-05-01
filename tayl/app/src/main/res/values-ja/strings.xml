@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">化学</string>
+  <string name="search_hint">検索式</string>
+  <string name="also_known_as">」とも呼ばれる:"</string>
+  <string name="formula">"式:"</string>
+  <string name="molar_mass">「モル質量:"</string>
+  <string name="unknown_compound">記載されていない/不明</string>
+  <string name="compound_elements_header">要素</string>
+  <string name="help_text">「化学: Zr に Ac から
+        v1.0.0
+
+Alex ドアン
+        Daniel キニー
+        ロバート Valladares
+        John Paul スティード
+        テイラー Veith
+        ビクトリア リバス
+
+移動のヒント:
+
+単位のコンバーター
+
+変換の種類を選択します
+        ドロップ ダウン メニュー最初
+        選択、最初の押すことによってユニット -
+        ドロップ ダウン メニュー
+        変換後の単位の値を入力します
+        「計算」を押し下
+        「計算」ボタンの下に結果が表示されます。
+
+化合物検索
+
+化合物表示から選択または検索
+        上部のバーから
+        複合式または複合検索できます。
+        名
+        数式で検索: 場合
+        * 検索は、大文字小文字を区別です!
+        * 式の場合はかっこを忘れないでください。
+        場合は、化合物名で検索。
+        * 化合物名の入力を開始します。
+        * 生成されたリストから化合物を選択します。
+        グラムの変換のための化合物を選択します。
+        モグラ
+
+要素
+
+要素の原子によってリストに表示
+        番号
+        画面の上部での要素を検索します。
+        名前で
+        詳細については、要素を選択します。
+        グラムからモルへの変換
+
+周期表
+
+風景 - 回転にテーブルが表示されます、
+        携帯電話!通常どおり表示にズームイン"
+    </string>
+  <string name="compoundsearchbuttontext">化合物検索</string>
+  <string name="tablebuttontext">周期表</string>
+  <string name="helpbuttontext">ヘルプ</string>
+  <string name="converterbuttontext">単位のコンバーター</string>
+  <string name="elementsbuttontext">要素</string>
+  <string name="contactbuttontext">お問い合わせ</string>
+  <string name="send_button">送信</string>
+  <string name="contactmessagehint">メッセージ</string>
+  <string name="contactsubjecthint">件名</string>
+  <string name="questionsuggestionbugprompt">質問、提案、またはバグを報告があるか。ここで知ってみましょう。</string>
+  <string name="splashScreen">これがスプラッシュ スクリーンのためのコンテナー</string>
+  <string name="mainImgView">ホーム画面のロゴのためのコンテナー</string>
+  <string name="conversion_type">変換の種類</string>
+  <string name="value">値</string>
+  <string name="from_unit">ユニットから</string>
+  <string name="to_unit">ユニットに</string>
+  <string name="calculate">計算します。</string>
+  <string name="name">名</string>
+  <string name="chemical_formula">化学式</string>
+  <string name="molar_mass_display">モル質量</string>
+  <string name="grams">グラム:</string>
+  <string name="moles">モグラ:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">アル</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">」とも呼ばれる:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq ヤード</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">OuncePoundAtomic 質量単位/DaltonGramMilligramKilogramMetric トン</string-array>
+  <string-array name="pressureUnits">1 平方インチあたり MercuryPounds の AtmosphereTorrPascalKilopascalMillimetre</string-array>
+  <string-array name="volumeUnits">立方 MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>

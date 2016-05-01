@@ -7,9 +7,6 @@ import android.os.Bundle;
 
 import com.chemistry.R;
 
-/**
- * Created by Daniel on 4/10/16.
- */
 public class PeriodicTableActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {

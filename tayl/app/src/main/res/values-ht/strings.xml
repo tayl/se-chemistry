@@ -1,0 +1,93 @@
+<resources>
+  <string name="app_name">Chimi</string>
+  <string name="search_hint">Rechèch koze</string>
+  <string name="also_known_as">"Tou:"</string>
+  <string name="formula">"Fòmil:"</string>
+  <string name="molar_mass">"Wo dan mès:"</string>
+  <string name="unknown_compound">Pa lis/sa nou pa konnen</string>
+  <string name="compound_elements_header">Eleman yo</string>
+  <string name="help_text">"Chem: de la nòd pou Zr
+        v1.0.0
+
+Alex Doan
+        Daniel Kinney
+        Robert Valladares
+        Jan Batis-Paul Steed
+        Taylor Veith
+        Victoria Rivas
+
+Apèsi enpotan pou navige:
+
+Convertisseur inite w la
+
+Chwazi jan de konvèsyon de la
+        kat ane ke yo bliye-desann premye
+        Chwazi ou nan - pou inite yo pwemye pa peze
+        menus ane ke yo bliye-desann
+        Antre rapòte ou lajan pou inite w la pou kouvri lavil la
+        bounda bough @ branch yo ak lapwès "Calculer"
+        Rezilta a deploye sou bouton "Calculer" a
+
+Grave rechèch lan/sitirasyon an
+
+Chwazi nan eleman ki te deploye oubyen fouye
+        sòti de kafe nan tèt
+        Ka jwenn via konpoze fòmil oubyen konpoze
+        fe-apel
+        Si chache ke fòmil:
+        * Rechèch nplwaye sansib!
+        * Pa bliye parantèz, si nan fòmil la
+        Si chache te konpoze rele:
+        * Kòmanse saisie nan non konpoze
+        * Chwazi a ase plisyè nan lis a généré
+        Chwazi yon ase plisyè pou konvèsyon moun gram yo pou
+        moles
+
+Eleman yo
+
+Eleman yo te deploye nan lis la pa a atomik
+        anpil
+        Rechèch pou eleman yo nan twal metalik a
+        te rele
+        Chwazi yon eleman pou plis enfòmasyon
+        ak konvèsyon nan gram yo pou moles
+
+Tablo peryodik
+
+Tab la ap etale nan jaden flè - faire ou
+        telefòn! Rale ekspozisyon kòm nòmal pou"
+    </string>
+  <string name="compoundsearchbuttontext">Grave rechèch lan/sitirasyon an</string>
+  <string name="tablebuttontext">Tablo peryodik</string>
+  <string name="helpbuttontext">Anmwe</string>
+  <string name="converterbuttontext">Convertisseur inite w la</string>
+  <string name="elementsbuttontext">Eleman yo</string>
+  <string name="contactbuttontext">Kontakte nou</string>
+  <string name="send_button">Voye</string>
+  <string name="contactmessagehint">mesaj</string>
+  <string name="contactsubjecthint">sijè</string>
+  <string name="questionsuggestionbugprompt">Gen yon kesyon, konsèy, oswa pou rapò n. pinèz? Fè nou konnen ki isit la.</string>
+  <string name="splashScreen">sa a se kès pou a ekran tchouboum</string>
+  <string name="mainImgView">bwat pou Joe\'s kay twal metalik</string>
+  <string name="conversion_type">Jan de konvèsyon</string>
+  <string name="value">Valè</string>
+  <string name="from_unit">Nan inite w la</string>
+  <string name="to_unit">Pou inite w la</string>
+  <string name="calculate">Kalkile</string>
+  <string name="name">fe-apel</string>
+  <string name="chemical_formula">Fòmil chimik</string>
+  <string name="molar_mass_display">Wo dan mès</string>
+  <string name="grams">Gram yo:</string>
+  <string name="moles">Moles:</string>
+  <string name="alumininum">Alumininum</string>
+  <string name="al">Al</string>
+  <string name="gram_default">26.98 g</string>
+  <string name="aka_string">"Tou:"</string>
+  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
+  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq twa pye</string-array>
+  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
+  <string-array name="massUnits">Mès OuncePoundAtomic inite w la/DaltonGramMilligramKilogramMetric tòn</string-array>
+  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre de MercuryPounds pa sou plas pous</string-array>
+  <string-array name="volumeUnits">Kib MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
+  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+</resources>
