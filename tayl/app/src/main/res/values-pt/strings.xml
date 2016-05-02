@@ -83,11 +83,76 @@ Tabela exibirá na paisagem - girar seu
   <string name="al">Al</string>
   <string name="gram_default">26,98 g</string>
   <string name="aka_string">"Também conhecido como:"</string>
-  <string-array name="converstionTypes">AreaDensityLengthMassPressureTemperatureVolume</string-array>
-  <string-array name="areaUnits">AcreHectareSq MetreSq CentimetreSq MillimetreSq KilometreSq MileSq InchSq FootSq jardim</string-array>
-  <string-array name="lengthUnits">InchFootYardMilePicometreNanometreMicrometreMillimetreCentimetreDecimetreMetreKilometreMegametreGigametre</string-array>
-  <string-array name="massUnits">Tonelada de massa de OuncePoundAtomic unidade/DaltonGramMilligramKilogramMetric</string-array>
-  <string-array name="pressureUnits">AtmosphereTorrPascalKilopascalMillimetre de MercuryPounds por Sq polegada</string-array>
-  <string-array name="volumeUnits">Cúbico MetreCubic CentimetreCubic MillimetreCubic KilometreLitreGallonQuartCupCubic FeetMillilitreKilolitre</string-array>
-  <string-array name="temperatureUnits">KelvinCelsiusFahrenheit</string-array>
+    <string-array name="converstionTypes">
+        <item>Area</item>
+        <item>Density</item>
+        <item>Length</item>
+        <item>Mass</item>
+        <item>Pressure</item>
+        <item>Temperature</item>
+        <item>Volume</item>
+    </string-array>
+    <string-array name="areaUnits">
+        <item>Acre</item>
+        <item>Hectare</item>
+        <item>Sq Metre</item>
+        <item>Sq Centimetre</item>
+        <item>Sq Millimetre</item>
+        <item>Sq Kilometre</item>
+        <item>Sq Mile</item>
+        <item>Sq Inch</item>
+        <item>Sq Foot</item>
+        <item>Sq Yard</item>
+    </string-array>
+    <string-array name="lengthUnits">
+        <item>Inch</item>
+        <item>Foot</item>
+        <item>Yard</item>
+        <item>Mile</item>
+        <item>Picometre</item>
+        <item>Nanometre</item>
+        <item>Micrometre</item>
+        <item>Millimetre</item>
+        <item>Centimetre</item>
+        <item>Decimetre</item>
+        <item>Metre</item>
+        <item>Kilometre</item>
+        <item>Megametre</item>
+        <item>Gigametre</item>
+    </string-array>
+    <string-array name="massUnits">
+        <item>Ounce</item>
+        <item>Pound</item>
+        <item>Atomic Mass Unit/Dalton</item>
+        <item>Gram</item>
+        <item>Milligram</item>
+        <item>Kilogram</item>
+        <item>Metric Ton</item>
+    </string-array>
+    <string-array name="pressureUnits">
+        <item>Atmosphere</item>
+        <item>Torr</item>
+        <item>Pascal</item>
+        <item>Kilopascal</item>
+        <item>Millimetre of Mercury</item>
+        <item>Pounds per Sq Inch</item>
+    </string-array>
+    <string-array name="volumeUnits">
+        <item>Cubic Metre</item>
+        <item>Cubic Centimetre</item>
+        <item>Cubic Millimetre</item>
+        <item>Cubic Kilometre</item>
+        <item>Litre</item>
+        <item>Gallon</item>
+        <item>Quart</item>
+        <item>Cup</item>
+        <item>Cubic Feet</item>
+        <item>Millilitre</item>
+        <item>Kilolitre</item>
+    </string-array>
+    <string-array name="temperatureUnits">
+        <item>Kelvin</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
 </resources>

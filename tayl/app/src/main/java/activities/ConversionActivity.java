@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.chemistry.R;
+import tech.ondek.chemistryhandbook.R;
 
 import converters.ConversionLiterals;
 
@@ -144,7 +144,7 @@ public class ConversionActivity extends Activity {
         unitToSpinner.setAdapter(unitAdaptor);
     }
 
-    public void calculateButtonListener() {
+    public void calculateButtonListener(View view) {
         int conversionType = conversionSpinner.getSelectedItemPosition();
         Double output = 0d;
 

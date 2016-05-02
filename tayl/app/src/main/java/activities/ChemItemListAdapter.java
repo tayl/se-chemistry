@@ -8,7 +8,7 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
 
-import com.chemistry.R;
+import tech.ondek.chemistryhandbook.R;
 
 import java.util.ArrayList;
 import java.util.List;

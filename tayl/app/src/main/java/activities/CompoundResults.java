@@ -9,7 +9,7 @@ import android.widget.Filter;
 import android.widget.ListView;
 import android.widget.SearchView;
 
-import com.chemistry.R;
+import tech.ondek.chemistryhandbook.R;
 
 import java.io.InputStream;
 

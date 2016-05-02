@@ -7,7 +7,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.chemistry.R;
+import tech.ondek.chemistryhandbook.R;
 
 public class SplashScreen extends Activity {
 

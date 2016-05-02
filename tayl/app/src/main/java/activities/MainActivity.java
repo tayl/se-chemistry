@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.chemistry.R;
+import tech.ondek.chemistryhandbook.R;
 
 public class MainActivity extends Activity {
 

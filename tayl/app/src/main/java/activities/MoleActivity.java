@@ -8,7 +8,7 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.chemistry.R;
+import tech.ondek.chemistryhandbook.R;
 
 
 /**

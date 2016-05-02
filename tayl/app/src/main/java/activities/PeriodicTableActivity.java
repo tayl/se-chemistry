@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
-import com.chemistry.R;
+import tech.ondek.chemistryhandbook.R;
 
 public class PeriodicTableActivity extends Activity {
 
